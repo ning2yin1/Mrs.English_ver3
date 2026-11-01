@@ -1,0 +1,6 @@
+.inventory-root { position:absolute; inset:0; isolation:isolate; }
+.inventory-root .inventory-content { position:relative; width:100%; }
+.inventory-root .inventory-rail { position:absolute; border-radius:3px; background:#171a43; pointer-events:none; }
+.inventory-root .inventory-thumb { position:absolute; left:0; width:100%; border-radius:3px; background:#60cfff; }
+.inventory-root .inventory-bright { position:absolute; top:2px; left:16px; right:16px; height:2px; background:#63e8ff; }
+.inventory-root .inventory-used { position:absolute; background:rgba(7,12,35,.45); pointer-events:none; }

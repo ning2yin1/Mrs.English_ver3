@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
+    "build:inventory-dev": "node scripts/build.mjs --inventory-development",
+    "build:pages": "node scripts/build-pages.mjs",
+    "preview:inventory-dev": "node scripts/serve.mjs dist-development",
     "preview": "node scripts/serve.mjs dist",
     "test": "node tests/browser.mjs",
     "test:layout": "node tests/layout.mjs",
     "test:home": "node tests/home-hud.mjs",
-    "test:collection": "node tests/collection-store.mjs && node tests/collection-browser.mjs"
+    "test:collection": "node tests/collection-store.mjs && node tests/collection-browser.mjs",
+    "test:inventory": "node tests/inventory-store.mjs && node tests/inventory-browser.mjs"
   },
   "devDependencies": { "playwright": "1.56.1" }
 }

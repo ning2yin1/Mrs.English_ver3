@@ -1,6 +1,7 @@
 import {renderCollection} from './view.js';
 import {createOwnershipStore,ownedCards} from './store.js';
 import {prepareBackground} from '../layout.js';
+import {readInventoryProgress} from '../inventory/progress.js';
 let resources;
 async function loadResources() {
   if(!resources) resources=(async()=>{
@@ -32,7 +33,8 @@ export function createCollection({stage,resize,onHome,notify=()=>{},store:custom
   };
   function filter(){state.filtered=owned.filter(card=>(!state.member||card.memberId===state.member)&&(!state.rarity||card.rarity===state.rarity));state.index=Math.max(0,Math.min(state.index,state.filtered.length-1));}
   function read(){
-    const {ledger,error}=store.read();owned=ownedCards(data.catalog,ledger);
+    const {ledger,error}=store.read();const progress=readInventoryProgress();
+    owned=ownedCards(data.catalog,ledger).map(card=>({...card,instances:Object.entries(progress).filter(([,value])=>value?.catalogId===card.id).slice(0,card.quantity).map(([instanceId,value])=>({instanceId,level:value.level}))}));
     state.total=owned.reduce((sum,card)=>sum+card.quantity,0);filter();
     if(error)notify('所持データを読み込めません。保存内容は変更していません。');
   }
@@ -47,7 +49,7 @@ export function createCollection({stage,resize,onHome,notify=()=>{},store:custom
       document.body.dataset.screen=scene.screen;resize();root.afterMount?.();
     }catch(error){console.error(error);notify('コレクションを表示できませんでした。再度開いてください。');}
   }
-  function onStorage(event){if(event.key==='mrsEnglishV3.collection.v1'){read();render();}}
+  function onStorage(event){if(['mrsEnglishV3.collection.v1','mrsEnglishV3.inventory.v1'].includes(event.key)){read();render();}}
   return {
     async open(cardId) {
       try {

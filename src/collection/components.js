@@ -40,6 +40,7 @@ export function artLayer(e) {
 }
 export function cardLayer(e,card) {
   const node=position(document.createElement('div'),e);node.className='collection-card';node.dataset.cardId=card.id;
+  if(card.instances)node.dataset.instanceLevels=JSON.stringify(card.instances);
   if(e.shadow) node.style.filter='drop-shadow(3px 7px 6px rgba(0,0,0,.7))';
   const art=document.createElement('div');art.className='card-art';art.style.transform=`scale(${e.width/1060})`;
   const [x,y,x1,y1]=card.photo_window;

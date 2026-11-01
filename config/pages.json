@@ -1,0 +1,4 @@
+{
+  "inventoryDevelopment": true,
+  "note": "Current prototype deployment: grant 10 development cards only to empty ownership, once. Set false for formal release. Normal npm run build always disables the grant."
+}
