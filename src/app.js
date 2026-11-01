@@ -4,6 +4,7 @@ import { createLayout, sceneBackground, prepareBackground } from './layout.js';
 import { createCollection } from './collection/controller.js';
 import { createInventory } from './inventory/controller.js';
 import { createShop } from './shop/controller.js';
+import { createPlay } from './play/controller.js';
 const stage = document.querySelector('#stage');
 const safe = document.querySelector('#safe-area');
 const notice = document.querySelector('#notice');
@@ -19,6 +20,7 @@ const { resize } = createLayout(safe, stage);
 const collection = createCollection({stage,resize,onHome:()=>show('home'),notify:message});
 const inventory = createInventory({stage,resize,onHome:()=>show('home'),notify:message});
 const shop = createShop({stage,resize,onHome:()=>show('home'),onInventory:()=>inventory.open(),notify:message});
+const play = createPlay({stage,resize,onHome:()=>show('home'),notify:message});
 
 async function show(screen) {
   current = screen;
@@ -64,6 +66,7 @@ function tap(target) {
     if (target.route === 'placeholder/collection') collection.open();
     else if (target.route === 'placeholder/inventory') inventory.open();
     else if (target.route === 'placeholder/shop') shop.open();
+    else if (target.route === 'placeholder/ready') play.open();
     else show(target.route);
   }
 }

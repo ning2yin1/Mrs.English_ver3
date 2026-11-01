@@ -5,7 +5,7 @@ export function persistence(storageProvider=()=>localStorage, locks=globalThis.n
   function recover(storage) {
     const raw=storage.getItem(JOURNAL_KEY);if(raw===null)return;
     const journal=JSON.parse(raw);
-    const allowed=['mrsEnglishV3.collection.v1','mrsEnglishV3.inventory.v1','mrsEnglishV3.wallet.v1','mrsEnglishV3.shop.v1'];
+    const allowed=['mrsEnglishV3.collection.v1','mrsEnglishV3.inventory.v1','mrsEnglishV3.wallet.v1','mrsEnglishV3.shop.v1','mrsEnglishV3.play.v1'];
     if(journal.version!==1||!Array.isArray(journal.changes)||journal.changes.some(c=>!allowed.includes(c.key)||(c.before!==null&&typeof c.before!=='string')||(c.after!==null&&typeof c.after!=='string')))throw new Error('未対応の保存復旧データです。元データを保持しています。');
     if(journal.changes.some(c=>![c.before,c.after].includes(storage.getItem(c.key))))throw new Error('保存内容が別の操作で変更されています。復旧データを保持しています。');
     if(journal.phase!==undefined&&!['prepared','committed','applied'].includes(journal.phase))throw new Error('未対応の取引状態です。復旧記録を保持しています。');

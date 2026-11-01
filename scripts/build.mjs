@@ -5,6 +5,7 @@ const output=inventoryDevelopment?'dist-development':'dist';
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 for (const file of ['index.html', 'src', 'assets', 'layouts', 'data']) await cp(file, `${output}/${file}`, { recursive: true });
+await cp('specs/play', `${output}/specs/play`, { recursive: true });
 for (const file of ['assets', 'spec']) await cp(`home_approved/${file}`, `${output}/home_approved/${file}`, { recursive: true });
 await cp('public', output, { recursive: true });
 if(inventoryDevelopment)await writeFile(`${output}/src/inventory/runtime-config.js`,'export const development = Object.freeze({enabled:true, testCoins:10000});\n');

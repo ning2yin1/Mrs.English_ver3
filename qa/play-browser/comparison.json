@@ -1,0 +1,47 @@
+[
+  {
+    "screen": "01_ready_initial",
+    "mean_absolute_rgb_error_0_255": 11.178473280048555,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "02_ready_hard",
+    "mean_absolute_rgb_error_0_255": 17.201311520989677,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "03_play_easy",
+    "mean_absolute_rgb_error_0_255": 9.183689017283223,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "04_play_normal",
+    "mean_absolute_rgb_error_0_255": 8.291007706203024,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "05_play_hard",
+    "mean_absolute_rgb_error_0_255": 8.420987896065013,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "06_feedback_correct",
+    "mean_absolute_rgb_error_0_255": 7.5761200526575,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "07_feedback_incorrect",
+    "mean_absolute_rgb_error_0_255": 29.661414691374663,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "08_paused",
+    "mean_absolute_rgb_error_0_255": 3.5050659108806568,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  },
+  {
+    "screen": "09_quit_confirm",
+    "mean_absolute_rgb_error_0_255": 4.3012728246781595,
+    "note": "Dynamic question order/scores/skill values differ; compact layout is checked separately."
+  }
+]
