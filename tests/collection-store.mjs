@@ -1,0 +1,37 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createOwnershipStore,ownedCards,acquiredDate,COLLECTION_KEY} from '../src/collection/store.js';
+const catalog=JSON.parse(await readFile('layouts/collection/catalog.json','utf8'));
+const values=new Map([['mrsEnglishV3.profile','keep-profile']]);
+let writes=0;
+const storage={getItem:key=>values.get(key)??null,setItem:(key,value)=>{writes++;values.set(key,value)}};
+const store=createOwnershipStore(catalog,()=>storage);
+assert.ok(createOwnershipStore(catalog,()=>{throw new Error('blocked')}).read().error);
+assert.deepEqual(store.read().ledger,{version:1,owned:{}});assert.equal(writes,0);
+store.awardCard('motoki-r-01',1,'2026-10-31T16:00:00Z');
+store.awardCard('motoki-r-01',2,'2026-11-02T00:00:00Z');
+assert.equal(store.read().ledger.owned['motoki-r-01'].quantity,3);
+assert.equal(store.read().ledger.owned['motoki-r-01'].firstAcquiredAt,'2026-10-31T16:00:00Z');
+assert.equal(acquiredDate('2026-10-31T16:00:00Z'),'2026.11.01');assert.equal(acquiredDate(null),'—');
+const ledger=store.read().ledger;
+ledger.future={preserve:true};ledger.owned['future-card']={quantity:4,firstAcquiredAt:'2025-01-01T00:00:00Z',extra:3};
+ledger.owned['motoki-r-01'].upgrade={preserve:true};ledger.owned['hiroto-r-01']={quantity:1,firstAcquiredAt:'2026-10-31T16:00:00Z'};
+values.set(COLLECTION_KEY,JSON.stringify(ledger));store.awardCard('motoki-r-01',1,'2027-01-01T00:00:00Z');
+assert.deepEqual(store.read().ledger.future,{preserve:true});
+assert.equal(store.read().ledger.owned['future-card'].extra,3);
+assert.deepEqual(store.read().ledger.owned['motoki-r-01'].upgrade,{preserve:true});
+assert.deepEqual(ownedCards(catalog,store.read().ledger).map(c=>c.id),['hiroto-r-01','motoki-r-01']);
+assert.match(catalog.cards.find(c=>c.id==='hiroto-r-01').image,/hiloto\/r\/hiloto-a-06/);
+assert.equal(catalog.cards.find(c=>c.id==='motoki-r-01').rarity,'R');
+for(const amount of [0,-1,1.5,NaN,Number.MAX_SAFE_INTEGER])assert.throws(()=>store.awardCard('motoki-r-01',amount));
+assert.throws(()=>store.awardCard('unknown',1));
+for(const raw of ['broken JSON',JSON.stringify({version:2,owned:{}}),JSON.stringify({version:1,owned:[]})]) {
+ values.set(COLLECTION_KEY,raw);const n=writes;assert.ok(store.read().error);assert.throws(()=>store.awardCard('motoki-r-01'));assert.equal(values.get(COLLECTION_KEY),raw);assert.equal(writes,n);
+}
+values.set(COLLECTION_KEY,JSON.stringify({version:1,owned:{'motoki-r-01':{quantity:1}}}));
+assert.equal(ownedCards(catalog,store.read().ledger)[0].firstAcquiredAt,undefined);assert.throws(()=>store.awardCard('motoki-r-01'));
+const original=values.get(COLLECTION_KEY);
+const denied=createOwnershipStore(catalog,()=>({getItem:storage.getItem,setItem:()=>{throw new Error('denied')}}));
+assert.throws(()=>denied.awardCard('hiroto-r-01'));assert.equal(values.get(COLLECTION_KEY),original);
+assert.equal(values.get('mrsEnglishV3.profile'),'keep-profile');
+console.log('Collection store: awards, immutable first date, Tokyo date, ordering, strict quantities, unknown fields/IDs, missing dates, invalid versions/JSON, write failure and profile isolation passed.');

@@ -1,0 +1,14 @@
+.collection-root { position:absolute; inset:0; isolation:isolate; }
+.collection-root .collection-scroll { position:absolute; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; touch-action:pan-y; -webkit-overflow-scrolling:touch; scrollbar-width:none; isolation:isolate; }
+.collection-root .collection-scroll::-webkit-scrollbar { display:none; }
+.collection-root .collection-content { position:relative; width:100%; }
+.collection-root .collection-card { position:absolute; user-select:none; -webkit-user-select:none; }
+.collection-root .card-art { position:absolute; inset:0; width:1060px; height:1484px; transform-origin:0 0; pointer-events:none; }
+.collection-root .card-art img { position:absolute; pointer-events:none; user-select:none; -webkit-user-drag:none; }
+.collection-root .card-photo { object-fit:cover; }
+.collection-root .collection-card-hit { appearance:none; border:0; background:transparent; padding:0; position:absolute; z-index:50; cursor:pointer; touch-action:pan-y; }
+.collection-root .collection-card-hit:focus-visible { outline:4px solid white; outline-offset:-8px; }
+.collection-root .collection-swipe { position:absolute; z-index:60; touch-action:pan-y; }
+.collection-root .collection-dropdown { position:absolute; inset:0; z-index:150; }
+.collection-root .collection-dismiss { position:absolute; inset:0; width:100%; height:100%; border:0; background:transparent; }
+.collection-root .collection-option { position:absolute; width:502px; height:65px; }
