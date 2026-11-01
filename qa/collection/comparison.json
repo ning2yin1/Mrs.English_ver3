@@ -1,0 +1,26 @@
+{
+  "collection_owned": {
+    "mean_absolute_rgb_error": 0.0,
+    "ui_region_mean_absolute_rgb_error": 0.0,
+    "pixels_any_channel_error_over16_percent": 0.0,
+    "max_error": 0,
+    "reference_sha256": "085487a6269d971dd94bb84faa39b856786e94f336eb5520b9f65094f450da4a",
+    "method": "Separated exported PNGs + existing PNGs + original photos/frames + editable font text, rendered from layout JSON with Pillow. No game/browser implementation."
+  },
+  "collection_detail": {
+    "mean_absolute_rgb_error": 0.0,
+    "ui_region_mean_absolute_rgb_error": 0.0,
+    "pixels_any_channel_error_over16_percent": 0.0,
+    "max_error": 0,
+    "reference_sha256": "2fb738dc501d974159fa0ce5e5f304eb286274c092bdc51bf614989dd2fa4a48",
+    "method": "Separated exported PNGs + existing PNGs + original photos/frames + editable font text, rendered from layout JSON with Pillow. No game/browser implementation."
+  },
+  "collection_empty": {
+    "mean_absolute_rgb_error": 2.203952025050458e-05,
+    "ui_region_mean_absolute_rgb_error": 2.9654164014900078e-05,
+    "pixels_any_channel_error_over16_percent": 0.0,
+    "max_error": 8,
+    "reference_sha256": "d7e9a6ea3ada0115e6f4b405198ab6b0a7123cdd3b777bec3718fdcd14ef3f32",
+    "method": "Separated exported PNGs + existing PNGs + original photos/frames + editable font text, rendered from layout JSON with Pillow. No game/browser implementation."
+  }
+}

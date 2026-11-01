@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mrs English Collection ownership v1",
+  "type": "object",
+  "required": [
+    "version",
+    "owned"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "owned": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "firstAcquiredAt",
+          "quantity"
+        ],
+        "properties": {
+          "firstAcquiredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

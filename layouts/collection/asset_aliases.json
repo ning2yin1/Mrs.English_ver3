@@ -1,0 +1,24 @@
+{
+  "purple_header": "assets/nickname/nickname_header.png",
+  "blue_button": {
+    "file": "home_approved/assets/home/button_collection.png",
+    "insets_top_right_bottom_left": [
+      18,
+      20,
+      17,
+      20
+    ]
+  },
+  "purple_button": {
+    "file": "home_approved/assets/home/status_menu.png",
+    "insets_top_right_bottom_left": [
+      16,
+      18,
+      16,
+      18
+    ]
+  },
+  "back": "assets/icons/nickname_back.png",
+  "arrow": "assets/icons/nickname_confirm_arrow.png",
+  "empty_emblem": "home_approved/assets/icons/collection.png"
+}

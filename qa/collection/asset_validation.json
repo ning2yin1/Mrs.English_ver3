@@ -1,0 +1,56 @@
+{
+  "repository_commit": "51e65e19727b6ceaea84cc28e3b84dfab4519d9a",
+  "existing_path_collisions": [],
+  "runtime_image_count": 91,
+  "all_png_jpeg_decode": true,
+  "original_photos_byte_identical": true,
+  "original_frames_byte_identical": true,
+  "approved_background_byte_identical": true,
+  "reused_assets_match_git_blob": true,
+  "alpha": [
+    {
+      "file": "assets/collection/ui/detail_aura.png",
+      "mode": "RGBA",
+      "alpha_min": 0,
+      "alpha_max": 85,
+      "partial_alpha_pixels": 377390
+    },
+    {
+      "file": "assets/collection/ui/empty_aura.png",
+      "mode": "RGBA",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "partial_alpha_pixels": 68152
+    },
+    {
+      "file": "assets/collection/ui/detail_info_panel.png",
+      "mode": "RGBA",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "partial_alpha_pixels": 92297
+    },
+    {
+      "file": "assets/collection/ui/scroll_thumb.png",
+      "mode": "RGBA",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "partial_alpha_pixels": 0
+    },
+    {
+      "file": "assets/collection/ui/list_panel.png",
+      "mode": "RGBA",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "partial_alpha_pixels": 889500
+    },
+    {
+      "file": "assets/collection/ui/scroll_track.png",
+      "mode": "RGBA",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "partial_alpha_pixels": 0
+    }
+  ],
+  "reference_source": "current user-attached approved Japanese PNGs",
+  "no_browser_game_implementation_tested": true
+}

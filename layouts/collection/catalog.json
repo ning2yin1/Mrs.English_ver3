@@ -1,0 +1,2071 @@
+{
+  "version": 1,
+  "members": {
+    "motoki": "大森元貴",
+    "hiroto": "若井滉斗",
+    "ryoka": "藤澤涼架"
+  },
+  "rarities": [
+    "R",
+    "S",
+    "A",
+    "B",
+    "C"
+  ],
+  "cards": [
+    {
+      "id": "hiroto-a-01",
+      "memberId": "hiroto",
+      "rarity": "A",
+      "image": "assets/collection/cards/hiloto/a/hiloto-a-01.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "hiloto/a/hiloto-a-01.jpg",
+      "source_sha256": "2c49a05099efd9a61848e2d53f29c6f47e775e6b3699fa16cae7967bf4c1e0cd",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "hiroto-a-02",
+      "memberId": "hiroto",
+      "rarity": "A",
+      "image": "assets/collection/cards/hiloto/a/hiloto-a-02.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "hiloto/a/hiloto-a-02.jpg",
+      "source_sha256": "be141eea9194a4fd371ac2620a56e031865f71b1cbd2ddb6c2a5a84dedbff323",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "hiroto-a-03",
+      "memberId": "hiroto",
+      "rarity": "A",
+      "image": "assets/collection/cards/hiloto/a/hiloto-a-03.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "hiloto/a/hiloto-a-03.jpg",
+      "source_sha256": "3731c89e519559b5505fa4daaacbb81d20717fc7618ff69694a50488f87738b5",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "hiroto-a-04",
+      "memberId": "hiroto",
+      "rarity": "A",
+      "image": "assets/collection/cards/hiloto/a/hiloto-a-04.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "hiloto/a/hiloto-a-04.jpg",
+      "source_sha256": "febf6d53b7150b49bf8e84495522c38ff2c79e2919f982bdc48dc077e3419864",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "hiroto-a-05",
+      "memberId": "hiroto",
+      "rarity": "A",
+      "image": "assets/collection/cards/hiloto/a/hiloto-a-05.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "hiloto/a/hiloto-a-05.jpg",
+      "source_sha256": "2204602cd2768eeadad560e5f7fc7a4f14a99a840f617e809a0b43faae154f0c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "hiroto-a-06",
+      "memberId": "hiroto",
+      "rarity": "A",
+      "image": "assets/collection/cards/hiloto/a/hiloto-a-07.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "hiloto/a/hiloto-a-07.jpg",
+      "source_sha256": "ba33864891efdd87462ab7c6f88e73098060de381670907069c10d292bea3906",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "hiroto-b-01",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "image": "assets/collection/cards/hiloto/b/hiloto-b-01.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "hiloto/b/hiloto-b-01.jpg",
+      "source_sha256": "3c8921cf6b617b6e2e5b887833fdcaeed18b0252996a904dd497ecc67436abe1",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-b-02",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "image": "assets/collection/cards/hiloto/b/hiloto-b-02.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "hiloto/b/hiloto-b-02.jpg",
+      "source_sha256": "9d006cf077f41ad798433a6389ba1f2eee3569c3509bff120d9999141cd49d81",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-b-03",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "image": "assets/collection/cards/hiloto/b/hiloto-b-03.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "hiloto/b/hiloto-b-03.jpg",
+      "source_sha256": "139492e88d45ea906ef912206e26697c7153b5b6985b0cc3c399a92b587747b8",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-b-04",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "image": "assets/collection/cards/hiloto/b/hiloto-b-04.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "hiloto/b/hiloto-b-04.jpg",
+      "source_sha256": "82b7d24d767c91f17eac7c6c87e331aab355b68c421f68664e348167cd7ceb6e",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-b-05",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "image": "assets/collection/cards/hiloto/b/hiloto-b-05.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "hiloto/b/hiloto-b-05.jpg",
+      "source_sha256": "b1a360afadab2843a8d232cd0dd465ce88ad5997de559bfdd457e947d3f47896",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-b-06",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "image": "assets/collection/cards/hiloto/b/hiloto-b-06.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "hiloto/b/hiloto-b-06.jpg",
+      "source_sha256": "84a924737c7b1e52842388f1f28dc4dc8cce76efdd3e98dd8496d2f7eceb0a99",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-c-01",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-01.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-01.jpg",
+      "source_sha256": "e4d020ca1ebc729e17501a7acd4f43c39c40ca1d76662697922eb9e763788ea6",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-02",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-02.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-02.jpg",
+      "source_sha256": "83eb3bf158436abcc47c9c7f2844a2223b43f71ab53942686b3796bc9e2cbfe2",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-03",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-03.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-03.jpg",
+      "source_sha256": "672d1c08cdfc529aa3473e768ada19c275ff54b51b7bf64d5e92543f016bd392",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-04",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-04.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-04.jpg",
+      "source_sha256": "28fd887db2f4b682f2d14fbc39079c51c9fe1e2d147b61f915cac74a63118eee",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-05",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-05.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-05.jpg",
+      "source_sha256": "bf1ac9b4354d859a20e52ccd06fd9ce6c6855fcf65cae911effb355cf69ab958",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-06",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-06.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-06.jpg",
+      "source_sha256": "45fc3ec5ad727110693ef0a5d4b3599c791bef23db29749610b0d2ae070e9bd8",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-07",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-07.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-07.jpg",
+      "source_sha256": "f3f2d4c1d0fb388d92f20760aecd7c57500c4015408a44d45c7ff538b6202043",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-08",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-08.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-08.jpg",
+      "source_sha256": "81182228b5f913a4d96f1c6859cd12fcc335835538d5f9c248a2882e96a87ec7",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-09",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-09.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-09.jpg",
+      "source_sha256": "13834848a74e29eec4c4215db90030afa6c563831631e9816e37ab57f2ffdc20",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-c-10",
+      "memberId": "hiroto",
+      "rarity": "C",
+      "image": "assets/collection/cards/hiloto/c/hiloto-c-10.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "hiloto/c/hiloto-c-10.jpg",
+      "source_sha256": "ba69d34831ed1600a7918555075f95d54fccf15c755174ffba0c7c1cd4a6ae1d",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "hiroto-r-01",
+      "memberId": "hiroto",
+      "rarity": "R",
+      "image": "assets/collection/cards/hiloto/r/hiloto-a-06.jpg",
+      "frame": "assets/collection/frames/rank_r.png",
+      "source_path": "hiloto/r/hiloto-a-06.jpg",
+      "source_sha256": "59d799d48d597d3b5949f64fa1923cf982f9c484e15183cd4e6f9f1c6fd89576",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        89,
+        106,
+        972,
+        1392
+      ]
+    },
+    {
+      "id": "hiroto-s-01",
+      "memberId": "hiroto",
+      "rarity": "S",
+      "image": "assets/collection/cards/hiloto/s/hiloto-s-01.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "hiloto/s/hiloto-s-01.jpg",
+      "source_sha256": "a32f5c477390ed0b81e9fb15aaf88ad9eba000f387abc2bd1bdc5d99df1375d3",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "hiroto-s-02",
+      "memberId": "hiroto",
+      "rarity": "S",
+      "image": "assets/collection/cards/hiloto/s/hiloto-s-02.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "hiloto/s/hiloto-s-02.jpg",
+      "source_sha256": "38ead44adc535d4450abee0e6242d9e574ce0dcdd7b6e14733161003cc3faaa0",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "hiroto-s-03",
+      "memberId": "hiroto",
+      "rarity": "S",
+      "image": "assets/collection/cards/hiloto/s/hiloto-s-03.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "hiloto/s/hiloto-s-03.jpg",
+      "source_sha256": "951bb5c212ce5713f67a558fccd9b7d5ba97cd62a06f71746716a3f67b7bb089",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "hiroto-s-04",
+      "memberId": "hiroto",
+      "rarity": "S",
+      "image": "assets/collection/cards/hiloto/s/hiloto-s-04.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "hiloto/s/hiloto-s-04.jpg",
+      "source_sha256": "9ec2fc0458771bd09195962c81fcd562143f84960a620db6421fef6f0543fb51",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "motoki-a-01",
+      "memberId": "motoki",
+      "rarity": "A",
+      "image": "assets/collection/cards/motoki/a/motoki-a-01.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "motoki/a/motoki-a-01.jpg",
+      "source_sha256": "b316c12d90de0a2c6183bee2b7d30e93cbe8d80cb1c2efcd081828047fa3cfa9",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "motoki-a-02",
+      "memberId": "motoki",
+      "rarity": "A",
+      "image": "assets/collection/cards/motoki/a/motoki-a-02.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "motoki/a/motoki-a-02.jpg",
+      "source_sha256": "d1f73c7ca4f37956d7914968a902d72d4ddc0706a14d90f8effca2d3a7fdc048",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "motoki-a-03",
+      "memberId": "motoki",
+      "rarity": "A",
+      "image": "assets/collection/cards/motoki/a/motoki-a-03.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "motoki/a/motoki-a-03.jpg",
+      "source_sha256": "406e6b6862651e1e4e877609860942dc36dd1471d880722ffacc496675798180",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "motoki-a-04",
+      "memberId": "motoki",
+      "rarity": "A",
+      "image": "assets/collection/cards/motoki/a/motoki-a-04.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "motoki/a/motoki-a-04.jpg",
+      "source_sha256": "5da020fb26649a08b029907c704bf3c9f9988871626ced0fdf33721e536c7802",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "motoki-a-05",
+      "memberId": "motoki",
+      "rarity": "A",
+      "image": "assets/collection/cards/motoki/a/motoki-a-05.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "motoki/a/motoki-a-05.jpg",
+      "source_sha256": "da52f399586ce4838bf05a0464c405456bae2005afeb0e6def207a1c20fa9a27",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "motoki-a-06",
+      "memberId": "motoki",
+      "rarity": "A",
+      "image": "assets/collection/cards/motoki/a/motoki-a-06.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "motoki/a/motoki-a-06.jpg",
+      "source_sha256": "ad0f89ab04ccf98147bab608aa31530fc2f8a2556335e170369e51c7075c087c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "motoki-b-01",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-01.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-01.jpg",
+      "source_sha256": "f2f81dc47aa24860bbe14d2b288be1ea025700749512d8f7553b545508210b00",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-b-02",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-02.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-02.jpg",
+      "source_sha256": "220bae8d2d9a25abedce1dc289cc09b380f5e3facfa9e6c3c1862921d1aed283",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-b-03",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-03.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-03.jpg",
+      "source_sha256": "ad371dea5012b65870e5f42429e7dd40823cf8260e5c56158293b4b190c1a1a7",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-b-04",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-04.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-04.jpg",
+      "source_sha256": "3a60cc961d1380f1df3a738e1b6a707eed019d103ce5ecf6267147f3c83cd8d2",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-b-05",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-05.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-05.jpg",
+      "source_sha256": "6b94876f74e539526db90a627d2782f09983c13d8dc84c033d5fc820548c16f6",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-b-06",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-06.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-06.jpg",
+      "source_sha256": "cff3236b36dab5efa3090ded0cffb3764898aa151a30457e1a6ebdf3f711708d",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-b-07",
+      "memberId": "motoki",
+      "rarity": "B",
+      "image": "assets/collection/cards/motoki/b/motoki-b-07.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "motoki/b/motoki-b-07.jpg",
+      "source_sha256": "d302f7c5d0b0e4157b95864ac7637a0dbac0b47ef865c19c5a4242fc9c91e527",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-c-01",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-01.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-01.jpg",
+      "source_sha256": "423ba35f7359f02f9ab3ec3034c0a3016ce11686a4cd7ac6c7725d670aacdfa7",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-02",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-02.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-02.jpg",
+      "source_sha256": "c16919a685d9bc489262b08623256d9a854095d905dd5dc4c560290116523d4f",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-03",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-03.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-03.jpg",
+      "source_sha256": "3c611851ae9784e66719f58da6c4f2d5ed7345a9bc25e9ca0eb4ccef476a888e",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-04",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-04.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-04.jpg",
+      "source_sha256": "da9bb537da71552a9f767219f08944ee3dd4b287cdd233eaf0edf11984d3f1a0",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-05",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-05.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-05.jpg",
+      "source_sha256": "84f8344b67ca0a6bfca176680acf4150fd44b363719ab077a708b3cc896b4e88",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-06",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-06.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-06.jpg",
+      "source_sha256": "50f52df4dc6e9ca2fefe935d73a471cb4abd6c8c3a3b3aea004d4a9812d85d41",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-07",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-07.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-07.jpg",
+      "source_sha256": "59db7e1f22571473563435ed3150e9379661fa986f93dfeac5e2cb6692aff647",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-08",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-08.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-08.jpg",
+      "source_sha256": "9650da06ff821a110cc515aa877db0e0046ac56ac918feb4008a9e033d47f44d",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-c-09",
+      "memberId": "motoki",
+      "rarity": "C",
+      "image": "assets/collection/cards/motoki/c/motoki-c-09.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "motoki/c/motoki-c-09.jpg",
+      "source_sha256": "862569f9c97190883236c6023016ebe1b6e2ebccc93d9f3962fcbebb034112db",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "motoki-r-01",
+      "memberId": "motoki",
+      "rarity": "R",
+      "image": "assets/collection/cards/motoki/r/motoki-a-07.jpg",
+      "frame": "assets/collection/frames/rank_r.png",
+      "source_path": "motoki/r/motoki-a-07.jpg",
+      "source_sha256": "6cec34ee235f7c61d9d144cc9be9c6c45bd5b869f8aa2a85f98ea280913dc536",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        89,
+        106,
+        972,
+        1392
+      ]
+    },
+    {
+      "id": "motoki-s-01",
+      "memberId": "motoki",
+      "rarity": "S",
+      "image": "assets/collection/cards/motoki/s/motoki-s-02.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "motoki/s/motoki-s-02.jpg",
+      "source_sha256": "7c8ea785bae17b44d80aa001e0c709321f1076a39a95b4683be05206017457c1",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "motoki-s-02",
+      "memberId": "motoki",
+      "rarity": "S",
+      "image": "assets/collection/cards/motoki/s/motoki-s-03.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "motoki/s/motoki-s-03.jpg",
+      "source_sha256": "b63ac2efbcfcd1a7976da735af2426f6824e2d3e931e6f0724ba4823c5798f18",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "motoki-s-03",
+      "memberId": "motoki",
+      "rarity": "S",
+      "image": "assets/collection/cards/motoki/s/motoki-s-04.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "motoki/s/motoki-s-04.jpg",
+      "source_sha256": "53216dee0a408c965bebaec7a368e1eff0d8b80889a04501853769b238c9b73f",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "motoki-s-04",
+      "memberId": "motoki",
+      "rarity": "S",
+      "image": "assets/collection/cards/motoki/s/motoki-s-05.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "motoki/s/motoki-s-05.jpg",
+      "source_sha256": "9d2bf7fadfe6fcf94c1298bbc76bdcabb38d24936a1134e13e3472490796b58c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "ryoka-a-01",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-01.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-01.jpg",
+      "source_sha256": "078fd1c0e6965e57d058d3c0ab5b92fbec366052b9a0a03d61cd2fc7aaea157f",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-a-02",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-02.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-02.jpg",
+      "source_sha256": "44ad2acb69e06484996c03357236a490ac280477a23b6b151c3bb89ecaeb2749",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-a-03",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-03.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-03.jpg",
+      "source_sha256": "dd059f4ad9b2df9b85fe3e9b255b5f020f4f1d9ce540d6fe36228c4f7335fcfc",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-a-04",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-04.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-04.jpg",
+      "source_sha256": "e0f37bae875bc62cfa84c89bf202b03c5c3c23e079d4418a8b38761fcbf917a4",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-a-05",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-05.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-05.jpg",
+      "source_sha256": "3d626169fd3f08d76c8e547ae9be5786c0ff7bf36a194752c08512a3e200cede",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-a-06",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-06.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-06.jpg",
+      "source_sha256": "3b6ba4f623ed400a0aa4e1d79550581e65620cdca0e91146895247cabef77de8",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-a-07",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "image": "assets/collection/cards/ryoka/a/ryoka-a-08.jpg",
+      "frame": "assets/collection/frames/rank_a.png",
+      "source_path": "ryoka/a/ryoka-a-08.jpg",
+      "source_sha256": "1fa0428e5cb680961cca89e59afa428252b88f06591ef20715b31561934452b6",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        115,
+        946,
+        1362
+      ]
+    },
+    {
+      "id": "ryoka-b-01",
+      "memberId": "ryoka",
+      "rarity": "B",
+      "image": "assets/collection/cards/ryoka/b/ryoka-b-01.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "ryoka/b/ryoka-b-01.jpg",
+      "source_sha256": "ab8263bebc1a283d16236eeaf2f398dbdaf4661b9623c7c2c28ff1e6a4516f9c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-b-02",
+      "memberId": "ryoka",
+      "rarity": "B",
+      "image": "assets/collection/cards/ryoka/b/ryoka-b-02.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "ryoka/b/ryoka-b-02.jpg",
+      "source_sha256": "27bf4cfec57202e4f80884c90b5936cc771be9c51dfbadcd0e6da4539f07f355",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-b-03",
+      "memberId": "ryoka",
+      "rarity": "B",
+      "image": "assets/collection/cards/ryoka/b/ryoka-b-03.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "ryoka/b/ryoka-b-03.jpg",
+      "source_sha256": "b45b0d57012a36c965bdc9cddf7d81b849b46af33431925390db1b7dfff68af4",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-b-04",
+      "memberId": "ryoka",
+      "rarity": "B",
+      "image": "assets/collection/cards/ryoka/b/ryoka-b-04.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "ryoka/b/ryoka-b-04.jpg",
+      "source_sha256": "1df547f014497d1eb6a7e7c184698c6bd163a5beeb2958b479544829ac192571",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-b-05",
+      "memberId": "ryoka",
+      "rarity": "B",
+      "image": "assets/collection/cards/ryoka/b/ryoka-b-05.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "ryoka/b/ryoka-b-05.jpg",
+      "source_sha256": "ab09988834852610e418178acee628da22630cc4165fa5a5d0fb716e69e02a76",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-b-06",
+      "memberId": "ryoka",
+      "rarity": "B",
+      "image": "assets/collection/cards/ryoka/b/ryoka-b-06.jpg",
+      "frame": "assets/collection/frames/rank_b.png",
+      "source_path": "ryoka/b/ryoka-b-06.jpg",
+      "source_sha256": "df2b619ad761adeffb7de257a95e436711e832064aec7f4ec8b33656cd08165c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        80,
+        102,
+        980,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-c-01",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-01.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-01.jpg",
+      "source_sha256": "bad01b0ea2d5c0f06ac70e4fff8efe0f0033ff5b0ac1eb24a836256e302df6a9",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-c-02",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-02.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-02.jpg",
+      "source_sha256": "990bf6f0a3340b6c902bd57d334d136d9779f2877910d0f46db5af575a4f0f8c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-c-03",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-03.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-03.jpg",
+      "source_sha256": "42b9f7d1dd1d4edbb989f88c71f51a92b8f65e81fc2409056175d4e32a30489e",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-c-04",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-04.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-04.jpg",
+      "source_sha256": "02aebb1df95aa632a1b9405bb0ae3163575df2d9af4c188a6bbf151eec00853b",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-c-05",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-05.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-05.jpg",
+      "source_sha256": "5c42dafac1fd63bc9ecdbc63df8dd049e6add1f98c184a38725b8fe01edd7492",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-c-06",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-06.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-06.jpg",
+      "source_sha256": "dbba165501077361da93d731235227e58c1b7ea73e8a6d49f26e76ac0a62fcf9",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-c-07",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "image": "assets/collection/cards/ryoka/c/ryoka-c-07.jpg",
+      "frame": "assets/collection/frames/rank_c.png",
+      "source_path": "ryoka/c/ryoka-c-07.jpg",
+      "source_sha256": "ad86531fda92cd2622371495c2651edba2a6e4c69bce04000f83f3dc6d826c97",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        114,
+        132,
+        948,
+        1348
+      ]
+    },
+    {
+      "id": "ryoka-r-01",
+      "memberId": "ryoka",
+      "rarity": "R",
+      "image": "assets/collection/cards/ryoka/r/ryoka-a-07.jpg",
+      "frame": "assets/collection/frames/rank_r.png",
+      "source_path": "ryoka/r/ryoka-a-07.jpg",
+      "source_sha256": "3530b560d5989ce304a89b5ade6818423dc7e08a878328f2d840137779039d2c",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        89,
+        106,
+        972,
+        1392
+      ]
+    },
+    {
+      "id": "ryoka-s-01",
+      "memberId": "ryoka",
+      "rarity": "S",
+      "image": "assets/collection/cards/ryoka/s/ryoka-s-01.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "ryoka/s/ryoka-s-01.jpg",
+      "source_sha256": "01e44738b7ab998c5e8c517cea73a6248e3ed4a1e410c58cc4ad955ad93cddf1",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "ryoka-s-02",
+      "memberId": "ryoka",
+      "rarity": "S",
+      "image": "assets/collection/cards/ryoka/s/ryoka-s-02.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "ryoka/s/ryoka-s-02.jpg",
+      "source_sha256": "b68f7b6da120098c888e16bd8bf8732ece05155f80346ad0e811b7bf2504902e",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "ryoka-s-03",
+      "memberId": "ryoka",
+      "rarity": "S",
+      "image": "assets/collection/cards/ryoka/s/ryoka-s-03.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "ryoka/s/ryoka-s-03.jpg",
+      "source_sha256": "3b648b98a285c5567db2bf4e8db05e260105b794b8283365dd6c79e855c7178e",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    },
+    {
+      "id": "ryoka-s-04",
+      "memberId": "ryoka",
+      "rarity": "S",
+      "image": "assets/collection/cards/ryoka/s/ryoka-s-04.jpg",
+      "frame": "assets/collection/frames/rank_s.png",
+      "source_path": "ryoka/s/ryoka-s-04.jpg",
+      "source_sha256": "ad309165162d8819b69568674bd6c824140be1a5bb6cd594aa44894c3573e225",
+      "photograph_fit": {
+        "mode": "cover",
+        "centering": [
+          0.56,
+          0.42
+        ]
+      },
+      "frame_size": [
+        1060,
+        1484
+      ],
+      "photo_window": [
+        116,
+        140,
+        946,
+        1351
+      ]
+    }
+  ]
+}

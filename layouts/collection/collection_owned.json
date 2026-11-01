@@ -1,0 +1,1400 @@
+{
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "background",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "z": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "title_bar",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "z": 10,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "back",
+      "kind": "image",
+      "x": 142,
+      "y": 48,
+      "width": 24,
+      "height": 40,
+      "z": 10,
+      "file": "assets/icons/nickname_back.png"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "x": 237.0,
+      "y": 47,
+      "width": 234.0,
+      "height": 35,
+      "z": 40,
+      "text": "コレクション",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 237,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -32,
+        234,
+        3
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "count",
+      "kind": "text",
+      "x": 1570.34375,
+      "y": 53,
+      "width": 119.65625,
+      "height": 28,
+      "z": 40,
+      "text": "所持18枚",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 29,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "right",
+      "anchor_x": 1690,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": "totalOwnedQuantity",
+      "glyph_bbox_baseline": [
+        0,
+        -25,
+        120,
+        3
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "member_filter_heading",
+      "kind": "text",
+      "x": 119.0,
+      "y": 126,
+      "width": 74.0,
+      "height": 16,
+      "z": 40,
+      "text": "メンバー",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 17,
+      "color": "#acbfff",
+      "tracking": 2,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 119,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -15,
+        68,
+        1
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "member_filter",
+      "kind": "nine_slice",
+      "x": 113,
+      "y": 151,
+      "width": 502,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "state": "active"
+    },
+    {
+      "id": "member_filter_label",
+      "kind": "text",
+      "x": 253.5390625,
+      "y": 168.5,
+      "width": 220.921875,
+      "height": 27,
+      "z": 40,
+      "text": "すべてのメンバー",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 364.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": "selectedMemberId or all",
+      "glyph_bbox_baseline": [
+        0,
+        -24,
+        221,
+        3
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "member_dropdown_arrow",
+      "kind": "image",
+      "x": 565,
+      "y": 176,
+      "width": 15,
+      "height": 25,
+      "z": 30,
+      "file": "assets/icons/nickname_confirm_arrow.png",
+      "rotate": -90
+    },
+    {
+      "id": "rarity_filter_heading",
+      "kind": "text",
+      "x": 721.0,
+      "y": 126,
+      "width": 93.0,
+      "height": 16,
+      "z": 40,
+      "text": "レアリティ",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 17,
+      "color": "#acbfff",
+      "tracking": 2,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 721,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -14,
+        84,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "rarity_0",
+      "kind": "nine_slice",
+      "x": 716,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "state": "active"
+    },
+    {
+      "id": "rarity_0_label",
+      "kind": "text",
+      "x": 754.5390625,
+      "y": 168.5,
+      "width": 80.921875,
+      "height": 25,
+      "z": 40,
+      "text": "すべて",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 795.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        81,
+        3
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "rarity_1",
+      "kind": "nine_slice",
+      "x": 887,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "state": "inactive"
+    },
+    {
+      "id": "rarity_1_label",
+      "kind": "text",
+      "x": 955.890625,
+      "y": 168.5,
+      "width": 20.21875,
+      "height": 21,
+      "z": 40,
+      "text": "R",
+      "font_file": "assets/collection/fonts/nimbus_sans_regular.otf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 966.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        20,
+        0
+      ]
+    },
+    {
+      "id": "rarity_2",
+      "kind": "nine_slice",
+      "x": 1058,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "state": "inactive"
+    },
+    {
+      "id": "rarity_2_label",
+      "kind": "text",
+      "x": 1127.6640625,
+      "y": 168.5,
+      "width": 18.671875,
+      "height": 21,
+      "z": 40,
+      "text": "S",
+      "font_file": "assets/collection/fonts/nimbus_sans_regular.otf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 1137.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        19,
+        0
+      ]
+    },
+    {
+      "id": "rarity_3",
+      "kind": "nine_slice",
+      "x": 1229,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "state": "inactive"
+    },
+    {
+      "id": "rarity_3_label",
+      "kind": "text",
+      "x": 1298.6640625,
+      "y": 168.5,
+      "width": 18.671875,
+      "height": 21,
+      "z": 40,
+      "text": "A",
+      "font_file": "assets/collection/fonts/nimbus_sans_regular.otf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 1308.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        19,
+        0
+      ]
+    },
+    {
+      "id": "rarity_4",
+      "kind": "nine_slice",
+      "x": 1400,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "state": "inactive"
+    },
+    {
+      "id": "rarity_4_label",
+      "kind": "text",
+      "x": 1469.6640625,
+      "y": 168.5,
+      "width": 18.671875,
+      "height": 21,
+      "z": 40,
+      "text": "B",
+      "font_file": "assets/collection/fonts/nimbus_sans_regular.otf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 1479.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        19,
+        0
+      ]
+    },
+    {
+      "id": "rarity_5",
+      "kind": "nine_slice",
+      "x": 1571,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "z": 10,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "state": "inactive"
+    },
+    {
+      "id": "rarity_5_label",
+      "kind": "text",
+      "x": 1639.890625,
+      "y": 168.5,
+      "width": 20.21875,
+      "height": 21,
+      "z": 40,
+      "text": "C",
+      "font_file": "assets/collection/fonts/nimbus_sans_regular.otf",
+      "font_size": 28,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 1650.0,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        20,
+        0
+      ]
+    },
+    {
+      "id": "list_panel",
+      "kind": "image",
+      "x": 95,
+      "y": 237,
+      "width": 1653,
+      "height": 542,
+      "z": 10,
+      "file": "assets/collection/ui/list_panel.png"
+    },
+    {
+      "id": "card_scroll_viewport",
+      "kind": "viewport",
+      "x": 126,
+      "y": 252,
+      "width": 1610,
+      "height": 514,
+      "z": 20,
+      "clip": true,
+      "axis": "vertical",
+      "content_height": 1073,
+      "children": [
+        {
+          "id": "card_motoki-r-01",
+          "kind": "card",
+          "x": 0,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "motoki-r-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_motoki-r-01",
+          "kind": "member_text",
+          "x": 66,
+          "y": 310,
+          "width": 81,
+          "height": 23,
+          "z": 40,
+          "text": "大森元貴",
+          "font_file": "assets/fonts/member_motoki_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            -1,
+            51,
+            130,
+            88
+          ],
+          "memberId": "motoki"
+        },
+        {
+          "id": "card_hiroto-r-01",
+          "kind": "card",
+          "x": 228,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "hiroto-r-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_hiroto-r-01",
+          "kind": "member_text",
+          "x": 291,
+          "y": 310,
+          "width": 88,
+          "height": 23,
+          "z": 40,
+          "text": "若井滉斗",
+          "font_file": "assets/fonts/member_hiroto_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            55,
+            126,
+            88
+          ],
+          "memberId": "hiroto"
+        },
+        {
+          "id": "card_ryoka-r-01",
+          "kind": "card",
+          "x": 456,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "ryoka-r-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_ryoka-r-01",
+          "kind": "member_text",
+          "x": 517,
+          "y": 310,
+          "width": 92,
+          "height": 23,
+          "z": 40,
+          "text": "藤澤涼架",
+          "font_file": "assets/fonts/member_ryoka_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            56,
+            128,
+            88
+          ],
+          "memberId": "ryoka"
+        },
+        {
+          "id": "card_motoki-s-01",
+          "kind": "card",
+          "x": 684,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "motoki-s-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_motoki-s-01",
+          "kind": "member_text",
+          "x": 750,
+          "y": 310,
+          "width": 81,
+          "height": 23,
+          "z": 40,
+          "text": "大森元貴",
+          "font_file": "assets/fonts/member_motoki_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            -1,
+            51,
+            130,
+            88
+          ],
+          "memberId": "motoki"
+        },
+        {
+          "id": "card_hiroto-s-01",
+          "kind": "card",
+          "x": 912,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "hiroto-s-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_hiroto-s-01",
+          "kind": "member_text",
+          "x": 975,
+          "y": 310,
+          "width": 88,
+          "height": 23,
+          "z": 40,
+          "text": "若井滉斗",
+          "font_file": "assets/fonts/member_hiroto_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            55,
+            126,
+            88
+          ],
+          "memberId": "hiroto"
+        },
+        {
+          "id": "card_ryoka-s-01",
+          "kind": "card",
+          "x": 1140,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "ryoka-s-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_ryoka-s-01",
+          "kind": "member_text",
+          "x": 1201,
+          "y": 310,
+          "width": 92,
+          "height": 23,
+          "z": 40,
+          "text": "藤澤涼架",
+          "font_file": "assets/fonts/member_ryoka_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            56,
+            128,
+            88
+          ],
+          "memberId": "ryoka"
+        },
+        {
+          "id": "card_motoki-a-01",
+          "kind": "card",
+          "x": 1368,
+          "y": 0,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "motoki-a-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_motoki-a-01",
+          "kind": "member_text",
+          "x": 1434,
+          "y": 310,
+          "width": 81,
+          "height": 23,
+          "z": 40,
+          "text": "大森元貴",
+          "font_file": "assets/fonts/member_motoki_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            -1,
+            51,
+            130,
+            88
+          ],
+          "memberId": "motoki"
+        },
+        {
+          "id": "card_hiroto-a-01",
+          "kind": "card",
+          "x": 0,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "hiroto-a-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_hiroto-a-01",
+          "kind": "member_text",
+          "x": 63,
+          "y": 680,
+          "width": 88,
+          "height": 23,
+          "z": 40,
+          "text": "若井滉斗",
+          "font_file": "assets/fonts/member_hiroto_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            55,
+            126,
+            88
+          ],
+          "memberId": "hiroto"
+        },
+        {
+          "id": "card_ryoka-a-05",
+          "kind": "card",
+          "x": 228,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "ryoka-a-05",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_ryoka-a-05",
+          "kind": "member_text",
+          "x": 289,
+          "y": 680,
+          "width": 92,
+          "height": 23,
+          "z": 40,
+          "text": "藤澤涼架",
+          "font_file": "assets/fonts/member_ryoka_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            56,
+            128,
+            88
+          ],
+          "memberId": "ryoka"
+        },
+        {
+          "id": "card_motoki-b-03",
+          "kind": "card",
+          "x": 456,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "motoki-b-03",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_motoki-b-03",
+          "kind": "member_text",
+          "x": 522,
+          "y": 680,
+          "width": 81,
+          "height": 23,
+          "z": 40,
+          "text": "大森元貴",
+          "font_file": "assets/fonts/member_motoki_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            -1,
+            51,
+            130,
+            88
+          ],
+          "memberId": "motoki"
+        },
+        {
+          "id": "card_hiroto-b-01",
+          "kind": "card",
+          "x": 684,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "hiroto-b-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_hiroto-b-01",
+          "kind": "member_text",
+          "x": 747,
+          "y": 680,
+          "width": 88,
+          "height": 23,
+          "z": 40,
+          "text": "若井滉斗",
+          "font_file": "assets/fonts/member_hiroto_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            55,
+            126,
+            88
+          ],
+          "memberId": "hiroto"
+        },
+        {
+          "id": "card_ryoka-b-05",
+          "kind": "card",
+          "x": 912,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "ryoka-b-05",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_ryoka-b-05",
+          "kind": "member_text",
+          "x": 973,
+          "y": 680,
+          "width": 92,
+          "height": 23,
+          "z": 40,
+          "text": "藤澤涼架",
+          "font_file": "assets/fonts/member_ryoka_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            56,
+            128,
+            88
+          ],
+          "memberId": "ryoka"
+        },
+        {
+          "id": "card_motoki-c-04",
+          "kind": "card",
+          "x": 1140,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "motoki-c-04",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_motoki-c-04",
+          "kind": "member_text",
+          "x": 1206,
+          "y": 680,
+          "width": 81,
+          "height": 23,
+          "z": 40,
+          "text": "大森元貴",
+          "font_file": "assets/fonts/member_motoki_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            -1,
+            51,
+            130,
+            88
+          ],
+          "memberId": "motoki"
+        },
+        {
+          "id": "card_hiroto-c-04",
+          "kind": "card",
+          "x": 1368,
+          "y": 370,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "hiroto-c-04",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_hiroto-c-04",
+          "kind": "member_text",
+          "x": 1431,
+          "y": 680,
+          "width": 88,
+          "height": 23,
+          "z": 40,
+          "text": "若井滉斗",
+          "font_file": "assets/fonts/member_hiroto_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            55,
+            126,
+            88
+          ],
+          "memberId": "hiroto"
+        },
+        {
+          "id": "card_ryoka-c-07",
+          "kind": "card",
+          "x": 0,
+          "y": 740,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "ryoka-c-07",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_ryoka-c-07",
+          "kind": "member_text",
+          "x": 61,
+          "y": 1050,
+          "width": 92,
+          "height": 23,
+          "z": 40,
+          "text": "藤澤涼架",
+          "font_file": "assets/fonts/member_ryoka_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            56,
+            128,
+            88
+          ],
+          "memberId": "ryoka"
+        },
+        {
+          "id": "card_motoki-s-02",
+          "kind": "card",
+          "x": 228,
+          "y": 740,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "motoki-s-02",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_motoki-s-02",
+          "kind": "member_text",
+          "x": 294,
+          "y": 1050,
+          "width": 81,
+          "height": 23,
+          "z": 40,
+          "text": "大森元貴",
+          "font_file": "assets/fonts/member_motoki_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            -1,
+            51,
+            130,
+            88
+          ],
+          "memberId": "motoki"
+        },
+        {
+          "id": "card_hiroto-s-02",
+          "kind": "card",
+          "x": 456,
+          "y": 740,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "hiroto-s-02",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_hiroto-s-02",
+          "kind": "member_text",
+          "x": 519,
+          "y": 1050,
+          "width": 88,
+          "height": 23,
+          "z": 40,
+          "text": "若井滉斗",
+          "font_file": "assets/fonts/member_hiroto_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            55,
+            126,
+            88
+          ],
+          "memberId": "hiroto"
+        },
+        {
+          "id": "card_ryoka-a-01",
+          "kind": "card",
+          "x": 684,
+          "y": 740,
+          "width": 214,
+          "height": 300,
+          "z": 20,
+          "card_id": "ryoka-a-01",
+          "shadow": {
+            "x": 3,
+            "y": 7,
+            "blur": 6,
+            "opacity": 0.7
+          },
+          "data_binding": "catalog + collection.owned"
+        },
+        {
+          "id": "member_ryoka-a-01",
+          "kind": "member_text",
+          "x": 745,
+          "y": 1050,
+          "width": 92,
+          "height": 23,
+          "z": 40,
+          "text": "藤澤涼架",
+          "font_file": "assets/fonts/member_ryoka_name.ttf",
+          "font_size": 64,
+          "render_crop_bbox": [
+            0,
+            56,
+            128,
+            88
+          ],
+          "memberId": "ryoka"
+        }
+      ]
+    },
+    {
+      "id": "scroll_track",
+      "kind": "image",
+      "x": 1723,
+      "y": 260,
+      "width": 8,
+      "height": 496,
+      "z": 30,
+      "file": "assets/collection/ui/scroll_track.png"
+    },
+    {
+      "id": "scroll_thumb",
+      "kind": "image",
+      "x": 1723,
+      "y": 260,
+      "width": 8,
+      "height": 175,
+      "z": 31,
+      "file": "assets/collection/ui/scroll_thumb.png"
+    },
+    {
+      "id": "tap_hint",
+      "kind": "text",
+      "x": 119.0,
+      "y": 800,
+      "width": 279.40625,
+      "height": 20,
+      "z": 40,
+      "text": "カードをタップして詳細を表示",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "color": "#c3c9e7",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 119,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        279,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "owned_hint",
+      "kind": "text",
+      "x": 1572.0,
+      "y": 801,
+      "width": 152.0,
+      "height": 16,
+      "z": 40,
+      "text": "所持カードのみ表示",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 16,
+      "color": "#91b0df",
+      "tracking": 1,
+      "anchor": "lt",
+      "align": "right",
+      "anchor_x": 1724,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -14,
+        144,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    }
+  ],
+  "taps": [
+    {
+      "id": "back",
+      "x": 123,
+      "y": 38,
+      "width": 64,
+      "height": 64,
+      "route": "home"
+    },
+    {
+      "id": "member_filter",
+      "x": 113,
+      "y": 151,
+      "width": 502,
+      "height": 65,
+      "action": "open-member-filter"
+    },
+    {
+      "id": "rarity_0",
+      "x": 716,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "action": "filter-rarity",
+      "value": null
+    },
+    {
+      "id": "rarity_1",
+      "x": 887,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "action": "filter-rarity",
+      "value": "R"
+    },
+    {
+      "id": "rarity_2",
+      "x": 1058,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "action": "filter-rarity",
+      "value": "S"
+    },
+    {
+      "id": "rarity_3",
+      "x": 1229,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "action": "filter-rarity",
+      "value": "A"
+    },
+    {
+      "id": "rarity_4",
+      "x": 1400,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "action": "filter-rarity",
+      "value": "B"
+    },
+    {
+      "id": "rarity_5",
+      "x": 1571,
+      "y": 151,
+      "width": 158,
+      "height": 65,
+      "action": "filter-rarity",
+      "value": "C"
+    }
+  ],
+  "card_taps": "Each visible card opens detail for its catalogId, cancelling taps during vertical scroll.",
+  "screen": "collection_owned",
+  "resize": {
+    "reference": [
+      1844,
+      853
+    ],
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "mode": "uniform contain inside existing safe-area",
+    "fixed": [
+      "title_bar",
+      "filters",
+      "list_panel"
+    ],
+    "scroll_only": "card_scroll_viewport"
+  },
+  "qa_example_only": true,
+  "production_binding": "Use actual owned data; never seed QA cards, dates, quantity, counts, or fixed scroll thumb length."
+}

@@ -1,0 +1,617 @@
+{
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "background",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "z": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "title_bar",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "z": 10,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "back",
+      "kind": "image",
+      "x": 142,
+      "y": 48,
+      "width": 24,
+      "height": 40,
+      "z": 10,
+      "file": "assets/icons/nickname_back.png"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "x": 237.0,
+      "y": 47,
+      "width": 234.0,
+      "height": 35,
+      "z": 40,
+      "text": "コレクション",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 237,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -32,
+        234,
+        3
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "detail_title",
+      "kind": "text",
+      "x": 746.0,
+      "y": 59,
+      "width": 108.0,
+      "height": 20,
+      "z": 40,
+      "text": "カード詳細",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "color": "#b3c5ff",
+      "tracking": 2,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 746,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        100,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "count",
+      "kind": "text",
+      "x": 1617.296875,
+      "y": 53,
+      "width": 72.703125,
+      "height": 21,
+      "z": 40,
+      "text": "01 / 18",
+      "font_file": "home_approved/assets/fonts/NimbusSansNarrow-Bold.otf",
+      "font_size": 29,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "right",
+      "anchor_x": 1690,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": "detail.position / filteredUniqueCount",
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        73,
+        0
+      ]
+    },
+    {
+      "id": "detail_info_panel",
+      "kind": "image",
+      "x": 126,
+      "y": 314,
+      "width": 385,
+      "height": 245,
+      "z": 10,
+      "file": "assets/collection/ui/detail_info_panel.png"
+    },
+    {
+      "id": "member_heading",
+      "kind": "text",
+      "x": 157.0,
+      "y": 344,
+      "width": 70.0,
+      "height": 15,
+      "z": 40,
+      "text": "メンバー",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 16,
+      "color": "#a6bbf1",
+      "tracking": 2,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 157,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -14,
+        64,
+        1
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "member_name",
+      "kind": "member_text",
+      "x": 157,
+      "y": 380,
+      "width": 131,
+      "height": 37,
+      "z": 40,
+      "text": "大森元貴",
+      "font_file": "assets/fonts/member_motoki_name.ttf",
+      "font_size": 64,
+      "render_crop_bbox": [
+        -1,
+        51,
+        130,
+        88
+      ],
+      "memberId": "motoki",
+      "data_binding": "currentCard.memberId; choose existing member-specific font"
+    },
+    {
+      "id": "rarity_heading",
+      "kind": "text",
+      "x": 157.0,
+      "y": 452,
+      "width": 88.0,
+      "height": 15,
+      "z": 40,
+      "text": "レアリティ",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 16,
+      "color": "#a6bbf1",
+      "tracking": 2,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 157,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -13,
+        79,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "rarity_value",
+      "kind": "text",
+      "x": 157.0,
+      "y": 485,
+      "width": 28.875,
+      "height": 29,
+      "z": 40,
+      "text": "R",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 40,
+      "color": "#ffe68d",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 157,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": "catalog.rarity",
+      "glyph_bbox_baseline": [
+        0,
+        -29,
+        29,
+        0
+      ]
+    },
+    {
+      "id": "rank_suffix",
+      "kind": "text",
+      "x": 205.0,
+      "y": 496,
+      "width": 59.0,
+      "height": 17,
+      "z": 40,
+      "text": "ランク",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 19,
+      "color": "#ddd9ed",
+      "tracking": 1,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 205,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -16,
+        57,
+        1
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "detail_aura",
+      "kind": "image",
+      "x": 597,
+      "y": 100,
+      "width": 650,
+      "height": 730,
+      "z": 15,
+      "file": "assets/collection/ui/detail_aura.png"
+    },
+    {
+      "id": "detail_card",
+      "kind": "card",
+      "x": 687,
+      "y": 140,
+      "width": 470,
+      "height": 658,
+      "z": 20,
+      "card_id": "motoki-r-01",
+      "data_binding": "currentFilteredOwnedCard"
+    },
+    {
+      "id": "previous",
+      "kind": "nine_slice",
+      "x": 573,
+      "y": 427,
+      "width": 73,
+      "height": 82,
+      "z": 10,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "state": "active"
+    },
+    {
+      "id": "previous_arrow",
+      "kind": "image",
+      "x": 598,
+      "y": 450,
+      "width": 22,
+      "height": 36,
+      "z": 30,
+      "file": "assets/icons/nickname_confirm_arrow.png",
+      "mirror": true
+    },
+    {
+      "id": "next",
+      "kind": "nine_slice",
+      "x": 1206,
+      "y": 427,
+      "width": 73,
+      "height": 82,
+      "z": 10,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "state": "active"
+    },
+    {
+      "id": "next_arrow",
+      "kind": "image",
+      "x": 1231,
+      "y": 450,
+      "width": 22,
+      "height": 36,
+      "z": 30,
+      "file": "assets/icons/nickname_confirm_arrow.png",
+      "mirror": false
+    },
+    {
+      "id": "first_acquired_heading",
+      "kind": "text",
+      "x": 1365.0,
+      "y": 366,
+      "width": 100.0,
+      "height": 19,
+      "z": 40,
+      "text": "初回入手日",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "color": "#9fb5e7",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 1365,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        100,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "first_acquired_value",
+      "kind": "text",
+      "x": 1362.0,
+      "y": 405,
+      "width": 185.1875,
+      "height": 27,
+      "z": 40,
+      "text": "2026.11.01",
+      "font_file": "assets/collection/fonts/nimbus_sans_regular.otf",
+      "font_size": 37,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 1362,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": "owned.firstAcquiredAt formatted Asia/Tokyo YYYY.MM.DD",
+      "glyph_bbox_baseline": [
+        0,
+        -27,
+        185,
+        0
+      ]
+    },
+    {
+      "id": "quantity_heading",
+      "kind": "text",
+      "x": 1365.0,
+      "y": 475,
+      "width": 80.0,
+      "height": 19,
+      "z": 40,
+      "text": "所持枚数",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "color": "#9fb5e7",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 1365,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        80,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "quantity_value",
+      "kind": "text",
+      "x": 1362.0,
+      "y": 514,
+      "width": 67.90625,
+      "height": 28,
+      "z": 40,
+      "text": "× 1",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 38,
+      "color": "#f3f2ff",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "left",
+      "anchor_x": 1362,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": "owned.quantity",
+      "glyph_bbox_baseline": [
+        0,
+        -28,
+        68,
+        0
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    },
+    {
+      "id": "swipe_hint",
+      "kind": "text",
+      "x": 787.0,
+      "y": 815,
+      "width": 270.0,
+      "height": 18,
+      "z": 40,
+      "text": "左右の矢印・スワイプで切り替え",
+      "font_file": "assets/collection/fonts/noto_sans_jp_450.ttf",
+      "font_size": 18,
+      "color": "#b7bfdc",
+      "tracking": 0,
+      "anchor": "lt",
+      "align": "center",
+      "anchor_x": 922,
+      "shadow": {
+        "x": 1,
+        "y": 1,
+        "rgba": [
+          0,
+          0,
+          20,
+          150
+        ]
+      },
+      "data_binding": null,
+      "glyph_bbox_baseline": [
+        0,
+        -16,
+        270,
+        2
+      ],
+      "font_fallback_file": "assets/collection/fonts/noto_sans_jp_450_extended.ttf"
+    }
+  ],
+  "taps": [
+    {
+      "id": "back",
+      "x": 123,
+      "y": 38,
+      "width": 64,
+      "height": 64,
+      "route": "previous-list-with-same-filters-and-scroll"
+    },
+    {
+      "id": "previous",
+      "x": 573,
+      "y": 427,
+      "width": 73,
+      "height": 82,
+      "action": "previous-card"
+    },
+    {
+      "id": "next",
+      "x": 1206,
+      "y": 427,
+      "width": 73,
+      "height": 82,
+      "action": "next-card"
+    }
+  ],
+  "swipe": {
+    "area": [
+      687,
+      140,
+      470,
+      658
+    ],
+    "axis": "horizontal",
+    "threshold_css_px": 40,
+    "dominance": 1.5,
+    "at_boundaries": "Stop at first/last; preserve layout and disable unavailable arrow."
+  },
+  "screen": "collection_detail",
+  "resize": {
+    "reference": [
+      1844,
+      853
+    ],
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "mode": "uniform contain inside existing safe-area",
+    "fixed": [
+      "title_bar",
+      "filters",
+      "list_panel"
+    ],
+    "scroll_only": "card_scroll_viewport"
+  },
+  "qa_example_only": true,
+  "production_binding": "Use actual owned data; never seed QA cards, dates, quantity, counts, or fixed scroll thumb length."
+}
