@@ -1,4 +1,4 @@
 {
-  "inventoryDevelopment": true,
-  "note": "Current prototype deployment: grant 10 development cards only to empty ownership, once. Set false for formal release. Normal npm run build always disables the grant."
+  "inventoryDevelopment": false,
+  "note": "Shop release: stop NEW development grants; retain all existing cards, levels, deck, coins and development history. The official welcome pack has a separate claim event."
 }
