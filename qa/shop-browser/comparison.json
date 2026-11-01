@@ -1,0 +1,32 @@
+[
+  {
+    "screen": "01_shop_main",
+    "mean_absolute_rgb_error_0_255": 2.0499854200096803,
+    "pixels_any_channel_over_16_percent": 2.9498414426052744
+  },
+  {
+    "screen": "02_purchase_confirm",
+    "mean_absolute_rgb_error_0_255": 0.955054001062983,
+    "pixels_any_channel_over_16_percent": 1.4726637896616002
+  },
+  {
+    "screen": "03_pack_opening",
+    "mean_absolute_rgb_error_0_255": 0.9553708191665841,
+    "pixels_any_channel_over_16_percent": 0.8102066713627799
+  },
+  {
+    "screen": "04_card_back",
+    "mean_absolute_rgb_error_0_255": 1.0687554621984083,
+    "pixels_any_channel_over_16_percent": 0.9339882461543156
+  },
+  {
+    "screen": "05_card_reveal",
+    "mean_absolute_rgb_error_0_255": 1.2147367675991927,
+    "pixels_any_channel_over_16_percent": 1.8951232475402626
+  },
+  {
+    "screen": "06_results",
+    "mean_absolute_rgb_error_0_255": 1.503036367751435,
+    "pixels_any_channel_over_16_percent": 1.965119916182009
+  }
+]

@@ -29,9 +29,11 @@ export function createInventoryStore({catalog,definitions,balance,storageProvide
         let [instanceId,value]=existing[n]||[];
         if(!instanceId){let ordinal=n+1;do{instanceId=`legacy:${card.id}:${String(ordinal++).padStart(4,'0')}`;}while(data.instances[instanceId]);value={catalogId:card.id,level:1};data.instances[instanceId]=value;}
         if(!Number.isInteger(value.level)||value.level<1||value.level>d.maxLevel)throw new Error('個体レベルが不正です。保存内容を保持しています。');
-        instances.push({...card,instanceId,level:value.level,definition:d});
+        instances.push({...card,instanceId,level:value.level,acquiredAt:value.acquiredAt||card.firstAcquiredAt,definition:d});
       }
     }
+    const time=value=>Number.isFinite(Date.parse(value))?Date.parse(value):Infinity;
+    instances.sort((a,b)=>(time(a.acquiredAt)-time(b.acquiredAt))||0);
     return {raw,data,wallet:coins,ownership:ownership.ledger,instances,deck:validDeck(data.deck,instances)?[...data.deck]:[null,null,null]};
   }
   async function load(){return db.run(storage=>{
@@ -41,6 +43,7 @@ export function createInventoryStore({catalog,definitions,balance,storageProvide
   });}
   return {
     load,
+    prepare:snapshot,
     saveDeck(deck,expectedRevision) {return db.run(storage=>{
       const state=snapshot(storage);if(!validDeck(deck,state.instances))throw new Error('所有する異なる個体を3枠に選択してください。');
       if(expectedRevision!==undefined&&(state.data.revision||0)!==expectedRevision)throw new Error('別の操作で編成やレベルが更新されています。編成を開き直してください。');
