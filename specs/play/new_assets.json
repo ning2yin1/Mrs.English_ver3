@@ -1,0 +1,26 @@
+[
+  {
+    "path": "assets/play/decor/feedback_correct.png",
+    "width": 1774,
+    "height": 887,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent": true,
+    "history": "original approved mockup decorative source; byte copy",
+    "usage": "static decorative correct wordmark"
+  },
+  {
+    "path": "assets/play/decor/ready_book.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "transparent": true,
+    "history": "original approved mockup decorative source; byte copy",
+    "usage": "ready_book"
+  }
+]

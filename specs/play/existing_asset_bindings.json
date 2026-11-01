@@ -1,0 +1,101 @@
+[
+  {
+    "role": "title_bar",
+    "previous_kit_path": "assets/nickname/nickname_header.png",
+    "repository_path_verified": false,
+    "sha256": "b872e4b0c1c488d32b1a900bac960698f7db70695f07ce448d681d677a9dfcf1",
+    "native_size": [
+      1661,
+      84
+    ],
+    "slice_trbl": null,
+    "delivery": "reuse_existing_do_not_overwrite"
+  },
+  {
+    "role": "blue_button",
+    "previous_kit_path": "assets/home/button_collection.png",
+    "repository_path_verified": false,
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf",
+    "native_size": [
+      344,
+      111
+    ],
+    "slice_trbl": [
+      18,
+      20,
+      17,
+      20
+    ],
+    "delivery": "reuse_existing_do_not_overwrite"
+  },
+  {
+    "role": "purple_button",
+    "previous_kit_path": "assets/home/status_menu.png",
+    "repository_path_verified": false,
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f",
+    "native_size": [
+      290,
+      83
+    ],
+    "slice_trbl": [
+      16,
+      18,
+      16,
+      18
+    ],
+    "delivery": "reuse_existing_do_not_overwrite"
+  },
+  {
+    "role": "panel",
+    "previous_kit_path": "assets/collection/ui/list_panel.png",
+    "repository_path_verified": false,
+    "sha256": "f62daa03b29902c5c9f38bce5a7bd522d8374f42d12b680dfbffa0066447c0a5",
+    "native_size": [
+      1653,
+      542
+    ],
+    "slice_trbl": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "delivery": "reuse_existing_do_not_overwrite"
+  },
+  {
+    "role": "ready_background",
+    "previous_kit_path": "assets/collection/background.png",
+    "repository_path_verified": false,
+    "sha256": "443b5a40e80c30c1c14ee411a690364741c2d214fe31aacbbe1e752f1eb5fad5",
+    "native_size": [
+      1844,
+      853
+    ],
+    "slice_trbl": null,
+    "delivery": "reuse_existing_do_not_overwrite"
+  },
+  {
+    "role": "back_arrow",
+    "previous_kit_path": "assets/icons/nickname_back.png",
+    "repository_path_verified": false,
+    "sha256": "24ac1f84581c63bbdf5118ab8e777786d955355c81d71dd2ff136bf86b6b1844",
+    "native_size": [
+      24,
+      40
+    ],
+    "slice_trbl": null,
+    "delivery": "reuse_existing_do_not_overwrite"
+  },
+  {
+    "role": "action_arrow",
+    "previous_kit_path": "assets/icons/nickname_confirm_arrow.png",
+    "repository_path_verified": false,
+    "sha256": "d73ee0a4f61b31a6fefb83ac6ca507dd0980863625ab9f9d1e2d4e4ec343fb6d",
+    "native_size": [
+      29,
+      47
+    ],
+    "slice_trbl": null,
+    "delivery": "reuse_existing_do_not_overwrite"
+  }
+]

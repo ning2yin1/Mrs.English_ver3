@@ -1,0 +1,55 @@
+/* Visual reference only. Not an application, route or game implementation.
+   Existing asset URLs below are previous-kit bindings; resolve in the real repo.
+   Do not edit global TOP/Collection/Inventory/Shop styles. */
+.me-play-kit {
+  --photo-darkness:.651; --cyan:#63e8ff; --gold:#ffe89c;
+  --blue-image:url("../../assets/home/button_collection.png");
+  --purple-image:url("../../assets/home/status_menu.png");
+  --panel-image:url("../../assets/collection/ui/list_panel.png");
+  --feedback-ms:280ms; --skill-ms:500ms;
+  color:#f3f2ff; isolation:isolate; position:relative;
+  inline-size:100%; block-size:100dvh; overflow:hidden;
+}
+.me-play-kit .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 50%; z-index:0; }
+.me-play-kit .photo-shade { position:absolute; inset:0; background:rgb(3 1 10 / var(--photo-darkness)); z-index:1; pointer-events:none; }
+.me-play-kit .safe-area { position:absolute; inset:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); z-index:2; }
+/* Set --canvas-scale and center offsets from safe-area dimensions; reference canvas 1844x853.
+   JS/ResizeObserver in future implementation must select compact flow if targets shrink below44px. */
+.me-play-kit .reference-canvas { position:absolute; width:1844px; height:853px; transform:translate(var(--canvas-x,0px),var(--canvas-y,0px)) scale(var(--canvas-scale,1)); transform-origin:0 0; }
+.me-play-kit .title-bar { position:absolute; left:92px; top:26px; width:1661px; height:84px; background:url("../../assets/nickname/nickname_header.png") center/100% 100% no-repeat; }
+.me-play-kit .blue-skin { border:0 solid transparent; border-width:18px 20px 17px; border-image-source:var(--blue-image); border-image-slice:18 20 17 20 fill; border-image-width:18px 20px 17px 20px; background:transparent; }
+.me-play-kit .purple-skin { border:0 solid transparent; border-width:16px 18px 16px; border-image-source:var(--purple-image); border-image-slice:16 18 16 18 fill; border-image-width:16px 18px 16px 18px; background:transparent; }
+.me-play-kit .panel-skin { border:16px solid transparent; border-image-source:var(--panel-image); border-image-slice:16 fill; border-image-width:16px; background:transparent; }
+.me-play-kit .control { box-sizing:border-box; position:relative; color:inherit; font:inherit; min-width:44px; min-height:44px; touch-action:manipulation; cursor:pointer; }
+.me-play-kit .control > .label { position:absolute; inset:0; display:grid; place-items:center; pointer-events:none; text-shadow:1px 2px 2px #000b; }
+.me-play-kit .control:active { transform:scale(.98); transition:transform 80ms; }
+.me-play-kit .control[aria-pressed="true"] { filter:drop-shadow(0 0 7px #42dfff88); color:var(--cyan); }
+.me-play-kit .control[data-used="true"] { opacity:.28; pointer-events:none; }
+.me-play-kit .control:disabled { opacity:.42; cursor:default; }
+.me-play-kit .control:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+.me-play-kit .prompt { color:#f3f2ff; text-shadow:1px 2px 3px #000d; background:none; overflow-wrap:anywhere; }
+.me-play-kit .answer, .me-play-kit .word-bank { display:flex; flex-wrap:wrap; justify-content:center; gap:12px 16px; align-content:start; overflow:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+.me-play-kit .word-bank .control { flex:0 0 auto; white-space:normal; max-width:100%; }
+.me-play-kit .feedback-copy { overflow:auto; text-align:center; background:none; }
+.me-play-kit .halo { --halo-color:#5fdfff; pointer-events:none; border-radius:50%; background:radial-gradient(ellipse,transparent 30%,color-mix(in srgb,var(--halo-color) 30%,transparent) 50%,transparent 72%); opacity:.25; }
+.me-play-kit .is-correct .halo { --halo-color:#ffe096; animation:me-play-halo var(--feedback-ms) ease-out; }
+.me-play-kit .is-incorrect .halo { --halo-color:#ff5573; animation:me-play-halo 220ms ease-out; }
+.me-play-kit .incorrect-title { font-weight:800; color:#ffeef3; text-shadow:0 2px #730b24,0 0 12px #e82958,0 0 24px #b31344; }
+.me-play-kit .skill-active { filter:drop-shadow(0 0 9px #ffdc77); animation:me-play-skill var(--skill-ms) ease-out; }
+.me-play-kit .modal-shade { position:absolute; inset:0; background:#0007; z-index:40; }
+.me-play-kit .modal { position:absolute; left:487px; top:215px; width:870px; height:430px; z-index:50; }
+.me-play-kit .modal::before { content:""; position:absolute; inset:0; background:rgb(12 13 40 / .96); clip-path:polygon(16px 0,calc(100% - 16px) 0,100% 16px,100% calc(100% - 16px),calc(100% - 16px) 100%,16px 100%,0 calc(100% - 16px),0 16px); z-index:-1; }
+.me-play-kit .pause-icon { display:flex; justify-content:center; align-items:center; gap:10px; }
+.me-play-kit .pause-icon::before,.me-play-kit .pause-icon::after { content:""; display:block; width:7px; height:29px; border-radius:1px; background:#f3f2ff; }
+/* Compact mode is a device layout adaptation, not a different decorative design.
+   Header/footer remain fixed. All action targets below are unscaled device CSS px. */
+.me-play-kit[data-layout="compact"] .reference-canvas { inset:0; width:100%; height:100%; transform:none; display:grid; grid-template-rows:52px minmax(0,1fr) 72px; }
+.me-play-kit[data-layout="compact"] .central-scroll { overflow:auto; min-height:0; padding:6px 12px; overscroll-behavior:contain; }
+.me-play-kit[data-layout="compact"] .control { min-width:44px; min-height:44px; font-size:16px; }
+.me-play-kit[data-layout="compact"] .prompt { font-size:clamp(16px,2.5vw,23px); }
+.me-play-kit[data-layout="compact"] .answer,.me-play-kit[data-layout="compact"] .word-bank { gap:6px; overflow:visible; }
+/* Existing absolute styles must be reset when mapping compact components.
+   Do not apply the reference left/top values on top of compact grid rows. */
+@keyframes me-play-halo { 0%{opacity:0;transform:scale(.96)} 55%{opacity:.65} 100%{opacity:.25;transform:scale(1.04)} }
+@keyframes me-play-skill { 0%{filter:drop-shadow(0 0 2px #ffdc77)} 50%{filter:drop-shadow(0 0 16px #ffdc77)} 100%{filter:drop-shadow(0 0 9px #ffdc77)} }
+@media(prefers-reduced-motion:reduce){ .me-play-kit *, .me-play-kit *::before,.me-play-kit *::after{ animation:none!important; transition:none!important; } }

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "question_count": 10,
+  "base": {
+    "EASY": 1000,
+    "NORMAL": 1500,
+    "HARD": 2000
+  },
+  "speed_max": {
+    "EASY": 500,
+    "NORMAL": 750,
+    "HARD": 1000
+  },
+  "speed_zero_seconds": 30,
+  "combo_per_streak": 50,
+  "combo_cap": 10,
+  "card_fraction_per_correct": 0.01,
+  "reward_coins": {
+    "EASY": 300,
+    "NORMAL": 450,
+    "HARD": 600
+  },
+  "daily_double_count": 5,
+  "daily_timezone": "Asia/Tokyo",
+  "score_up_per_card": 0.05,
+  "speed_up_per_card": 0.2,
+  "combo_support_uses_per_card": 1,
+  "rounding": "half_up_at_final_total_only",
+  "assumptions": [
+    "daily_timezone_provisional",
+    "completed_stages_only_count_for_daily_double",
+    "combo_support_one_charge_per_equipped_support_card",
+    "pause_excluded_from_answer_time"
+  ]
+}

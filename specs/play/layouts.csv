@@ -1,0 +1,142 @@
+﻿screen,id,x,y,width,height,x_percent,y_percent,width_percent,height_percent,z,asset_role,text_source,action
+ready_initial,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+ready_initial,back,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,戻る,home
+ready_initial,title,237,47,440,55,12.8525,5.51,23.8612,6.4478,20,,READY,
+ready_initial,dataset_count,1390,54,300,40,75.3796,6.3306,16.269,4.6893,20,,categories.length / total questions,
+ready_initial,left_panel,95,135,850,640,5.1518,15.8265,46.0954,75.0293,10,panel,,
+ready_initial,right_panel,971,135,777,640,52.6573,15.8265,42.1367,75.0293,10,panel,,
+ready_initial,grade_tabs,128,206,730,52,6.9414,24.1501,39.5879,6.0961,20,,grades from categories,
+ready_initial,category_list,119,280,800,483,6.4534,32.8253,43.3839,56.6237,20,,category.title + count,select_category
+ready_initial,selected_title,1006,201,570,84,54.5553,23.5639,30.9111,9.8476,20,,selected category.title,
+ready_initial,selected_description,1006,258,570,74,54.5553,30.2462,30.9111,8.6753,20,,category.description,
+ready_initial,book,1582,171,137,137,85.7918,20.0469,7.4295,16.061,20,ready_book,,
+ready_initial,grade_tag,1006,301,88,29,54.5553,35.2872,4.7722,3.3998,20,,category.grade,
+ready_initial,count,1120,303,440,35,60.7375,35.5217,23.8612,4.1032,20,,category.questions.length,
+ready_initial,difficulty_easy,1006,408,704,66,54.5553,47.8312,38.1779,7.7374,20,blue_or_purple_button,EASY,select_difficulty
+ready_initial,difficulty_normal,1006,484,704,66,54.5553,56.7409,38.1779,7.7374,20,blue_or_purple_button,NORMAL,select_difficulty
+ready_initial,difficulty_hard,1006,560,704,66,54.5553,65.6506,38.1779,7.7374,20,blue_or_purple_button,HARD,select_difficulty
+ready_initial,records,1006,638,704,27,54.5553,74.7948,38.1779,3.1653,20,,existing personal best / completion,
+ready_initial,start,1006,703,704,62,54.5553,82.415,38.1779,7.2685,20,blue_button,START,create_stage
+ready_hard,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+ready_hard,back,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,戻る,home
+ready_hard,title,237,47,440,55,12.8525,5.51,23.8612,6.4478,20,,READY,
+ready_hard,dataset_count,1390,54,300,40,75.3796,6.3306,16.269,4.6893,20,,categories.length / total questions,
+ready_hard,left_panel,95,135,850,640,5.1518,15.8265,46.0954,75.0293,10,panel,,
+ready_hard,right_panel,971,135,777,640,52.6573,15.8265,42.1367,75.0293,10,panel,,
+ready_hard,grade_tabs,128,206,730,52,6.9414,24.1501,39.5879,6.0961,20,,grades from categories,
+ready_hard,category_list,119,280,800,483,6.4534,32.8253,43.3839,56.6237,20,,category.title + count,select_category
+ready_hard,selected_title,1006,201,570,84,54.5553,23.5639,30.9111,9.8476,20,,selected category.title,
+ready_hard,selected_description,1006,258,570,74,54.5553,30.2462,30.9111,8.6753,20,,category.description,
+ready_hard,book,1582,171,137,137,85.7918,20.0469,7.4295,16.061,20,ready_book,,
+ready_hard,grade_tag,1006,301,88,29,54.5553,35.2872,4.7722,3.3998,20,,category.grade,
+ready_hard,count,1120,303,440,35,60.7375,35.5217,23.8612,4.1032,20,,category.questions.length,
+ready_hard,difficulty_easy,1006,408,704,66,54.5553,47.8312,38.1779,7.7374,20,blue_or_purple_button,EASY,select_difficulty
+ready_hard,difficulty_normal,1006,484,704,66,54.5553,56.7409,38.1779,7.7374,20,blue_or_purple_button,NORMAL,select_difficulty
+ready_hard,difficulty_hard,1006,560,704,66,54.5553,65.6506,38.1779,7.7374,20,blue_or_purple_button,HARD,select_difficulty
+ready_hard,records,1006,638,704,27,54.5553,74.7948,38.1779,3.1653,20,,existing personal best / completion,
+ready_hard,start,1006,703,704,62,54.5553,82.415,38.1779,7.2685,20,blue_button,START,create_stage
+easy,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+easy,pause,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,一時停止,pause
+easy,grammar,237,48,550,42,12.8525,5.6272,29.8265,4.9238,20,,category.title,
+easy,difficulty,815,42,157,54,44.1974,4.9238,8.5141,6.3306,20,blue_button,difficulty,
+easy,progress,1084,53,140,40,58.7852,6.2134,7.5922,4.6893,20,,questionIndex+1 / 10,
+easy,score,1257,42,230,51,68.167,4.9238,12.4729,5.9789,20,,floor(questionScoreRaw),
+easy,combo,1556,42,160,51,84.3818,4.9238,8.6768,5.9789,20,,combo,
+easy,prompt_label,700,186,444,30,37.961,21.8054,24.0781,3.517,20,,日本語のお題,
+easy,japanese,300,235,1244,106,16.269,27.5498,67.462,12.4267,20,,question.japanese,
+easy,deck_label,128,645,300,28,6.9414,75.6155,16.269,3.2825,20,,編成カード,
+easy,deck1,128,665,80,112,6.9414,77.9601,4.3384,13.1301,20,existing_card_component,,
+easy,deck2,224,665,80,112,12.1475,77.9601,4.3384,13.1301,20,existing_card_component,,
+easy,deck3,320,665,80,112,17.3536,77.9601,4.3384,13.1301,20,existing_card_component,,
+easy,skill,476,690,728,80,25.8134,80.891,39.4794,9.3787,25,,resolved active skill,
+easy,confirm,1365,705,360,72,74.0239,82.6495,19.5228,8.4408,20,blue_button,決定,grade_once
+easy,english_blank,350,365,1150,90,18.9805,42.7902,62.3644,10.551,20,,easy.prompt + current choice,
+easy,option1,440,550,218,76,23.8612,64.4783,11.8221,8.9097,20,blue_or_purple_button,easy.options[shuffled 0],select_option
+easy,option2,684,550,218,76,37.0933,64.4783,11.8221,8.9097,20,blue_or_purple_button,easy.options[shuffled 1],select_option
+easy,option3,928,550,218,76,50.3254,64.4783,11.8221,8.9097,20,blue_or_purple_button,easy.options[shuffled 2],select_option
+easy,option4,1172,550,218,76,63.5575,64.4783,11.8221,8.9097,20,blue_or_purple_button,easy.options[shuffled 3],select_option
+normal,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+normal,pause,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,一時停止,pause
+normal,grammar,237,48,550,42,12.8525,5.6272,29.8265,4.9238,20,,category.title,
+normal,difficulty,815,42,157,54,44.1974,4.9238,8.5141,6.3306,20,blue_button,difficulty,
+normal,progress,1084,53,140,40,58.7852,6.2134,7.5922,4.6893,20,,questionIndex+1 / 10,
+normal,score,1257,42,230,51,68.167,4.9238,12.4729,5.9789,20,,floor(questionScoreRaw),
+normal,combo,1556,42,160,51,84.3818,4.9238,8.6768,5.9789,20,,combo,
+normal,prompt_label,700,186,444,30,37.961,21.8054,24.0781,3.517,20,,日本語のお題,
+normal,japanese,300,235,1244,106,16.269,27.5498,67.462,12.4267,20,,question.japanese,
+normal,deck_label,128,645,300,28,6.9414,75.6155,16.269,3.2825,20,,編成カード,
+normal,deck1,128,665,80,112,6.9414,77.9601,4.3384,13.1301,20,existing_card_component,,
+normal,deck2,224,665,80,112,12.1475,77.9601,4.3384,13.1301,20,existing_card_component,,
+normal,deck3,320,665,80,112,17.3536,77.9601,4.3384,13.1301,20,existing_card_component,,
+normal,skill,476,690,728,80,25.8134,80.891,39.4794,9.3787,25,,resolved active skill,
+normal,confirm,1365,705,360,72,74.0239,82.6495,19.5228,8.4408,20,blue_button,決定,grade_once
+normal,answer,354,365,1190,84,19.1974,42.7902,64.5336,9.8476,20,,selected tile array,undo_tile
+normal,undo_hint,354,464,1130,36,19.1974,54.3962,61.2798,4.2204,20,,回答内の単語をタップすると取り消せます,
+normal,tile_bank,354,523,1130,150,19.1974,61.313,61.2798,17.585,20,,shuffled unselected/used tiles,select_tile
+hard,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+hard,pause,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,一時停止,pause
+hard,grammar,237,48,550,42,12.8525,5.6272,29.8265,4.9238,20,,category.title,
+hard,difficulty,815,42,157,54,44.1974,4.9238,8.5141,6.3306,20,blue_button,difficulty,
+hard,progress,1084,53,140,40,58.7852,6.2134,7.5922,4.6893,20,,questionIndex+1 / 10,
+hard,score,1257,42,230,51,68.167,4.9238,12.4729,5.9789,20,,floor(questionScoreRaw),
+hard,combo,1556,42,160,51,84.3818,4.9238,8.6768,5.9789,20,,combo,
+hard,prompt_label,700,186,444,30,37.961,21.8054,24.0781,3.517,20,,日本語のお題,
+hard,japanese,300,235,1244,106,16.269,27.5498,67.462,12.4267,20,,question.japanese,
+hard,deck_label,128,645,300,28,6.9414,75.6155,16.269,3.2825,20,,編成カード,
+hard,deck1,128,665,80,112,6.9414,77.9601,4.3384,13.1301,20,existing_card_component,,
+hard,deck2,224,665,80,112,12.1475,77.9601,4.3384,13.1301,20,existing_card_component,,
+hard,deck3,320,665,80,112,17.3536,77.9601,4.3384,13.1301,20,existing_card_component,,
+hard,skill,476,690,728,80,25.8134,80.891,39.4794,9.3787,25,,resolved active skill,
+hard,confirm,1365,705,360,72,74.0239,82.6495,19.5228,8.4408,20,blue_button,決定,grade_once
+hard,answer,354,365,1190,84,19.1974,42.7902,64.5336,9.8476,20,,selected tile array,undo_tile
+hard,undo_hint,354,464,1130,36,19.1974,54.3962,61.2798,4.2204,20,,回答内の単語をタップすると取り消せます,
+hard,tile_bank,354,523,1130,150,19.1974,61.313,61.2798,17.585,20,,shuffled unselected/used tiles,select_tile
+correct,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+correct,pause,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,一時停止,pause
+correct,grammar,237,48,550,42,12.8525,5.6272,29.8265,4.9238,20,,category.title,
+correct,difficulty,815,42,157,54,44.1974,4.9238,8.5141,6.3306,20,blue_button,difficulty,
+correct,progress,1084,53,140,40,58.7852,6.2134,7.5922,4.6893,20,,questionIndex+1 / 10,
+correct,score,1257,42,230,51,68.167,4.9238,12.4729,5.9789,20,,floor(questionScoreRaw),
+correct,combo,1556,42,160,51,84.3818,4.9238,8.6768,5.9789,20,,combo,
+correct,prompt_label,700,186,444,30,37.961,21.8054,24.0781,3.517,20,,日本語のお題,
+correct,japanese,300,235,1244,106,16.269,27.5498,67.462,12.4267,20,,question.japanese,
+correct,deck_label,128,645,300,28,6.9414,75.6155,16.269,3.2825,20,,編成カード,
+correct,deck1,128,665,80,112,6.9414,77.9601,4.3384,13.1301,20,existing_card_component,,
+correct,deck2,224,665,80,112,12.1475,77.9601,4.3384,13.1301,20,existing_card_component,,
+correct,deck3,320,665,80,112,17.3536,77.9601,4.3384,13.1301,20,existing_card_component,,
+correct,skill,476,690,728,80,25.8134,80.891,39.4794,9.3787,25,,resolved active skill,
+correct,feedback_title,737,321,370,160,39.9675,37.6319,20.0651,18.7573,25,feedback_correct_or_css_incorrect,正解！ / 残念！,
+correct,correct_english,300,490,1244,60,16.269,57.4443,67.462,7.034,20,,question.english,
+correct,translation_and_explanation,320,565,1204,80,17.3536,66.2368,65.2928,9.3787,20,,question.japanese + explanation,
+correct,earned,700,650,444,40,37.961,76.2016,24.0781,4.6893,20,,questionPointsRaw / zero,
+correct,next,1365,705,360,72,74.0239,82.6495,19.5228,8.4408,20,blue_button,NEXT,next_or_settle
+incorrect,header,92,26,1661,84,4.9892,3.0481,90.0759,9.8476,10,title_bar,,
+incorrect,pause,118,22,88,88,6.3991,2.5791,4.7722,10.3165,20,,一時停止,pause
+incorrect,grammar,237,48,550,42,12.8525,5.6272,29.8265,4.9238,20,,category.title,
+incorrect,difficulty,815,42,157,54,44.1974,4.9238,8.5141,6.3306,20,blue_button,difficulty,
+incorrect,progress,1084,53,140,40,58.7852,6.2134,7.5922,4.6893,20,,questionIndex+1 / 10,
+incorrect,score,1257,42,230,51,68.167,4.9238,12.4729,5.9789,20,,floor(questionScoreRaw),
+incorrect,combo,1556,42,160,51,84.3818,4.9238,8.6768,5.9789,20,,combo,
+incorrect,prompt_label,700,186,444,30,37.961,21.8054,24.0781,3.517,20,,日本語のお題,
+incorrect,japanese,300,235,1244,106,16.269,27.5498,67.462,12.4267,20,,question.japanese,
+incorrect,deck_label,128,645,300,28,6.9414,75.6155,16.269,3.2825,20,,編成カード,
+incorrect,deck1,128,665,80,112,6.9414,77.9601,4.3384,13.1301,20,existing_card_component,,
+incorrect,deck2,224,665,80,112,12.1475,77.9601,4.3384,13.1301,20,existing_card_component,,
+incorrect,deck3,320,665,80,112,17.3536,77.9601,4.3384,13.1301,20,existing_card_component,,
+incorrect,skill,476,690,728,80,25.8134,80.891,39.4794,9.3787,25,,resolved active skill,
+incorrect,feedback_title,737,321,370,160,39.9675,37.6319,20.0651,18.7573,25,feedback_correct_or_css_incorrect,正解！ / 残念！,
+incorrect,correct_english,300,490,1244,60,16.269,57.4443,67.462,7.034,20,,question.english,
+incorrect,translation_and_explanation,320,565,1204,80,17.3536,66.2368,65.2928,9.3787,20,,question.japanese + explanation,
+incorrect,earned,700,650,444,40,37.961,76.2016,24.0781,4.6893,20,,questionPointsRaw / zero,
+incorrect,next,1365,705,360,72,74.0239,82.6495,19.5228,8.4408,20,blue_button,NEXT,next_or_settle
+paused,modal_shade,0,0,1844,853,0.0,0.0,100.0,100.0,40,css_black_045,,
+paused,modal_panel,487,215,870,430,26.41,25.2052,47.18,50.4103,50,panel,,
+paused,modal_title,550,265,744,70,29.8265,31.0668,40.3471,8.2063,60,,一時停止,
+paused,resume,622,365,600,80,33.731,42.7902,32.538,9.3787,60,blue_button,再開,resume
+paused,quit,622,475,600,80,33.731,55.6858,32.538,9.3787,60,purple_button,途中終了,quit_confirm
+quit_confirm,modal_shade,0,0,1844,853,0.0,0.0,100.0,100.0,40,css_black_045,,
+quit_confirm,modal_panel,487,215,870,430,26.41,25.2052,47.18,50.4103,50,panel,,
+quit_confirm,title,550,265,744,70,29.8265,31.0668,40.3471,8.2063,60,,ステージを終了しますか？,
+quit_confirm,warning,550,355,744,70,29.8265,41.6178,40.3471,8.2063,60,,スコアとRコインは獲得できません,
+quit_confirm,cancel,550,500,350,80,29.8265,58.6166,18.9805,9.3787,60,blue_button,戻る,paused
+quit_confirm,exit,944,500,350,80,51.1931,58.6166,18.9805,9.3787,60,purple_button,終了する,abort_to_ready

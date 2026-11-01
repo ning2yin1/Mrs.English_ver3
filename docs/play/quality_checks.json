@@ -1,0 +1,13 @@
+{
+  "backgrounds_original_bytes_verified": 22,
+  "json_original_bytes_verified": true,
+  "approved_original_reconstruction_images": 6,
+  "reconstruction_metrics": "reconstruction_metrics.json",
+  "scoring_fixtures_independently_recalculated": 9,
+  "preview_images": 9,
+  "png_jpeg_decode": "PASS",
+  "json_parse": "PASS",
+  "preview_font_missing_characters": [],
+  "runtime_iphone_tests": "NOT_IMPLEMENTED_NOT_RUN",
+  "published_repository_audit": "NOT_PERFORMED"
+}

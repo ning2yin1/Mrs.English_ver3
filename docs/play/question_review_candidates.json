@@ -1,0 +1,1028 @@
+[
+  {
+    "question_id": "04-02",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: maked",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "04-03",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: watchs",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "04-05",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: haved, haves",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "04-06",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: goed, gos",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "04-07",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: s, sed, ss",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "04-09",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: eated",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "04-10",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: spended",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "07-03",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: weared",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "07-04",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: hased, hasing, hass",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "07-06",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: practiceed, practiceing",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "07-09",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: buyed",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "07-10",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: makeed, makeing",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "20-04",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: I’med, I’ming, I’ms",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "20-06",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: I’m noted, I’m noting, I’m nots",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "21-01",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: starte, startes",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "21-04",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: answere, answeres",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "21-06",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: visite, visites",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "21-07",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: joine, joines",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "21-08",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: watche",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "21-10",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: listene, listenes",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "27-04",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: oned, oning, ons",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "27-05",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: ated, ating, ats",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "27-07",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: fromed, froming, froms",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "27-08",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: ated, ating, ats",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "27-09",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: oned, oning, ons",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "33-07",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: must noted, must noting, must nots",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "33-08",
+    "severity": "review",
+    "fields": "easy.options; hard.distractors",
+    "reason": "不自然な自動生成候補: must noted, must noting, must nots",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "malformed_distractor",
+    "applied": true
+  },
+  {
+    "question_id": "02-07",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "not以外にneverも文法上は成立するが、和訳の「まだ」はnot...yetを意図。",
+    "suggestion": "和訳を採点条件として表示し、neverは「一度も」の意味になると補足する候補。",
+    "kind": "pedagogical_or_alternative",
+    "applied": false
+  },
+  {
+    "question_id": "09-04",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "We / Theyはどちらも英文として成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "09-07",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "his / herはどちらも英文として成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "09-08",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "him / herはどちらも英文として成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "09-10",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "hers / hisはどちらも英文として成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "10-01",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "数字が文法事項ではなく和訳の数値で決まる。",
+    "suggestion": "単複・冠詞を空欄にする別案は承認が必要。",
+    "kind": "pedagogical_or_alternative",
+    "applied": false
+  },
+  {
+    "question_id": "10-02",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "membersの前のtwo / three / severalはいずれも文法上成立。",
+    "suggestion": "和訳で三人を選ぶ形式だと説明する候補。",
+    "kind": "pedagogical_or_alternative",
+    "applied": false
+  },
+  {
+    "question_id": "10-03",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "many / severalはどちらも「たくさん」に近く正解の一意性が弱い。",
+    "suggestion": "例: many / much / a / anにする候補。ただし承認前は変更しない。",
+    "kind": "pedagogical_or_alternative",
+    "applied": false
+  },
+  {
+    "question_id": "10-05",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "an / theは両方文法上成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "10-08",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "an / theは両方文法上成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "10-09",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "a / theは両方文法上成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "10-10",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "a / theは両方文法上成立。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "11-10",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "T - shirtsの3タイルを単純に空白結合すると原文T-shirtsと異なる。",
+    "suggestion": "採点は承認されたタイル表面列を用い、英文表示はenglishをそのまま使う。将来T-shirtsを1タイル化する変更は別承認。",
+    "kind": "pedagogical_or_alternative",
+    "applied": false
+  },
+  {
+    "question_id": "12-06",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "Which member / What memberの使い分けは選択肢集合の文脈に依存。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "12-07",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "Which album / What albumはどちらも日本語「どのアルバム」に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "12-08",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "Which color / What colorはどちらも同じ和訳に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "12-09",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "Which concert / What concertはどちらも成立し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "12-10",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "Which song / What songは同じ和訳で成立し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "32-01",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "is going to / willがともに予定の和訳に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "32-02",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "is going to / willが同じ日本語の未来表現に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "32-03",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "I’m going to / I willが同じ予定に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "32-04",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "is going to / willが同じ予定に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "32-07",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "We’re not going to / We won’tはどちらも行かない予定に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "37-06",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "while / whenは同時進行の文でどちらも自然な場合がある。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "37-07",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "while / whenの両方が「〜している間」に対応し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "37-08",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "while / whenは入浴中の意味でどちらも自然。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "37-09",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "while / whenの同時進行表現が両方成立し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "37-10",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "while / whenは同時の演奏を表すとき両方成立し得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "39-04",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "knows that / knows ifはどちらも英文として成立するが、訳は異なる。",
+    "suggestion": "「知っている事実」と「〜かどうか」を解説する候補。",
+    "kind": "pedagogical_or_alternative",
+    "applied": false
+  },
+  {
+    "question_id": "40-09",
+    "severity": "review",
+    "fields": "easy.options; explanation; hard.distractors",
+    "reason": "not to / to notは否定不定詞としてどちらも同じ意味で許容され得る。",
+    "suggestion": "選択肢とHARDダミーを修正済み。変更履歴を参照。",
+    "kind": "pedagogical_or_alternative",
+    "applied": true
+  },
+  {
+    "question_id": "04-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "05-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "06-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "07-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "08-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "09-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "10-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "11-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "12-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "13-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "14-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "15-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "16-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "17-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "18-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "19-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "20-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "21-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "22-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "23-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "24-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "25-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "26-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "27-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "28-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "29-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "30-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "31-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "32-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "33-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "34-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "35-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "36-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "37-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "38-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "39-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "40-*",
+    "severity": "note",
+    "fields": "explanation",
+    "reason": "No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。",
+    "suggestion": "原文の解説を表示し、個別解説への更新は別承認。",
+    "kind": "generic_explanation",
+    "applied": false
+  },
+  {
+    "question_id": "21-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "22-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "23-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "24-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "25-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "26-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "27-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "28-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "29-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "30-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "31-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "32-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "33-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "34-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "35-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "36-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "37-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "38-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "39-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  },
+  {
+    "question_id": "40-*",
+    "severity": "note",
+    "fields": "grade",
+    "reason": "学年が仮分類。",
+    "suggestion": "原値を表示。教材方針が決まってから学年のみ別版で確定する。",
+    "kind": "provisional_grade",
+    "applied": false
+  }
+]

@@ -1,0 +1,115 @@
+﻿question_id,severity,fields,reason,suggestion,kind,applied
+04-02,review,easy.options; hard.distractors,不自然な自動生成候補: maked,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+04-03,review,easy.options; hard.distractors,不自然な自動生成候補: watchs,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+04-05,review,easy.options; hard.distractors,"不自然な自動生成候補: haved, haves",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+04-06,review,easy.options; hard.distractors,"不自然な自動生成候補: goed, gos",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+04-07,review,easy.options; hard.distractors,"不自然な自動生成候補: s, sed, ss",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+04-09,review,easy.options; hard.distractors,不自然な自動生成候補: eated,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+04-10,review,easy.options; hard.distractors,不自然な自動生成候補: spended,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+07-03,review,easy.options; hard.distractors,不自然な自動生成候補: weared,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+07-04,review,easy.options; hard.distractors,"不自然な自動生成候補: hased, hasing, hass",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+07-06,review,easy.options; hard.distractors,"不自然な自動生成候補: practiceed, practiceing",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+07-09,review,easy.options; hard.distractors,不自然な自動生成候補: buyed,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+07-10,review,easy.options; hard.distractors,"不自然な自動生成候補: makeed, makeing",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+20-04,review,easy.options; hard.distractors,"不自然な自動生成候補: I’med, I’ming, I’ms",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+20-06,review,easy.options; hard.distractors,"不自然な自動生成候補: I’m noted, I’m noting, I’m nots",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+21-01,review,easy.options; hard.distractors,"不自然な自動生成候補: starte, startes",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+21-04,review,easy.options; hard.distractors,"不自然な自動生成候補: answere, answeres",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+21-06,review,easy.options; hard.distractors,"不自然な自動生成候補: visite, visites",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+21-07,review,easy.options; hard.distractors,"不自然な自動生成候補: joine, joines",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+21-08,review,easy.options; hard.distractors,不自然な自動生成候補: watche,選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+21-10,review,easy.options; hard.distractors,"不自然な自動生成候補: listene, listenes",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+27-04,review,easy.options; hard.distractors,"不自然な自動生成候補: oned, oning, ons",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+27-05,review,easy.options; hard.distractors,"不自然な自動生成候補: ated, ating, ats",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+27-07,review,easy.options; hard.distractors,"不自然な自動生成候補: fromed, froming, froms",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+27-08,review,easy.options; hard.distractors,"不自然な自動生成候補: ated, ating, ats",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+27-09,review,easy.options; hard.distractors,"不自然な自動生成候補: oned, oning, ons",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+33-07,review,easy.options; hard.distractors,"不自然な自動生成候補: must noted, must noting, must nots",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+33-08,review,easy.options; hard.distractors,"不自然な自動生成候補: must noted, must noting, must nots",選択肢とHARDダミーを修正済み。変更履歴を参照。,malformed_distractor,True
+02-07,review,easy.options; explanation; hard.distractors,not以外にneverも文法上は成立するが、和訳の「まだ」はnot...yetを意図。,和訳を採点条件として表示し、neverは「一度も」の意味になると補足する候補。,pedagogical_or_alternative,False
+09-04,review,easy.options; explanation; hard.distractors,We / Theyはどちらも英文として成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+09-07,review,easy.options; explanation; hard.distractors,his / herはどちらも英文として成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+09-08,review,easy.options; explanation; hard.distractors,him / herはどちらも英文として成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+09-10,review,easy.options; explanation; hard.distractors,hers / hisはどちらも英文として成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+10-01,review,easy.options; explanation; hard.distractors,数字が文法事項ではなく和訳の数値で決まる。,単複・冠詞を空欄にする別案は承認が必要。,pedagogical_or_alternative,False
+10-02,review,easy.options; explanation; hard.distractors,membersの前のtwo / three / severalはいずれも文法上成立。,和訳で三人を選ぶ形式だと説明する候補。,pedagogical_or_alternative,False
+10-03,review,easy.options; explanation; hard.distractors,many / severalはどちらも「たくさん」に近く正解の一意性が弱い。,例: many / much / a / anにする候補。ただし承認前は変更しない。,pedagogical_or_alternative,False
+10-05,review,easy.options; explanation; hard.distractors,an / theは両方文法上成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+10-08,review,easy.options; explanation; hard.distractors,an / theは両方文法上成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+10-09,review,easy.options; explanation; hard.distractors,a / theは両方文法上成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+10-10,review,easy.options; explanation; hard.distractors,a / theは両方文法上成立。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+11-10,review,easy.options; explanation; hard.distractors,T - shirtsの3タイルを単純に空白結合すると原文T-shirtsと異なる。,採点は承認されたタイル表面列を用い、英文表示はenglishをそのまま使う。将来T-shirtsを1タイル化する変更は別承認。,pedagogical_or_alternative,False
+12-06,review,easy.options; explanation; hard.distractors,Which member / What memberの使い分けは選択肢集合の文脈に依存。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+12-07,review,easy.options; explanation; hard.distractors,Which album / What albumはどちらも日本語「どのアルバム」に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+12-08,review,easy.options; explanation; hard.distractors,Which color / What colorはどちらも同じ和訳に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+12-09,review,easy.options; explanation; hard.distractors,Which concert / What concertはどちらも成立し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+12-10,review,easy.options; explanation; hard.distractors,Which song / What songは同じ和訳で成立し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+32-01,review,easy.options; explanation; hard.distractors,is going to / willがともに予定の和訳に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+32-02,review,easy.options; explanation; hard.distractors,is going to / willが同じ日本語の未来表現に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+32-03,review,easy.options; explanation; hard.distractors,I’m going to / I willが同じ予定に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+32-04,review,easy.options; explanation; hard.distractors,is going to / willが同じ予定に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+32-07,review,easy.options; explanation; hard.distractors,We’re not going to / We won’tはどちらも行かない予定に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+37-06,review,easy.options; explanation; hard.distractors,while / whenは同時進行の文でどちらも自然な場合がある。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+37-07,review,easy.options; explanation; hard.distractors,while / whenの両方が「〜している間」に対応し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+37-08,review,easy.options; explanation; hard.distractors,while / whenは入浴中の意味でどちらも自然。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+37-09,review,easy.options; explanation; hard.distractors,while / whenの同時進行表現が両方成立し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+37-10,review,easy.options; explanation; hard.distractors,while / whenは同時の演奏を表すとき両方成立し得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+39-04,review,easy.options; explanation; hard.distractors,knows that / knows ifはどちらも英文として成立するが、訳は異なる。,「知っている事実」と「〜かどうか」を解説する候補。,pedagogical_or_alternative,False
+40-09,review,easy.options; explanation; hard.distractors,not to / to notは否定不定詞としてどちらも同じ意味で許容され得る。,選択肢とHARDダミーを修正済み。変更履歴を参照。,pedagogical_or_alternative,True
+04-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+05-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+06-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+07-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+08-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+09-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+10-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+11-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+12-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+13-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+14-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+15-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+16-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+17-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+18-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+19-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+20-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+21-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+22-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+23-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+24-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+25-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+26-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+27-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+28-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+29-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+30-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+31-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+32-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+33-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+34-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+35-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+36-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+37-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+38-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+39-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+40-*,note,explanation,No.04以降はカテゴリ共通説明が中心で個々の誤答理由の説明ではない。,原文の解説を表示し、個別解説への更新は別承認。,generic_explanation,False
+21-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+22-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+23-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+24-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+25-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+26-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+27-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+28-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+29-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+30-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+31-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+32-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+33-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+34-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+35-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+36-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+37-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+38-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+39-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False
+40-*,note,grade,学年が仮分類。,原値を表示。教材方針が決まってから学年のみ別版で確定する。,provisional_grade,False

@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "04-02",
+    "english": "They make music together.",
+    "before_easy": [
+      "maked",
+      "makes",
+      "make",
+      "making"
+    ],
+    "after_easy": [
+      "makes",
+      "made",
+      "make",
+      "making"
+    ],
+    "before_hard": [
+      "makes",
+      "maked"
+    ],
+    "after_hard": [
+      "makes",
+      "made"
+    ]
+  },
+  {
+    "id": "04-03",
+    "english": "I watch their music videos on YouTube.",
+    "before_easy": [
+      "watch",
+      "watchs",
+      "watched",
+      "watching"
+    ],
+    "after_easy": [
+      "watch",
+      "watches",
+      "watched",
+      "watching"
+    ],
+    "before_hard": [
+      "watching",
+      "watched"
+    ],
+    "after_hard": [
+      "watches",
+      "watched"
+    ]
+  },
+  {
+    "id": "04-05",
+    "english": "I have three Mrs. GREEN APPLE albums.",
+    "before_easy": [
+      "haved",
+      "haves",
+      "having",
+      "have"
+    ],
+    "after_easy": [
+      "has",
+      "had",
+      "having",
+      "have"
+    ],
+    "before_hard": [
+      "haves",
+      "haved"
+    ],
+    "after_hard": [
+      "has",
+      "had"
+    ]
+  },
+  {
+    "id": "04-06",
+    "english": "My friends and I go to concerts together.",
+    "before_easy": [
+      "go",
+      "gos",
+      "goed",
+      "going"
+    ],
+    "after_easy": [
+      "go",
+      "goes",
+      "went",
+      "going"
+    ],
+    "before_hard": [
+      "goed",
+      "gos"
+    ],
+    "after_hard": [
+      "goes",
+      "went"
+    ]
+  },
+  {
+    "id": "04-07",
+    "english": "We sing \"Ao to Natsu\" together.",
+    "before_easy": [
+      "s",
+      "ss",
+      "sed",
+      "sing"
+    ],
+    "after_easy": [
+      "sings",
+      "sang",
+      "singing",
+      "sing"
+    ],
+    "before_hard": [
+      "sed",
+      "ss"
+    ],
+    "after_hard": [
+      "sings",
+      "sang"
+    ]
+  },
+  {
+    "id": "04-09",
+    "english": "We eat dinner before the concert.",
+    "before_easy": [
+      "eats",
+      "eated",
+      "eat",
+      "eating"
+    ],
+    "after_easy": [
+      "eats",
+      "ate",
+      "eat",
+      "eating"
+    ],
+    "before_hard": [
+      "eated",
+      "eats"
+    ],
+    "after_hard": [
+      "eats",
+      "ate"
+    ]
+  },
+  {
+    "id": "04-10",
+    "english": "I spend a lot of money on Mrs. GREEN APPLE.",
+    "before_easy": [
+      "spend",
+      "spends",
+      "spended",
+      "spending"
+    ],
+    "after_easy": [
+      "spend",
+      "spends",
+      "spent",
+      "spending"
+    ],
+    "before_hard": [
+      "spending",
+      "spended"
+    ],
+    "after_hard": [
+      "spends",
+      "spent"
+    ]
+  },
+  {
+    "id": "07-03",
+    "english": "Ryoka wears colorful clothes on stage.",
+    "before_easy": [
+      "wearing",
+      "wear",
+      "weared",
+      "wears"
+    ],
+    "after_easy": [
+      "wear",
+      "wore",
+      "wearing",
+      "wears"
+    ],
+    "before_hard": [
+      "weared",
+      "wearing"
+    ],
+    "after_hard": [
+      "wear",
+      "wore"
+    ]
+  },
+  {
+    "id": "07-04",
+    "english": "Motoki has a beautiful singing voice.",
+    "before_easy": [
+      "has",
+      "hass",
+      "hased",
+      "hasing"
+    ],
+    "after_easy": [
+      "has",
+      "have",
+      "had",
+      "having"
+    ],
+    "before_hard": [
+      "hass",
+      "hasing"
+    ],
+    "after_hard": [
+      "have",
+      "had"
+    ]
+  },
+  {
+    "id": "07-06",
+    "english": "Hiloto practices the guitar every day.",
+    "before_easy": [
+      "practices",
+      "practice",
+      "practiceing",
+      "practiceed"
+    ],
+    "after_easy": [
+      "practices",
+      "practice",
+      "practiced",
+      "practicing"
+    ],
+    "before_hard": [
+      "practice",
+      "practiceed"
+    ],
+    "after_hard": [
+      "practice",
+      "practiced"
+    ]
+  },
+  {
+    "id": "07-09",
+    "english": "My best friend buys every new Mrs. GREEN APPLE album.",
+    "before_easy": [
+      "buy",
+      "buyed",
+      "buys",
+      "buying"
+    ],
+    "after_easy": [
+      "buy",
+      "bought",
+      "buys",
+      "buying"
+    ],
+    "before_hard": [
+      "buy",
+      "buying"
+    ],
+    "after_hard": [
+      "buy",
+      "bought"
+    ]
+  },
+  {
+    "id": "07-10",
+    "english": "Motoki makes people smile with his music.",
+    "before_easy": [
+      "makes",
+      "make",
+      "makeed",
+      "makeing"
+    ],
+    "after_easy": [
+      "makes",
+      "make",
+      "made",
+      "making"
+    ],
+    "before_hard": [
+      "make",
+      "makeed"
+    ],
+    "after_hard": [
+      "make",
+      "made"
+    ]
+  },
+  {
+    "id": "20-04",
+    "english": "I’m making a Mrs. GREEN APPLE playlist.",
+    "before_easy": [
+      "I’ms",
+      "I’med",
+      "I’ming",
+      "I’m"
+    ],
+    "after_easy": [
+      "I am not",
+      "I was",
+      "I’ll",
+      "I’m"
+    ],
+    "before_hard": [
+      "I’ms",
+      "I’ming"
+    ],
+    "after_hard": [
+      "I am not",
+      "I was"
+    ]
+  },
+  {
+    "id": "20-06",
+    "english": "I’m not crying.",
+    "before_easy": [
+      "I’m nots",
+      "I’m noted",
+      "I’m not",
+      "I’m noting"
+    ],
+    "after_easy": [
+      "I wasn’t",
+      "I don’t",
+      "I’m not",
+      "I didn’t"
+    ],
+    "before_hard": [
+      "I’m nots",
+      "I’m noted"
+    ],
+    "after_hard": [
+      "I wasn’t",
+      "I don’t"
+    ]
+  },
+  {
+    "id": "21-01",
+    "english": "Motoki started writing songs at a young age.",
+    "before_easy": [
+      "starte",
+      "started",
+      "starting",
+      "startes"
+    ],
+    "after_easy": [
+      "start",
+      "started",
+      "starts",
+      "starting"
+    ],
+    "before_hard": [
+      "starte",
+      "startes"
+    ],
+    "after_hard": [
+      "start",
+      "starts"
+    ]
+  },
+  {
+    "id": "21-04",
+    "english": "Motoki answered a difficult question.",
+    "before_easy": [
+      "answering",
+      "answered",
+      "answeres",
+      "answere"
+    ],
+    "after_easy": [
+      "answer",
+      "answered",
+      "answers",
+      "answering"
+    ],
+    "before_hard": [
+      "answere",
+      "answeres"
+    ],
+    "after_hard": [
+      "answer",
+      "answers"
+    ]
+  },
+  {
+    "id": "21-06",
+    "english": "They visited America for a recording.",
+    "before_easy": [
+      "visite",
+      "visited",
+      "visites",
+      "visiting"
+    ],
+    "after_easy": [
+      "visit",
+      "visited",
+      "visits",
+      "visiting"
+    ],
+    "before_hard": [
+      "visite",
+      "visites"
+    ],
+    "after_hard": [
+      "visit",
+      "visits"
+    ]
+  },
+  {
+    "id": "21-07",
+    "english": "My sister joined the fan club last month.",
+    "before_easy": [
+      "joine",
+      "joining",
+      "joines",
+      "joined"
+    ],
+    "after_easy": [
+      "join",
+      "joins",
+      "joining",
+      "joined"
+    ],
+    "before_hard": [
+      "joine",
+      "joines"
+    ],
+    "after_hard": [
+      "join",
+      "joins"
+    ]
+  },
+  {
+    "id": "21-08",
+    "english": "We watched their concert on TV last night.",
+    "before_easy": [
+      "watching",
+      "watche",
+      "watched",
+      "watches"
+    ],
+    "after_easy": [
+      "watch",
+      "watches",
+      "watched",
+      "watching"
+    ],
+    "before_hard": [
+      "watche",
+      "watches"
+    ],
+    "after_hard": [
+      "watch",
+      "watches"
+    ]
+  },
+  {
+    "id": "21-10",
+    "english": "I listened to “Lilac” ten times yesterday.",
+    "before_easy": [
+      "listenes",
+      "listene",
+      "listening",
+      "listened"
+    ],
+    "after_easy": [
+      "listen",
+      "listens",
+      "listening",
+      "listened"
+    ],
+    "before_hard": [
+      "listene",
+      "listenes"
+    ],
+    "after_hard": [
+      "listen",
+      "listens"
+    ]
+  },
+  {
+    "id": "27-04",
+    "english": "The three members are on the stage.",
+    "before_easy": [
+      "ons",
+      "oned",
+      "oning",
+      "on"
+    ],
+    "after_easy": [
+      "in",
+      "at",
+      "under",
+      "on"
+    ],
+    "before_hard": [
+      "oning",
+      "oned"
+    ],
+    "after_hard": [
+      "in",
+      "at"
+    ]
+  },
+  {
+    "id": "27-05",
+    "english": "Hiloto is at the airport.",
+    "before_easy": [
+      "ating",
+      "at",
+      "ats",
+      "ated"
+    ],
+    "after_easy": [
+      "in",
+      "at",
+      "on",
+      "under"
+    ],
+    "before_hard": [
+      "ated",
+      "ating"
+    ],
+    "after_hard": [
+      "in",
+      "on"
+    ]
+  },
+  {
+    "id": "27-07",
+    "english": "The members are traveling from Tokyo to Osaka.",
+    "before_easy": [
+      "froms",
+      "fromed",
+      "from",
+      "froming"
+    ],
+    "after_easy": [
+      "for",
+      "at",
+      "from",
+      "with"
+    ],
+    "before_hard": [
+      "froms",
+      "froming"
+    ],
+    "after_hard": [
+      "for",
+      "at"
+    ]
+  },
+  {
+    "id": "27-08",
+    "english": "The concert starts at six o’clock.",
+    "before_easy": [
+      "ating",
+      "ats",
+      "at",
+      "ated"
+    ],
+    "after_easy": [
+      "on",
+      "in",
+      "at",
+      "for"
+    ],
+    "before_hard": [
+      "ated",
+      "ating"
+    ],
+    "after_hard": [
+      "on",
+      "in"
+    ]
+  },
+  {
+    "id": "27-09",
+    "english": "Ryoka’s birthday is on May 19th.",
+    "before_easy": [
+      "on",
+      "ons",
+      "oned",
+      "oning"
+    ],
+    "after_easy": [
+      "on",
+      "in",
+      "at",
+      "for"
+    ],
+    "before_hard": [
+      "oning",
+      "oned"
+    ],
+    "after_hard": [
+      "in",
+      "at"
+    ]
+  },
+  {
+    "id": "33-07",
+    "english": "You must not record videos during the concert.",
+    "before_easy": [
+      "must not",
+      "must nots",
+      "must noted",
+      "must noting"
+    ],
+    "after_easy": [
+      "must not",
+      "don’t have to",
+      "should not",
+      "cannot"
+    ],
+    "before_hard": [
+      "must noted",
+      "must nots"
+    ],
+    "after_hard": [
+      "don’t have to",
+      "should not"
+    ]
+  },
+  {
+    "id": "33-08",
+    "english": "Fans must not throw things onto the stage.",
+    "before_easy": [
+      "must nots",
+      "must noted",
+      "must noting",
+      "must not"
+    ],
+    "after_easy": [
+      "don’t have to",
+      "should not",
+      "cannot",
+      "must not"
+    ],
+    "before_hard": [
+      "must noting",
+      "must noted"
+    ],
+    "after_hard": [
+      "don’t have to",
+      "should not"
+    ]
+  },
+  {
+    "id": "09-04",
+    "english": "We love them very much.",
+    "before_easy": [
+      "We",
+      "Us",
+      "Our",
+      "They"
+    ],
+    "after_easy": [
+      "We",
+      "Us",
+      "Our",
+      "Ours"
+    ],
+    "before_hard": [
+      "Us",
+      "They"
+    ],
+    "after_hard": [
+      "Us",
+      "Our"
+    ]
+  },
+  {
+    "id": "09-07",
+    "english": "I want his autograph.",
+    "before_easy": [
+      "he",
+      "him",
+      "his",
+      "her"
+    ],
+    "after_easy": [
+      "he",
+      "him",
+      "his",
+      "himself"
+    ],
+    "before_hard": [
+      "he",
+      "him"
+    ],
+    "after_hard": [
+      "he",
+      "him"
+    ]
+  },
+  {
+    "id": "09-08",
+    "english": "I gave him my fan letter.",
+    "before_easy": [
+      "her",
+      "he",
+      "his",
+      "him"
+    ],
+    "after_easy": [
+      "he",
+      "his",
+      "himself",
+      "him"
+    ],
+    "before_hard": [
+      "his",
+      "her"
+    ],
+    "after_hard": [
+      "he",
+      "his"
+    ]
+  },
+  {
+    "id": "09-10",
+    "english": "The last ticket is hers.",
+    "before_easy": [
+      "her",
+      "hers",
+      "she",
+      "his"
+    ],
+    "after_easy": [
+      "her",
+      "hers",
+      "she",
+      "herself"
+    ],
+    "before_hard": [
+      "her",
+      "she"
+    ],
+    "after_hard": [
+      "her",
+      "she"
+    ]
+  },
+  {
+    "id": "10-05",
+    "english": "Hiloto has an older brother.",
+    "before_easy": [
+      "an",
+      "a",
+      "the",
+      "some"
+    ],
+    "after_easy": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "before_hard": [
+      "the",
+      "a"
+    ],
+    "after_hard": [
+      "a",
+      "some"
+    ]
+  },
+  {
+    "id": "10-08",
+    "english": "Motoki has an idea for a new song.",
+    "before_easy": [
+      "a",
+      "an",
+      "the",
+      "some"
+    ],
+    "after_easy": [
+      "a",
+      "an",
+      "some",
+      "many"
+    ],
+    "before_hard": [
+      "the",
+      "some"
+    ],
+    "after_hard": [
+      "some",
+      "many"
+    ]
+  },
+  {
+    "id": "10-09",
+    "english": "I have a ticket for the concert.",
+    "before_easy": [
+      "some",
+      "an",
+      "a",
+      "the"
+    ],
+    "after_easy": [
+      "an",
+      "some",
+      "a",
+      "many"
+    ],
+    "before_hard": [
+      "some",
+      "an"
+    ],
+    "after_hard": [
+      "an",
+      "some"
+    ]
+  },
+  {
+    "id": "10-10",
+    "english": "The song has a special meaning.",
+    "before_easy": [
+      "an",
+      "a",
+      "the",
+      "some"
+    ],
+    "after_easy": [
+      "an",
+      "a",
+      "some",
+      "many"
+    ],
+    "before_hard": [
+      "some",
+      "the"
+    ],
+    "after_hard": [
+      "an",
+      "some"
+    ]
+  },
+  {
+    "id": "12-06",
+    "english": "Which member is the tallest?",
+    "before_easy": [
+      "Which",
+      "Who",
+      "When",
+      "What"
+    ],
+    "after_easy": [
+      "Which",
+      "Who",
+      "When",
+      "Where"
+    ],
+    "before_hard": [
+      "When",
+      "What"
+    ],
+    "after_hard": [
+      "Who",
+      "When"
+    ]
+  },
+  {
+    "id": "12-07",
+    "english": "Which album do you like best?",
+    "before_easy": [
+      "What",
+      "Who",
+      "When",
+      "Which"
+    ],
+    "after_easy": [
+      "Who",
+      "When",
+      "Where",
+      "Which"
+    ],
+    "before_hard": [
+      "Who",
+      "What"
+    ],
+    "after_hard": [
+      "Who",
+      "When"
+    ]
+  },
+  {
+    "id": "12-08",
+    "english": "Which color looks best on Motoki?",
+    "before_easy": [
+      "What",
+      "Who",
+      "When",
+      "Which"
+    ],
+    "after_easy": [
+      "Who",
+      "When",
+      "Where",
+      "Which"
+    ],
+    "before_hard": [
+      "Who",
+      "What"
+    ],
+    "after_hard": [
+      "Who",
+      "When"
+    ]
+  },
+  {
+    "id": "12-09",
+    "english": "Which concert was your favorite?",
+    "before_easy": [
+      "What",
+      "Who",
+      "When",
+      "Which"
+    ],
+    "after_easy": [
+      "Who",
+      "When",
+      "Where",
+      "Which"
+    ],
+    "before_hard": [
+      "When",
+      "Who"
+    ],
+    "after_hard": [
+      "Who",
+      "When"
+    ]
+  },
+  {
+    "id": "12-10",
+    "english": "Which song do you recommend to new fans?",
+    "before_easy": [
+      "Who",
+      "When",
+      "What",
+      "Which"
+    ],
+    "after_easy": [
+      "Who",
+      "When",
+      "Where",
+      "Which"
+    ],
+    "before_hard": [
+      "When",
+      "What"
+    ],
+    "after_hard": [
+      "Who",
+      "When"
+    ]
+  },
+  {
+    "id": "32-01",
+    "english": "Motoki is going to record a new song tomorrow.",
+    "before_easy": [
+      "is going to",
+      "will",
+      "are going to",
+      "was going to"
+    ],
+    "after_easy": [
+      "is going to",
+      "are going to",
+      "was going to",
+      "am going to"
+    ],
+    "before_hard": [
+      "are going to",
+      "was going to"
+    ],
+    "after_hard": [
+      "are going to",
+      "was going to"
+    ]
+  },
+  {
+    "id": "32-02",
+    "english": "Ryoka is going to buy new clothes this weekend.",
+    "before_easy": [
+      "will",
+      "are going to",
+      "is going to",
+      "was going to"
+    ],
+    "after_easy": [
+      "are going to",
+      "was going to",
+      "is going to",
+      "am going to"
+    ],
+    "before_hard": [
+      "are going to",
+      "was going to"
+    ],
+    "after_hard": [
+      "are going to",
+      "was going to"
+    ]
+  },
+  {
+    "id": "32-04",
+    "english": "My mother is going to watch a Mrs. GREEN APPLE concert with me.",
+    "before_easy": [
+      "was going to",
+      "are going to",
+      "will",
+      "is going to"
+    ],
+    "after_easy": [
+      "are going to",
+      "was going to",
+      "am going to",
+      "is going to"
+    ],
+    "before_hard": [
+      "are going to",
+      "was going to"
+    ],
+    "after_hard": [
+      "are going to",
+      "was going to"
+    ]
+  },
+  {
+    "id": "32-03",
+    "english": "I’m going to join the fan club next year.",
+    "before_easy": [
+      "I will",
+      "I’m going to",
+      "I was going to",
+      "I’m not going to"
+    ],
+    "after_easy": [
+      "I is going to",
+      "I’m going to",
+      "I are going to",
+      "I going to"
+    ],
+    "before_hard": [
+      "I’m not going to",
+      "I was going to"
+    ],
+    "after_hard": [
+      "I is going to",
+      "I are going to"
+    ]
+  },
+  {
+    "id": "32-07",
+    "english": "We’re not going to drive to the concert.",
+    "before_easy": [
+      "We’re not going to",
+      "We won’t",
+      "We weren’t going to",
+      "We’re going to"
+    ],
+    "after_easy": [
+      "We’re not going to",
+      "We isn’t going to",
+      "We am not going to",
+      "We not going to"
+    ],
+    "before_hard": [
+      "We’re going to",
+      "We weren’t going to"
+    ],
+    "after_hard": [
+      "We isn’t going to",
+      "We am not going to"
+    ]
+  },
+  {
+    "id": "37-06",
+    "english": "I fell asleep while I was watching their interview.",
+    "before_easy": [
+      "when",
+      "because",
+      "while",
+      "so"
+    ],
+    "after_easy": [
+      "because",
+      "so",
+      "while",
+      "if"
+    ],
+    "before_hard": [
+      "because",
+      "when"
+    ],
+    "after_hard": [
+      "because",
+      "so"
+    ]
+  },
+  {
+    "id": "37-07",
+    "english": "Ryoka was dancing while the other members were talking.",
+    "before_easy": [
+      "while",
+      "when",
+      "because",
+      "so"
+    ],
+    "after_easy": [
+      "while",
+      "because",
+      "so",
+      "if"
+    ],
+    "before_hard": [
+      "when",
+      "so"
+    ],
+    "after_hard": [
+      "because",
+      "so"
+    ]
+  },
+  {
+    "id": "37-08",
+    "english": "I listen to Mrs. GREEN APPLE while I take a shower.",
+    "before_easy": [
+      "when",
+      "because",
+      "while",
+      "so"
+    ],
+    "after_easy": [
+      "because",
+      "so",
+      "while",
+      "if"
+    ],
+    "before_hard": [
+      "when",
+      "because"
+    ],
+    "after_hard": [
+      "because",
+      "so"
+    ]
+  },
+  {
+    "id": "37-09",
+    "english": "I was studying English while my sister was watching TV.",
+    "before_easy": [
+      "while",
+      "when",
+      "because",
+      "so"
+    ],
+    "after_easy": [
+      "while",
+      "because",
+      "so",
+      "if"
+    ],
+    "before_hard": [
+      "when",
+      "so"
+    ],
+    "after_hard": [
+      "because",
+      "so"
+    ]
+  },
+  {
+    "id": "37-10",
+    "english": "Hiloto was playing the guitar while Motoki was singing.",
+    "before_easy": [
+      "so",
+      "when",
+      "because",
+      "while"
+    ],
+    "after_easy": [
+      "because",
+      "so",
+      "if",
+      "while"
+    ],
+    "before_hard": [
+      "because",
+      "so"
+    ],
+    "after_hard": [
+      "because",
+      "so"
+    ]
+  },
+  {
+    "id": "40-09",
+    "english": "Ryoka promised not to tell Motoki the secret.",
+    "before_easy": [
+      "to not",
+      "don’t",
+      "not to",
+      "not"
+    ],
+    "after_easy": [
+      "don’t",
+      "didn’t",
+      "not to",
+      "doesn’t"
+    ],
+    "before_hard": [
+      "to not",
+      "don’t"
+    ],
+    "after_hard": [
+      "don’t",
+      "didn’t"
+    ]
+  }
+]

@@ -1,0 +1,328 @@
+{
+  "purpose": "expected values only; not game implementation",
+  "fixtures": [
+    {
+      "name": "EASY_perfect_zero_seconds",
+      "difficulty": "EASY",
+      "power": 6270,
+      "correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "time_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "skills": {},
+      "expected_score": 18377,
+      "expected_coins": 300,
+      "expected_double_coins": 600
+    },
+    {
+      "name": "NORMAL_perfect_zero_seconds",
+      "difficulty": "NORMAL",
+      "power": 6270,
+      "correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "time_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "skills": {},
+      "expected_score": 25877,
+      "expected_coins": 450,
+      "expected_double_coins": 900
+    },
+    {
+      "name": "HARD_perfect_zero_seconds",
+      "difficulty": "HARD",
+      "power": 6270,
+      "correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "time_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "skills": {},
+      "expected_score": 33377,
+      "expected_coins": 600,
+      "expected_double_coins": 1200
+    },
+    {
+      "name": "easy_perfect_30_seconds",
+      "difficulty": "EASY",
+      "power": 6270,
+      "correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "time_ms": [
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000
+      ],
+      "skills": {},
+      "expected_score": 13377
+    },
+    {
+      "name": "easy_all_wrong",
+      "difficulty": "EASY",
+      "power": 6270,
+      "correct": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "skills": {},
+      "expected_score": 0,
+      "expected_coins": 300
+    },
+    {
+      "name": "easy_score_up_one",
+      "difficulty": "EASY",
+      "power": 6270,
+      "correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "time_ms": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "skills": {
+        "score_up": 1
+      },
+      "expected_score": 18877
+    },
+    {
+      "name": "easy_fractional_one",
+      "difficulty": "EASY",
+      "power": 6271,
+      "correct": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_ms": [
+        10001,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "skills": {},
+      "expected_card_bonus_raw": 62.71,
+      "expected_score": 1446
+    },
+    {
+      "name": "support_two_charges",
+      "difficulty": "EASY",
+      "power": 0,
+      "correct": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "time_ms": [
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000
+      ],
+      "skills": {
+        "combo_support": 2
+      },
+      "expected_combo_after_each": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected_score": 4350
+    },
+    {
+      "name": "half_up_card_bonus",
+      "difficulty": "EASY",
+      "power": 6270,
+      "correct": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "time_ms": [
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000,
+        30000
+      ],
+      "skills": {},
+      "expected_card_bonus_raw": 313.5,
+      "expected_score": 6064
+    }
+  ],
+  "reward_boundaries": [
+    {
+      "completed_before": 0,
+      "multiplier": 2
+    },
+    {
+      "completed_before": 4,
+      "multiplier": 2
+    },
+    {
+      "completed_before": 5,
+      "multiplier": 1
+    }
+  ],
+  "aborted": {
+    "score_awarded": 0,
+    "coins_awarded": 0,
+    "daily_count_increment": 0
+  }
+}

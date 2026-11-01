@@ -1,0 +1,38 @@
+[
+  {
+    "reference": "03_play_easy.png",
+    "mean_absolute_error_0_255": 0.0,
+    "max_channel_difference": 0,
+    "changed_bbox": null
+  },
+  {
+    "reference": "04_play_normal.png",
+    "mean_absolute_error_0_255": 0.0,
+    "max_channel_difference": 0,
+    "changed_bbox": null
+  },
+  {
+    "reference": "05_play_hard.png",
+    "mean_absolute_error_0_255": 0.0,
+    "max_channel_difference": 0,
+    "changed_bbox": null
+  },
+  {
+    "reference": "06_play_correct.png",
+    "mean_absolute_error_0_255": 0.0,
+    "max_channel_difference": 0,
+    "changed_bbox": null
+  },
+  {
+    "reference": "01_ready_initial.png",
+    "mean_absolute_error_0_255": 0.0,
+    "max_channel_difference": 0,
+    "changed_bbox": null
+  },
+  {
+    "reference": "02_ready_hard.png",
+    "mean_absolute_error_0_255": 0.0,
+    "max_channel_difference": 0,
+    "changed_bbox": null
+  }
+]

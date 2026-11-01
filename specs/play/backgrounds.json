@@ -1,0 +1,222 @@
+[
+  {
+    "id": "bg-01",
+    "path": "assets/play/backgrounds/bg-01.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-01.jpg",
+    "sha256": "b662c07126f0e4dc5581d10520bb98e099604040609d7c3643a88f54300892ff",
+    "width": 2560,
+    "height": 1280,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-02",
+    "path": "assets/play/backgrounds/bg-02.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-02.jpeg",
+    "sha256": "88757de94e8ec948da727c6eb44eb2aa87845b79bbac6878384e37fa339f4221",
+    "width": 2048,
+    "height": 1024,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-03",
+    "path": "assets/play/backgrounds/bg-03.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-03.jpeg",
+    "sha256": "6024ef608bf5bd3d5fc333756e7f88b778da723fd3e9d1993056e86784955e13",
+    "width": 2048,
+    "height": 1024,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-04",
+    "path": "assets/play/backgrounds/bg-04.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-04.jpg",
+    "sha256": "146ba9fd2ae2bd2c875c27c28f12cf9bef67bc3679cc3dd142e45097133e7999",
+    "width": 1200,
+    "height": 600,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-05",
+    "path": "assets/play/backgrounds/bg-05.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-05.jpg",
+    "sha256": "44a892f17d9b979960f219a5369cb15ece7627b19953375c0ea98fb8d164cccd",
+    "width": 1200,
+    "height": 600,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-06",
+    "path": "assets/play/backgrounds/bg-06.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-06.jpeg",
+    "sha256": "4c9d055e00a1e93555f3d36353ddcfe86a15533801cb1ae227e562b32a26e73d",
+    "width": 1280,
+    "height": 640,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-07",
+    "path": "assets/play/backgrounds/bg-07.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-07.jpeg",
+    "sha256": "89df9d829f41ce29d3f992af583a7b8cad76609239f803ec8c62c5c496d92f7b",
+    "width": 1280,
+    "height": 640,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-08",
+    "path": "assets/play/backgrounds/bg-08.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-08.jpeg",
+    "sha256": "2592ab86ffbe7cf9081de5d84e288843fd15448a9371fefa7036e0f4cbae1f36",
+    "width": 1200,
+    "height": 600,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-09",
+    "path": "assets/play/backgrounds/bg-09.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-09.jpg",
+    "sha256": "899dceb1e2fa10f62bff006dd6df17c60c859390e2f8117e9801b4c98c8bcb55",
+    "width": 1081,
+    "height": 541,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-10",
+    "path": "assets/play/backgrounds/bg-10.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-10.jpeg",
+    "sha256": "1b15ff4d3a170eb6f7642ab92b22b6b8f8fd2a10dee3d401998bee406896b5fe",
+    "width": 1703,
+    "height": 852,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-11",
+    "path": "assets/play/backgrounds/bg-11.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-11.jpg",
+    "sha256": "058f8cf8f05a83fd99edae2cd0cfc2df704e9f9464aa04e27c398cb7f427e257",
+    "width": 975,
+    "height": 488,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-12",
+    "path": "assets/play/backgrounds/bg-12.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-12.jpeg",
+    "sha256": "b5e404a53339e8d0e40fcd77bb8ffdde25cf07b9b90917ed86def9902582dc07",
+    "width": 1640,
+    "height": 820,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-13",
+    "path": "assets/play/backgrounds/bg-13.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-13.jpg",
+    "sha256": "2979182eec8a641319f0f1e1ae2198cdb70ea8cf70ada3ea2c6433afcaa3a15b",
+    "width": 1920,
+    "height": 960,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-14",
+    "path": "assets/play/backgrounds/bg-14.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-14.jpeg",
+    "sha256": "3eed20831570d1f14462dde9a04d47db49bc923945782d0ba08f8ac27a45f0fa",
+    "width": 2048,
+    "height": 1024,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-15",
+    "path": "assets/play/backgrounds/bg-15.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-15.jpeg",
+    "sha256": "5d8e6ad40a388e3f1f2180755fef6a22dd888b950587001c806fb41cabf88bcd",
+    "width": 2048,
+    "height": 1024,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-16",
+    "path": "assets/play/backgrounds/bg-16.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-16.jpg",
+    "sha256": "359d8bf1cf54d14c64f27607b80fecddd583c3dd28b2c4e67b16624aca0617dd",
+    "width": 1460,
+    "height": 730,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-17",
+    "path": "assets/play/backgrounds/bg-17.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-17.jpeg",
+    "sha256": "3ed4dbc5457278402ba1427424b16ee91b5deea319f07b182e2996d6fafada57",
+    "width": 1200,
+    "height": 600,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-18",
+    "path": "assets/play/backgrounds/bg-18.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-18.jpeg",
+    "sha256": "37505b962c00cc6c0eddbf26de5f4ad412aceab9e86446aca8cd7229e7b1d140",
+    "width": 2048,
+    "height": 1024,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-19",
+    "path": "assets/play/backgrounds/bg-19.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-19.jpeg",
+    "sha256": "6b3345d7827de5fdb7897b02dc611cea5e0f1a2725668c1685213934fa563d6b",
+    "width": 2048,
+    "height": 1024,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-20",
+    "path": "assets/play/backgrounds/bg-20.jpeg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-20.jpeg",
+    "sha256": "080c6ce276974424760d25da16ea94f9fc307999681b33d7f7edfcd8c6fc1a70",
+    "width": 1920,
+    "height": 960,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-21",
+    "path": "assets/play/backgrounds/bg-21.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-21.jpg",
+    "sha256": "7acd0c75b647c1a332322d87506b2e0ff861c7131797d5c4682556823805be01",
+    "width": 800,
+    "height": 400,
+    "original_bytes": true
+  },
+  {
+    "id": "bg-22",
+    "path": "assets/play/backgrounds/bg-22.jpg",
+    "source_zip": "backgrounds.zip",
+    "source_entry": "backgrounds/bg-22.jpg",
+    "sha256": "fb7ee1534629ea885daf4e345d29661f004498d04152dcb9595110c4c010d15a",
+    "width": 1080,
+    "height": 540,
+    "original_bytes": true
+  }
+]

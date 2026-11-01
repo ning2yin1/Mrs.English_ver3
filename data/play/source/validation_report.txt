@@ -1,0 +1,6 @@
+Categories: 40
+Questions: 400
+Easy options: 4 unique each
+Normal reconstruction: PASS
+Hard distractors: 2 unique, not in answer tiles
+Issue log: []
