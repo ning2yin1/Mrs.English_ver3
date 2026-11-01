@@ -1,6 +1,7 @@
 import { loadProfile, saveProfile, normalizeName } from './profile.js';
 import { renderScreen, placeholder, backgroundForScreen } from './screens.js';
 import { createLayout, sceneBackground, prepareBackground } from './layout.js';
+import { createCollection } from './collection/controller.js';
 const stage = document.querySelector('#stage');
 const safe = document.querySelector('#safe-area');
 const notice = document.querySelector('#notice');
@@ -13,6 +14,7 @@ let current = 'title';
 let renderVersion = 0;
 let layouts, backgrounds, homeBounds;
 const { resize } = createLayout(safe, stage);
+const collection = createCollection({stage,resize,onHome:()=>show('home'),notify:message});
 
 async function show(screen) {
   current = screen;
@@ -54,7 +56,10 @@ function tap(target) {
   if (target.id === 'back') { show({nickname:'title',member:'nickname',background:'member'}[current]); return; }
   if (current === 'member') { state.memberId = target.id; show('member'); }
   else if (current === 'background' && target.value) { state.backgroundId = target.value; show('background'); }
-  else if (current === 'home') show(target.route);
+  else if (current === 'home') {
+    if (target.route === 'placeholder/collection') collection.open();
+    else show(target.route);
+  }
 }
 try {
   const json = async path => { const response = await fetch(path); if (!response.ok) throw new Error(path); return response.json(); };

@@ -1,0 +1,17 @@
+[
+  {
+    "screen": "collection_owned",
+    "mean_absolute_rgb_error_0_255": 2.003032553219084,
+    "pixels_any_channel_over_16_percent": 3.593289474688035
+  },
+  {
+    "screen": "collection_detail",
+    "mean_absolute_rgb_error_0_255": 0.8538589080773994,
+    "pixels_any_channel_over_16_percent": 1.9967805346957148
+  },
+  {
+    "screen": "collection_empty",
+    "mean_absolute_rgb_error_0_255": 0.8629141840418615,
+    "pixels_any_channel_over_16_percent": 0.8117960598423836
+  }
+]
