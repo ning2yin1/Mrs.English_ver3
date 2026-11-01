@@ -1,0 +1,17 @@
+[
+  {
+    "screen": "inventory_main",
+    "mean_absolute_rgb_error_0_255": 1.9667112119277883,
+    "pixels_any_channel_over_16_percent": 4.000808680858422
+  },
+  {
+    "screen": "inventory_deck",
+    "mean_absolute_rgb_error_0_255": 1.990908485978203,
+    "pixels_any_channel_over_16_percent": 3.6103277191893866
+  },
+  {
+    "screen": "inventory_upgrade",
+    "mean_absolute_rgb_error_0_255": 1.2775941151090235,
+    "pixels_any_channel_over_16_percent": 2.3958441941546105
+  }
+]

@@ -2,6 +2,7 @@ import { loadProfile, saveProfile, normalizeName } from './profile.js';
 import { renderScreen, placeholder, backgroundForScreen } from './screens.js';
 import { createLayout, sceneBackground, prepareBackground } from './layout.js';
 import { createCollection } from './collection/controller.js';
+import { createInventory } from './inventory/controller.js';
 const stage = document.querySelector('#stage');
 const safe = document.querySelector('#safe-area');
 const notice = document.querySelector('#notice');
@@ -15,6 +16,7 @@ let renderVersion = 0;
 let layouts, backgrounds, homeBounds;
 const { resize } = createLayout(safe, stage);
 const collection = createCollection({stage,resize,onHome:()=>show('home'),notify:message});
+const inventory = createInventory({stage,resize,onHome:()=>show('home'),notify:message});
 
 async function show(screen) {
   current = screen;
@@ -58,6 +60,7 @@ function tap(target) {
   else if (current === 'background' && target.value) { state.backgroundId = target.value; show('background'); }
   else if (current === 'home') {
     if (target.route === 'placeholder/collection') collection.open();
+    else if (target.route === 'placeholder/inventory') inventory.open();
     else show(target.route);
   }
 }
@@ -67,6 +70,7 @@ try {
   const data = await Promise.all(screens.map(s => json(s === 'home' ? 'home_approved/spec/home_layout.json' : `layouts/${s}.json`)));
   layouts = Object.fromEntries(screens.map((s, i) => [s, data[i]]));
   [backgrounds, homeBounds] = await Promise.all([json('layouts/external_backgrounds.json'), json('src/home-font-bounds.json')]);
+  try { await inventory.initializeDevelopment(); } catch (error) { message(error.message); }
   await show('title');
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 } catch (error) {

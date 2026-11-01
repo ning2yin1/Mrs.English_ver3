@@ -1,0 +1,19 @@
+{
+  "home_reference": {
+    "pixel_difference_bbox": null,
+    "identical": true
+  },
+  "iphone_home": {
+    "pixel_difference_bbox": null,
+    "identical": true
+  },
+  "collection_owned": {
+    "existing_browser_capture_unchanged": true
+  },
+  "collection_detail": {
+    "existing_browser_capture_unchanged": true
+  },
+  "collection_empty": {
+    "existing_browser_capture_unchanged": true
+  }
+}
