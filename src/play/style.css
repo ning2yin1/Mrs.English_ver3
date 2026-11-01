@@ -92,3 +92,33 @@ body[data-screen^=play_]::before{background:rgba(3,1,10,.651)}body[data-screen=p
 .me-play-kit .play-confirm::after,.me-play-kit .play-start::after{content:'';position:absolute;right:10px;top:calc(50% - 13px);width:16px;height:26px;background:url('../../assets/icons/nickname_confirm_arrow.png') center/contain no-repeat;pointer-events:none}
 .me-play-kit .english-blank .blank{display:inline-block;min-width:140px;margin:0 12px;padding:4px 16px;color:var(--cyan);border:14px solid transparent;border-image:var(--blue) 18 20 17 20 fill stretch;line-height:1}
 .me-play-kit[data-layout=compact] .english-blank .blank{min-width:60px;margin:0 6px;padding:3px 6px;border-width:7px;font-size:24px}
+/* Requested Play/READY refinements; existing artwork and other screen styles stay intact. */
+.me-play-kit{touch-action:manipulation}
+.me-play-kit .play-button,.me-play-kit .play-back,.me-play-kit .play-pause{touch-action:manipulation}
+.me-play-kit .play-central,.me-play-kit .play-answer,.me-play-kit .play-bank,.me-play-kit .play-category-list,.me-play-kit .feedback-copy,.me-play-kit .selected-description,.me-play-kit .grammar-title{touch-action:manipulation;touch-action:pan-y pinch-zoom}
+.me-play-kit .category-name{white-space:nowrap;font-size:24px;min-width:0}
+.me-play-kit .feedback-copy{background:rgba(7,13,35,.8);color:#f8faff;border:1px solid #63e8ff66;border-radius:8px;padding:14px 20px;text-align:left;line-height:1.45}
+.me-play-kit .correct-english{overflow:auto;pointer-events:auto;line-height:1.15}
+.me-play-kit[data-layout=reference] .play-options.long-options{top:420px!important}
+.me-play-kit[data-layout=compact] .category-name{font-size:14px;white-space:nowrap;letter-spacing:-.25px}
+.me-play-kit[data-layout=compact] .play-category .play-button-label{grid-template-columns:48px minmax(0,1fr) 25px;gap:2px}
+.me-play-kit[data-layout=compact] .play-difficulty .play-button-label{grid-template-columns:78px minmax(0,1fr) 14px;font-size:13px}
+.me-play-kit[data-layout=compact]{grid-template-rows:54px minmax(0,1fr) 64px}
+.me-play-kit[data-layout=compact] .play-central{display:flex;flex-direction:column;gap:5px;padding:4px 10px 6px;overflow:hidden}
+.me-play-kit[data-layout=compact] .play-central .play-copy{margin:0;min-height:0;flex:0 0 auto}
+.me-play-kit[data-layout=compact] .play-central .japanese{font-size:18px!important;line-height:1.25;min-height:23px;max-height:48px;overflow:auto;display:block}
+.me-play-kit[data-layout=compact] .play-central .arrange-hint,.me-play-kit[data-layout=compact] .play-central .undo-hint{display:none}
+.me-play-kit[data-layout=compact] .play-answer{flex:0 1 auto;min-height:45px;max-height:96px;margin:0;padding-bottom:4px;overflow:auto;gap:4px}
+.me-play-kit[data-layout=compact] .play-bank{flex:1 1 auto;min-height:44px;margin:0;padding:0;overflow:auto;gap:4px}
+.me-play-kit[data-layout=compact] .play-tile{font-size:16px;min-height:44px;padding:4px 7px}
+.me-play-kit[data-layout=compact] .play-options{flex:0 0 auto;margin:5px 0 0}
+.me-play-kit[data-layout=compact] .play-central .english-blank{font-size:24px!important;margin:0;max-height:100px;overflow:auto}
+.me-play-kit[data-layout=compact] .play-central img.feedback-title{flex:0 1 66px;min-height:46px;width:160px!important;height:66px!important;margin:0 auto}
+.me-play-kit[data-layout=compact] .play-central .incorrect-title{flex:0 1 58px;min-height:40px;font-size:38px!important}
+.me-play-kit[data-layout=compact] .play-central .correct-english{font-size:23px!important;max-height:57px;overflow:auto;flex:0 0 auto;line-height:1.15}
+.me-play-kit[data-layout=compact] .play-central .feedback-copy{flex:1 1 64px;min-height:44px;padding:8px 12px;font-size:16px!important;line-height:1.4;overflow:auto}
+.me-play-kit[data-layout=compact] .play-central .earned{flex:0 0 auto;font-size:20px!important;line-height:1.1}
+.me-play-kit[data-layout=compact] .play-category .play-button-label{grid-template-columns:45px minmax(0,1fr) 32px}
+.me-play-kit[data-layout=compact] .category-count{white-space:nowrap;font-size:12px}
+.me-play-kit[data-layout=compact] .category-number{font-size:14px}
+.me-play-kit[data-layout=compact] .play-central img.feedback-title{min-height:40px}

@@ -88,3 +88,6 @@ export function createInventoryStore({catalog,definitions,balance,storageProvide
     },
   };
 }
+
+// Read-only access to the same wallet used by upgrades, Shop and Play.
+export {wallet as readWallet};

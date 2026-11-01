@@ -12,9 +12,9 @@ export async function loadPlayResources(){
     const css=p=>new Promise((resolve,reject)=>{const n=document.createElement('link');n.rel='stylesheet';n.href=p;n.onload=resolve;n.onerror=reject;document.head.append(n);});
     const response=await fetch('data/play/source/grammar_01_40.json');if(!response.ok)throw new Error('問題を読み込めません。');const source=await response.text(),dataset=validateDataset(JSON.parse(source));
     const datasetHash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(source)))].map(n=>n.toString(16).padStart(2,'0')).join('');
-    const [config,backgrounds,catalog,definitions,balance,layouts]=await Promise.all([json('specs/play/scoring_config.json'),json('specs/play/backgrounds.json'),json('layouts/collection/catalog.json'),json('data/inventory/card_definitions.example.json'),json('data/inventory/balance.example.json'),json('specs/play/layouts.json'),css('src/collection/style.css'),css('src/play/style.css')]);
+    const [config,backgrounds,catalog,definitions,balance,layouts,titles]=await Promise.all([json('specs/play/scoring_config.json'),json('specs/play/backgrounds.json'),json('layouts/collection/catalog.json'),json('data/inventory/card_definitions.example.json'),json('data/inventory/balance.example.json'),json('specs/play/layouts.json'),json('data/play/display_titles.json'),css('src/collection/style.css'),css('src/play/style.css')]);
     await document.fonts.load('26px PlayJP');await document.fonts.load('700 26px PlayJP');await document.fonts.load('26px PlayEN');
-    return {dataset,datasetHash,config,backgrounds,catalog,definitions,balance,layouts};
+    return {dataset,datasetHash,config,backgrounds,catalog,definitions,balance,layouts,titles};
   })().catch(e=>{resources=null;throw e;});return resources;
 }
 export function createPlay({stage,resize,onHome,notify=()=>{},resources:customResources,store:customStore}){

@@ -68,7 +68,8 @@ export function createPlayStore({dataset,datasetHash,backgrounds,config,catalog,
       const result={stageId:id,categoryId:s.categoryId,difficulty:s.difficulty,datasetHash:s.datasetHash,startedAt:s.createdAt,completedAt,rewardDateKey:day,backgroundId:s.backgroundId,questionResults:s.answers,deckSnapshot:s.deckSnapshot,deckPowerSnapshot:s.deckPowerSnapshot,...summarize(s.answers,s.deckPowerSnapshot),rewardBase,dailyMultiplier:multiplier,rewardCoins,completionStatus:'completed',settlementId:`play:${id}`};
       state.data.results[id]=result;state.data.daily[day]=before+1;
       const recordKey=`${s.categoryId}:${s.difficulty}`,previous=state.data.records[recordKey];
-      state.data.records[recordKey]={...previous,bestScore:Math.max(previous?.bestScore??0,result.finalScoreInteger),completionCount:(previous?.completionCount??0)+1,lastStageId:id};
+      state.data.records[recordKey]={...previous,completionCount:(previous?.completionCount??0)+1,lastStageId:id};
+      if(previous?.bestScore===undefined||result.finalScoreInteger>previous.bestScore)state.data.records[recordKey].bestScore=result.finalScoreInteger;
       s.status='completed';state.data.revision++;snapshot.wallet.rCoin+=rewardCoins;
       db.commitDurable(storage,{[PLAY_KEY]:JSON.stringify(state.data),[WALLET_KEY]:JSON.stringify(snapshot.wallet)},{[PLAY_KEY]:state.raw,[WALLET_KEY]:snapshot.raw[WALLET_KEY]});
       return structuredClone(state.data);

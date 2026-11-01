@@ -1,7 +1,6 @@
 import {cardLayer,memberNames} from '../collection/components.js';
 import {summarize} from './scoring.js';
 const fmt=n=>Math.floor(n).toLocaleString('en-US');
-const hints={EASY:'英文の穴埋め',NORMAL:'英単語の並び替え',HARD:'ダミー単語を含む並び替え'};
 function el(tag,cls,text){const n=document.createElement(tag);n.className=cls;if(text!==undefined)n.textContent=text;return n;}
 function rect(n,x,y,w,h){Object.assign(n.style,{left:`${x}px`,top:`${y}px`,width:`${w}px`,height:`${h}px`});return n;}
 function copy(parent,cls,text,x,y,w,h,size=26){const n=rect(el('div',`play-copy ${cls}`,text),x,y,w,h);n.style.fontSize=`${size}px`;parent.append(n);return n;}
@@ -32,7 +31,7 @@ function ready(root,state,data,act){
   for(const [i,grade]of ['',...new Set(categories.map(c=>c.grade))].entries()){const n=button(tabs,`grade:${grade}`,grade||'すべて',act,state.grade===grade);n.setAttribute('aria-pressed',state.grade===grade);n.style.flex='1';}
   const list=rect(el('div','play-category-list'),119,280,800,483);list.setAttribute('aria-label','文法カテゴリ');root.append(list);
   for(const c of categories.filter(c=>!state.grade||c.grade===state.grade)){
-    const n=button(list,`category:${c.id}`,'',act,c.id===current.id);n.classList.add('play-category');n.setAttribute('aria-pressed',c.id===current.id);n.querySelector('span').append(el('b','category-number',`No.${c.id}`),el('span','category-name',c.title),el('span','category-count',`${c.questions.length}文`));
+    const n=button(list,`category:${c.id}`,'',act,c.id===current.id);n.classList.add('play-category');n.setAttribute('aria-pressed',c.id===current.id);n.title=`No.${c.id} ${c.title}`;n.querySelector('span').append(el('b','category-number',`No.${c.id}`),el('span','category-name',data.titles?.[c.id]||c.title),el('span','category-count',`${c.questions.length}文`));
   }
   copy(root,'selected-label','選択中の文法',1006,157,570,40,24);copy(root,'selected-id',`No.${current.id}`,1443,155,115,29,20);
   const title=copy(root,'selected-title',current.title,1006,201,570,66,38);
@@ -41,7 +40,7 @@ function ready(root,state,data,act){
   copy(root,'selected-grade',current.grade,1006,301,88,29,19);copy(root,'example-count',`収録例文 ${current.questions.length}文`,1120,303,440,35,24);
   copy(root,'difficulty-title','難易度を選択',1006,363,704,36,26);
   for(const [i,mode]of ['EASY','NORMAL','HARD'].entries()){
-    const n=button(root,`mode:${mode}`,'',act,state.difficulty===mode);n.classList.add('play-difficulty');rect(n,1006,408+76*i,704,66);n.setAttribute('aria-pressed',state.difficulty===mode);n.querySelector('span').append(el('strong','',mode),el('span','',hints[mode]),el('b','check',state.difficulty===mode?'✓':''));
+    const n=button(root,`mode:${mode}`,'',act,state.difficulty===mode);n.classList.add('play-difficulty');rect(n,1006,408+76*i,704,66);n.setAttribute('aria-pressed',state.difficulty===mode);n.querySelector('span').append(el('strong','',mode),el('span','difficulty-best',`最高スコア ${state.saved.records[`${current.id}:${mode}`]?fmt(state.saved.records[`${current.id}:${mode}`].bestScore):'—'}`),el('b','check',state.difficulty===mode?'✓':''));
   }
   const record=state.saved.records[`${current.id}:${state.difficulty}`];copy(root,'records',`最高スコア ${record?fmt(record.bestScore):'—'}　　${record?`クリア ${record.completionCount}回`:'クリア記録 未プレイ'}`,1006,638,704,29,21);
   copy(root,'start-hint',`${state.difficulty} / 1プレイ10問`,1006,674,704,29,24);
@@ -64,31 +63,31 @@ function footer(root,state,data,act){
 }
 function question(root,state,data,act){
   const s=state.session,q=data.dataset.categories.find(c=>c.id===s.categoryId)?.questions.find(q=>q.id===s.questionIds[s.index])||JSON.parse(s.questionSources[s.index]);
-  const content=el('main','play-central');root.append(content);copy(content,'prompt-label','日本語のお題',700,186,444,30,23);copy(content,'japanese',q.japanese,300,235,1244,106,44);
+  const content=el('main','play-central');root.append(content);copy(content,'japanese',q.japanese,200,130,1444,80,42);
   const showing=s.status==='feedback'||(['paused','quitConfirm'].includes(s.status)&&s.resumeStatus==='feedback');
   if(showing){
     const a=s.answers[s.index];content.classList.add(a.correct?'is-correct':'is-incorrect');
-    if(a.correct)image(content,'feedback-title','assets/play/decor/feedback_correct.png',737,321,370,160);else copy(content,'feedback-title incorrect-title','残念！',737,321,370,160,74);
+    if(a.correct)image(content,'feedback-title','assets/play/decor/feedback_correct.png',737,230,370,160);else copy(content,'feedback-title incorrect-title','残念！',737,230,370,160,74);
     const accessible=el('span','play-sr',a.correct?'正解！':'残念！');accessible.setAttribute('role','status');content.append(accessible);
-    copy(content,'correct-english',q.english,300,490,1244,60,48);
-    const explanation=copy(content,'feedback-copy',`${q.japanese}\n${q.explanation}`,320,565,1204,80,25);explanation.setAttribute('tabindex','0');
-    copy(content,'earned',`+${fmt(a.awardedQuestionPointsRaw)}`,700,650,444,40,32);return;
+    copy(content,'correct-english',q.english,250,405,1344,85,46);
+    const explanation=copy(content,'feedback-copy',q.explanation,320,500,1204,115,25);explanation.setAttribute('tabindex','0');
+    copy(content,'earned',`+${fmt(a.awardedQuestionPointsRaw)}`,700,625,444,40,32);return;
   }
   const input=s.inputs[s.index];
   if(s.difficulty==='EASY'){
-    copy(content,'arrange-hint','空欄に入る単語を選んでください',400,312,1044,40,23);
-    const phrase=copy(content,'english-blank','',350,365,1150,90,48);const [before,after]=q.easy.prompt.split('_____');phrase.append(document.createTextNode(before),el('span','blank',input.selected||'_____'),document.createTextNode(after||''));
-    const options=rect(el('div','play-options'),440,550,950,154);content.append(options);
+    copy(content,'arrange-hint','空欄に入る単語を選んでください',400,214,1044,32,23);
+    const phrase=copy(content,'english-blank','',350,260,1150,90,48);const [before,after]=q.easy.prompt.split('_____');phrase.append(document.createTextNode(before),el('span','blank',input.selected||'_____'),document.createTextNode(after||''));
+    const options=rect(el('div','play-options'),440,420,950,180);content.append(options);
     if(input.options.some(s=>s.length>12))options.classList.add('long-options');
     for(const [i,value]of input.options.entries()){const n=button(options,`option:${i}`,value,act,input.selected===value);n.setAttribute('aria-pressed',input.selected===value);}
   }else{
-    const answer=rect(el('div','play-answer'),354,365,1190,90);answer.setAttribute('aria-label','回答');content.append(answer);
+    const answer=rect(el('div','play-answer'),354,260,1190,120);answer.setAttribute('aria-label','回答');content.append(answer);
     for(const id of input.selectedIds){const t=input.tiles.find(t=>t.id===id);const n=button(answer,`undo:${id}`,t.text,act,true);n.classList.add('play-tile');}
-    copy(content,'undo-hint','回答内の単語をタップすると取り消せます',354,464,1130,36,23);
-    const bank=rect(el('div','play-bank'),354,523,1130,140);bank.setAttribute('aria-label','単語');content.append(bank);
+    copy(content,'undo-hint','回答内の単語をタップすると取り消せます',354,386,1130,30,23);
+    const bank=rect(el('div','play-bank'),354,430,1130,212);bank.setAttribute('aria-label','単語');content.append(bank);
     for(const t of input.tiles){const n=button(bank,`tile:${t.id}`,t.text,act);n.classList.add('play-tile');n.dataset.used=input.selectedIds.includes(t.id);n.disabled=input.selectedIds.includes(t.id);}
-    copy(content,'answer-label','回答',128,374,150,35,25);copy(content,'bank-label','単語',128,541,150,35,25);
-    copy(content,'arrange-hint',s.difficulty==='HARD'?'ダミー単語を含む並び替え・和訳に合う原文を作ろう':'英単語を並べて、和訳に合う原文を作ろう',400,312,1044,40,23);
+    copy(content,'answer-label','回答',128,274,150,35,25);copy(content,'bank-label','単語',128,448,150,35,25);
+    copy(content,'arrange-hint',s.difficulty==='HARD'?'ダミー単語を含む並び替え・和訳に合う原文を作ろう':'英単語を並べて、和訳に合う原文を作ろう',400,214,1044,32,23);
   }
 }
 function modal(root,state,act){

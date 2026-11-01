@@ -5,6 +5,8 @@ import { createCollection } from './collection/controller.js';
 import { createInventory } from './inventory/controller.js';
 import { createShop } from './shop/controller.js';
 import { createPlay } from './play/controller.js';
+import {readWallet,WALLET_KEY} from './inventory/store.js';
+import {persistence} from './inventory/persistence.js';
 const stage = document.querySelector('#stage');
 const safe = document.querySelector('#safe-area');
 const notice = document.querySelector('#notice');
@@ -27,11 +29,13 @@ async function show(screen) {
   const version = ++renderVersion;
   if (!persistentWarning) message('');
   const isPlaceholder = screen.startsWith('placeholder/');
+  let rCoin;
+  if(screen==='home')try{rCoin=await persistence().read(storage=>readWallet(storage).rCoin);}catch(error){if(!persistentWarning)message(error.message);rCoin=null;}
   const backgroundFile = sceneBackground(layouts[screen], screen === 'home' ? 'home_approved/' : '',
     backgroundForScreen(screen, state, backgrounds));
   const [fragment, background] = await Promise.all([
     isPlaceholder ? placeholder(screen, () => show('home'))
-      : renderScreen(screen, layouts[screen], state, { tap, confirm }, backgrounds, homeBounds),
+      : renderScreen(screen, layouts[screen], screen==='home'?{...state,rCoin}:state, { tap, confirm }, backgrounds, homeBounds),
     prepareBackground(backgroundFile),
   ]);
   if (version !== renderVersion) return;
@@ -43,6 +47,13 @@ async function show(screen) {
   stage.setAttribute('aria-label', {title:'タイトル',nickname:'ニックネーム設定',member:'推し選択',background:'背景選択',home:'ホーム'}[screen] || '仮画面');
   resize();
 }
+async function refreshHomeCoins(){
+  const root=stage.querySelector('.home-hud');if(current!=='home'||stage.dataset.screen!=='home'||!root)return;
+  try{const value=await persistence().read(storage=>readWallet(storage).rCoin);if(stage.querySelector('.home-hud')===root)await root.updateCoins(value);}catch(error){message(error.message);}
+}
+window.addEventListener('storage',event=>{if(event.key===WALLET_KEY||event.key===null)refreshHomeCoins();});
+window.addEventListener('focus',refreshHomeCoins);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshHomeCoins();});
 function confirm() {
   if (current === 'nickname') {
     const input = document.querySelector('#nickname');
