@@ -1,6 +1,7 @@
 import { picture, label, hit, nineSlice, position } from './components.js';
 import { MEMBERS, normalizeName } from './profile.js';
 import { isSceneBackground } from './layout.js';
+import { renderHomeHud } from './home-hud.js';
 const names = { motoki: '大森元貴', hiroto: '若井滉斗', ryoka: '藤澤涼架' };
 const byId = (layout, id) => layout.elements.find(e => e.id === id);
 
@@ -12,6 +13,7 @@ export function backgroundForScreen(screen, state, backgrounds) {
 }
 
 export async function renderScreen(screen, layout, state, actions, backgrounds, homeBounds) {
+  if (screen === 'home') return renderHomeHud(layout,state,actions.tap,homeBounds);
   const fragment = document.createDocumentFragment();
   const base = screen === 'home' ? 'home_approved/' : '';
   const selectedMember = MEMBERS.indexOf(state.memberId);
@@ -49,11 +51,6 @@ export async function renderScreen(screen, layout, state, actions, backgrounds, 
       if (e.id === 'background_selected_preview') e.file = 'backgrounds/' + selectedBackground.source_file;
       if (e.id === 'preview_index' && state.backgroundId !== 'bg-01') {
         fragment.append(dynamicText(e, `${state.backgroundId.slice(3)} / 22`, 31)); continue;
-      }
-    }
-    if (screen === 'home') {
-      if (e.id === 'nickname' && state.nickname !== 'Nene') {
-        fragment.append(dynamicText({ ...e, width: 305, height: 35, y: 10 }, state.nickname, 30)); continue;
       }
     }
     fragment.append(e.kind === 'text' ? await label(e, base, screen === 'home' ? homeBounds[e.id] : undefined) : picture(e, base));

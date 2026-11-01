@@ -20,11 +20,16 @@ export function createLayout(safe, stage) {
     const width = Math.max(0, right - left);
     const height = Math.max(0, bottom - top);
     const scale = Math.min(width / REFERENCE.width, height / REFERENCE.height);
+    const home = stage.dataset.screen === 'home';
+    const canvasWidth = home && scale ? width/scale : REFERENCE.width;
+    const canvasHeight = home && scale ? height/scale : REFERENCE.height;
     Object.assign(stage.style, {
+      width:`${canvasWidth}px`, height:`${canvasHeight}px`,
       transform:`scale(${scale})`,
-      left:`${left - rect.left + (width - REFERENCE.width * scale) / 2}px`,
-      top:`${top - rect.top + (height - REFERENCE.height * scale) / 2}px`,
+      left:`${left - rect.left + (width - canvasWidth * scale) / 2}px`,
+      top:`${top - rect.top + (height - canvasHeight * scale) / 2}px`,
     });
+    stage.querySelector('.home-hud')?.resizeHud(canvasWidth,canvasHeight);
   }
   window.addEventListener('resize', resize);
   window.visualViewport?.addEventListener('resize', resize);
