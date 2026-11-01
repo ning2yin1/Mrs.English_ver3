@@ -25,7 +25,7 @@ function header(root,state,data,act){
   copy(bar,'combo-label','コンボ',1556,40,160,20,16);copy(bar,'combo',String(s.combo),1556,61,160,36,30);
 }
 function ready(root,state,data,act){
-  root.classList.add('is-ready');const categories=[...data.dataset.categories].sort((a,b)=>Number(a.id)-Number(b.id)),current=categories.find(c=>c.id===state.categoryId)||categories[0];
+  root.classList.add('is-ready');const categories=[...data.dataset.categories].sort((a,b)=>Number(a.id)-Number(b.id)),current=categories.find(c=>c.id===state.categoryId)||categories[0]||{id:'',title:'選択できる文法がありません',description:'問題データを追加してください。',grade:'',questions:[]};
   panel(root,'ready-left',95,135,850,640);panel(root,'ready-right',971,135,777,640);
   copy(root,'list-title','英文法を選択',128,156,550,42,30);copy(root,'list-count',`${categories.length}項目`,800,158,105,40,26);
   const tabs=rect(el('nav','play-grades'),128,206,730,52);tabs.setAttribute('aria-label','学年');root.append(tabs);

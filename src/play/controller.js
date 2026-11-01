@@ -47,7 +47,13 @@ export function createPlay({stage,resize,onHome,notify=()=>{},resources:customRe
     if(path!==backgroundPath){const bg=await prepareBackground(path);document.querySelector('#scene-background').replaceWith(bg);backgroundPath=path;}
   }
   function leave(){active=false;anchor=null;clearInterval(checkpoint);renderId++;window.removeEventListener('storage',onStorage);window.removeEventListener('resize',onResize);document.removeEventListener('visibilitychange',onVisibility);window.removeEventListener('pagehide',onPageHide);onHome();}
-  async function ready(){stop();state.session=null;await backdrop();const inventory=createInventoryStore(data),snapshot=await persistence().read(storage=>inventory.prepare(storage));state.deckCount=snapshot.deck.filter(Boolean).length;state.deckPower=totalPower(snapshot.deck,snapshot.instances);await render();}
+  async function ready(){
+    stop();state.session=null;
+    const categories=[...data.dataset.categories].sort((a,b)=>Number(a.id)-Number(b.id));
+    if(!categories.some(c=>c.id===state.categoryId))state.categoryId=categories[0]?.id||'';
+    if(state.grade&&!categories.some(c=>c.grade===state.grade))state.grade='';
+    await backdrop();const inventory=createInventoryStore(data),snapshot=await persistence().read(storage=>inventory.prepare(storage));state.deckCount=snapshot.deck.filter(Boolean).length;state.deckPower=totalPower(snapshot.deck,snapshot.instances);await render();
+  }
   function schedule(fn){queue=queue.then(fn).catch(async e=>{anchor=null;error(e);try{adopt(await store.load());if(state.session?.status==='input'){// A conflicting/retried tab resumes explicitly, never silently resets its timer.
       adopt(await store.change(state.session.stageId,state.saved.revision,'pause',{elapsedActiveMs:state.session.inputs[state.session.index].elapsedActiveMs}));}
       await backdrop();await render();}catch(recovery){error(recovery);}});return queue;}
