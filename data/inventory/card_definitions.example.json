@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "provisionalBalance": true,
+  "cards": [
+    {
+      "catalogId": "motoki-r-01",
+      "memberId": "motoki",
+      "rarity": "R",
+      "basePower": 3550,
+      "powerPerLevel": 150,
+      "skillId": "score_up",
+      "maxLevel": 50
+    },
+    {
+      "catalogId": "hiroto-r-01",
+      "memberId": "hiroto",
+      "rarity": "R",
+      "basePower": 3600,
+      "powerPerLevel": 150,
+      "skillId": "combo_support",
+      "maxLevel": 50
+    },
+    {
+      "catalogId": "hiroto-s-01",
+      "memberId": "hiroto",
+      "rarity": "S",
+      "basePower": 2800,
+      "powerPerLevel": 150,
+      "skillId": "speed_up",
+      "maxLevel": 40
+    },
+    {
+      "catalogId": "ryoka-s-01",
+      "memberId": "ryoka",
+      "rarity": "S",
+      "basePower": 2870,
+      "powerPerLevel": 150,
+      "skillId": "score_up",
+      "maxLevel": 40
+    },
+    {
+      "catalogId": "motoki-a-01",
+      "memberId": "motoki",
+      "rarity": "A",
+      "basePower": 2130,
+      "powerPerLevel": 150,
+      "skillId": "combo_support",
+      "maxLevel": 30
+    },
+    {
+      "catalogId": "ryoka-a-05",
+      "memberId": "ryoka",
+      "rarity": "A",
+      "basePower": 2050,
+      "powerPerLevel": 150,
+      "skillId": "combo_support",
+      "maxLevel": 30
+    },
+    {
+      "catalogId": "motoki-b-03",
+      "memberId": "motoki",
+      "rarity": "B",
+      "basePower": 1420,
+      "powerPerLevel": 150,
+      "skillId": "score_up",
+      "maxLevel": 20
+    },
+    {
+      "catalogId": "hiroto-b-01",
+      "memberId": "hiroto",
+      "rarity": "B",
+      "basePower": 1510,
+      "powerPerLevel": 150,
+      "skillId": "speed_up",
+      "maxLevel": 20
+    },
+    {
+      "catalogId": "motoki-c-04",
+      "memberId": "motoki",
+      "rarity": "C",
+      "basePower": 780,
+      "powerPerLevel": 150,
+      "skillId": "combo_support",
+      "maxLevel": 10
+    },
+    {
+      "catalogId": "ryoka-c-07",
+      "memberId": "ryoka",
+      "rarity": "C",
+      "basePower": 660,
+      "powerPerLevel": 150,
+      "skillId": "score_up",
+      "maxLevel": 10
+    }
+  ],
+  "powerFormula": "basePower + (level-1)*powerPerLevel"
+}

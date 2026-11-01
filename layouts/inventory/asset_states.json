@@ -1,0 +1,43 @@
+{
+  "selection": {
+    "normal": "no glow",
+    "selected_136": "assets/inventory/ui/selection_glow_136.png",
+    "selected_238": "assets/inventory/ui/selection_glow_238.png",
+    "padding": 20
+  },
+  "usedInOtherSlot": {
+    "overlay_rgba": [
+      7,
+      12,
+      35,
+      115
+    ],
+    "disabled": true,
+    "tag": "assets/inventory/ui/tag_used.png"
+  },
+  "upgradeButton": {
+    "normal": {
+      "file": "home_approved/assets/home/button_collection.png",
+      "label": "Rコイン {cost}で強化"
+    },
+    "levelCap": {
+      "file": "home_approved/assets/home/button_collection.png",
+      "opacity": 0.45,
+      "label": "レベル上限",
+      "disabled": true
+    },
+    "insufficientCoins": {
+      "file": "home_approved/assets/home/button_collection.png",
+      "opacity": 0.45,
+      "label": "Rコイン不足",
+      "disabled": true,
+      "requiredCoinTextColor": "#ff9da5"
+    },
+    "busy": {
+      "file": "home_approved/assets/home/button_collection.png",
+      "opacity": 0.65,
+      "label": "強化中…",
+      "disabled": true
+    }
+  }
+}

@@ -1,0 +1,208 @@
+﻿screen,coordinate_space,id,kind,x,y,width,height,paint_order,file_or_card,text,binding
+main,screen,main_001,image,0,0,1844,853,0,assets/collection/background.png,,
+main,screen,main_002,image,92,26,1661,84,1,assets/nickname/nickname_header.png,,
+main,screen,main_003,image,142,48,24,40,2,assets/icons/nickname_back.png,,
+main,screen,main_004,text,237,47,234.0,34,3,,インベントリ,"label (static, localized)"
+main,screen,main_005,text,877.5,57,105.0,21,4,,カード管理,"label (static, localized)"
+main,screen,main_006,image,1464,46,39,39,5,home_approved/assets/icons/coin.png,,
+main,screen,main_007,text,1604.921875,50,85.078125,30,6,,"9,979",wallet.rCoin
+main,screen,main_008,nine_slice,95,135,885,640,7,assets/collection/ui/list_panel.png,,
+main,screen,main_009,image,112,184,851,426,8,assets/inventory/ui/deck_backplate.png,,
+main,screen,main_010,text,128,157,189.0,27,9,,編成中のデッキ,"label (static, localized)"
+main,screen,main_011,text,893.390625,158,50.609375,19,10,,3 / 3,filled deck slots / 3
+main,screen,main_012,card,140,217,238,333,11,motoki-r-01,,
+main,screen,main_013,text,207.0,562,104.0,26,12,,大森元貴,member name from catalog
+main,screen,main_014,text,204.65625,600,108.6875,17,13,,Lv. 12 / 50,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,screen,main_015,card,416,217,238,333,14,hiroto-s-01,,
+main,screen,main_016,text,483.0,562,104.0,26,15,,若井滉斗,member name from catalog
+main,screen,main_017,text,480.65625,600,108.6875,17,16,,Lv. 10 / 40,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,screen,main_018,card,692,217,238,333,17,ryoka-a-05,,
+main,screen,main_019,text,759.0,562,104.0,26,18,,藤澤涼架,member name from catalog
+main,screen,main_020,text,763.046875,600,95.90625,17,19,,Lv. 8 / 30,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,screen,main_021,separator,128,696,818,1,20,,,
+main,screen,main_022,text,128,651,132.0,22,21,,デッキ総合力,"label (static, localized)"
+main,screen,main_023,text,814.53125,640,128.46875,39,22,,"12,450",sum(power of deck instanceIds)
+main,screen,main_024,nine_slice,128,708,387,60,23,home_approved/assets/home/button_collection.png,,
+main,screen,main_025,text,242.0,721.5,135.0,27,24,,デッキ編成,"label (static, localized)"
+main,screen,main_026,image,480,726,14,23,25,assets/icons/nickname_confirm_arrow.png,,
+main,screen,main_027,nine_slice,545,708,400,60,26,home_approved/assets/home/button_collection.png,,
+main,screen,main_028,text,665.5,721.5,135.0,26,27,,カード強化,"label (static, localized)"
+main,screen,main_029,image,910,726,14,23,28,assets/icons/nickname_confirm_arrow.png,,
+main,screen,main_030,nine_slice,1012,135,736,640,29,assets/collection/ui/list_panel.png,,
+main,screen,main_031,text,1042,157,135.0,26,30,,所持カード,"label (static, localized)"
+main,screen,main_032,text,1654.71875,158,55.28125,25,31,,10枚,owned instance count
+main,screen,main_033,nine_slice,1042,202,143,45,32,home_approved/assets/home/button_collection.png,,
+main,screen,main_034,text,1083.15625,211.0,60.6875,19,33,,すべて,"label (static, localized)"
+main,screen,main_035,nine_slice,1201,202,229,45,34,home_approved/assets/home/status_menu.png,,
+main,screen,main_036,text,1284.0,211.0,63.0,21,35,,入手順,"label (static, localized)"
+main,screen,main_073,viewport,1037,266,675,506,36,,,
+main,viewport-local,main_037,card,4,5,136,190,0,motoki-r-01,,
+main,viewport-local,main_038,nine_slice,55,164,83,29,1,assets/inventory/ui/tag_normal.png,,
+main,viewport-local,main_039,text,71.1875,168,50.625,19,2,,編成 1,draftDeck membership and selectedSlot
+main,viewport-local,main_040,text,36.0,201,72.0,17,3,,大森元貴,member name from catalog
+main,viewport-local,main_041,text,42.7890625,226,58.421875,16,4,,Lv. 12,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_042,card,175,5,136,190,5,hiroto-s-01,,
+main,viewport-local,main_043,nine_slice,226,164,83,29,6,assets/inventory/ui/tag_normal.png,,
+main,viewport-local,main_044,text,242.1875,168,50.625,19,7,,編成 2,draftDeck membership and selectedSlot
+main,viewport-local,main_045,text,207.0,201,72.0,19,8,,若井滉斗,member name from catalog
+main,viewport-local,main_046,text,213.7890625,226,58.421875,16,9,,Lv. 10,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_047,card,346,5,136,190,10,ryoka-a-05,,
+main,viewport-local,main_048,nine_slice,397,164,83,29,11,assets/inventory/ui/tag_normal.png,,
+main,viewport-local,main_049,text,413.1875,168,50.625,19,12,,編成 3,draftDeck membership and selectedSlot
+main,viewport-local,main_050,text,378.0,201,72.0,19,13,,藤澤涼架,member name from catalog
+main,viewport-local,main_051,text,390.625,226,46.75,16,14,,Lv. 8,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_052,card,517,5,136,190,15,motoki-b-03,,
+main,viewport-local,main_053,text,549.0,201,72.0,17,16,,大森元貴,member name from catalog
+main,viewport-local,main_054,text,561.625,226,46.75,16,17,,Lv. 6,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_055,card,4,260,136,190,18,motoki-c-04,,
+main,viewport-local,main_056,text,36.0,456,72.0,17,19,,大森元貴,member name from catalog
+main,viewport-local,main_057,text,48.625,481,46.75,16,20,,Lv. 3,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_058,card,175,260,136,190,21,hiroto-r-01,,
+main,viewport-local,main_059,text,207.0,456,72.0,19,22,,若井滉斗,member name from catalog
+main,viewport-local,main_060,text,213.7890625,481,58.421875,16,23,,Lv. 11,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_061,card,346,260,136,190,24,ryoka-s-01,,
+main,viewport-local,main_062,text,378.0,456,72.0,19,25,,藤澤涼架,member name from catalog
+main,viewport-local,main_063,text,390.625,481,46.75,16,26,,Lv. 9,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_064,card,517,260,136,190,27,motoki-a-01,,
+main,viewport-local,main_065,text,549.0,456,72.0,17,28,,大森元貴,member name from catalog
+main,viewport-local,main_066,text,561.625,481,46.75,16,29,,Lv. 8,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_067,card,4,515,136,190,30,hiroto-b-01,,
+main,viewport-local,main_068,text,36.0,711,72.0,19,31,,若井滉斗,member name from catalog
+main,viewport-local,main_069,text,48.625,736,46.75,16,32,,Lv. 5,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,viewport-local,main_070,card,175,515,136,190,33,ryoka-c-07,,
+main,viewport-local,main_071,text,207.0,711,72.0,19,34,,藤澤涼架,member name from catalog
+main,viewport-local,main_072,text,219.625,736,46.75,16,35,,Lv. 4,instance level/power/cap or upgrade preview; see BINDINGS.md
+main,screen,main_074,scrollbar,1720,272,7,493,37,,,
+main,screen,main_075,text,119,804,258.203125,21,38,,カードを選んで、編成・強化,"label (static, localized)"
+main,screen,main_076,text,1570.0,805,153.0,17,39,,所持カードのみ表示,"label (static, localized)"
+deck,screen,deck_001,image,0,0,1844,853,0,assets/collection/background.png,,
+deck,screen,deck_002,image,92,26,1661,84,1,assets/nickname/nickname_header.png,,
+deck,screen,deck_003,image,142,48,24,40,2,assets/icons/nickname_back.png,,
+deck,screen,deck_004,text,237,47,195.0,38,3,,デッキ編成,"label (static, localized)"
+deck,screen,deck_005,text,840.0859375,57,179.828125,21,4,,3枚のカードを編成,"label (static, localized)"
+deck,screen,deck_006,image,1464,46,39,39,5,home_approved/assets/icons/coin.png,,
+deck,screen,deck_007,text,1604.921875,50,85.078125,30,6,,"9,979",wallet.rCoin
+deck,screen,deck_008,nine_slice,95,135,885,640,7,assets/collection/ui/list_panel.png,,
+deck,screen,deck_009,image,112,184,851,426,8,assets/inventory/ui/deck_backplate.png,,
+deck,screen,deck_010,text,128,157,216.0,27,9,,編成する枠を選択,"label (static, localized)"
+deck,screen,deck_011,nine_slice,185,197,84,29,10,assets/inventory/ui/tag_normal.png,,
+deck,screen,deck_012,text,210.6875,201,32.625,18,11,,枠 1,draftDeck membership and selectedSlot
+deck,screen,deck_013,card,140,239,238,333,12,motoki-r-01,,
+deck,screen,deck_014,text,207.0,584,104.0,26,13,,大森元貴,member name from catalog
+deck,screen,deck_015,text,204.65625,622,108.6875,17,14,,Lv. 12 / 50,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,screen,deck_016,nine_slice,461,197,148,29,15,assets/inventory/ui/tag_normal.png,,
+deck,screen,deck_017,text,487.59375,201,94.8125,19,16,,枠 2  選択中,draftDeck membership and selectedSlot
+deck,screen,deck_018,image,396,219,278,373,17,assets/inventory/ui/selection_glow_238.png,,
+deck,screen,deck_019,card,416,239,238,333,18,hiroto-s-01,,
+deck,screen,deck_020,text,483.0,584,104.0,26,19,,若井滉斗,member name from catalog
+deck,screen,deck_021,text,480.65625,622,108.6875,17,20,,Lv. 10 / 40,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,screen,deck_022,nine_slice,737,197,84,29,21,assets/inventory/ui/tag_normal.png,,
+deck,screen,deck_023,text,762.6875,201,32.625,18,22,,枠 3,draftDeck membership and selectedSlot
+deck,screen,deck_024,card,692,239,238,333,23,ryoka-a-05,,
+deck,screen,deck_025,text,759.0,584,104.0,26,24,,藤澤涼架,member name from catalog
+deck,screen,deck_026,text,763.046875,622,95.90625,17,25,,Lv. 8 / 30,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,screen,deck_027,separator,128,696,818,1,26,,,
+deck,screen,deck_028,text,128,662,132.0,22,27,,デッキ総合力,"label (static, localized)"
+deck,screen,deck_029,text,814.53125,651,128.46875,39,28,,"12,450",sum(power of deck instanceIds)
+deck,screen,deck_030,nine_slice,128,708,817,60,29,home_approved/assets/home/button_collection.png,,
+deck,screen,deck_031,text,457.0,721.5,135.0,26,30,,編成を確定,"label (static, localized)"
+deck,screen,deck_032,image,910,726,14,23,31,assets/icons/nickname_confirm_arrow.png,,
+deck,screen,deck_033,nine_slice,1012,135,736,259,32,assets/collection/ui/list_panel.png,,
+deck,screen,deck_034,text,1042,156,154.0,22,33,,選択中のカード,"label (static, localized)"
+deck,screen,deck_035,text,1042,193,132.0,33,34,,若井滉斗,member name from catalog
+deck,screen,deck_036,nine_slice,1552,190,157,29,35,assets/inventory/ui/tag_rank_s.png,,
+deck,screen,deck_037,text,1595.875,194,69.25,17,36,,S ランク,selected catalog rarity (R/S/A/B/C)
+deck,screen,deck_038,text,1042,247,132.34375,21,37,,Lv. 10 / 40,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,screen,deck_039,text,1560.296875,249,149.703125,27,38,,"能力値  4,150",instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,screen,deck_040,separator,1042,292,669,1,39,,,
+deck,screen,deck_041,text,1042,312,60.0,17,40,,スキル,"label (static, localized)"
+deck,screen,deck_042,text,1178,308,146.0,25,41,,スピードUP,catalog-specific skill definition / localized effect
+deck,screen,deck_043,text,1042,349,215.890625,22,42,,回答速度ボーナス +6%,"label (static, localized)"
+deck,screen,deck_044,nine_slice,1012,411,736,364,43,assets/collection/ui/list_panel.png,,
+deck,screen,deck_045,text,1042,431,274.25,25,44,,入れ替えるカードを選択,"label (static, localized)"
+deck,screen,deck_046,text,1619.21875,433,90.78125,22,45,,所持10枚,owned instance count
+deck,screen,deck_086,viewport,1037,477,675,281,46,,,
+deck,viewport-local,deck_047,card,4,5,136,190,0,motoki-r-01,,
+deck,viewport-local,deck_048,overlay,4,5,136,190,1,,,
+deck,viewport-local,deck_049,nine_slice,3,164,138,29,2,assets/inventory/ui/tag_used.png,,
+deck,viewport-local,deck_050,text,0.0,168,144.0,19,3,,ほかの枠で編成中,draftDeck membership and selectedSlot
+deck,viewport-local,deck_051,text,36.0,201,72.0,17,4,,大森元貴,member name from catalog
+deck,viewport-local,deck_052,text,42.7890625,226,58.421875,16,5,,Lv. 12,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_053,image,155,-15,176,230,6,assets/inventory/ui/selection_glow_136.png,,
+deck,viewport-local,deck_054,card,175,5,136,190,7,hiroto-s-01,,
+deck,viewport-local,deck_055,nine_slice,226,164,83,29,8,assets/inventory/ui/tag_normal.png,,
+deck,viewport-local,deck_056,text,242.1875,168,50.625,19,9,,編成 2,draftDeck membership and selectedSlot
+deck,viewport-local,deck_057,text,207.0,201,72.0,19,10,,若井滉斗,member name from catalog
+deck,viewport-local,deck_058,text,213.7890625,226,58.421875,16,11,,Lv. 10,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_059,card,346,5,136,190,12,ryoka-a-05,,
+deck,viewport-local,deck_060,overlay,346,5,136,190,13,,,
+deck,viewport-local,deck_061,nine_slice,345,164,138,29,14,assets/inventory/ui/tag_used.png,,
+deck,viewport-local,deck_062,text,342.0,168,144.0,19,15,,ほかの枠で編成中,draftDeck membership and selectedSlot
+deck,viewport-local,deck_063,text,378.0,201,72.0,19,16,,藤澤涼架,member name from catalog
+deck,viewport-local,deck_064,text,390.625,226,46.75,16,17,,Lv. 8,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_065,card,517,5,136,190,18,motoki-b-03,,
+deck,viewport-local,deck_066,text,549.0,201,72.0,17,19,,大森元貴,member name from catalog
+deck,viewport-local,deck_067,text,561.625,226,46.75,16,20,,Lv. 6,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_068,card,4,276,136,190,21,motoki-c-04,,
+deck,viewport-local,deck_069,text,36.0,472,72.0,17,22,,大森元貴,member name from catalog
+deck,viewport-local,deck_070,text,48.625,497,46.75,16,23,,Lv. 3,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_071,card,175,276,136,190,24,hiroto-r-01,,
+deck,viewport-local,deck_072,text,207.0,472,72.0,19,25,,若井滉斗,member name from catalog
+deck,viewport-local,deck_073,text,213.7890625,497,58.421875,16,26,,Lv. 11,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_074,card,346,276,136,190,27,ryoka-s-01,,
+deck,viewport-local,deck_075,text,378.0,472,72.0,19,28,,藤澤涼架,member name from catalog
+deck,viewport-local,deck_076,text,390.625,497,46.75,16,29,,Lv. 9,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_077,card,517,276,136,190,30,motoki-a-01,,
+deck,viewport-local,deck_078,text,549.0,472,72.0,17,31,,大森元貴,member name from catalog
+deck,viewport-local,deck_079,text,561.625,497,46.75,16,32,,Lv. 8,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_080,card,4,547,136,190,33,hiroto-b-01,,
+deck,viewport-local,deck_081,text,36.0,743,72.0,19,34,,若井滉斗,member name from catalog
+deck,viewport-local,deck_082,text,48.625,768,46.75,16,35,,Lv. 5,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,viewport-local,deck_083,card,175,547,136,190,36,ryoka-c-07,,
+deck,viewport-local,deck_084,text,207.0,743,72.0,19,37,,藤澤涼架,member name from catalog
+deck,viewport-local,deck_085,text,219.625,768,46.75,16,38,,Lv. 4,instance level/power/cap or upgrade preview; see BINDINGS.md
+deck,screen,deck_087,scrollbar,1720,483,7,268,47,,,
+deck,screen,deck_088,text,119,805,518.8125,21,48,,枠を選択して入れ替え。同じ個体の重複編成はできません,"label (static, localized)"
+upgrade,screen,upgrade_001,image,0,0,1844,853,0,assets/collection/background.png,,
+upgrade,screen,upgrade_002,image,92,26,1661,84,1,assets/nickname/nickname_header.png,,
+upgrade,screen,upgrade_003,image,142,48,24,40,2,assets/icons/nickname_back.png,,
+upgrade,screen,upgrade_004,text,237,47,195.0,38,3,,カード強化,"label (static, localized)"
+upgrade,screen,upgrade_005,text,818.21875,57,223.5625,21,4,,Rコインでカードを強化,"label (static, localized)"
+upgrade,screen,upgrade_006,image,1464,46,39,39,5,home_approved/assets/icons/coin.png,,
+upgrade,screen,upgrade_007,text,1604.921875,50,85.078125,30,6,,"9,979",wallet.rCoin
+upgrade,screen,upgrade_008,nine_slice,95,135,650,640,7,assets/collection/ui/list_panel.png,,
+upgrade,screen,upgrade_009,image,112,151,616,599,8,assets/inventory/ui/deck_backplate.png,,
+upgrade,screen,upgrade_010,card,208,157,420,588,9,motoki-r-01,,
+upgrade,screen,upgrade_011,nine_slice,777,135,971,640,10,assets/collection/ui/list_panel.png,,
+upgrade,screen,upgrade_012,text,814,158,144.0,35,11,,大森元貴,member name from catalog
+upgrade,screen,upgrade_013,nine_slice,1555,160,156,29,12,assets/inventory/ui/tag_rank_r.png,,
+upgrade,screen,upgrade_014,text,1597.875,164,70.25,17,13,,R ランク,selected catalog rarity (R/S/A/B/C)
+upgrade,screen,upgrade_015,text,1092.0,222,42.0,22,14,,現在,"label (static, localized)"
+upgrade,screen,upgrade_016,text,1548.5,222,63.0,21,15,,強化後,"label (static, localized)"
+upgrade,screen,upgrade_017,separator,814,258,897,1,16,,,
+upgrade,screen,upgrade_018,text,814,279,75.0,20,17,,レベル,"label (static, localized)"
+upgrade,screen,upgrade_019,text,1088.53125,271,48.9375,32,18,,12,instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_020,text,1324.5,274,35.0,22,19,,→,"label (static, localized)"
+upgrade,screen,upgrade_021,text,1555.53125,271,48.9375,33,20,,13,instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_022,text,1621.015625,323,87.984375,19,21,,最大 Lv.50,instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_023,text,814,362,75.0,25,22,,能力値,instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_024,text,1060.4453125,352,105.109375,39,23,,"5,200",instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_025,text,1324.5,357,35.0,22,24,,→,"label (static, localized)"
+upgrade,screen,upgrade_026,text,1527.4453125,352,105.109375,39,25,,"5,350",instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_027,separator,814,416,897,1,26,,,
+upgrade,screen,upgrade_028,text,814,439,63.0,19,27,,スキル,"label (static, localized)"
+upgrade,screen,upgrade_029,text,959,432,127.8125,24,28,,スコアUP,catalog-specific skill definition / localized effect
+upgrade,screen,upgrade_030,text,1528.0,438,182.0,25,29,,獲得スコア +8%,catalog-specific skill definition / localized effect
+upgrade,screen,upgrade_031,nine_slice,814,497,896,100,30,assets/collection/ui/list_panel.png,,
+upgrade,screen,upgrade_032,text,841,514,118.5625,20,31,,必要Rコイン,"label (static, localized)"
+upgrade,screen,upgrade_033,image,841,548,30,30,32,home_approved/assets/icons/coin.png,,
+upgrade,screen,upgrade_034,text,887,543,53.390625,23,33,,500,instance level/power/cap or upgrade preview; see BINDINGS.md
+upgrade,screen,upgrade_035,text,1261,514,118.5625,21,34,,所持Rコイン,"label (static, localized)"
+upgrade,screen,upgrade_036,image,1261,548,30,30,35,home_approved/assets/icons/coin.png,,
+upgrade,screen,upgrade_037,text,1307,543,80.078125,29,36,,"9,979",wallet.rCoin
+upgrade,screen,upgrade_038,text,814,621,189.0,21,37,,強化後の所持コイン,"label (static, localized)"
+upgrade,screen,upgrade_039,text,1638.96875,615,70.03125,26,38,,"9,479",wallet.rCoin - upgradeCost
+upgrade,screen,upgrade_040,nine_slice,814,669,896,84,39,home_approved/assets/home/button_collection.png,,
+upgrade,screen,upgrade_041,text,1117.3359375,692.5,265.328125,31,40,,Rコイン 500で強化,localized upgrade button with actual cost
+upgrade,screen,upgrade_042,image,1675,699,14,23,41,assets/icons/nickname_confirm_arrow.png,,
+upgrade,screen,upgrade_043,text,119,805,418.0,21,42,,カード・レアリティはそのまま、レベルを強化,"label (static, localized)"

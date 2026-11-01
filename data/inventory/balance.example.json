@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "provisionalBalance": true,
+  "maxLevelByRarity": {
+    "R": 50,
+    "S": 40,
+    "A": 30,
+    "B": 20,
+    "C": 10
+  },
+  "skills": {
+    "score_up": {
+      "name": "スコアUP",
+      "effectType": "score_bonus",
+      "value": 0.08,
+      "description": "獲得スコア +8%"
+    },
+    "speed_up": {
+      "name": "スピードUP",
+      "effectType": "answer_speed_bonus",
+      "value": 0.06,
+      "description": "回答速度ボーナス +6%"
+    },
+    "combo_support": {
+      "name": "コンボサポート",
+      "effectType": "combo_break_guard",
+      "value": 1,
+      "description": "コンボ切れを1回防止"
+    }
+  },
+  "upgradeCostByRarity": {
+    "R": {
+      "base": 60,
+      "perCurrentLevelAbove1": 40
+    },
+    "S": {
+      "base": 50,
+      "perCurrentLevelAbove1": 30
+    },
+    "A": {
+      "base": 40,
+      "perCurrentLevelAbove1": 20
+    },
+    "B": {
+      "base": 30,
+      "perCurrentLevelAbove1": 10
+    },
+    "C": {
+      "base": 20,
+      "perCurrentLevelAbove1": 5
+    }
+  },
+  "costFormula": "base + (currentLevel-1)*perCurrentLevelAbove1",
+  "note": "Example tuning only. User confirmed caps; all other example effects/growth/costs remain adjustable."
+}

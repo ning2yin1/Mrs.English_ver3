@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "enabledByDefault": false,
+  "developmentOnly": true,
+  "grantId": "inventory-dev-seed-v1",
+  "instances": [
+    {
+      "instanceId": "inventory-dev-v1-dev-01",
+      "qaAlias": "dev-01",
+      "catalogId": "motoki-r-01",
+      "level": 12,
+      "firstAcquiredAt": "2026-11-01T00:00:00+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-02",
+      "qaAlias": "dev-02",
+      "catalogId": "hiroto-r-01",
+      "level": 11,
+      "firstAcquiredAt": "2026-11-01T00:00:05+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-03",
+      "qaAlias": "dev-03",
+      "catalogId": "hiroto-s-01",
+      "level": 10,
+      "firstAcquiredAt": "2026-11-01T00:00:01+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-04",
+      "qaAlias": "dev-04",
+      "catalogId": "ryoka-s-01",
+      "level": 9,
+      "firstAcquiredAt": "2026-11-01T00:00:06+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-05",
+      "qaAlias": "dev-05",
+      "catalogId": "motoki-a-01",
+      "level": 8,
+      "firstAcquiredAt": "2026-11-01T00:00:07+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-06",
+      "qaAlias": "dev-06",
+      "catalogId": "ryoka-a-05",
+      "level": 8,
+      "firstAcquiredAt": "2026-11-01T00:00:02+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-07",
+      "qaAlias": "dev-07",
+      "catalogId": "motoki-b-03",
+      "level": 6,
+      "firstAcquiredAt": "2026-11-01T00:00:03+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-08",
+      "qaAlias": "dev-08",
+      "catalogId": "hiroto-b-01",
+      "level": 5,
+      "firstAcquiredAt": "2026-11-01T00:00:08+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-09",
+      "qaAlias": "dev-09",
+      "catalogId": "motoki-c-04",
+      "level": 3,
+      "firstAcquiredAt": "2026-11-01T00:00:04+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    },
+    {
+      "instanceId": "inventory-dev-v1-dev-10",
+      "qaAlias": "dev-10",
+      "catalogId": "ryoka-c-07",
+      "level": 4,
+      "firstAcquiredAt": "2026-11-01T00:00:09+09:00",
+      "origin": "development-fixture",
+      "grantId": "inventory-dev-seed-v1"
+    }
+  ],
+  "deck": [
+    "inventory-dev-v1-dev-01",
+    "inventory-dev-v1-dev-03",
+    "inventory-dev-v1-dev-06"
+  ],
+  "qaWalletR": 9979,
+  "walletPolicy": "QA snapshot only; never reset real coin balance to this value",
+  "formalShopPack": false
+}

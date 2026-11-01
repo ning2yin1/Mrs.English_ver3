@@ -1,0 +1,2461 @@
+{
+  "screen": "inventory_deck",
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "deck_001",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 0,
+      "z": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "deck_002",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "paint_order": 1,
+      "z": 1,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "deck_003",
+      "kind": "image",
+      "x": 142,
+      "y": 48,
+      "width": 24,
+      "height": 40,
+      "paint_order": 2,
+      "z": 2,
+      "file": "assets/icons/nickname_back.png"
+    },
+    {
+      "id": "deck_004",
+      "kind": "text",
+      "x": 237,
+      "y": 47,
+      "width": 195.0,
+      "height": 38,
+      "paint_order": 3,
+      "z": 3,
+      "text": "デッキ編成",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 237,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -34,
+        195,
+        4
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_005",
+      "kind": "text",
+      "x": 840.0859375,
+      "y": 57,
+      "width": 179.828125,
+      "height": 21,
+      "paint_order": 4,
+      "z": 4,
+      "text": "3枚のカードを編成",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 21,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 930,
+      "align": "center",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        180,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_006",
+      "kind": "image",
+      "x": 1464,
+      "y": 46,
+      "width": 39,
+      "height": 39,
+      "paint_order": 5,
+      "z": 5,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "deck_007",
+      "kind": "text",
+      "x": 1604.921875,
+      "y": 50,
+      "width": 85.078125,
+      "height": 30,
+      "paint_order": 6,
+      "z": 6,
+      "text": "9,979",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 34,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1690,
+      "align": "right",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -24,
+        85,
+        6
+      ],
+      "binding": "wallet.rCoin"
+    },
+    {
+      "id": "deck_008",
+      "kind": "nine_slice",
+      "x": 95,
+      "y": 135,
+      "width": 885,
+      "height": 640,
+      "paint_order": 7,
+      "z": 7,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "deck_009",
+      "kind": "image",
+      "x": 112,
+      "y": 184,
+      "width": 851,
+      "height": 426,
+      "paint_order": 8,
+      "z": 8,
+      "file": "assets/inventory/ui/deck_backplate.png",
+      "replace_alpha": 160
+    },
+    {
+      "id": "deck_010",
+      "kind": "text",
+      "x": 128,
+      "y": 157,
+      "width": 216.0,
+      "height": 27,
+      "paint_order": 9,
+      "z": 9,
+      "text": "編成する枠を選択",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 27,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 128,
+      "align": "left",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -24,
+        216,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_011",
+      "kind": "nine_slice",
+      "x": 185,
+      "y": 197,
+      "width": 84,
+      "height": 29,
+      "paint_order": 10,
+      "z": 10,
+      "file": "assets/inventory/ui/tag_normal.png",
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "state_label": "枠 1"
+    },
+    {
+      "id": "deck_012",
+      "kind": "text",
+      "x": 210.6875,
+      "y": 201,
+      "width": 32.625,
+      "height": 18,
+      "paint_order": 11,
+      "z": 11,
+      "text": "枠 1",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 18,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 227.0,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -16,
+        33,
+        2
+      ],
+      "binding": "draftDeck membership and selectedSlot"
+    },
+    {
+      "id": "deck_013",
+      "kind": "card",
+      "x": 140,
+      "y": 239,
+      "width": 238,
+      "height": 333,
+      "paint_order": 12,
+      "z": 12,
+      "catalog_id": "motoki-r-01",
+      "instance_id": "inventory-dev-v1-dev-01",
+      "shadow": {
+        "offset": [
+          -9,
+          -4
+        ],
+        "padding": 12,
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "runtime_instance_binding": "actual owned instanceId",
+      "qa_instance_alias": "dev-01"
+    },
+    {
+      "id": "deck_014",
+      "kind": "text",
+      "x": 207.0,
+      "y": 584,
+      "width": 104.0,
+      "height": 26,
+      "paint_order": 13,
+      "z": 13,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 26,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 259,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        104,
+        3
+      ],
+      "binding": "member name from catalog"
+    },
+    {
+      "id": "deck_015",
+      "kind": "text",
+      "x": 204.65625,
+      "y": 622,
+      "width": 108.6875,
+      "height": 17,
+      "paint_order": 14,
+      "z": 14,
+      "text": "Lv. 12 / 50",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 23,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 259,
+      "align": "center",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        109,
+        0
+      ],
+      "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md"
+    },
+    {
+      "id": "deck_016",
+      "kind": "nine_slice",
+      "x": 461,
+      "y": 197,
+      "width": 148,
+      "height": 29,
+      "paint_order": 15,
+      "z": 15,
+      "file": "assets/inventory/ui/tag_normal.png",
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "state_label": "枠 2  選択中"
+    },
+    {
+      "id": "deck_017",
+      "kind": "text",
+      "x": 487.59375,
+      "y": 201,
+      "width": 94.8125,
+      "height": 19,
+      "paint_order": 16,
+      "z": 16,
+      "text": "枠 2  選択中",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 18,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 535.0,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -16,
+        95,
+        3
+      ],
+      "binding": "draftDeck membership and selectedSlot"
+    },
+    {
+      "id": "deck_018",
+      "kind": "image",
+      "x": 396,
+      "y": 219,
+      "width": 278,
+      "height": 373,
+      "paint_order": 17,
+      "z": 17,
+      "file": "assets/inventory/ui/selection_glow_238.png",
+      "state": "selected"
+    },
+    {
+      "id": "deck_019",
+      "kind": "card",
+      "x": 416,
+      "y": 239,
+      "width": 238,
+      "height": 333,
+      "paint_order": 18,
+      "z": 18,
+      "catalog_id": "hiroto-s-01",
+      "instance_id": "inventory-dev-v1-dev-03",
+      "shadow": {
+        "offset": [
+          -9,
+          -4
+        ],
+        "padding": 12,
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "runtime_instance_binding": "actual owned instanceId",
+      "qa_instance_alias": "dev-03"
+    },
+    {
+      "id": "deck_020",
+      "kind": "text",
+      "x": 483.0,
+      "y": 584,
+      "width": 104.0,
+      "height": 26,
+      "paint_order": 19,
+      "z": 19,
+      "text": "若井滉斗",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 26,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 535,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        104,
+        3
+      ],
+      "binding": "member name from catalog"
+    },
+    {
+      "id": "deck_021",
+      "kind": "text",
+      "x": 480.65625,
+      "y": 622,
+      "width": 108.6875,
+      "height": 17,
+      "paint_order": 20,
+      "z": 20,
+      "text": "Lv. 10 / 40",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 23,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 535,
+      "align": "center",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        109,
+        0
+      ],
+      "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md"
+    },
+    {
+      "id": "deck_022",
+      "kind": "nine_slice",
+      "x": 737,
+      "y": 197,
+      "width": 84,
+      "height": 29,
+      "paint_order": 21,
+      "z": 21,
+      "file": "assets/inventory/ui/tag_normal.png",
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "state_label": "枠 3"
+    },
+    {
+      "id": "deck_023",
+      "kind": "text",
+      "x": 762.6875,
+      "y": 201,
+      "width": 32.625,
+      "height": 18,
+      "paint_order": 22,
+      "z": 22,
+      "text": "枠 3",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 18,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 779.0,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -16,
+        33,
+        2
+      ],
+      "binding": "draftDeck membership and selectedSlot"
+    },
+    {
+      "id": "deck_024",
+      "kind": "card",
+      "x": 692,
+      "y": 239,
+      "width": 238,
+      "height": 333,
+      "paint_order": 23,
+      "z": 23,
+      "catalog_id": "ryoka-a-05",
+      "instance_id": "inventory-dev-v1-dev-06",
+      "shadow": {
+        "offset": [
+          -9,
+          -4
+        ],
+        "padding": 12,
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "runtime_instance_binding": "actual owned instanceId",
+      "qa_instance_alias": "dev-06"
+    },
+    {
+      "id": "deck_025",
+      "kind": "text",
+      "x": 759.0,
+      "y": 584,
+      "width": 104.0,
+      "height": 26,
+      "paint_order": 24,
+      "z": 24,
+      "text": "藤澤涼架",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 26,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 811,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        104,
+        3
+      ],
+      "binding": "member name from catalog"
+    },
+    {
+      "id": "deck_026",
+      "kind": "text",
+      "x": 763.046875,
+      "y": 622,
+      "width": 95.90625,
+      "height": 17,
+      "paint_order": 25,
+      "z": 25,
+      "text": "Lv. 8 / 30",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 23,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 811,
+      "align": "center",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        96,
+        0
+      ],
+      "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md"
+    },
+    {
+      "id": "deck_027",
+      "kind": "separator",
+      "x": 128,
+      "y": 696,
+      "width": 818,
+      "height": 1,
+      "paint_order": 26,
+      "z": 26,
+      "fill": [
+        143,
+        169,
+        246,
+        85
+      ],
+      "browser_rgb": "#8fa9f6"
+    },
+    {
+      "id": "deck_028",
+      "kind": "text",
+      "x": 128,
+      "y": 662,
+      "width": 132.0,
+      "height": 22,
+      "paint_order": 27,
+      "z": 27,
+      "text": "デッキ総合力",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 22,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 128,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        132,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_029",
+      "kind": "text",
+      "x": 814.53125,
+      "y": 651,
+      "width": 128.46875,
+      "height": 39,
+      "paint_order": 28,
+      "z": 28,
+      "text": "12,450",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 42,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 943,
+      "align": "right",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -31,
+        128,
+        8
+      ],
+      "binding": "sum(power of deck instanceIds)"
+    },
+    {
+      "id": "deck_030",
+      "kind": "nine_slice",
+      "x": 128,
+      "y": 708,
+      "width": 817,
+      "height": 60,
+      "paint_order": 29,
+      "z": 29,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "button_label": "編成を確定"
+    },
+    {
+      "id": "deck_031",
+      "kind": "text",
+      "x": 457.0,
+      "y": 721.5,
+      "width": 135.0,
+      "height": 26,
+      "paint_order": 30,
+      "z": 30,
+      "text": "編成を確定",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 27,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 524.5,
+      "align": "center",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        135,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_032",
+      "kind": "image",
+      "x": 910,
+      "y": 726,
+      "width": 14,
+      "height": 23,
+      "paint_order": 31,
+      "z": 31,
+      "file": "assets/icons/nickname_confirm_arrow.png"
+    },
+    {
+      "id": "deck_033",
+      "kind": "nine_slice",
+      "x": 1012,
+      "y": 135,
+      "width": 736,
+      "height": 259,
+      "paint_order": 32,
+      "z": 32,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": true
+    },
+    {
+      "id": "deck_034",
+      "kind": "text",
+      "x": 1042,
+      "y": 156,
+      "width": 154.0,
+      "height": 22,
+      "paint_order": 33,
+      "z": 33,
+      "text": "選択中のカード",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 22,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1042,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        154,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_035",
+      "kind": "text",
+      "x": 1042,
+      "y": 193,
+      "width": 132.0,
+      "height": 33,
+      "paint_order": 34,
+      "z": 34,
+      "text": "若井滉斗",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 33,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1042,
+      "align": "left",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -29,
+        132,
+        4
+      ],
+      "binding": "member name from catalog"
+    },
+    {
+      "id": "deck_036",
+      "kind": "nine_slice",
+      "x": 1552,
+      "y": 190,
+      "width": 157,
+      "height": 29,
+      "paint_order": 35,
+      "z": 35,
+      "file": "assets/inventory/ui/tag_rank_s.png",
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "state_label": "S ランク"
+    },
+    {
+      "id": "deck_037",
+      "kind": "text",
+      "x": 1595.875,
+      "y": 194,
+      "width": 69.25,
+      "height": 17,
+      "paint_order": 36,
+      "z": 36,
+      "text": "S ランク",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 18,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 1630.5,
+      "align": "center",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -15,
+        69,
+        2
+      ],
+      "binding": "selected catalog rarity (R/S/A/B/C)"
+    },
+    {
+      "id": "deck_038",
+      "kind": "text",
+      "x": 1042,
+      "y": 247,
+      "width": 132.34375,
+      "height": 21,
+      "paint_order": 37,
+      "z": 37,
+      "text": "Lv. 10 / 40",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 28,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 1042,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        132,
+        0
+      ],
+      "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md"
+    },
+    {
+      "id": "deck_039",
+      "kind": "text",
+      "x": 1560.296875,
+      "y": 249,
+      "width": 149.703125,
+      "height": 27,
+      "paint_order": 38,
+      "z": 38,
+      "text": "能力値  4,150",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 25,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1710,
+      "align": "right",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        150,
+        5
+      ],
+      "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md"
+    },
+    {
+      "id": "deck_040",
+      "kind": "separator",
+      "x": 1042,
+      "y": 292,
+      "width": 669,
+      "height": 1,
+      "paint_order": 39,
+      "z": 39,
+      "fill": [
+        143,
+        169,
+        246,
+        85
+      ],
+      "browser_rgb": "#8fa9f6"
+    },
+    {
+      "id": "deck_041",
+      "kind": "text",
+      "x": 1042,
+      "y": 312,
+      "width": 60.0,
+      "height": 17,
+      "paint_order": 40,
+      "z": 40,
+      "text": "スキル",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1042,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -16,
+        60,
+        1
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_042",
+      "kind": "text",
+      "x": 1178,
+      "y": 308,
+      "width": 146.0,
+      "height": 25,
+      "paint_order": 41,
+      "z": 41,
+      "text": "スピードUP",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 27,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1178,
+      "align": "left",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        146,
+        2
+      ],
+      "binding": "catalog-specific skill definition / localized effect"
+    },
+    {
+      "id": "deck_043",
+      "kind": "text",
+      "x": 1042,
+      "y": 349,
+      "width": 215.890625,
+      "height": 22,
+      "paint_order": 42,
+      "z": 42,
+      "text": "回答速度ボーナス +6%",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 21,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 1042,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        216,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_044",
+      "kind": "nine_slice",
+      "x": 1012,
+      "y": 411,
+      "width": 736,
+      "height": 364,
+      "paint_order": 43,
+      "z": 43,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "deck_045",
+      "kind": "text",
+      "x": 1042,
+      "y": 431,
+      "width": 274.25,
+      "height": 25,
+      "paint_order": 44,
+      "z": 44,
+      "text": "入れ替えるカードを選択",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 25,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1042,
+      "align": "left",
+      "bold": true,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        274,
+        3
+      ],
+      "binding": "label (static, localized)"
+    },
+    {
+      "id": "deck_046",
+      "kind": "text",
+      "x": 1619.21875,
+      "y": 433,
+      "width": 90.78125,
+      "height": 22,
+      "paint_order": 45,
+      "z": 45,
+      "text": "所持10枚",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 22,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1710,
+      "align": "right",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        91,
+        3
+      ],
+      "binding": "owned instance count"
+    },
+    {
+      "id": "deck_086",
+      "kind": "viewport",
+      "x": 1037,
+      "y": 477,
+      "width": 675,
+      "height": 281,
+      "paint_order": 46,
+      "z": 46,
+      "clip": true,
+      "scroll_axis": "vertical",
+      "children": [
+        {
+          "id": "deck_047",
+          "kind": "card",
+          "x": 4,
+          "y": 5,
+          "width": 136,
+          "height": 190,
+          "paint_order": 0,
+          "z": 0,
+          "catalog_id": "motoki-r-01",
+          "instance_id": "inventory-dev-v1-dev-01",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-01"
+        },
+        {
+          "id": "deck_048",
+          "kind": "overlay",
+          "x": 4,
+          "y": 5,
+          "width": 136,
+          "height": 190,
+          "paint_order": 1,
+          "z": 1,
+          "fill": [
+            7,
+            12,
+            35,
+            115
+          ],
+          "state": "used-in-other-slot",
+          "instance_context": "inventory-dev-v1-dev-01"
+        },
+        {
+          "id": "deck_049",
+          "kind": "nine_slice",
+          "x": 3,
+          "y": 164,
+          "width": 138,
+          "height": 29,
+          "paint_order": 2,
+          "z": 2,
+          "file": "assets/inventory/ui/tag_used.png",
+          "insets": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "state_label": "ほかの枠で編成中",
+          "instance_context": "inventory-dev-v1-dev-01"
+        },
+        {
+          "id": "deck_050",
+          "kind": "text",
+          "x": 0.0,
+          "y": 168,
+          "width": 144.0,
+          "height": 19,
+          "paint_order": 3,
+          "z": 3,
+          "text": "ほかの枠で編成中",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -17,
+            144,
+            2
+          ],
+          "binding": "draftDeck membership and selectedSlot",
+          "instance_context": "inventory-dev-v1-dev-01"
+        },
+        {
+          "id": "deck_051",
+          "kind": "text",
+          "x": 36.0,
+          "y": 201,
+          "width": 72.0,
+          "height": 17,
+          "paint_order": 4,
+          "z": 4,
+          "text": "大森元貴",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -15,
+            72,
+            2
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-01"
+        },
+        {
+          "id": "deck_052",
+          "kind": "text",
+          "x": 42.7890625,
+          "y": 226,
+          "width": 58.421875,
+          "height": 16,
+          "paint_order": 5,
+          "z": 5,
+          "text": "Lv. 12",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            58,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-01"
+        },
+        {
+          "id": "deck_053",
+          "kind": "image",
+          "x": 155,
+          "y": -15,
+          "width": 176,
+          "height": 230,
+          "paint_order": 6,
+          "z": 6,
+          "file": "assets/inventory/ui/selection_glow_136.png",
+          "state": "selected",
+          "instance_context": "inventory-dev-v1-dev-01"
+        },
+        {
+          "id": "deck_054",
+          "kind": "card",
+          "x": 175,
+          "y": 5,
+          "width": 136,
+          "height": 190,
+          "paint_order": 7,
+          "z": 7,
+          "catalog_id": "hiroto-s-01",
+          "instance_id": "inventory-dev-v1-dev-03",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-03"
+        },
+        {
+          "id": "deck_055",
+          "kind": "nine_slice",
+          "x": 226,
+          "y": 164,
+          "width": 83,
+          "height": 29,
+          "paint_order": 8,
+          "z": 8,
+          "file": "assets/inventory/ui/tag_normal.png",
+          "insets": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "state_label": "編成 2",
+          "instance_context": "inventory-dev-v1-dev-03"
+        },
+        {
+          "id": "deck_056",
+          "kind": "text",
+          "x": 242.1875,
+          "y": 168,
+          "width": 50.625,
+          "height": 19,
+          "paint_order": 9,
+          "z": 9,
+          "text": "編成 2",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 267.5,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -17,
+            51,
+            2
+          ],
+          "binding": "draftDeck membership and selectedSlot",
+          "instance_context": "inventory-dev-v1-dev-03"
+        },
+        {
+          "id": "deck_057",
+          "kind": "text",
+          "x": 207.0,
+          "y": 201,
+          "width": 72.0,
+          "height": 19,
+          "paint_order": 10,
+          "z": 10,
+          "text": "若井滉斗",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 243.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            72,
+            3
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-03"
+        },
+        {
+          "id": "deck_058",
+          "kind": "text",
+          "x": 213.7890625,
+          "y": 226,
+          "width": 58.421875,
+          "height": 16,
+          "paint_order": 11,
+          "z": 11,
+          "text": "Lv. 10",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 243.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            58,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-03"
+        },
+        {
+          "id": "deck_059",
+          "kind": "card",
+          "x": 346,
+          "y": 5,
+          "width": 136,
+          "height": 190,
+          "paint_order": 12,
+          "z": 12,
+          "catalog_id": "ryoka-a-05",
+          "instance_id": "inventory-dev-v1-dev-06",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-06"
+        },
+        {
+          "id": "deck_060",
+          "kind": "overlay",
+          "x": 346,
+          "y": 5,
+          "width": 136,
+          "height": 190,
+          "paint_order": 13,
+          "z": 13,
+          "fill": [
+            7,
+            12,
+            35,
+            115
+          ],
+          "state": "used-in-other-slot",
+          "instance_context": "inventory-dev-v1-dev-06"
+        },
+        {
+          "id": "deck_061",
+          "kind": "nine_slice",
+          "x": 345,
+          "y": 164,
+          "width": 138,
+          "height": 29,
+          "paint_order": 14,
+          "z": 14,
+          "file": "assets/inventory/ui/tag_used.png",
+          "insets": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "state_label": "ほかの枠で編成中",
+          "instance_context": "inventory-dev-v1-dev-06"
+        },
+        {
+          "id": "deck_062",
+          "kind": "text",
+          "x": 342.0,
+          "y": 168,
+          "width": 144.0,
+          "height": 19,
+          "paint_order": 15,
+          "z": 15,
+          "text": "ほかの枠で編成中",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 414.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -17,
+            144,
+            2
+          ],
+          "binding": "draftDeck membership and selectedSlot",
+          "instance_context": "inventory-dev-v1-dev-06"
+        },
+        {
+          "id": "deck_063",
+          "kind": "text",
+          "x": 378.0,
+          "y": 201,
+          "width": 72.0,
+          "height": 19,
+          "paint_order": 16,
+          "z": 16,
+          "text": "藤澤涼架",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 414.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            72,
+            3
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-06"
+        },
+        {
+          "id": "deck_064",
+          "kind": "text",
+          "x": 390.625,
+          "y": 226,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 17,
+          "z": 17,
+          "text": "Lv. 8",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 414.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-06"
+        },
+        {
+          "id": "deck_065",
+          "kind": "card",
+          "x": 517,
+          "y": 5,
+          "width": 136,
+          "height": 190,
+          "paint_order": 18,
+          "z": 18,
+          "catalog_id": "motoki-b-03",
+          "instance_id": "inventory-dev-v1-dev-07",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-07"
+        },
+        {
+          "id": "deck_066",
+          "kind": "text",
+          "x": 549.0,
+          "y": 201,
+          "width": 72.0,
+          "height": 17,
+          "paint_order": 19,
+          "z": 19,
+          "text": "大森元貴",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 585.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -15,
+            72,
+            2
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-07"
+        },
+        {
+          "id": "deck_067",
+          "kind": "text",
+          "x": 561.625,
+          "y": 226,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 20,
+          "z": 20,
+          "text": "Lv. 6",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 585.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-07"
+        },
+        {
+          "id": "deck_068",
+          "kind": "card",
+          "x": 4,
+          "y": 276,
+          "width": 136,
+          "height": 190,
+          "paint_order": 21,
+          "z": 21,
+          "catalog_id": "motoki-c-04",
+          "instance_id": "inventory-dev-v1-dev-09",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-09"
+        },
+        {
+          "id": "deck_069",
+          "kind": "text",
+          "x": 36.0,
+          "y": 472,
+          "width": 72.0,
+          "height": 17,
+          "paint_order": 22,
+          "z": 22,
+          "text": "大森元貴",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -15,
+            72,
+            2
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-09"
+        },
+        {
+          "id": "deck_070",
+          "kind": "text",
+          "x": 48.625,
+          "y": 497,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 23,
+          "z": 23,
+          "text": "Lv. 3",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-09"
+        },
+        {
+          "id": "deck_071",
+          "kind": "card",
+          "x": 175,
+          "y": 276,
+          "width": 136,
+          "height": 190,
+          "paint_order": 24,
+          "z": 24,
+          "catalog_id": "hiroto-r-01",
+          "instance_id": "inventory-dev-v1-dev-02",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-02"
+        },
+        {
+          "id": "deck_072",
+          "kind": "text",
+          "x": 207.0,
+          "y": 472,
+          "width": 72.0,
+          "height": 19,
+          "paint_order": 25,
+          "z": 25,
+          "text": "若井滉斗",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 243.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            72,
+            3
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-02"
+        },
+        {
+          "id": "deck_073",
+          "kind": "text",
+          "x": 213.7890625,
+          "y": 497,
+          "width": 58.421875,
+          "height": 16,
+          "paint_order": 26,
+          "z": 26,
+          "text": "Lv. 11",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 243.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            58,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-02"
+        },
+        {
+          "id": "deck_074",
+          "kind": "card",
+          "x": 346,
+          "y": 276,
+          "width": 136,
+          "height": 190,
+          "paint_order": 27,
+          "z": 27,
+          "catalog_id": "ryoka-s-01",
+          "instance_id": "inventory-dev-v1-dev-04",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-04"
+        },
+        {
+          "id": "deck_075",
+          "kind": "text",
+          "x": 378.0,
+          "y": 472,
+          "width": 72.0,
+          "height": 19,
+          "paint_order": 28,
+          "z": 28,
+          "text": "藤澤涼架",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 414.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            72,
+            3
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-04"
+        },
+        {
+          "id": "deck_076",
+          "kind": "text",
+          "x": 390.625,
+          "y": 497,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 29,
+          "z": 29,
+          "text": "Lv. 9",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 414.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-04"
+        },
+        {
+          "id": "deck_077",
+          "kind": "card",
+          "x": 517,
+          "y": 276,
+          "width": 136,
+          "height": 190,
+          "paint_order": 30,
+          "z": 30,
+          "catalog_id": "motoki-a-01",
+          "instance_id": "inventory-dev-v1-dev-05",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-05"
+        },
+        {
+          "id": "deck_078",
+          "kind": "text",
+          "x": 549.0,
+          "y": 472,
+          "width": 72.0,
+          "height": 17,
+          "paint_order": 31,
+          "z": 31,
+          "text": "大森元貴",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 585.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -15,
+            72,
+            2
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-05"
+        },
+        {
+          "id": "deck_079",
+          "kind": "text",
+          "x": 561.625,
+          "y": 497,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 32,
+          "z": 32,
+          "text": "Lv. 8",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 585.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-05"
+        },
+        {
+          "id": "deck_080",
+          "kind": "card",
+          "x": 4,
+          "y": 547,
+          "width": 136,
+          "height": 190,
+          "paint_order": 33,
+          "z": 33,
+          "catalog_id": "hiroto-b-01",
+          "instance_id": "inventory-dev-v1-dev-08",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-08"
+        },
+        {
+          "id": "deck_081",
+          "kind": "text",
+          "x": 36.0,
+          "y": 743,
+          "width": 72.0,
+          "height": 19,
+          "paint_order": 34,
+          "z": 34,
+          "text": "若井滉斗",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            72,
+            3
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-08"
+        },
+        {
+          "id": "deck_082",
+          "kind": "text",
+          "x": 48.625,
+          "y": 768,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 35,
+          "z": 35,
+          "text": "Lv. 5",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 72.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-08"
+        },
+        {
+          "id": "deck_083",
+          "kind": "card",
+          "x": 175,
+          "y": 547,
+          "width": 136,
+          "height": 190,
+          "paint_order": 36,
+          "z": 36,
+          "catalog_id": "ryoka-c-07",
+          "instance_id": "inventory-dev-v1-dev-10",
+          "shadow": {
+            "offset": [
+              -9,
+              -4
+            ],
+            "padding": 12,
+            "blur": 5,
+            "opacity": 0.7
+          },
+          "runtime_instance_binding": "actual owned instanceId",
+          "qa_instance_alias": "dev-10"
+        },
+        {
+          "id": "deck_084",
+          "kind": "text",
+          "x": 207.0,
+          "y": 743,
+          "width": 72.0,
+          "height": 19,
+          "paint_order": 37,
+          "z": 37,
+          "text": "藤澤涼架",
+          "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+          "font_size": 18,
+          "fill": "#f3f2ff",
+          "anchor": "lt",
+          "anchor_x": 243.0,
+          "align": "center",
+          "bold": true,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            72,
+            3
+          ],
+          "binding": "member name from catalog",
+          "instance_context": "inventory-dev-v1-dev-10"
+        },
+        {
+          "id": "deck_085",
+          "kind": "text",
+          "x": 219.625,
+          "y": 768,
+          "width": 46.75,
+          "height": 16,
+          "paint_order": 38,
+          "z": 38,
+          "text": "Lv. 4",
+          "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+          "font_size": 21,
+          "fill": "#63e8ff",
+          "anchor": "lt",
+          "anchor_x": 243.0,
+          "align": "center",
+          "bold": false,
+          "shadow": [
+            1,
+            1,
+            0,
+            0,
+            20,
+            160
+          ],
+          "glyph_bbox_baseline": [
+            0,
+            -16,
+            47,
+            0
+          ],
+          "binding": "instance level/power/cap or upgrade preview; see BINDINGS.md",
+          "instance_context": "inventory-dev-v1-dev-10"
+        }
+      ],
+      "content_rows": 3,
+      "content_height": 789,
+      "repeater": {
+        "source": "ownedInstances; never QA children in production",
+        "columns": 4,
+        "card_size": [
+          136,
+          190
+        ],
+        "column_pitch": 171,
+        "row_pitch": 271,
+        "card_offset": [
+          4,
+          5
+        ],
+        "member_label": {
+          "center_x_relative": 72,
+          "y_relative_to_card_top": 196,
+          "font_size": 18,
+          "weight": 650
+        },
+        "level_label": {
+          "center_x_relative": 72,
+          "y_relative_to_card_top": 221,
+          "font_size": 21
+        },
+        "content_height_rule": "rows=ceil(count/4); for rows>0: (rows-1)*rowPitch+247; otherwise 0",
+        "clipping": "All children including text, glow and tags are clipped to viewport",
+        "scrollbar": "Native scroll state mapped to approved rail; thumb scales with viewport/content ratio"
+      }
+    },
+    {
+      "id": "deck_087",
+      "kind": "scrollbar",
+      "x": 1720,
+      "y": 483,
+      "width": 7,
+      "height": 268,
+      "paint_order": 47,
+      "z": 47,
+      "fill": "#171a43",
+      "thumb_height": 90,
+      "thumb_fill": "#60cfff",
+      "row_pitch": 271
+    },
+    {
+      "id": "deck_088",
+      "kind": "text",
+      "x": 119,
+      "y": 805,
+      "width": 518.8125,
+      "height": 21,
+      "paint_order": 48,
+      "z": 48,
+      "text": "枠を選択して入れ替え。同じ個体の重複編成はできません",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 119,
+      "align": "left",
+      "bold": false,
+      "shadow": [
+        1,
+        1,
+        0,
+        0,
+        20,
+        160
+      ],
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        519,
+        3
+      ],
+      "binding": "label (static, localized)"
+    }
+  ],
+  "layout_rule": "uniform contain inside safe-area; preserve all aspect ratios",
+  "sample_only": true,
+  "data_source": "Runtime owned instances and existing R coin wallet; QA fixture must not seed production",
+  "taps": [
+    {
+      "id": "back",
+      "x": 123,
+      "y": 38,
+      "width": 64,
+      "height": 64,
+      "action": "inventory-main-with-selection-and-scroll-preserved"
+    },
+    {
+      "id": "confirm_deck",
+      "x": 128,
+      "y": 708,
+      "width": 817,
+      "height": 60,
+      "action": "validate unique owned instanceIds; persist draft deck and return main"
+    },
+    {
+      "id": "slot_1",
+      "x": 140,
+      "y": 239,
+      "width": 238,
+      "height": 333,
+      "action": "select-slot",
+      "slot": 0
+    },
+    {
+      "id": "slot_2",
+      "x": 416,
+      "y": 239,
+      "width": 238,
+      "height": 333,
+      "action": "select-slot",
+      "slot": 1
+    },
+    {
+      "id": "slot_3",
+      "x": 692,
+      "y": 239,
+      "width": 238,
+      "height": 333,
+      "action": "select-slot",
+      "slot": 2
+    }
+  ],
+  "card_taps": "Visible card bounds intersected with viewport; pointer drag cancels tap. Main selects instance for upgrade; deck selects candidate unless used by other slot.",
+  "safe_area": {
+    "reference": [
+      1844,
+      853
+    ],
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "align": "center inside safe-area",
+    "aspect_ratio": "preserve uniformly",
+    "scroll_only": "viewport; title/deck/filter/actions stay fixed"
+  }
+}

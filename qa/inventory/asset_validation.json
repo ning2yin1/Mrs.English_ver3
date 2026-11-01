@@ -1,0 +1,141 @@
+{
+  "no_github_access": true,
+  "existing_files_shipped_or_overwritten": 0,
+  "all_image_decode": true,
+  "reused_dependency_hashes_match": true,
+  "card_source_files_modified": false,
+  "reconstruction_uses_separate_assets_and_text": true,
+  "reused_dependency_files": 25,
+  "new_decorative_pngs": 7,
+  "production_implementation_included": false,
+  "checks": [
+    {
+      "file": "qa/inventory/inventory_main_difference_x4.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/inventory/inventory_main_reconstructed.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/inventory/inventory_upgrade_difference_x4.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/inventory/inventory_upgrade_reconstructed.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/inventory/inventory_deck_reconstructed.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/inventory/inventory_deck_difference_x4.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/inventory/ui/deck_backplate.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/inventory/ui/tag_normal.png",
+      "size": [
+        157,
+        29
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/inventory/ui/selection_glow_238.png",
+      "size": [
+        278,
+        373
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/inventory/ui/tag_used.png",
+      "size": [
+        157,
+        29
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/inventory/ui/tag_rank_s.png",
+      "size": [
+        157,
+        29
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/inventory/ui/selection_glow_136.png",
+      "size": [
+        176,
+        230
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/inventory/ui/tag_rank_r.png",
+      "size": [
+        157,
+        29
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "mockups/inventory/inventory_deck.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "mockups/inventory/inventory_upgrade.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "mockups/inventory/inventory_main.png",
+      "size": [
+        1844,
+        853
+      ],
+      "mode": "RGBA"
+    }
+  ]
+}

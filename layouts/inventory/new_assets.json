@@ -1,0 +1,97 @@
+[
+  {
+    "file": "assets/inventory/fonts/OFL.txt",
+    "bytes": 4388,
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "purpose": "font-or-license"
+  },
+  {
+    "file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+    "bytes": 5764968,
+    "sha256": "63c65d2ece13b66a0671b8a47b2df9082147aa8a00f15c5d85a0c3167b3087e9",
+    "purpose": "font-or-license"
+  },
+  {
+    "file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+    "bytes": 5759192,
+    "sha256": "deec947968f41d2df80e1e0c8de8539c06ccf7159bd61c7e0c28799157c7858a",
+    "purpose": "font-or-license"
+  },
+  {
+    "file": "assets/inventory/ui/deck_backplate.png",
+    "bytes": 1909078,
+    "sha256": "c5317090c97aeb54a8935cc79f62440e392e271eddaf5ebc7744c991f30a2d10",
+    "purpose": "text-free-decoration",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alpha_min": 255,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/inventory/ui/selection_glow_136.png",
+    "bytes": 7434,
+    "sha256": "4521eb10080b627f335a776a33fea9f0f090b20489834a568fee5ec5dd8e71f7",
+    "purpose": "text-free-decoration",
+    "width": 176,
+    "height": 230,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/inventory/ui/selection_glow_238.png",
+    "bytes": 8547,
+    "sha256": "6f2bdedfe24e46b73e6fa9e06a0eadf5c96b016dec70f0feac87251856cae37f",
+    "purpose": "text-free-decoration",
+    "width": 278,
+    "height": 373,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/inventory/ui/tag_normal.png",
+    "bytes": 251,
+    "sha256": "85d3eb6822fdaec1261d1471086181afe7439d3418f6c37a9612dcebf5fe23e2",
+    "purpose": "text-free-decoration",
+    "width": 157,
+    "height": 29,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/inventory/ui/tag_rank_r.png",
+    "bytes": 251,
+    "sha256": "7898ce17ff938c55fabc901bd403c8ca18ff595be19cec77fb49d45a6c42902d",
+    "purpose": "text-free-decoration",
+    "width": 157,
+    "height": 29,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/inventory/ui/tag_rank_s.png",
+    "bytes": 252,
+    "sha256": "408d79638f3188416acf133498741fdf5ee59d3d37b9dd3fec2e2775e0d2bb13",
+    "purpose": "text-free-decoration",
+    "width": 157,
+    "height": 29,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/inventory/ui/tag_used.png",
+    "bytes": 249,
+    "sha256": "05495e457e601c4fbc299a478721c7b249712794a09023d4a23b7fe3f17ff086",
+    "purpose": "text-free-decoration",
+    "width": 157,
+    "height": 29,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  }
+]

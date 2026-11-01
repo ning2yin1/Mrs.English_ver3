@@ -1,0 +1,20 @@
+{
+  "main": {
+    "mean_absolute_rgb_error": 0.0,
+    "maximum_channel_error": 0,
+    "pixels_with_any_channel_error_over16_percent": 0.0,
+    "different_pixels": 0
+  },
+  "deck": {
+    "mean_absolute_rgb_error": 0.0,
+    "maximum_channel_error": 0,
+    "pixels_with_any_channel_error_over16_percent": 0.0,
+    "different_pixels": 0
+  },
+  "upgrade": {
+    "mean_absolute_rgb_error": 0.0,
+    "maximum_channel_error": 0,
+    "pixels_with_any_channel_error_over16_percent": 0.0,
+    "different_pixels": 0
+  }
+}

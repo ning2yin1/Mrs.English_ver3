@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Inventory sidecar v1 proposal; resolve real storage adapter before implementation",
+  "type": "object",
+  "required": [
+    "version",
+    "instances",
+    "deck",
+    "appliedDevGrants"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "instances": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "catalogId",
+          "level"
+        ],
+        "properties": {
+          "catalogId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "deck": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "appliedDevGrants": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "$comment": "Application validator must additionally enforce rarity-specific caps, unique non-null deck IDs, and existing shared ownership; JSON schema maximum 50 alone is not enough."
+}
