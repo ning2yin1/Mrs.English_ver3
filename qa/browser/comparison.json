@@ -1,0 +1,37 @@
+[
+  {
+    "screen": "title",
+    "mean_absolute_rgb_error_0_255": 0.3934870250801264,
+    "opaque_ui_and_text_mean_absolute_rgb_error_0_255": 15.7162718897181,
+    "pixels_any_channel_over_16_percent": 0.4209336449382427,
+    "note": ""
+  },
+  {
+    "screen": "nickname",
+    "mean_absolute_rgb_error_0_255": 1.3843141343681735,
+    "opaque_ui_and_text_mean_absolute_rgb_error_0_255": 6.568978744480625,
+    "pixels_any_channel_over_16_percent": 1.245126934921535,
+    "note": "Native input caret omitted when unfocused."
+  },
+  {
+    "screen": "member",
+    "mean_absolute_rgb_error_0_255": 0.6530282300824193,
+    "opaque_ui_and_text_mean_absolute_rgb_error_0_255": 2.9537090872108975,
+    "pixels_any_channel_over_16_percent": 1.087268871127296,
+    "note": ""
+  },
+  {
+    "screen": "background",
+    "mean_absolute_rgb_error_0_255": 21.223140182368553,
+    "opaque_ui_and_text_mean_absolute_rgb_error_0_255": 5.835839493962304,
+    "pixels_any_channel_over_16_percent": 33.34804047473126,
+    "note": "Original supplied backgrounds replace reference photo crops; full-frame difference is not a UI fidelity score."
+  },
+  {
+    "screen": "home",
+    "mean_absolute_rgb_error_0_255": 48.73657687257512,
+    "opaque_ui_and_text_mean_absolute_rgb_error_0_255": 2.9691991473977914,
+    "pixels_any_channel_over_16_percent": 68.33919075967682,
+    "note": "Original supplied backgrounds replace reference photo crops; full-frame difference is not a UI fidelity score."
+  }
+]

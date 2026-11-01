@@ -1,0 +1,104 @@
+{
+  "results": [
+    {
+      "viewport": "844x390",
+      "safeInsets": {
+        "left": 47,
+        "right": 47,
+        "bottom": 21
+      },
+      "scale": 0.4067245119305857,
+      "topBeforeSafeWidthPercent": 89.47939262472886,
+      "bottomBeforeSafeWidthPercent": 92.24511930585683,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    },
+    {
+      "viewport": "852x393",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "bottom": 21
+      },
+      "scale": 0.39804772234273317,
+      "topBeforeSafeWidthPercent": 89.47939262472883,
+      "bottomBeforeSafeWidthPercent": 92.24511930585683,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    },
+    {
+      "viewport": "932x430",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "bottom": 21
+      },
+      "scale": 0.44143167028199565,
+      "topBeforeSafeWidthPercent": 89.47939262472883,
+      "bottomBeforeSafeWidthPercent": 92.24511930585683,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    },
+    {
+      "viewport": "812x375",
+      "safeInsets": {
+        "left": 44,
+        "right": 44,
+        "bottom": 21
+      },
+      "scale": 0.3926247288503254,
+      "topBeforeSafeWidthPercent": 89.47939262472885,
+      "bottomBeforeSafeWidthPercent": 92.24511930585685,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    },
+    {
+      "viewport": "932x320",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "bottom": 21
+      },
+      "scale": 0.3505275498241501,
+      "topBeforeSafeWidthPercent": 71.05288172111149,
+      "bottomBeforeSafeWidthPercent": 73.24906170158222,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    },
+    {
+      "viewport": "844x390-asymmetric",
+      "safeInsets": {
+        "left": 47,
+        "right": 0,
+        "bottom": 21
+      },
+      "scale": 0.43221258134490237,
+      "topBeforeSafeWidthPercent": 89.47939262472883,
+      "bottomBeforeSafeWidthPercent": 92.24511930585683,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    },
+    {
+      "viewport": "844x390-no-inset",
+      "safeInsets": {
+        "left": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "scale": 0.45720984759671746,
+      "topBeforeSafeWidthPercent": 89.38344176950045,
+      "bottomBeforeSafeWidthPercent": 92.14620269692136,
+      "topAfterSafeWidthPercent": 100,
+      "bottomAfterSafeWidthPercent": 100,
+      "checks": "Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed."
+    }
+  ],
+  "referenceScreenshot": "SuperStar reference screenshot was not attached; no direct visual comparison claimed.",
+  "device": "Chromium; safe areas simulated. Physical iPhone not tested."
+}
