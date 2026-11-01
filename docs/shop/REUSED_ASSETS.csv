@@ -1,0 +1,28 @@
+﻿file,purpose,sha256,bytes,bundled
+assets/nickname/nickname_header.png,Original purple title bar,b872e4b0c1c488d32b1a900bac960698f7db70695f07ce448d681d677a9dfcf1,147318,False
+assets/icons/nickname_back.png,Original back arrow,24ac1f84581c63bbdf5118ab8e777786d955355c81d71dd2ff136bf86b6b1844,2885,False
+home_approved/assets/home/button_collection.png,"Original blue button; nine-slice [18,20,17,20]",7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf,37712,False
+home_approved/assets/home/status_menu.png,"Original purple button; nine-slice [16,18,16,18]",b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f,22047,False
+assets/icons/nickname_confirm_arrow.png,Original right arrow,d73ee0a4f61b31a6fefb83ac6ca507dd0980863625ab9f9d1e2d4e4ec343fb6d,3706,False
+home_approved/assets/icons/coin.png,"R coin, read existing wallet",bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357,7594,False
+home_approved/assets/icons/diamond.png,Diamond display only; never consumed,d87cc042bbfbe0faf6dc97a4b54ef7113543bf0e236da2c9c0ef2c6c6d3321e4,6801,False
+assets/collection/background.png,Approved shared backdrop,443b5a40e80c30c1c14ee411a690364741c2d214fe31aacbbe1e752f1eb5fad5,1694330,False
+assets/collection/ui/list_panel.png,"Glass panel; nine-slice [16,16,16,16]",f62daa03b29902c5c9f38bce5a7bd522d8374f42d12b680dfbffa0066447c0a5,5433,False
+assets/inventory/ui/tag_rank_r.png,"Blank dark-gold guarantee tag; nine-slice [8,8,8,8]",7898ce17ff938c55fabc901bd403c8ca18ff595be19cec77fb49d45a6c42902d,251,False
+assets/inventory/fonts/noto_sans_jp_450.ttf,Existing exact Japanese regular font,63c65d2ece13b66a0671b8a47b2df9082147aa8a00f15c5d85a0c3167b3087e9,5764968,False
+assets/inventory/fonts/noto_sans_jp_650.ttf,Existing exact Japanese bold font,deec947968f41d2df80e1e0c8de8539c06ccf7159bd61c7e0c28799157c7858a,5759192,False
+assets/collection/fonts/nimbus_sans_bold.otf,Existing numeric font,7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67,83264,False
+layouts/collection/catalog.json,Existing stable catalog definitions,ab5dedbabcb6f961802b363e4579099659433898533ae48034c4aab71f6ae8eb,48700,False
+assets/collection/cards/motoki/r/motoki-a-07.jpg,Original unmodified card photo used by QA sample,6cec34ee235f7c61d9d144cc9be9c6c45bd5b869f8aa2a85f98ea280913dc536,261266,False
+assets/collection/frames/rank_r.png,Original unmodified rank frame,be46d07c2768e482073b4f63e8e9814228b8aa09433581bb50cb51b1200c2af7,532353,False
+assets/collection/cards/hiloto/s/hiloto-s-01.jpg,Original unmodified card photo used by QA sample,a32f5c477390ed0b81e9fb15aaf88ad9eba000f387abc2bd1bdc5d99df1375d3,401579,False
+assets/collection/frames/rank_s.png,Original unmodified rank frame,90ef3cbe94038a3ea318f300c3a1322bedacb6827beb65940726aefa662fbe49,390436,False
+assets/collection/cards/motoki/a/motoki-a-01.jpg,Original unmodified card photo used by QA sample,b316c12d90de0a2c6183bee2b7d30e93cbe8d80cb1c2efcd081828047fa3cfa9,87543,False
+assets/collection/frames/rank_a.png,Original unmodified rank frame,9774cc568a521b246b75f3253d027deef7850d35bd1d83269fe5bffc244c7506,342055,False
+assets/collection/cards/ryoka/a/ryoka-a-05.jpg,Original unmodified card photo used by QA sample,3d626169fd3f08d76c8e547ae9be5786c0ff7bf36a194752c08512a3e200cede,77108,False
+assets/collection/cards/motoki/b/motoki-b-03.jpg,Original unmodified card photo used by QA sample,ad371dea5012b65870e5f42429e7dd40823cf8260e5c56158293b4b190c1a1a7,206867,False
+assets/collection/frames/rank_b.png,Original unmodified rank frame,23d6b787e2491ce7767234ae76d4e499a244a307db54bfbf48cf89589104493c,355258,False
+assets/collection/cards/hiloto/b/hiloto-b-01.jpg,Original unmodified card photo used by QA sample,3c8921cf6b617b6e2e5b887833fdcaeed18b0252996a904dd497ecc67436abe1,438771,False
+assets/collection/cards/motoki/c/motoki-c-04.jpg,Original unmodified card photo used by QA sample,da9bb537da71552a9f767219f08944ee3dd4b287cdd233eaf0edf11984d3f1a0,148924,False
+assets/collection/frames/rank_c.png,Original unmodified rank frame,1c60ffd161ddfbb2d903f291d2aac700ef6a439dc3da442549dfd91b90a36c6f,314333,False
+assets/collection/cards/ryoka/c/ryoka-c-07.jpg,Original unmodified card photo used by QA sample,ad86531fda92cd2622371495c2651edba2a6e4c69bce04000f83f3dc6d826c97,183764,False

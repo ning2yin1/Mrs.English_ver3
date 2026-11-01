@@ -1,0 +1,191 @@
+[
+  {
+    "file": "assets/nickname/nickname_header.png",
+    "purpose": "Original purple title bar",
+    "sha256": "b872e4b0c1c488d32b1a900bac960698f7db70695f07ce448d681d677a9dfcf1",
+    "bytes": 147318,
+    "bundled": false
+  },
+  {
+    "file": "assets/icons/nickname_back.png",
+    "purpose": "Original back arrow",
+    "sha256": "24ac1f84581c63bbdf5118ab8e777786d955355c81d71dd2ff136bf86b6b1844",
+    "bytes": 2885,
+    "bundled": false
+  },
+  {
+    "file": "home_approved/assets/home/button_collection.png",
+    "purpose": "Original blue button; nine-slice [18,20,17,20]",
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf",
+    "bytes": 37712,
+    "bundled": false
+  },
+  {
+    "file": "home_approved/assets/home/status_menu.png",
+    "purpose": "Original purple button; nine-slice [16,18,16,18]",
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f",
+    "bytes": 22047,
+    "bundled": false
+  },
+  {
+    "file": "assets/icons/nickname_confirm_arrow.png",
+    "purpose": "Original right arrow",
+    "sha256": "d73ee0a4f61b31a6fefb83ac6ca507dd0980863625ab9f9d1e2d4e4ec343fb6d",
+    "bytes": 3706,
+    "bundled": false
+  },
+  {
+    "file": "home_approved/assets/icons/coin.png",
+    "purpose": "R coin, read existing wallet",
+    "sha256": "bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357",
+    "bytes": 7594,
+    "bundled": false
+  },
+  {
+    "file": "home_approved/assets/icons/diamond.png",
+    "purpose": "Diamond display only; never consumed",
+    "sha256": "d87cc042bbfbe0faf6dc97a4b54ef7113543bf0e236da2c9c0ef2c6c6d3321e4",
+    "bytes": 6801,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/background.png",
+    "purpose": "Approved shared backdrop",
+    "sha256": "443b5a40e80c30c1c14ee411a690364741c2d214fe31aacbbe1e752f1eb5fad5",
+    "bytes": 1694330,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/ui/list_panel.png",
+    "purpose": "Glass panel; nine-slice [16,16,16,16]",
+    "sha256": "f62daa03b29902c5c9f38bce5a7bd522d8374f42d12b680dfbffa0066447c0a5",
+    "bytes": 5433,
+    "bundled": false
+  },
+  {
+    "file": "assets/inventory/ui/tag_rank_r.png",
+    "purpose": "Blank dark-gold guarantee tag; nine-slice [8,8,8,8]",
+    "sha256": "7898ce17ff938c55fabc901bd403c8ca18ff595be19cec77fb49d45a6c42902d",
+    "bytes": 251,
+    "bundled": false
+  },
+  {
+    "file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+    "purpose": "Existing exact Japanese regular font",
+    "sha256": "63c65d2ece13b66a0671b8a47b2df9082147aa8a00f15c5d85a0c3167b3087e9",
+    "bytes": 5764968,
+    "bundled": false
+  },
+  {
+    "file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+    "purpose": "Existing exact Japanese bold font",
+    "sha256": "deec947968f41d2df80e1e0c8de8539c06ccf7159bd61c7e0c28799157c7858a",
+    "bytes": 5759192,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/fonts/nimbus_sans_bold.otf",
+    "purpose": "Existing numeric font",
+    "sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+    "bytes": 83264,
+    "bundled": false
+  },
+  {
+    "file": "layouts/collection/catalog.json",
+    "purpose": "Existing stable catalog definitions",
+    "sha256": "ab5dedbabcb6f961802b363e4579099659433898533ae48034c4aab71f6ae8eb",
+    "bytes": 48700,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/motoki/r/motoki-a-07.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "6cec34ee235f7c61d9d144cc9be9c6c45bd5b869f8aa2a85f98ea280913dc536",
+    "bytes": 261266,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/frames/rank_r.png",
+    "purpose": "Original unmodified rank frame",
+    "sha256": "be46d07c2768e482073b4f63e8e9814228b8aa09433581bb50cb51b1200c2af7",
+    "bytes": 532353,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/hiloto/s/hiloto-s-01.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "a32f5c477390ed0b81e9fb15aaf88ad9eba000f387abc2bd1bdc5d99df1375d3",
+    "bytes": 401579,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/frames/rank_s.png",
+    "purpose": "Original unmodified rank frame",
+    "sha256": "90ef3cbe94038a3ea318f300c3a1322bedacb6827beb65940726aefa662fbe49",
+    "bytes": 390436,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/motoki/a/motoki-a-01.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "b316c12d90de0a2c6183bee2b7d30e93cbe8d80cb1c2efcd081828047fa3cfa9",
+    "bytes": 87543,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/frames/rank_a.png",
+    "purpose": "Original unmodified rank frame",
+    "sha256": "9774cc568a521b246b75f3253d027deef7850d35bd1d83269fe5bffc244c7506",
+    "bytes": 342055,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/ryoka/a/ryoka-a-05.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "3d626169fd3f08d76c8e547ae9be5786c0ff7bf36a194752c08512a3e200cede",
+    "bytes": 77108,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/motoki/b/motoki-b-03.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "ad371dea5012b65870e5f42429e7dd40823cf8260e5c56158293b4b190c1a1a7",
+    "bytes": 206867,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/frames/rank_b.png",
+    "purpose": "Original unmodified rank frame",
+    "sha256": "23d6b787e2491ce7767234ae76d4e499a244a307db54bfbf48cf89589104493c",
+    "bytes": 355258,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/hiloto/b/hiloto-b-01.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "3c8921cf6b617b6e2e5b887833fdcaeed18b0252996a904dd497ecc67436abe1",
+    "bytes": 438771,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/motoki/c/motoki-c-04.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "da9bb537da71552a9f767219f08944ee3dd4b287cdd233eaf0edf11984d3f1a0",
+    "bytes": 148924,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/frames/rank_c.png",
+    "purpose": "Original unmodified rank frame",
+    "sha256": "1c60ffd161ddfbb2d903f291d2aac700ef6a439dc3da442549dfd91b90a36c6f",
+    "bytes": 314333,
+    "bundled": false
+  },
+  {
+    "file": "assets/collection/cards/ryoka/c/ryoka-c-07.jpg",
+    "purpose": "Original unmodified card photo used by QA sample",
+    "sha256": "ad86531fda92cd2622371495c2651edba2a6e4c69bce04000f83f3dc6d826c97",
+    "bytes": 183764,
+    "bundled": false
+  }
+]

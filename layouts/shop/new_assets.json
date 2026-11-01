@@ -1,0 +1,382 @@
+[
+  {
+    "file": "assets/shop/cards/card_back.png",
+    "bytes": 1906522,
+    "sha256": "6dba4dc304087edb8fe00b02fc9b3f4642c8fda65f97f55f6fa43189ef07951a",
+    "width": 1060,
+    "height": 1484,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/glow_01.png",
+    "bytes": 102757,
+    "sha256": "f4146814fd9e06a09d3160ba3a3d2d94e403fa2b1c68f5d32224f749651efbc1",
+    "width": 525,
+    "height": 511,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 80
+  },
+  {
+    "file": "assets/shop/fx/glow_02.png",
+    "bytes": 100080,
+    "sha256": "f65f4e329f7e5761ff2dd2d08b11f5c3fc8c2d78dad04cd9790fc671d934c06b",
+    "width": 525,
+    "height": 511,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 80
+  },
+  {
+    "file": "assets/shop/fx/glow_03.png",
+    "bytes": 98225,
+    "sha256": "a18f438beb1b5d20a3bb918c893d0d2e147b7e57570e8372102ec97982abfb22",
+    "width": 525,
+    "height": 511,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 80
+  },
+  {
+    "file": "assets/shop/fx/glow_04.png",
+    "bytes": 120834,
+    "sha256": "387eca9b05a1ff03410e9e4f571596ac470ff45efe048d8b9ae467b227edd1d6",
+    "width": 583,
+    "height": 595,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 70
+  },
+  {
+    "file": "assets/shop/fx/glow_06.png",
+    "bytes": 156555,
+    "sha256": "1c162a4890352491db0afe21696fab7afa920d0cdcbab10bd775baf7c979c4b6",
+    "width": 637,
+    "height": 699,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 140
+  },
+  {
+    "file": "assets/shop/fx/glow_07.png",
+    "bytes": 168577,
+    "sha256": "444a9f352ce65b4055c33fab2a3df8b7cfc65df2fc933bed0e5fd1e62f3d79ac",
+    "width": 684,
+    "height": 710,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 100
+  },
+  {
+    "file": "assets/shop/fx/glow_13.png",
+    "bytes": 172513,
+    "sha256": "bab32ab3ec9aa8b3fce108b051a6d0c2a0e63156deaad019aaa3ff96b24d06c1",
+    "width": 733,
+    "height": 719,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 110
+  },
+  {
+    "file": "assets/shop/fx/glow_16.png",
+    "bytes": 183378,
+    "sha256": "336b94f89cc925b655a24e24cc24cb9cb7a53784e8352d658bc67cf291bf4307",
+    "width": 727,
+    "height": 763,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 145
+  },
+  {
+    "file": "assets/shop/fx/glow_17.png",
+    "bytes": 163776,
+    "sha256": "19e09f4abf5cd0f80ae4e6f34f3834970549f856e07c0ee7bc9e1cb2b3993f2c",
+    "width": 589,
+    "height": 699,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 90
+  },
+  {
+    "file": "assets/shop/fx/glow_25.png",
+    "bytes": 82049,
+    "sha256": "905ad403e568cc443922b588de652668f0f5d24f9d0dd4e00ca3ffe93e4975f8",
+    "width": 441,
+    "height": 495,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 96
+  },
+  {
+    "file": "assets/shop/fx/glow_27.png",
+    "bytes": 82581,
+    "sha256": "7cb6a72da52d58f184e186289d844076b566d2de7efd7d589e0a4aa4abe79f44",
+    "width": 441,
+    "height": 495,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 96
+  },
+  {
+    "file": "assets/shop/fx/rarity_a_halo.png",
+    "bytes": 32964,
+    "sha256": "47a415f6c0fd90a1ad7919a1ed11190da3840cd9410c52fd6024f3f0a2d143ce",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 100
+  },
+  {
+    "file": "assets/shop/fx/rarity_b_halo.png",
+    "bytes": 32130,
+    "sha256": "6ae2f4e1b11ed8c4f8f343e2dd47bcd7c52c92a911dabe1a256964d1f45fe420",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 95
+  },
+  {
+    "file": "assets/shop/fx/rarity_c_halo.png",
+    "bytes": 24942,
+    "sha256": "73f7f83842ede1e0b9257666922e0331513ec1d7641ccaf3cb5d84e4e17f0edb",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 55
+  },
+  {
+    "file": "assets/shop/fx/rarity_s_halo.png",
+    "bytes": 61590,
+    "sha256": "1839a4063051777271dad17108f201a5b1a7220add68774e84d0d3e72fee7947",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 180
+  },
+  {
+    "file": "assets/shop/fx/rays_05.png",
+    "bytes": 173809,
+    "sha256": "e142955e301951a8f77ef93fc73ec008a2b12c7273185b6855825dc749e25dd4",
+    "width": 1130,
+    "height": 719,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 34
+  },
+  {
+    "file": "assets/shop/fx/rays_14.png",
+    "bytes": 163519,
+    "sha256": "9fd1bc3e23f6cbd5cf1619a5669c263a00110469f233a64b7d8154c4dafa8c5c",
+    "width": 1132,
+    "height": 689,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 34
+  },
+  {
+    "file": "assets/shop/fx/rays_15.png",
+    "bytes": 248185,
+    "sha256": "4ae4b1a80fac315580036e8ec97e781db49ca373185883395b6e6f68292c3537",
+    "width": 1624,
+    "height": 719,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 35
+  },
+  {
+    "file": "assets/shop/fx/reveal_flash.png",
+    "bytes": 23653,
+    "sha256": "799c12fc4bf5e74618345036f3222e1ed12456cdc29a94974acee7690507b0a5",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 210
+  },
+  {
+    "file": "assets/shop/fx/star_08.png",
+    "bytes": 154,
+    "sha256": "7c3bf7600c4abb95cdb7ecb3bbc8d1f5d197ade0c757679685f8e1478c9a3ac9",
+    "width": 25,
+    "height": 25,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_09.png",
+    "bytes": 163,
+    "sha256": "be62877c3dec4b3b1f4cb3bc18915adc9cb553ec9aa5b9ba835a06432d77b088",
+    "width": 29,
+    "height": 29,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_10.png",
+    "bytes": 126,
+    "sha256": "3456baa7d532357f82443b3a3e1899a4693fa4022ccaa81e20b0f6647cbfae8e",
+    "width": 21,
+    "height": 21,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_11.png",
+    "bytes": 132,
+    "sha256": "f16a2bfd935235962cad0b12bb99d0f53d14092c30a58abbda2388e9eaa5575a",
+    "width": 23,
+    "height": 23,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_12.png",
+    "bytes": 121,
+    "sha256": "22d47572b082227696f70effc3e534cf09d327db9ab3b27fbb7237c0dd2710d7",
+    "width": 19,
+    "height": 19,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_19.png",
+    "bytes": 180,
+    "sha256": "0558e8ea336dd490faae72f1bbe717ecd24e8239ff7df9ca2608ce08432948e3",
+    "width": 33,
+    "height": 33,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_21.png",
+    "bytes": 168,
+    "sha256": "06d593043f0d8ab1875db5d01c5258c4c417308cd906cc4721febcc3c59e3b51",
+    "width": 31,
+    "height": 31,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/fx/star_28.png",
+    "bytes": 126,
+    "sha256": "7efd58319fae7e5f55389977a4d474567a11ae410561a2809ea99f0324e9fe4f",
+    "width": 21,
+    "height": 21,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/packs/pack_five.png",
+    "bytes": 3269935,
+    "sha256": "e777c808be9fd8d48217fad94fff795855a101db10053421b95efd05faa08dc2",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 254
+  },
+  {
+    "file": "assets/shop/packs/pack_one.png",
+    "bytes": 2975519,
+    "sha256": "ef179c76d369e312b7950e4c60cd1a916cae4bdd9d6296211011d406eb1c6ef7",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 254
+  },
+  {
+    "file": "assets/shop/packs/pack_ten.png",
+    "bytes": 2996556,
+    "sha256": "d183819f0771a50042253968b23b9d0f486cfe77f08a21b49ce5f9a6cd9354cb",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 254
+  },
+  {
+    "file": "assets/shop/ui/close.png",
+    "bytes": 264,
+    "sha256": "5adbc200c29bbfc13c1995afe4c829035c44d9ac270615ca7d976e41b85cc181",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/ui/count_badge_gold_32.png",
+    "bytes": 680,
+    "sha256": "a517dd3006ae2e9f8d496b48737c0fe28fb7c9edfc9f7e6dceac68dc7e41044f",
+    "width": 78,
+    "height": 78,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/ui/count_badge_gold_44.png",
+    "bytes": 955,
+    "sha256": "b22897d3edd16a96abf5cdda57cb99770ceb1f235b9f1cd529acf4169ffbf4cd",
+    "width": 102,
+    "height": 102,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/ui/count_badge_silver_32.png",
+    "bytes": 697,
+    "sha256": "e20724f8dc54c81c1136ac15efd7da4e3d3e4889d6a8335499b7f787872e0a06",
+    "width": 78,
+    "height": 78,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/ui/count_badge_silver_44.png",
+    "bytes": 976,
+    "sha256": "b090ec0de68a09356d9f7e1877b00652bbcd6d1232167760b14353211e0320fa",
+    "width": 102,
+    "height": 102,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/ui/count_badge_violet_32.png",
+    "bytes": 695,
+    "sha256": "0cfdb5b6202af6e19c524ea5a2500b2ad667669eb09925118334dc739e8085ba",
+    "width": 78,
+    "height": 78,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "file": "assets/shop/ui/count_badge_violet_44.png",
+    "bytes": 974,
+    "sha256": "a93ca052a154ce2ab672a956f696638af695ae7c43efac47bc92eb34a819a044",
+    "width": 102,
+    "height": 102,
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255
+  }
+]

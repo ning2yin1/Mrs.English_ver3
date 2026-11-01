@@ -1,0 +1,898 @@
+{
+  "screen": "06_results",
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "06_results_001",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "06_results_002",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "paint_order": 1,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "06_results_003",
+      "kind": "image",
+      "x": 142,
+      "y": 48,
+      "width": 24,
+      "height": 40,
+      "paint_order": 2,
+      "file": "assets/icons/nickname_back.png"
+    },
+    {
+      "id": "06_results_004",
+      "kind": "text",
+      "x": 237,
+      "y": 47,
+      "width": 156.0,
+      "height": 37,
+      "paint_order": 3,
+      "text": "獲得結果",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 237,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -33,
+        156,
+        4
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "06_results_005",
+      "kind": "text",
+      "x": 830.484375,
+      "y": 56,
+      "width": 219.03125,
+      "height": 24,
+      "paint_order": 4,
+      "text": "10枚のカードを獲得",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 24,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 940,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        219,
+        3
+      ],
+      "binding": "committedReceipt.results.length"
+    },
+    {
+      "id": "06_results_006",
+      "kind": "image",
+      "x": 1253,
+      "y": 47,
+      "width": 37,
+      "height": 37,
+      "paint_order": 5,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "06_results_007",
+      "kind": "text",
+      "x": 1362.203125,
+      "y": 51,
+      "width": 94.796875,
+      "height": 28,
+      "paint_order": 6,
+      "text": "15,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1457,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        95,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "06_results_008",
+      "kind": "image",
+      "x": 1511,
+      "y": 47,
+      "width": 44,
+      "height": 37,
+      "paint_order": 7,
+      "file": "home_approved/assets/icons/diamond.png"
+    },
+    {
+      "id": "06_results_009",
+      "kind": "text",
+      "x": 1655.53125,
+      "y": 51,
+      "width": 34.46875,
+      "height": 22,
+      "paint_order": 8,
+      "text": "21",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1690,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        34,
+        0
+      ],
+      "binding": "existingWallet.diamonds (display only)"
+    },
+    {
+      "id": "06_results_010",
+      "kind": "nine_slice",
+      "x": 95,
+      "y": 135,
+      "width": 1653,
+      "height": 615,
+      "paint_order": 9,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "06_results_011",
+      "kind": "image",
+      "x": 76,
+      "y": 25,
+      "width": 441,
+      "height": 495,
+      "paint_order": 10,
+      "file": "assets/shop/fx/glow_25.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        296,
+        272
+      ],
+      "effect_parameters": {
+        "args": [
+          296,
+          272,
+          106,
+          139,
+          [
+            237,
+            180,
+            44
+          ],
+          100
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "06_results_012",
+      "kind": "card",
+      "x": 206,
+      "y": 147,
+      "width": 180,
+      "height": 252,
+      "paint_order": 11,
+      "catalog_id": "motoki-r-01",
+      "qa_card_index": 0,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_013",
+      "kind": "image",
+      "x": 356,
+      "y": 173,
+      "width": 21,
+      "height": 21,
+      "paint_order": 12,
+      "file": "assets/shop/fx/star_10.png",
+      "effect": "star",
+      "pivot_canvas": [
+        366,
+        183
+      ],
+      "effect_parameters": {
+        "args": [
+          366,
+          183,
+          8,
+          "#ffe89c"
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "06_results_014",
+      "kind": "text",
+      "x": 252.0,
+      "y": 408,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 13,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 296,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_015",
+      "kind": "card",
+      "x": 516,
+      "y": 147,
+      "width": 180,
+      "height": 252,
+      "paint_order": 14,
+      "catalog_id": "motoki-b-03",
+      "qa_card_index": 6,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_016",
+      "kind": "text",
+      "x": 562.0,
+      "y": 408,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 15,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 606,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_017",
+      "kind": "card",
+      "x": 826,
+      "y": 147,
+      "width": 180,
+      "height": 252,
+      "paint_order": 16,
+      "catalog_id": "motoki-c-04",
+      "qa_card_index": 8,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_018",
+      "kind": "text",
+      "x": 872.0,
+      "y": 408,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 17,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 916,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_019",
+      "kind": "card",
+      "x": 1136,
+      "y": 147,
+      "width": 180,
+      "height": 252,
+      "paint_order": 18,
+      "catalog_id": "ryoka-a-05",
+      "qa_card_index": 5,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_020",
+      "kind": "text",
+      "x": 1182.0,
+      "y": 408,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 19,
+      "text": "藤澤涼架",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1226,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_021",
+      "kind": "card",
+      "x": 1446,
+      "y": 147,
+      "width": 180,
+      "height": 252,
+      "paint_order": 20,
+      "catalog_id": "hiroto-b-01",
+      "qa_card_index": 7,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_022",
+      "kind": "text",
+      "x": 1492.0,
+      "y": 408,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 21,
+      "text": "若井滉斗",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1536,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_023",
+      "kind": "card",
+      "x": 206,
+      "y": 449,
+      "width": 180,
+      "height": 252,
+      "paint_order": 22,
+      "catalog_id": "ryoka-c-07",
+      "qa_card_index": 9,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_024",
+      "kind": "text",
+      "x": 252.0,
+      "y": 710,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 23,
+      "text": "藤澤涼架",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 296,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_025",
+      "kind": "card",
+      "x": 516,
+      "y": 449,
+      "width": 180,
+      "height": 252,
+      "paint_order": 24,
+      "catalog_id": "motoki-a-01",
+      "qa_card_index": 4,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_026",
+      "kind": "text",
+      "x": 562.0,
+      "y": 710,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 25,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 606,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_027",
+      "kind": "card",
+      "x": 826,
+      "y": 449,
+      "width": 180,
+      "height": 252,
+      "paint_order": 26,
+      "catalog_id": "motoki-c-04",
+      "qa_card_index": 8,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_028",
+      "kind": "text",
+      "x": 872.0,
+      "y": 710,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 27,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 916,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_029",
+      "kind": "card",
+      "x": 1136,
+      "y": 449,
+      "width": 180,
+      "height": 252,
+      "paint_order": 28,
+      "catalog_id": "motoki-b-03",
+      "qa_card_index": 6,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_030",
+      "kind": "text",
+      "x": 1182.0,
+      "y": 710,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 29,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1226,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_031",
+      "kind": "image",
+      "x": 1316,
+      "y": 327,
+      "width": 441,
+      "height": 495,
+      "paint_order": 30,
+      "file": "assets/shop/fx/glow_27.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        1536,
+        574
+      ],
+      "effect_parameters": {
+        "args": [
+          1536,
+          574,
+          106,
+          139,
+          [
+            152,
+            75,
+            255
+          ],
+          100
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "06_results_032",
+      "kind": "card",
+      "x": 1446,
+      "y": 449,
+      "width": 180,
+      "height": 252,
+      "paint_order": 31,
+      "catalog_id": "hiroto-s-01",
+      "qa_card_index": 2,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "06_results_033",
+      "kind": "image",
+      "x": 1596,
+      "y": 475,
+      "width": 21,
+      "height": 21,
+      "paint_order": 32,
+      "file": "assets/shop/fx/star_28.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1606,
+        485
+      ],
+      "effect_parameters": {
+        "args": [
+          1606,
+          485,
+          8,
+          "#e3c4ff"
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "06_results_034",
+      "kind": "text",
+      "x": 1492.0,
+      "y": 710,
+      "width": 88.0,
+      "height": 22,
+      "paint_order": 33,
+      "text": "若井滉斗",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 22,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1536,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        88,
+        3
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "06_results_035",
+      "kind": "nine_slice",
+      "x": 1540,
+      "y": 672,
+      "width": 89,
+      "height": 29,
+      "paint_order": 34,
+      "file": "assets/inventory/ui/tag_rank_r.png",
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "state_label": "確定枠"
+    },
+    {
+      "id": "06_results_036",
+      "kind": "text",
+      "x": 1557.5,
+      "y": 676,
+      "width": 54.0,
+      "height": 19,
+      "paint_order": 35,
+      "text": "確定枠",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 18,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 1584.5,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        54,
+        2
+      ],
+      "binding": "receipt.count==10 && result.index==9; never all S/R"
+    },
+    {
+      "id": "06_results_037",
+      "kind": "nine_slice",
+      "x": 367,
+      "y": 770,
+      "width": 505,
+      "height": 62,
+      "paint_order": 36,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "button_label": "インベントリへ"
+    },
+    {
+      "id": "06_results_038",
+      "kind": "text",
+      "x": 513.0,
+      "y": 784.5,
+      "width": 189.0,
+      "height": 24,
+      "paint_order": 37,
+      "text": "インベントリへ",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 27,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 607.5,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        189,
+        2
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "06_results_039",
+      "kind": "image",
+      "x": 837,
+      "y": 789,
+      "width": 14,
+      "height": 23,
+      "paint_order": 38,
+      "file": "assets/icons/nickname_confirm_arrow.png"
+    },
+    {
+      "id": "06_results_040",
+      "kind": "nine_slice",
+      "x": 925,
+      "y": 770,
+      "width": 555,
+      "height": 62,
+      "paint_order": 39,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "button_label": "OK"
+    },
+    {
+      "id": "06_results_041",
+      "kind": "text",
+      "x": 1182.15625,
+      "y": 783.5,
+      "width": 40.6875,
+      "height": 21,
+      "paint_order": 40,
+      "text": "OK",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 29,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1202.5,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        42,
+        0
+      ],
+      "binding": "static localized label"
+    }
+  ],
+  "sample_only": true,
+  "runtime_source": "committed purchase receipt, existing catalog/ownership/wallet; never mock sample data",
+  "resize": {
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "position": "center in safe area",
+    "aspect": "uniform"
+  },
+  "taps": [
+    {
+      "id": "back",
+      "x": 123,
+      "y": 38,
+      "width": 64,
+      "height": 64,
+      "action": "shop-after-receipt-applied"
+    },
+    {
+      "id": "inventory",
+      "x": 367,
+      "y": 770,
+      "width": 505,
+      "height": 62,
+      "action": "existing-inventory-after-applied-receipt"
+    },
+    {
+      "id": "ok",
+      "x": 925,
+      "y": 770,
+      "width": 555,
+      "height": 62,
+      "action": "existing-shop"
+    }
+  ],
+  "scroll": "none; all six approved layouts are fixed, results 10 cards fit 5x2",
+  "effects_clip": "Keep rays and animated effect groups below title bar (body y>=136). Use exported pivot, not default bitmap center."
+}

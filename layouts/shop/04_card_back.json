@@ -1,0 +1,604 @@
+{
+  "screen": "04_card_back",
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "04_card_back_001",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "04_card_back_002",
+      "kind": "overlay",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 1,
+      "fill": [
+        0,
+        2,
+        18,
+        115
+      ]
+    },
+    {
+      "id": "04_card_back_003",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "paint_order": 2,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "04_card_back_004",
+      "kind": "text",
+      "x": 237,
+      "y": 47,
+      "width": 195.0,
+      "height": 36,
+      "paint_order": 3,
+      "text": "カード公開",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 237,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -32,
+        195,
+        4
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "04_card_back_005",
+      "kind": "text",
+      "x": 909.65625,
+      "y": 56,
+      "width": 60.6875,
+      "height": 25,
+      "paint_order": 4,
+      "text": "1 / 10",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 24,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 940,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -20,
+        61,
+        5
+      ],
+      "binding": "revealIndex+1 / committedReceipt.results.length"
+    },
+    {
+      "id": "04_card_back_006",
+      "kind": "image",
+      "x": 1253,
+      "y": 47,
+      "width": 37,
+      "height": 37,
+      "paint_order": 5,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "04_card_back_007",
+      "kind": "text",
+      "x": 1362.203125,
+      "y": 51,
+      "width": 94.796875,
+      "height": 28,
+      "paint_order": 6,
+      "text": "15,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1457,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        95,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "04_card_back_008",
+      "kind": "image",
+      "x": 1511,
+      "y": 47,
+      "width": 44,
+      "height": 37,
+      "paint_order": 7,
+      "file": "home_approved/assets/icons/diamond.png"
+    },
+    {
+      "id": "04_card_back_009",
+      "kind": "text",
+      "x": 1655.53125,
+      "y": 51,
+      "width": 34.46875,
+      "height": 22,
+      "paint_order": 8,
+      "text": "21",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1690,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        34,
+        0
+      ],
+      "binding": "existingWallet.diamonds (display only)"
+    },
+    {
+      "id": "04_card_back_010",
+      "kind": "nine_slice",
+      "x": 95,
+      "y": 135,
+      "width": 1653,
+      "height": 640,
+      "paint_order": 9,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "04_card_back_011",
+      "kind": "image",
+      "x": 556,
+      "y": 73,
+      "width": 733,
+      "height": 719,
+      "paint_order": 10,
+      "file": "assets/shop/fx/glow_13.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        922,
+        432
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          432,
+          250,
+          245,
+          [
+            71,
+            153,
+            199
+          ],
+          110
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "04_card_back_012",
+      "kind": "image",
+      "x": 394,
+      "y": 134,
+      "width": 1132,
+      "height": 689,
+      "paint_order": 11,
+      "file": "assets/shop/fx/rays_14.png",
+      "effect": "rays",
+      "pivot_canvas": [
+        922,
+        430
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          430,
+          450,
+          300,
+          [
+            79,
+            129,
+            230
+          ],
+          9
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "04_card_back_013",
+      "kind": "image",
+      "x": 747,
+      "y": 176,
+      "width": 350,
+      "height": 490,
+      "paint_order": 12,
+      "file": "assets/shop/cards/card_back.png",
+      "role": "original-card-back"
+    },
+    {
+      "id": "04_card_back_014",
+      "kind": "nine_slice",
+      "x": 137,
+      "y": 297,
+      "width": 425,
+      "height": 219,
+      "paint_order": 13,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "04_card_back_015",
+      "kind": "text",
+      "x": 170,
+      "y": 323,
+      "width": 155.09375,
+      "height": 30,
+      "paint_order": 14,
+      "text": "10枚パック",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 30,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 170,
+      "align": "left",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -26,
+        155,
+        4
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "04_card_back_016",
+      "kind": "text",
+      "x": 170,
+      "y": 376,
+      "width": 176.265625,
+      "height": 28,
+      "paint_order": 15,
+      "text": "1枚目 / 全10枚",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 27,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 170,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        176,
+        5
+      ],
+      "binding": "revealIndex+1 / committedReceipt.results.length"
+    },
+    {
+      "id": "04_card_back_017",
+      "kind": "text",
+      "x": 170,
+      "y": 444,
+      "width": 200.75,
+      "height": 23,
+      "paint_order": 16,
+      "text": "10枚目はS以上確定",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 23,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 170,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -20,
+        201,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "04_card_back_018",
+      "kind": "nine_slice",
+      "x": 1283,
+      "y": 297,
+      "width": 425,
+      "height": 219,
+      "paint_order": 17,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "04_card_back_019",
+      "kind": "text",
+      "x": 1316,
+      "y": 325,
+      "width": 239.625,
+      "height": 25,
+      "paint_order": 18,
+      "text": "カードを1枚ずつ公開",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 25,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1316,
+      "align": "left",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        240,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "04_card_back_020",
+      "kind": "text",
+      "x": 1316,
+      "y": 373,
+      "width": 231.0,
+      "height": 21,
+      "paint_order": 19,
+      "text": "結果をまとめて確認する",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 21,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1316,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        231,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "04_card_back_021",
+      "kind": "nine_slice",
+      "x": 1316,
+      "y": 429,
+      "width": 358,
+      "height": 61,
+      "paint_order": 20,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "button_label": "スキップ"
+    },
+    {
+      "id": "04_card_back_022",
+      "kind": "text",
+      "x": 1441.0,
+      "y": 443.0,
+      "width": 108.0,
+      "height": 26,
+      "paint_order": 21,
+      "text": "スキップ",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 27,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1495.0,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        108,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "04_card_back_023",
+      "kind": "text",
+      "x": 718.8515625,
+      "y": 713,
+      "width": 406.296875,
+      "height": 32,
+      "paint_order": 22,
+      "text": "タップしてカードをめくる",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 34,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 922,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -29,
+        406,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "04_card_back_024",
+      "kind": "dot",
+      "x": 821,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 23,
+      "fill": "#ffe89c",
+      "progress_index": 0
+    },
+    {
+      "id": "04_card_back_025",
+      "kind": "dot",
+      "x": 843,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 24,
+      "fill": "#62658c",
+      "progress_index": 1
+    },
+    {
+      "id": "04_card_back_026",
+      "kind": "dot",
+      "x": 865,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 25,
+      "fill": "#62658c",
+      "progress_index": 2
+    },
+    {
+      "id": "04_card_back_027",
+      "kind": "dot",
+      "x": 887,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 26,
+      "fill": "#62658c",
+      "progress_index": 3
+    },
+    {
+      "id": "04_card_back_028",
+      "kind": "dot",
+      "x": 909,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 27,
+      "fill": "#62658c",
+      "progress_index": 4
+    },
+    {
+      "id": "04_card_back_029",
+      "kind": "dot",
+      "x": 931,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 28,
+      "fill": "#62658c",
+      "progress_index": 5
+    },
+    {
+      "id": "04_card_back_030",
+      "kind": "dot",
+      "x": 953,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 29,
+      "fill": "#62658c",
+      "progress_index": 6
+    },
+    {
+      "id": "04_card_back_031",
+      "kind": "dot",
+      "x": 975,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 30,
+      "fill": "#62658c",
+      "progress_index": 7
+    },
+    {
+      "id": "04_card_back_032",
+      "kind": "dot",
+      "x": 997,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 31,
+      "fill": "#62658c",
+      "progress_index": 8
+    },
+    {
+      "id": "04_card_back_033",
+      "kind": "dot",
+      "x": 1019,
+      "y": 756,
+      "width": 8,
+      "height": 8,
+      "paint_order": 32,
+      "fill": "#62658c",
+      "progress_index": 9
+    }
+  ],
+  "sample_only": true,
+  "runtime_source": "committed purchase receipt, existing catalog/ownership/wallet; never mock sample data",
+  "resize": {
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "position": "center in safe area",
+    "aspect": "uniform"
+  },
+  "taps": [
+    {
+      "id": "flip",
+      "x": 747,
+      "y": 176,
+      "width": 350,
+      "height": 490,
+      "action": "flip-current-result"
+    },
+    {
+      "id": "skip",
+      "x": 1316,
+      "y": 429,
+      "width": 358,
+      "height": 61,
+      "action": "cancel FX and reveal sequence; show same receipt results"
+    }
+  ],
+  "scroll": "none; all six approved layouts are fixed, results 10 cards fit 5x2",
+  "effects_clip": "Keep rays and animated effect groups below title bar (body y>=136). Use exported pivot, not default bitmap center."
+}

@@ -1,0 +1,223 @@
+﻿screen,id,kind,x,y,width,height,paint_order,file_or_catalog,text,binding
+01_shop_main,01_shop_main_001,image,0,0,1844,853,0,assets/collection/background.png,,
+01_shop_main,01_shop_main_002,image,92,26,1661,84,1,assets/nickname/nickname_header.png,,
+01_shop_main,01_shop_main_003,image,142,48,24,40,2,assets/icons/nickname_back.png,,
+01_shop_main,01_shop_main_004,text,237,47,156.0,37,3,,ショップ,static localized label
+01_shop_main,01_shop_main_005,text,844.0,56,192.0,24,4,,通常カードパック,static localized label
+01_shop_main,01_shop_main_006,image,1253,47,37,37,5,home_approved/assets/icons/coin.png,,
+01_shop_main,01_shop_main_007,text,1362.203125,51,94.796875,28,6,,"25,000",existingWallet.rCoin; preview uses balance-cost
+01_shop_main,01_shop_main_008,image,1511,47,44,37,7,home_approved/assets/icons/diamond.png,,
+01_shop_main,01_shop_main_009,text,1655.53125,51,34.46875,22,8,,21,existingWallet.diamonds (display only)
+01_shop_main,01_shop_main_010,nine_slice,95,132,1653,82,9,assets/collection/ui/list_panel.png,,
+01_shop_main,01_shop_main_011,text,129,145,337.09375,30,10,,初回限定  無料10枚パック,selectedSku.count / label
+01_shop_main,01_shop_main_012,text,129,183,298.84375,20,11,,S以上1枚確定・受け取りは1回限り,visible when setupComplete && !officialWelcomePackClaimed
+01_shop_main,01_shop_main_013,nine_slice,1365,144,350,58,12,home_approved/assets/home/button_collection.png,,
+01_shop_main,01_shop_main_014,text,1437.0,157.0,182.0,25,13,,無料で受け取る,visible when setupComplete && !officialWelcomePackClaimed
+01_shop_main,01_shop_main_015,image,1680,161,14,23,14,assets/icons/nickname_confirm_arrow.png,,
+01_shop_main,01_shop_main_016,nine_slice,95,235,533,540,15,assets/collection/ui/list_panel.png,,
+01_shop_main,01_shop_main_017,text,287.640625,254,146.71875,32,16,,1枚パック,selectedSku.count / label
+01_shop_main,01_shop_main_018,image,99,213,525,511,17,assets/shop/fx/glow_01.png,,
+01_shop_main,01_shop_main_019,image,252,299,218,327,18,assets/shop/packs/pack_one.png,,
+01_shop_main,01_shop_main_020,image,394,522,78,78,19,assets/shop/ui/count_badge_silver_32.png,,
+01_shop_main,01_shop_main_021,text,424.3828125,540.2,17.234375,22,20,,1,selectedSku.count / label
+01_shop_main,01_shop_main_022,text,425.0,571,16.0,16,21,,枚,selectedSku.count / label
+01_shop_main,01_shop_main_023,text,315.0,640,92.0,23,22,,通常抽選,static localized label
+01_shop_main,01_shop_main_024,nine_slice,119,702,485,59,23,home_approved/assets/home/button_collection.png,,
+01_shop_main,01_shop_main_025,text,259.7578125,714.5,179.484375,29,24,,"1,000 Rコイン",selectedSku.price or confirmation CTA; free is 0
+01_shop_main,01_shop_main_026,image,569,720,14,23,25,assets/icons/nickname_confirm_arrow.png,,
+01_shop_main,01_shop_main_027,nine_slice,655,235,533,540,26,assets/collection/ui/list_panel.png,,
+01_shop_main,01_shop_main_028,text,847.640625,254,146.71875,32,27,,5枚パック,selectedSku.count / label
+01_shop_main,01_shop_main_029,image,659,213,525,511,28,assets/shop/fx/glow_02.png,,
+01_shop_main,01_shop_main_030,image,812,299,218,327,29,assets/shop/packs/pack_five.png,,
+01_shop_main,01_shop_main_031,image,954,522,78,78,30,assets/shop/ui/count_badge_violet_32.png,,
+01_shop_main,01_shop_main_032,text,984.3828125,540.2,17.234375,22,31,,5,selectedSku.count / label
+01_shop_main,01_shop_main_033,text,985.0,571,16.0,16,32,,枚,selectedSku.count / label
+01_shop_main,01_shop_main_034,text,875.0,640,92.0,23,33,,通常抽選,static localized label
+01_shop_main,01_shop_main_035,nine_slice,679,702,485,59,34,home_approved/assets/home/button_collection.png,,
+01_shop_main,01_shop_main_036,text,819.7578125,714.5,179.484375,29,35,,"5,000 Rコイン",selectedSku.price or confirmation CTA; free is 0
+01_shop_main,01_shop_main_037,image,1129,720,14,23,36,assets/icons/nickname_confirm_arrow.png,,
+01_shop_main,01_shop_main_038,nine_slice,1215,235,533,540,37,assets/collection/ui/list_panel.png,,
+01_shop_main,01_shop_main_039,text,1398.28125,254,165.4375,32,38,,10枚パック,selectedSku.count / label
+01_shop_main,01_shop_main_040,image,1219,213,525,511,39,assets/shop/fx/glow_03.png,,
+01_shop_main,01_shop_main_041,image,1372,299,218,327,40,assets/shop/packs/pack_ten.png,,
+01_shop_main,01_shop_main_042,image,1514,522,78,78,41,assets/shop/ui/count_badge_gold_32.png,,
+01_shop_main,01_shop_main_043,text,1535.765625,540.2,34.46875,22,42,,10,selectedSku.count / label
+01_shop_main,01_shop_main_044,text,1545.0,571,16.0,16,43,,枚,selectedSku.count / label
+01_shop_main,01_shop_main_045,nine_slice,1361,626,240,29,44,assets/inventory/ui/tag_rank_r.png,,
+01_shop_main,01_shop_main_046,text,1425.15625,630,111.6875,20,45,,S以上1枚確定,static localized label
+01_shop_main,01_shop_main_047,text,1378.625,662,204.75,18,46,,10枚目はSまたはRランク,static localized label
+01_shop_main,01_shop_main_048,nine_slice,1239,702,485,59,47,home_approved/assets/home/button_collection.png,,
+01_shop_main,01_shop_main_049,text,1371.875,714.5,195.25,29,48,,"10,000 Rコイン",selectedSku.price or confirmation CTA; free is 0
+01_shop_main,01_shop_main_050,image,1689,720,14,23,49,assets/icons/nickname_confirm_arrow.png,,
+01_shop_main,01_shop_main_051,text,119,805,424.59375,19,50,,通常抽選：R 1%  /  S 9%  /  A 25%  /  B 30%  /  C 35%,normal rarity probability table from data/shop/catalog.json
+01_shop_main,01_shop_main_052,text,1449.0,805,274.0,20,51,,10枚目の確定枠：R 10%  /  S 90%,guaranteed rarity probability table from data/shop/catalog.json
+02_purchase_confirm,02_purchase_confirm_001,image,0,0,1844,853,0,assets/collection/background.png,,
+02_purchase_confirm,02_purchase_confirm_002,image,92,26,1661,84,1,assets/nickname/nickname_header.png,,
+02_purchase_confirm,02_purchase_confirm_003,image,142,48,24,40,2,assets/icons/nickname_back.png,,
+02_purchase_confirm,02_purchase_confirm_004,text,237,47,156.0,37,3,,購入確認,static localized label
+02_purchase_confirm,02_purchase_confirm_005,text,878.484375,56,123.03125,24,4,,10枚パック,selectedSku.count / label
+02_purchase_confirm,02_purchase_confirm_006,image,1253,47,37,37,5,home_approved/assets/icons/coin.png,,
+02_purchase_confirm,02_purchase_confirm_007,text,1362.203125,51,94.796875,28,6,,"25,000",existingWallet.rCoin; preview uses balance-cost
+02_purchase_confirm,02_purchase_confirm_008,image,1511,47,44,37,7,home_approved/assets/icons/diamond.png,,
+02_purchase_confirm,02_purchase_confirm_009,text,1655.53125,51,34.46875,22,8,,21,existingWallet.diamonds (display only)
+02_purchase_confirm,02_purchase_confirm_010,nine_slice,249,135,1346,640,9,assets/collection/ui/list_panel.png,,
+02_purchase_confirm,02_purchase_confirm_011,image,1519,153,32,32,10,assets/shop/ui/close.png,,
+02_purchase_confirm,02_purchase_confirm_012,text,714.0,162,416.0,32,11,,このパックを購入しますか？,static localized label
+02_purchase_confirm,02_purchase_confirm_013,image,631,115,583,595,12,assets/shop/fx/glow_04.png,,
+02_purchase_confirm,02_purchase_confirm_014,image,786,227,273,410,13,assets/shop/packs/pack_ten.png,,
+02_purchase_confirm,02_purchase_confirm_015,image,961,504,102,102,14,assets/shop/ui/count_badge_gold_44.png,,
+02_purchase_confirm,02_purchase_confirm_016,text,988.09375,526.4,47.8125,32,15,,10,selectedSku.count / label
+02_purchase_confirm,02_purchase_confirm_017,text,1002.0,565,20.0,20,16,,枚,selectedSku.count / label
+02_purchase_confirm,02_purchase_confirm_018,text,305,269,186.125,35,17,,10枚パック,selectedSku.count / label
+02_purchase_confirm,02_purchase_confirm_019,nine_slice,305,331,252,29,18,assets/inventory/ui/tag_rank_r.png,,
+02_purchase_confirm,02_purchase_confirm_020,text,375.15625,335,111.6875,20,19,,S以上1枚確定,static localized label
+02_purchase_confirm,02_purchase_confirm_021,text,305,389,171.03125,24,20,,カード10枚入り,selectedSku.count / label
+02_purchase_confirm,02_purchase_confirm_022,text,305,434,261.609375,23,21,,10枚目はSまたはRランク,static localized label
+02_purchase_confirm,02_purchase_confirm_023,nine_slice,1143,239,405,366,22,assets/collection/ui/list_panel.png,,
+02_purchase_confirm,02_purchase_confirm_024,text,1172,265,42.0,21,23,,価格,static localized label
+02_purchase_confirm,02_purchase_confirm_025,image,1172,303,30,30,24,home_approved/assets/icons/coin.png,,
+02_purchase_confirm,02_purchase_confirm_026,text,1405.90625,299,110.09375,33,25,,"10,000",selectedSku.price or confirmation CTA; free is 0
+02_purchase_confirm,02_purchase_confirm_027,separator,1172,355,345,1,26,,,
+02_purchase_confirm,02_purchase_confirm_028,text,1172,382,118.5625,21,27,,所持Rコイン,static localized label
+02_purchase_confirm,02_purchase_confirm_029,image,1172,420,30,30,28,home_approved/assets/icons/coin.png,,
+02_purchase_confirm,02_purchase_confirm_030,text,1424.21875,416,91.78125,27,29,,"25,000",existingWallet.rCoin; preview uses balance-cost
+02_purchase_confirm,02_purchase_confirm_031,text,1172,496,126.0,21,30,,購入後の残高,static localized label
+02_purchase_confirm,02_purchase_confirm_032,image,1172,534,30,30,31,home_approved/assets/icons/coin.png,,
+02_purchase_confirm,02_purchase_confirm_033,text,1418.125,530,97.875,29,32,,"15,000",existingWallet.rCoin; preview uses balance-cost
+02_purchase_confirm,02_purchase_confirm_034,text,684.765625,633,474.46875,22,33,,Rコインを消費して、カードパックを購入します,static localized label
+02_purchase_confirm,02_purchase_confirm_035,nine_slice,300,692,460,65,34,home_approved/assets/home/status_menu.png,,
+02_purchase_confirm,02_purchase_confirm_036,text,460.0,707.5,140.0,26,35,,キャンセル,static localized label
+02_purchase_confirm,02_purchase_confirm_037,nine_slice,798,692,750,65,36,home_approved/assets/home/button_collection.png,,
+02_purchase_confirm,02_purchase_confirm_038,text,1016.3828125,707.0,289.234375,31,37,,"10,000 Rコインで購入",selectedSku.price or confirmation CTA; free is 0
+02_purchase_confirm,02_purchase_confirm_039,image,1513,713,14,23,38,assets/icons/nickname_confirm_arrow.png,,
+03_pack_opening,03_pack_opening_001,image,0,0,1844,853,0,assets/collection/background.png,,
+03_pack_opening,03_pack_opening_002,overlay,0,0,1844,853,1,,,
+03_pack_opening,03_pack_opening_003,image,92,26,1661,84,2,assets/nickname/nickname_header.png,,
+03_pack_opening,03_pack_opening_004,text,237,47,195.0,37,3,,パック開封,static localized label
+03_pack_opening,03_pack_opening_005,text,878.484375,56,123.03125,24,4,,10枚パック,selectedSku.count / label
+03_pack_opening,03_pack_opening_006,image,1253,47,37,37,5,home_approved/assets/icons/coin.png,,
+03_pack_opening,03_pack_opening_007,text,1362.203125,51,94.796875,28,6,,"15,000",existingWallet.rCoin; preview uses balance-cost
+03_pack_opening,03_pack_opening_008,image,1511,47,44,37,7,home_approved/assets/icons/diamond.png,,
+03_pack_opening,03_pack_opening_009,text,1655.53125,51,34.46875,22,8,,21,existingWallet.diamonds (display only)
+03_pack_opening,03_pack_opening_010,nine_slice,249,136,1346,638,9,assets/collection/ui/list_panel.png,,
+03_pack_opening,03_pack_opening_011,image,366,134,1130,719,10,assets/shop/fx/rays_05.png,,
+03_pack_opening,03_pack_opening_012,image,604,92,637,699,11,assets/shop/fx/glow_06.png,,
+03_pack_opening,03_pack_opening_013,text,841.3359375,156,161.328125,26,12,,S以上1枚確定,static localized label
+03_pack_opening,03_pack_opening_014,image,580,96,684,710,13,assets/shop/fx/glow_07.png,,
+03_pack_opening,03_pack_opening_015,image,760,204,323,485,14,assets/shop/packs/pack_ten.png,,
+03_pack_opening,03_pack_opening_016,image,978,541,102,102,15,assets/shop/ui/count_badge_gold_44.png,,
+03_pack_opening,03_pack_opening_017,text,1005.09375,563.4,47.8125,32,16,,10,selectedSku.count / label
+03_pack_opening,03_pack_opening_018,text,1019.0,602,20.0,20,17,,枚,selectedSku.count / label
+03_pack_opening,03_pack_opening_019,image,653,282,25,25,18,assets/shop/fx/star_08.png,,
+03_pack_opening,03_pack_opening_020,image,1152,345,29,29,19,assets/shop/fx/star_09.png,,
+03_pack_opening,03_pack_opening_021,image,685,579,21,21,20,assets/shop/fx/star_10.png,,
+03_pack_opening,03_pack_opening_022,image,1153,566,23,23,21,assets/shop/fx/star_11.png,,
+03_pack_opening,03_pack_opening_023,image,1041,221,19,19,22,assets/shop/fx/star_12.png,,
+03_pack_opening,03_pack_opening_024,nine_slice,600,701,644,65,23,home_approved/assets/home/button_collection.png,,
+03_pack_opening,03_pack_opening_025,text,813.96875,715.0,216.0625,31,24,,タップして開封,static localized label
+04_card_back,04_card_back_001,image,0,0,1844,853,0,assets/collection/background.png,,
+04_card_back,04_card_back_002,overlay,0,0,1844,853,1,,,
+04_card_back,04_card_back_003,image,92,26,1661,84,2,assets/nickname/nickname_header.png,,
+04_card_back,04_card_back_004,text,237,47,195.0,36,3,,カード公開,static localized label
+04_card_back,04_card_back_005,text,909.65625,56,60.6875,25,4,,1 / 10,revealIndex+1 / committedReceipt.results.length
+04_card_back,04_card_back_006,image,1253,47,37,37,5,home_approved/assets/icons/coin.png,,
+04_card_back,04_card_back_007,text,1362.203125,51,94.796875,28,6,,"15,000",existingWallet.rCoin; preview uses balance-cost
+04_card_back,04_card_back_008,image,1511,47,44,37,7,home_approved/assets/icons/diamond.png,,
+04_card_back,04_card_back_009,text,1655.53125,51,34.46875,22,8,,21,existingWallet.diamonds (display only)
+04_card_back,04_card_back_010,nine_slice,95,135,1653,640,9,assets/collection/ui/list_panel.png,,
+04_card_back,04_card_back_011,image,556,73,733,719,10,assets/shop/fx/glow_13.png,,
+04_card_back,04_card_back_012,image,394,134,1132,689,11,assets/shop/fx/rays_14.png,,
+04_card_back,04_card_back_013,image,747,176,350,490,12,assets/shop/cards/card_back.png,,
+04_card_back,04_card_back_014,nine_slice,137,297,425,219,13,assets/collection/ui/list_panel.png,,
+04_card_back,04_card_back_015,text,170,323,155.09375,30,14,,10枚パック,selectedSku.count / label
+04_card_back,04_card_back_016,text,170,376,176.265625,28,15,,1枚目 / 全10枚,revealIndex+1 / committedReceipt.results.length
+04_card_back,04_card_back_017,text,170,444,200.75,23,16,,10枚目はS以上確定,static localized label
+04_card_back,04_card_back_018,nine_slice,1283,297,425,219,17,assets/collection/ui/list_panel.png,,
+04_card_back,04_card_back_019,text,1316,325,239.625,25,18,,カードを1枚ずつ公開,static localized label
+04_card_back,04_card_back_020,text,1316,373,231.0,21,19,,結果をまとめて確認する,static localized label
+04_card_back,04_card_back_021,nine_slice,1316,429,358,61,20,home_approved/assets/home/status_menu.png,,
+04_card_back,04_card_back_022,text,1441.0,443.0,108.0,26,21,,スキップ,static localized label
+04_card_back,04_card_back_023,text,718.8515625,713,406.296875,32,22,,タップしてカードをめくる,static localized label
+04_card_back,04_card_back_024,dot,821,756,8,8,23,,,
+04_card_back,04_card_back_025,dot,843,756,8,8,24,,,
+04_card_back,04_card_back_026,dot,865,756,8,8,25,,,
+04_card_back,04_card_back_027,dot,887,756,8,8,26,,,
+04_card_back,04_card_back_028,dot,909,756,8,8,27,,,
+04_card_back,04_card_back_029,dot,931,756,8,8,28,,,
+04_card_back,04_card_back_030,dot,953,756,8,8,29,,,
+04_card_back,04_card_back_031,dot,975,756,8,8,30,,,
+04_card_back,04_card_back_032,dot,997,756,8,8,31,,,
+04_card_back,04_card_back_033,dot,1019,756,8,8,32,,,
+05_card_reveal,05_card_reveal_001,image,0,0,1844,853,0,assets/collection/background.png,,
+05_card_reveal,05_card_reveal_002,overlay,0,0,1844,853,1,,,
+05_card_reveal,05_card_reveal_003,image,92,26,1661,84,2,assets/nickname/nickname_header.png,,
+05_card_reveal,05_card_reveal_004,text,237,47,195.0,37,3,,カード獲得,static localized label
+05_card_reveal,05_card_reveal_005,text,909.65625,56,60.6875,25,4,,1 / 10,revealIndex+1 / committedReceipt.results.length
+05_card_reveal,05_card_reveal_006,image,1253,47,37,37,5,home_approved/assets/icons/coin.png,,
+05_card_reveal,05_card_reveal_007,text,1362.203125,51,94.796875,28,6,,"15,000",existingWallet.rCoin; preview uses balance-cost
+05_card_reveal,05_card_reveal_008,image,1511,47,44,37,7,home_approved/assets/icons/diamond.png,,
+05_card_reveal,05_card_reveal_009,text,1655.53125,51,34.46875,22,8,,21,existingWallet.diamonds (display only)
+05_card_reveal,05_card_reveal_010,nine_slice,95,135,1653,640,9,assets/collection/ui/list_panel.png,,
+05_card_reveal,05_card_reveal_011,image,159,134,1624,719,10,assets/shop/fx/rays_15.png,,
+05_card_reveal,05_card_reveal_012,image,559,46,727,763,11,assets/shop/fx/glow_16.png,,
+05_card_reveal,05_card_reveal_013,image,628,76,589,699,12,assets/shop/fx/glow_17.png,,
+05_card_reveal,05_card_reveal_014,card,728,145,388,543,13,motoki-r-01,,committed receipt result index; never reroll for rendering
+05_card_reveal,05_card_reveal_015,image,714,195,25,25,14,assets/shop/fx/star_08.png,,
+05_card_reveal,05_card_reveal_016,image,1094,228,33,33,15,assets/shop/fx/star_19.png,,
+05_card_reveal,05_card_reveal_017,image,732,586,23,23,16,assets/shop/fx/star_11.png,,
+05_card_reveal,05_card_reveal_018,image,1100,613,31,31,17,assets/shop/fx/star_21.png,,
+05_card_reveal,05_card_reveal_019,image,1182,410,19,19,18,assets/shop/fx/star_12.png,,
+05_card_reveal,05_card_reveal_020,image,673,388,19,19,19,assets/shop/fx/star_12.png,,
+05_card_reveal,05_card_reveal_021,image,851,152,21,21,20,assets/shop/fx/star_10.png,,
+05_card_reveal,05_card_reveal_022,text,303.2890625,291,79.421875,80,21,,R,committedReceipt.results[index].rarity
+05_card_reveal,05_card_reveal_023,text,284.203125,416,117.59375,30,22,,Rランク,committedReceipt.results[index].rarity
+05_card_reveal,05_card_reveal_024,text,285.5,470,115.0,23,23,,カード獲得,static localized label
+05_card_reveal,05_card_reveal_025,nine_slice,1283,294,425,238,24,assets/collection/ui/list_panel.png,,
+05_card_reveal,05_card_reveal_026,text,1425.0,326,140.0,34,25,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+05_card_reveal,05_card_reveal_027,text,1443.953125,387,102.09375,25,26,,Rランク,committedReceipt.results[index].rarity
+05_card_reveal,05_card_reveal_028,text,1401.8046875,465,186.390625,25,27,,10枚パック  1 / 10,revealIndex+1 / committedReceipt.results.length
+05_card_reveal,05_card_reveal_029,text,852.0,706,140.0,34,28,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+05_card_reveal,05_card_reveal_030,nine_slice,1315,661,360,77,29,home_approved/assets/home/button_collection.png,,
+05_card_reveal,05_card_reveal_031,text,1452.0,681.0,62.0,30,30,,次へ,次へ until last; last label 結果を見る
+05_card_reveal,05_card_reveal_032,image,1640,688,14,23,31,assets/icons/nickname_confirm_arrow.png,,
+06_results,06_results_001,image,0,0,1844,853,0,assets/collection/background.png,,
+06_results,06_results_002,image,92,26,1661,84,1,assets/nickname/nickname_header.png,,
+06_results,06_results_003,image,142,48,24,40,2,assets/icons/nickname_back.png,,
+06_results,06_results_004,text,237,47,156.0,37,3,,獲得結果,static localized label
+06_results,06_results_005,text,830.484375,56,219.03125,24,4,,10枚のカードを獲得,committedReceipt.results.length
+06_results,06_results_006,image,1253,47,37,37,5,home_approved/assets/icons/coin.png,,
+06_results,06_results_007,text,1362.203125,51,94.796875,28,6,,"15,000",existingWallet.rCoin; preview uses balance-cost
+06_results,06_results_008,image,1511,47,44,37,7,home_approved/assets/icons/diamond.png,,
+06_results,06_results_009,text,1655.53125,51,34.46875,22,8,,21,existingWallet.diamonds (display only)
+06_results,06_results_010,nine_slice,95,135,1653,615,9,assets/collection/ui/list_panel.png,,
+06_results,06_results_011,image,76,25,441,495,10,assets/shop/fx/glow_25.png,,
+06_results,06_results_012,card,206,147,180,252,11,motoki-r-01,,committed receipt result index; never reroll for rendering
+06_results,06_results_013,image,356,173,21,21,12,assets/shop/fx/star_10.png,,
+06_results,06_results_014,text,252.0,408,88.0,22,13,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_015,card,516,147,180,252,14,motoki-b-03,,committed receipt result index; never reroll for rendering
+06_results,06_results_016,text,562.0,408,88.0,22,15,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_017,card,826,147,180,252,16,motoki-c-04,,committed receipt result index; never reroll for rendering
+06_results,06_results_018,text,872.0,408,88.0,22,17,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_019,card,1136,147,180,252,18,ryoka-a-05,,committed receipt result index; never reroll for rendering
+06_results,06_results_020,text,1182.0,408,88.0,22,19,,藤澤涼架,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_021,card,1446,147,180,252,20,hiroto-b-01,,committed receipt result index; never reroll for rendering
+06_results,06_results_022,text,1492.0,408,88.0,22,21,,若井滉斗,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_023,card,206,449,180,252,22,ryoka-c-07,,committed receipt result index; never reroll for rendering
+06_results,06_results_024,text,252.0,710,88.0,22,23,,藤澤涼架,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_025,card,516,449,180,252,24,motoki-a-01,,committed receipt result index; never reroll for rendering
+06_results,06_results_026,text,562.0,710,88.0,22,25,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_027,card,826,449,180,252,26,motoki-c-04,,committed receipt result index; never reroll for rendering
+06_results,06_results_028,text,872.0,710,88.0,22,27,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_029,card,1136,449,180,252,28,motoki-b-03,,committed receipt result index; never reroll for rendering
+06_results,06_results_030,text,1182.0,710,88.0,22,29,,大森元貴,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_031,image,1316,327,441,495,30,assets/shop/fx/glow_27.png,,
+06_results,06_results_032,card,1446,449,180,252,31,hiroto-s-01,,committed receipt result index; never reroll for rendering
+06_results,06_results_033,image,1596,475,21,21,32,assets/shop/fx/star_28.png,,
+06_results,06_results_034,text,1492.0,710,88.0,22,33,,若井滉斗,committedReceipt.results[index].catalogId -> existing catalog member name
+06_results,06_results_035,nine_slice,1540,672,89,29,34,assets/inventory/ui/tag_rank_r.png,,
+06_results,06_results_036,text,1557.5,676,54.0,19,35,,確定枠,receipt.count==10 && result.index==9; never all S/R
+06_results,06_results_037,nine_slice,367,770,505,62,36,home_approved/assets/home/status_menu.png,,
+06_results,06_results_038,text,513.0,784.5,189.0,24,37,,インベントリへ,static localized label
+06_results,06_results_039,image,837,789,14,23,38,assets/icons/nickname_confirm_arrow.png,,
+06_results,06_results_040,nine_slice,925,770,555,62,39,home_approved/assets/home/button_collection.png,,
+06_results,06_results_041,text,1182.15625,783.5,40.6875,21,40,,OK,static localized label

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Immutable Shop receipt contract, adapt to existing storage service",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "purchaseId",
+    "sku",
+    "count",
+    "pricePaid",
+    "committedAt",
+    "results"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "purchaseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sku": {
+      "enum": [
+        "normal_1",
+        "normal_5",
+        "normal_10",
+        "welcome_10"
+      ]
+    },
+    "count": {
+      "enum": [
+        1,
+        5,
+        10
+      ]
+    },
+    "pricePaid": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "committedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "claimEventId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "catalogVersion": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "index",
+          "instanceId",
+          "catalogId",
+          "rarity",
+          "acquiredAt",
+          "initialLevel",
+          "guaranteed"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9
+          },
+          "instanceId": {
+            "type": "string"
+          },
+          "catalogId": {
+            "type": "string"
+          },
+          "rarity": {
+            "enum": [
+              "R",
+              "S",
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "acquiredAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "initialLevel": {
+            "const": 1
+          },
+          "guaranteed": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$comment": "Runtime must validate results length==count, unique instanceIds/index, exact SKU price, and guarantee only at zero-based index9 for count10."
+}

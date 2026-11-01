@@ -1,0 +1,541 @@
+{
+  "screen": "03_pack_opening",
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "03_pack_opening_001",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "03_pack_opening_002",
+      "kind": "overlay",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 1,
+      "fill": [
+        0,
+        2,
+        18,
+        115
+      ]
+    },
+    {
+      "id": "03_pack_opening_003",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "paint_order": 2,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "03_pack_opening_004",
+      "kind": "text",
+      "x": 237,
+      "y": 47,
+      "width": 195.0,
+      "height": 37,
+      "paint_order": 3,
+      "text": "パック開封",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 237,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -33,
+        195,
+        4
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "03_pack_opening_005",
+      "kind": "text",
+      "x": 878.484375,
+      "y": 56,
+      "width": 123.03125,
+      "height": 24,
+      "paint_order": 4,
+      "text": "10枚パック",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 24,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 940,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        123,
+        3
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "03_pack_opening_006",
+      "kind": "image",
+      "x": 1253,
+      "y": 47,
+      "width": 37,
+      "height": 37,
+      "paint_order": 5,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "03_pack_opening_007",
+      "kind": "text",
+      "x": 1362.203125,
+      "y": 51,
+      "width": 94.796875,
+      "height": 28,
+      "paint_order": 6,
+      "text": "15,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1457,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        95,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "03_pack_opening_008",
+      "kind": "image",
+      "x": 1511,
+      "y": 47,
+      "width": 44,
+      "height": 37,
+      "paint_order": 7,
+      "file": "home_approved/assets/icons/diamond.png"
+    },
+    {
+      "id": "03_pack_opening_009",
+      "kind": "text",
+      "x": 1655.53125,
+      "y": 51,
+      "width": 34.46875,
+      "height": 22,
+      "paint_order": 8,
+      "text": "21",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1690,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        34,
+        0
+      ],
+      "binding": "existingWallet.diamonds (display only)"
+    },
+    {
+      "id": "03_pack_opening_010",
+      "kind": "nine_slice",
+      "x": 249,
+      "y": 136,
+      "width": 1346,
+      "height": 638,
+      "paint_order": 9,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "03_pack_opening_011",
+      "kind": "image",
+      "x": 366,
+      "y": 134,
+      "width": 1130,
+      "height": 719,
+      "paint_order": 10,
+      "file": "assets/shop/fx/rays_05.png",
+      "effect": "rays",
+      "pivot_canvas": [
+        922,
+        446
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          446,
+          480,
+          320
+        ],
+        "kwargs": {
+          "seed": 5
+        }
+      }
+    },
+    {
+      "id": "03_pack_opening_012",
+      "kind": "image",
+      "x": 604,
+      "y": 92,
+      "width": 637,
+      "height": 699,
+      "paint_order": 11,
+      "file": "assets/shop/fx/glow_06.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        922,
+        441
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          441,
+          200,
+          235,
+          [
+            229,
+            164,
+            50
+          ],
+          140
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_013",
+      "kind": "text",
+      "x": 841.3359375,
+      "y": 156,
+      "width": 161.328125,
+      "height": 26,
+      "paint_order": 12,
+      "text": "S以上1枚確定",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 26,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 922,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        161,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "03_pack_opening_014",
+      "kind": "image",
+      "x": 580,
+      "y": 96,
+      "width": 684,
+      "height": 710,
+      "paint_order": 13,
+      "file": "assets/shop/fx/glow_07.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        922,
+        451.35
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          451.35,
+          226.1,
+          242.5,
+          [
+            255,
+            194,
+            61
+          ],
+          100
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_015",
+      "kind": "image",
+      "x": 760,
+      "y": 204,
+      "width": 323,
+      "height": 485,
+      "paint_order": 14,
+      "file": "assets/shop/packs/pack_ten.png",
+      "role": "pack-body",
+      "pack_index": 2
+    },
+    {
+      "id": "03_pack_opening_016",
+      "kind": "image",
+      "x": 978,
+      "y": 541,
+      "width": 102,
+      "height": 102,
+      "paint_order": 15,
+      "file": "assets/shop/ui/count_badge_gold_44.png",
+      "role": "count-badge-background"
+    },
+    {
+      "id": "03_pack_opening_017",
+      "kind": "text",
+      "x": 1005.09375,
+      "y": 563.4,
+      "width": 47.8125,
+      "height": 32,
+      "paint_order": 16,
+      "text": "10",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 43,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 1029,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -31,
+        48,
+        1
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "03_pack_opening_018",
+      "kind": "text",
+      "x": 1019.0,
+      "y": 602,
+      "width": 20.0,
+      "height": 20,
+      "paint_order": 17,
+      "text": "枚",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1029,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        20,
+        3
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "03_pack_opening_019",
+      "kind": "image",
+      "x": 653,
+      "y": 282,
+      "width": 25,
+      "height": 25,
+      "paint_order": 18,
+      "file": "assets/shop/fx/star_08.png",
+      "effect": "star",
+      "pivot_canvas": [
+        665,
+        294
+      ],
+      "effect_parameters": {
+        "args": [
+          665,
+          294,
+          10
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_020",
+      "kind": "image",
+      "x": 1152,
+      "y": 345,
+      "width": 29,
+      "height": 29,
+      "paint_order": 19,
+      "file": "assets/shop/fx/star_09.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1166,
+        359
+      ],
+      "effect_parameters": {
+        "args": [
+          1166,
+          359,
+          12
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_021",
+      "kind": "image",
+      "x": 685,
+      "y": 579,
+      "width": 21,
+      "height": 21,
+      "paint_order": 20,
+      "file": "assets/shop/fx/star_10.png",
+      "effect": "star",
+      "pivot_canvas": [
+        695,
+        589
+      ],
+      "effect_parameters": {
+        "args": [
+          695,
+          589,
+          8
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_022",
+      "kind": "image",
+      "x": 1153,
+      "y": 566,
+      "width": 23,
+      "height": 23,
+      "paint_order": 21,
+      "file": "assets/shop/fx/star_11.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1164,
+        577
+      ],
+      "effect_parameters": {
+        "args": [
+          1164,
+          577,
+          9
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_023",
+      "kind": "image",
+      "x": 1041,
+      "y": 221,
+      "width": 19,
+      "height": 19,
+      "paint_order": 22,
+      "file": "assets/shop/fx/star_12.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1050,
+        230
+      ],
+      "effect_parameters": {
+        "args": [
+          1050,
+          230,
+          7
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "03_pack_opening_024",
+      "kind": "nine_slice",
+      "x": 600,
+      "y": 701,
+      "width": 644,
+      "height": 65,
+      "paint_order": 23,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "button_label": "タップして開封"
+    },
+    {
+      "id": "03_pack_opening_025",
+      "kind": "text",
+      "x": 813.96875,
+      "y": 715.0,
+      "width": 216.0625,
+      "height": 31,
+      "paint_order": 24,
+      "text": "タップして開封",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 922.0,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -27,
+        216,
+        4
+      ],
+      "binding": "static localized label"
+    }
+  ],
+  "sample_only": true,
+  "runtime_source": "committed purchase receipt, existing catalog/ownership/wallet; never mock sample data",
+  "resize": {
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "position": "center in safe area",
+    "aspect": "uniform"
+  },
+  "taps": [
+    {
+      "id": "open_pack",
+      "x": 712,
+      "y": 204,
+      "width": 420,
+      "height": 485,
+      "action": "play-open-once"
+    },
+    {
+      "id": "open_button",
+      "x": 600,
+      "y": 701,
+      "width": 644,
+      "height": 65,
+      "action": "play-open-once"
+    }
+  ],
+  "scroll": "none; all six approved layouts are fixed, results 10 cards fit 5x2",
+  "effects_clip": "Keep rays and animated effect groups below title bar (body y>=136). Use exported pivot, not default bitmap center."
+}

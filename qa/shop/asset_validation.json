@@ -1,0 +1,28 @@
+{
+  "all_exported_images_decode": true,
+  "all_assets_rgba_with_transparency": true,
+  "pack_bodies_are_original_approved_pngs": true,
+  "card_back_bytes_unchanged": true,
+  "photos_or_frames_modified": false,
+  "shared_files_bundled_or_overwritten": 0,
+  "probability_totals": {
+    "normal": 100,
+    "guaranteed": 100
+  },
+  "normal_boundaries": {
+    "0": "R",
+    "1..9": "S",
+    "10..34": "A",
+    "35..64": "B",
+    "65..99": "C"
+  },
+  "guaranteed_boundaries": {
+    "0..9": "R",
+    "10..99": "S"
+  },
+  "shared_dependency_count": 27,
+  "new_runtime_images": 38,
+  "github_accessed": false,
+  "game_implementation_included": false,
+  "browser_animation_or_purchase_tests_performed": false
+}

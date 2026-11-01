@@ -1,0 +1,731 @@
+{
+  "version": 1,
+  "timing": {
+    "packIdlePulseMs": 1800,
+    "shakeMs": 220,
+    "buildGlowMs": 220,
+    "sealLiftMs": 280,
+    "packFadeMs": 180,
+    "backEnterMs": 220,
+    "flipMs": 520,
+    "frontRevealMs": 220,
+    "nextTransitionMs": 160,
+    "flashMs": 140,
+    "resultFadeMs": 220
+  },
+  "cardFlipGeometry": {
+    "baseSize": [
+      388,
+      543
+    ],
+    "startScale": 0.9020618556701031,
+    "startCenter": [
+      922,
+      421
+    ],
+    "endScale": 1,
+    "endCenter": [
+      922,
+      416.5
+    ]
+  },
+  "packSplit": {
+    "sealClipFraction": 0.095,
+    "sealLiftPx": 34,
+    "sealRotateDeg": -5,
+    "bodyScale": 1.03,
+    "useSameOriginalPngTwice": true
+  },
+  "profiles": {
+    "C": {
+      "halo": "assets/shop/fx/rarity_c_halo.png",
+      "accent": "#ebf2ff",
+      "peakOpacity": 0.35,
+      "particles": 0,
+      "flashOpacity": 0,
+      "revealHoldMs": 260
+    },
+    "B": {
+      "halo": "assets/shop/fx/rarity_b_halo.png",
+      "accent": "#ff4e46",
+      "peakOpacity": 0.55,
+      "particles": 2,
+      "flashOpacity": 0,
+      "revealHoldMs": 320
+    },
+    "A": {
+      "halo": "assets/shop/fx/rarity_a_halo.png",
+      "accent": "#9858ff",
+      "peakOpacity": 0.65,
+      "particles": 4,
+      "flashOpacity": 0.12,
+      "revealHoldMs": 400
+    },
+    "S": {
+      "halo": "assets/shop/fx/rarity_s_halo.png",
+      "accent": "#af5dff",
+      "peakOpacity": 0.9,
+      "particles": 10,
+      "flashOpacity": 0.3,
+      "revealHoldMs": 650
+    },
+    "R": {
+      "halo": [
+        "assets/shop/fx/glow_16.png",
+        "assets/shop/fx/glow_17.png"
+      ],
+      "accent": "#ffd16a",
+      "peakOpacity": 1,
+      "particles": 20,
+      "flashOpacity": 0.7,
+      "revealHoldMs": 900
+    }
+  },
+  "flash": "assets/shop/fx/reveal_flash.png",
+  "approvedGroups": {
+    "03_pack_opening": [
+      {
+        "id": "03_pack_opening_011",
+        "kind": "image",
+        "x": 366,
+        "y": 134,
+        "width": 1130,
+        "height": 719,
+        "paint_order": 10,
+        "file": "assets/shop/fx/rays_05.png",
+        "effect": "rays",
+        "pivot_canvas": [
+          922,
+          446
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            446,
+            480,
+            320
+          ],
+          "kwargs": {
+            "seed": 5
+          }
+        }
+      },
+      {
+        "id": "03_pack_opening_012",
+        "kind": "image",
+        "x": 604,
+        "y": 92,
+        "width": 637,
+        "height": 699,
+        "paint_order": 11,
+        "file": "assets/shop/fx/glow_06.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          922,
+          441
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            441,
+            200,
+            235,
+            [
+              229,
+              164,
+              50
+            ],
+            140
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "03_pack_opening_014",
+        "kind": "image",
+        "x": 580,
+        "y": 96,
+        "width": 684,
+        "height": 710,
+        "paint_order": 13,
+        "file": "assets/shop/fx/glow_07.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          922,
+          451.35
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            451.35,
+            226.1,
+            242.5,
+            [
+              255,
+              194,
+              61
+            ],
+            100
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "03_pack_opening_019",
+        "kind": "image",
+        "x": 653,
+        "y": 282,
+        "width": 25,
+        "height": 25,
+        "paint_order": 18,
+        "file": "assets/shop/fx/star_08.png",
+        "effect": "star",
+        "pivot_canvas": [
+          665,
+          294
+        ],
+        "effect_parameters": {
+          "args": [
+            665,
+            294,
+            10
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "03_pack_opening_020",
+        "kind": "image",
+        "x": 1152,
+        "y": 345,
+        "width": 29,
+        "height": 29,
+        "paint_order": 19,
+        "file": "assets/shop/fx/star_09.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1166,
+          359
+        ],
+        "effect_parameters": {
+          "args": [
+            1166,
+            359,
+            12
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "03_pack_opening_021",
+        "kind": "image",
+        "x": 685,
+        "y": 579,
+        "width": 21,
+        "height": 21,
+        "paint_order": 20,
+        "file": "assets/shop/fx/star_10.png",
+        "effect": "star",
+        "pivot_canvas": [
+          695,
+          589
+        ],
+        "effect_parameters": {
+          "args": [
+            695,
+            589,
+            8
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "03_pack_opening_022",
+        "kind": "image",
+        "x": 1153,
+        "y": 566,
+        "width": 23,
+        "height": 23,
+        "paint_order": 21,
+        "file": "assets/shop/fx/star_11.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1164,
+          577
+        ],
+        "effect_parameters": {
+          "args": [
+            1164,
+            577,
+            9
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "03_pack_opening_023",
+        "kind": "image",
+        "x": 1041,
+        "y": 221,
+        "width": 19,
+        "height": 19,
+        "paint_order": 22,
+        "file": "assets/shop/fx/star_12.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1050,
+          230
+        ],
+        "effect_parameters": {
+          "args": [
+            1050,
+            230,
+            7
+          ],
+          "kwargs": {}
+        }
+      }
+    ],
+    "04_card_back": [
+      {
+        "id": "04_card_back_011",
+        "kind": "image",
+        "x": 556,
+        "y": 73,
+        "width": 733,
+        "height": 719,
+        "paint_order": 10,
+        "file": "assets/shop/fx/glow_13.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          922,
+          432
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            432,
+            250,
+            245,
+            [
+              71,
+              153,
+              199
+            ],
+            110
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "04_card_back_012",
+        "kind": "image",
+        "x": 394,
+        "y": 134,
+        "width": 1132,
+        "height": 689,
+        "paint_order": 11,
+        "file": "assets/shop/fx/rays_14.png",
+        "effect": "rays",
+        "pivot_canvas": [
+          922,
+          430
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            430,
+            450,
+            300,
+            [
+              79,
+              129,
+              230
+            ],
+            9
+          ],
+          "kwargs": {}
+        }
+      }
+    ],
+    "05_card_reveal": [
+      {
+        "id": "05_card_reveal_011",
+        "kind": "image",
+        "x": 159,
+        "y": 134,
+        "width": 1624,
+        "height": 719,
+        "paint_order": 10,
+        "file": "assets/shop/fx/rays_15.png",
+        "effect": "rays",
+        "pivot_canvas": [
+          922,
+          434
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            434,
+            650,
+            415,
+            [
+              253,
+              203,
+              87
+            ],
+            21
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_012",
+        "kind": "image",
+        "x": 559,
+        "y": 46,
+        "width": 727,
+        "height": 763,
+        "paint_order": 11,
+        "file": "assets/shop/fx/glow_16.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          922,
+          427
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            427,
+            245,
+            265,
+            [
+              255,
+              185,
+              36
+            ],
+            145
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_013",
+        "kind": "image",
+        "x": 628,
+        "y": 76,
+        "width": 589,
+        "height": 699,
+        "paint_order": 12,
+        "file": "assets/shop/fx/glow_17.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          922,
+          425
+        ],
+        "effect_parameters": {
+          "args": [
+            922,
+            425,
+            180,
+            240,
+            [
+              255,
+              240,
+              177
+            ],
+            90
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_015",
+        "kind": "image",
+        "x": 714,
+        "y": 195,
+        "width": 25,
+        "height": 25,
+        "paint_order": 14,
+        "file": "assets/shop/fx/star_08.png",
+        "effect": "star",
+        "pivot_canvas": [
+          726,
+          207
+        ],
+        "effect_parameters": {
+          "args": [
+            726,
+            207,
+            10
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_016",
+        "kind": "image",
+        "x": 1094,
+        "y": 228,
+        "width": 33,
+        "height": 33,
+        "paint_order": 15,
+        "file": "assets/shop/fx/star_19.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1110,
+          244
+        ],
+        "effect_parameters": {
+          "args": [
+            1110,
+            244,
+            14
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_017",
+        "kind": "image",
+        "x": 732,
+        "y": 586,
+        "width": 23,
+        "height": 23,
+        "paint_order": 16,
+        "file": "assets/shop/fx/star_11.png",
+        "effect": "star",
+        "pivot_canvas": [
+          743,
+          597
+        ],
+        "effect_parameters": {
+          "args": [
+            743,
+            597,
+            9
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_018",
+        "kind": "image",
+        "x": 1100,
+        "y": 613,
+        "width": 31,
+        "height": 31,
+        "paint_order": 17,
+        "file": "assets/shop/fx/star_21.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1115,
+          628
+        ],
+        "effect_parameters": {
+          "args": [
+            1115,
+            628,
+            13
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_019",
+        "kind": "image",
+        "x": 1182,
+        "y": 410,
+        "width": 19,
+        "height": 19,
+        "paint_order": 18,
+        "file": "assets/shop/fx/star_12.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1191,
+          419
+        ],
+        "effect_parameters": {
+          "args": [
+            1191,
+            419,
+            7
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_020",
+        "kind": "image",
+        "x": 673,
+        "y": 388,
+        "width": 19,
+        "height": 19,
+        "paint_order": 19,
+        "file": "assets/shop/fx/star_12.png",
+        "effect": "star",
+        "pivot_canvas": [
+          682,
+          397
+        ],
+        "effect_parameters": {
+          "args": [
+            682,
+            397,
+            7
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "05_card_reveal_021",
+        "kind": "image",
+        "x": 851,
+        "y": 152,
+        "width": 21,
+        "height": 21,
+        "paint_order": 20,
+        "file": "assets/shop/fx/star_10.png",
+        "effect": "star",
+        "pivot_canvas": [
+          861,
+          162
+        ],
+        "effect_parameters": {
+          "args": [
+            861,
+            162,
+            8
+          ],
+          "kwargs": {}
+        }
+      }
+    ],
+    "06_results": [
+      {
+        "id": "06_results_011",
+        "kind": "image",
+        "x": 76,
+        "y": 25,
+        "width": 441,
+        "height": 495,
+        "paint_order": 10,
+        "file": "assets/shop/fx/glow_25.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          296,
+          272
+        ],
+        "effect_parameters": {
+          "args": [
+            296,
+            272,
+            106,
+            139,
+            [
+              237,
+              180,
+              44
+            ],
+            100
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "06_results_013",
+        "kind": "image",
+        "x": 356,
+        "y": 173,
+        "width": 21,
+        "height": 21,
+        "paint_order": 12,
+        "file": "assets/shop/fx/star_10.png",
+        "effect": "star",
+        "pivot_canvas": [
+          366,
+          183
+        ],
+        "effect_parameters": {
+          "args": [
+            366,
+            183,
+            8,
+            "#ffe89c"
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "06_results_031",
+        "kind": "image",
+        "x": 1316,
+        "y": 327,
+        "width": 441,
+        "height": 495,
+        "paint_order": 30,
+        "file": "assets/shop/fx/glow_27.png",
+        "effect": "glow",
+        "pivot_canvas": [
+          1536,
+          574
+        ],
+        "effect_parameters": {
+          "args": [
+            1536,
+            574,
+            106,
+            139,
+            [
+              152,
+              75,
+              255
+            ],
+            100
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "id": "06_results_033",
+        "kind": "image",
+        "x": 1596,
+        "y": 475,
+        "width": 21,
+        "height": 21,
+        "paint_order": 32,
+        "file": "assets/shop/fx/star_28.png",
+        "effect": "star",
+        "pivot_canvas": [
+          1606,
+          485
+        ],
+        "effect_parameters": {
+          "args": [
+            1606,
+            485,
+            8,
+            "#e3c4ff"
+          ],
+          "kwargs": {}
+        }
+      }
+    ]
+  },
+  "normalIdleRays": {
+    "rotateDegPerCycle": 18,
+    "durationMs": 10000,
+    "opacityRange": [
+      0.65,
+      1
+    ]
+  },
+  "reducedMotion": {
+    "noRotation": true,
+    "noShake": true,
+    "flipUsesOpacity": true,
+    "transitionMs": 140,
+    "flashOpacity": 0
+  },
+  "note": "Timing is tunable. Approved static PNG arrangement stays unchanged; no videos or game code included."
+}

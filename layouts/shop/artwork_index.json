@@ -1,0 +1,240 @@
+[
+  {
+    "file": "assets/shop/ui/count_badge_silver_32.png",
+    "purpose": "Blank count medallion. Overlay editable count and 枚 separately; never nine-slice.",
+    "width": 78,
+    "height": 78,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/ui/count_badge_silver_44.png",
+    "purpose": "Blank count medallion. Overlay editable count and 枚 separately; never nine-slice.",
+    "width": 102,
+    "height": 102,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/ui/count_badge_violet_32.png",
+    "purpose": "Blank count medallion. Overlay editable count and 枚 separately; never nine-slice.",
+    "width": 78,
+    "height": 78,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/ui/count_badge_violet_44.png",
+    "purpose": "Blank count medallion. Overlay editable count and 枚 separately; never nine-slice.",
+    "width": 102,
+    "height": 102,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/ui/count_badge_gold_32.png",
+    "purpose": "Blank count medallion. Overlay editable count and 枚 separately; never nine-slice.",
+    "width": 78,
+    "height": 78,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/ui/count_badge_gold_44.png",
+    "purpose": "Blank count medallion. Overlay editable count and 枚 separately; never nine-slice.",
+    "width": 102,
+    "height": 102,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/ui/close.png",
+    "purpose": "Approved close icon only, transparent",
+    "width": 32,
+    "height": 32,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_01.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 525,
+    "height": 511,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_02.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 525,
+    "height": 511,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_03.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 525,
+    "height": 511,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_04.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 583,
+    "height": 595,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rays_05.png",
+    "purpose": "Approved isolated rays; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 1130,
+    "height": 719,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_06.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 637,
+    "height": 699,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_07.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 684,
+    "height": 710,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_08.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 25,
+    "height": 25,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_09.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 29,
+    "height": 29,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_10.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 21,
+    "height": 21,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_11.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 23,
+    "height": 23,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_12.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 19,
+    "height": 19,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_13.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 733,
+    "height": 719,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rays_14.png",
+    "purpose": "Approved isolated rays; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 1132,
+    "height": 689,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rays_15.png",
+    "purpose": "Approved isolated rays; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 1624,
+    "height": 719,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_16.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 727,
+    "height": 763,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_17.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 589,
+    "height": 699,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_19.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 33,
+    "height": 33,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_21.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 31,
+    "height": 31,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_25.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 441,
+    "height": 495,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/glow_27.png",
+    "purpose": "Approved isolated glow; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 441,
+    "height": 495,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/star_28.png",
+    "purpose": "Approved isolated star; alpha transparent, no cards/labels. Use original coordinate/pivot from layouts.",
+    "width": 21,
+    "height": 21,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rarity_c_halo.png",
+    "purpose": "Animation-only C halo. Transparent; keep behind original card; not a new mockup.",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rarity_b_halo.png",
+    "purpose": "Animation-only B halo. Transparent; keep behind original card; not a new mockup.",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rarity_a_halo.png",
+    "purpose": "Animation-only A halo. Transparent; keep behind original card; not a new mockup.",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/rarity_s_halo.png",
+    "purpose": "Animation-only S halo. Transparent; keep behind original card; not a new mockup.",
+    "width": 512,
+    "height": 640,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/shop/fx/reveal_flash.png",
+    "purpose": "Soft one-shot reveal flash, opacity animated. Do not strobe.",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  }
+]

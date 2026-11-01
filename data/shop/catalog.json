@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "currency": "R_COIN",
+  "diamondsUsable": false,
+  "skus": [
+    {
+      "id": "normal_1",
+      "label": "1枚パック",
+      "count": 1,
+      "price": 1000,
+      "packImage": "assets/shop/packs/pack_one.png",
+      "guaranteedIndex": null
+    },
+    {
+      "id": "normal_5",
+      "label": "5枚パック",
+      "count": 5,
+      "price": 5000,
+      "packImage": "assets/shop/packs/pack_five.png",
+      "guaranteedIndex": null
+    },
+    {
+      "id": "normal_10",
+      "label": "10枚パック",
+      "count": 10,
+      "price": 10000,
+      "packImage": "assets/shop/packs/pack_ten.png",
+      "guaranteedIndex": 9
+    },
+    {
+      "id": "welcome_10",
+      "label": "初回無料10枚パック",
+      "count": 10,
+      "price": 0,
+      "packImage": "assets/shop/packs/pack_ten.png",
+      "guaranteedIndex": 9,
+      "claimEventId": "mrs-english-welcome-10-v1",
+      "requiresSetupComplete": true,
+      "developmentGrant": false
+    }
+  ],
+  "normalWeights": [
+    {
+      "rarity": "R",
+      "weight": 1
+    },
+    {
+      "rarity": "S",
+      "weight": 9
+    },
+    {
+      "rarity": "A",
+      "weight": 25
+    },
+    {
+      "rarity": "B",
+      "weight": 30
+    },
+    {
+      "rarity": "C",
+      "weight": 35
+    }
+  ],
+  "guaranteedWeights": [
+    {
+      "rarity": "R",
+      "weight": 10
+    },
+    {
+      "rarity": "S",
+      "weight": 90
+    }
+  ],
+  "withinRaritySelection": "uniform among eligible existing catalog IDs; with replacement; explicit adjustable policy",
+  "startingLevel": 1
+}

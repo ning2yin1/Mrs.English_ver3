@@ -1,0 +1,793 @@
+{
+  "screen": "02_purchase_confirm",
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "02_purchase_confirm_001",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "02_purchase_confirm_002",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "paint_order": 1,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "02_purchase_confirm_003",
+      "kind": "image",
+      "x": 142,
+      "y": 48,
+      "width": 24,
+      "height": 40,
+      "paint_order": 2,
+      "file": "assets/icons/nickname_back.png"
+    },
+    {
+      "id": "02_purchase_confirm_004",
+      "kind": "text",
+      "x": 237,
+      "y": 47,
+      "width": 156.0,
+      "height": 37,
+      "paint_order": 3,
+      "text": "購入確認",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 237,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -33,
+        156,
+        4
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_005",
+      "kind": "text",
+      "x": 878.484375,
+      "y": 56,
+      "width": 123.03125,
+      "height": 24,
+      "paint_order": 4,
+      "text": "10枚パック",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 24,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 940,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        123,
+        3
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "02_purchase_confirm_006",
+      "kind": "image",
+      "x": 1253,
+      "y": 47,
+      "width": 37,
+      "height": 37,
+      "paint_order": 5,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "02_purchase_confirm_007",
+      "kind": "text",
+      "x": 1362.203125,
+      "y": 51,
+      "width": 94.796875,
+      "height": 28,
+      "paint_order": 6,
+      "text": "25,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1457,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        95,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "02_purchase_confirm_008",
+      "kind": "image",
+      "x": 1511,
+      "y": 47,
+      "width": 44,
+      "height": 37,
+      "paint_order": 7,
+      "file": "home_approved/assets/icons/diamond.png"
+    },
+    {
+      "id": "02_purchase_confirm_009",
+      "kind": "text",
+      "x": 1655.53125,
+      "y": 51,
+      "width": 34.46875,
+      "height": 22,
+      "paint_order": 8,
+      "text": "21",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1690,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        34,
+        0
+      ],
+      "binding": "existingWallet.diamonds (display only)"
+    },
+    {
+      "id": "02_purchase_confirm_010",
+      "kind": "nine_slice",
+      "x": 249,
+      "y": 135,
+      "width": 1346,
+      "height": 640,
+      "paint_order": 9,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": true
+    },
+    {
+      "id": "02_purchase_confirm_011",
+      "kind": "image",
+      "x": 1519,
+      "y": 153,
+      "width": 32,
+      "height": 32,
+      "paint_order": 10,
+      "file": "assets/shop/ui/close.png"
+    },
+    {
+      "id": "02_purchase_confirm_012",
+      "kind": "text",
+      "x": 714.0,
+      "y": 162,
+      "width": 416.0,
+      "height": 32,
+      "paint_order": 11,
+      "text": "このパックを購入しますか？",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 32,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 922,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -28,
+        416,
+        4
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_013",
+      "kind": "image",
+      "x": 631,
+      "y": 115,
+      "width": 583,
+      "height": 595,
+      "paint_order": 12,
+      "file": "assets/shop/fx/glow_04.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        922,
+        412
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          412,
+          180,
+          190,
+          [
+            130,
+            66,
+            230
+          ],
+          70
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "02_purchase_confirm_014",
+      "kind": "image",
+      "x": 786,
+      "y": 227,
+      "width": 273,
+      "height": 410,
+      "paint_order": 13,
+      "file": "assets/shop/packs/pack_ten.png",
+      "role": "pack-body",
+      "pack_index": 2
+    },
+    {
+      "id": "02_purchase_confirm_015",
+      "kind": "image",
+      "x": 961,
+      "y": 504,
+      "width": 102,
+      "height": 102,
+      "paint_order": 14,
+      "file": "assets/shop/ui/count_badge_gold_44.png",
+      "role": "count-badge-background"
+    },
+    {
+      "id": "02_purchase_confirm_016",
+      "kind": "text",
+      "x": 988.09375,
+      "y": 526.4,
+      "width": 47.8125,
+      "height": 32,
+      "paint_order": 15,
+      "text": "10",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 43,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 1012,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -31,
+        48,
+        1
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "02_purchase_confirm_017",
+      "kind": "text",
+      "x": 1002.0,
+      "y": 565,
+      "width": 20.0,
+      "height": 20,
+      "paint_order": 16,
+      "text": "枚",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 20,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1012,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        20,
+        3
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "02_purchase_confirm_018",
+      "kind": "text",
+      "x": 305,
+      "y": 269,
+      "width": 186.125,
+      "height": 35,
+      "paint_order": 17,
+      "text": "10枚パック",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 36,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 305,
+      "align": "left",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -31,
+        186,
+        4
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "02_purchase_confirm_019",
+      "kind": "nine_slice",
+      "x": 305,
+      "y": 331,
+      "width": 252,
+      "height": 29,
+      "paint_order": 18,
+      "file": "assets/inventory/ui/tag_rank_r.png",
+      "insets": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "state_label": "S以上1枚確定"
+    },
+    {
+      "id": "02_purchase_confirm_020",
+      "kind": "text",
+      "x": 375.15625,
+      "y": 335,
+      "width": 111.6875,
+      "height": 20,
+      "paint_order": 19,
+      "text": "S以上1枚確定",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 18,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 431.0,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -17,
+        112,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_021",
+      "kind": "text",
+      "x": 305,
+      "y": 389,
+      "width": 171.03125,
+      "height": 24,
+      "paint_order": 20,
+      "text": "カード10枚入り",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 24,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 305,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        171,
+        3
+      ],
+      "binding": "selectedSku.count / label"
+    },
+    {
+      "id": "02_purchase_confirm_022",
+      "kind": "text",
+      "x": 305,
+      "y": 434,
+      "width": 261.609375,
+      "height": 23,
+      "paint_order": 21,
+      "text": "10枚目はSまたはRランク",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 23,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 305,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -20,
+        262,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_023",
+      "kind": "nine_slice",
+      "x": 1143,
+      "y": 239,
+      "width": 405,
+      "height": 366,
+      "paint_order": 22,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "02_purchase_confirm_024",
+      "kind": "text",
+      "x": 1172,
+      "y": 265,
+      "width": 42.0,
+      "height": 21,
+      "paint_order": 23,
+      "text": "価格",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 21,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1172,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        42,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_025",
+      "kind": "image",
+      "x": 1172,
+      "y": 303,
+      "width": 30,
+      "height": 30,
+      "paint_order": 24,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "02_purchase_confirm_026",
+      "kind": "text",
+      "x": 1405.90625,
+      "y": 299,
+      "width": 110.09375,
+      "height": 33,
+      "paint_order": 25,
+      "text": "10,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 36,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 1516,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -26,
+        110,
+        7
+      ],
+      "binding": "selectedSku.price or confirmation CTA; free is 0"
+    },
+    {
+      "id": "02_purchase_confirm_027",
+      "kind": "separator",
+      "x": 1172,
+      "y": 355,
+      "width": 345,
+      "height": 1,
+      "paint_order": 26,
+      "fill": [
+        143,
+        169,
+        246,
+        85
+      ],
+      "browser_rgb": "#8fa9f6"
+    },
+    {
+      "id": "02_purchase_confirm_028",
+      "kind": "text",
+      "x": 1172,
+      "y": 382,
+      "width": 118.5625,
+      "height": 21,
+      "paint_order": 27,
+      "text": "所持Rコイン",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 21,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1172,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        119,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_029",
+      "kind": "image",
+      "x": 1172,
+      "y": 420,
+      "width": 30,
+      "height": 30,
+      "paint_order": 28,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "02_purchase_confirm_030",
+      "kind": "text",
+      "x": 1424.21875,
+      "y": 416,
+      "width": 91.78125,
+      "height": 27,
+      "paint_order": 29,
+      "text": "25,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 30,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1516,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -21,
+        92,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "02_purchase_confirm_031",
+      "kind": "text",
+      "x": 1172,
+      "y": 496,
+      "width": 126.0,
+      "height": 21,
+      "paint_order": 30,
+      "text": "購入後の残高",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 21,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1172,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -18,
+        126,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_032",
+      "kind": "image",
+      "x": 1172,
+      "y": 534,
+      "width": 30,
+      "height": 30,
+      "paint_order": 31,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "02_purchase_confirm_033",
+      "kind": "text",
+      "x": 1418.125,
+      "y": 530,
+      "width": 97.875,
+      "height": 29,
+      "paint_order": 32,
+      "text": "15,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 32,
+      "fill": "#63e8ff",
+      "anchor": "lt",
+      "anchor_x": 1516,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        98,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "02_purchase_confirm_034",
+      "kind": "text",
+      "x": 684.765625,
+      "y": 633,
+      "width": 474.46875,
+      "height": 22,
+      "paint_order": 33,
+      "text": "Rコインを消費して、カードパックを購入します",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 22,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 922,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -19,
+        474,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_035",
+      "kind": "nine_slice",
+      "x": 300,
+      "y": 692,
+      "width": 460,
+      "height": 65,
+      "paint_order": 34,
+      "file": "home_approved/assets/home/status_menu.png",
+      "insets": [
+        16,
+        18,
+        16,
+        18
+      ],
+      "button_label": "キャンセル"
+    },
+    {
+      "id": "02_purchase_confirm_036",
+      "kind": "text",
+      "x": 460.0,
+      "y": 707.5,
+      "width": 140.0,
+      "height": 26,
+      "paint_order": 35,
+      "text": "キャンセル",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 28,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 530.0,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        140,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "02_purchase_confirm_037",
+      "kind": "nine_slice",
+      "x": 798,
+      "y": 692,
+      "width": 750,
+      "height": 65,
+      "paint_order": 36,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "button_label": "10,000 Rコインで購入"
+    },
+    {
+      "id": "02_purchase_confirm_038",
+      "kind": "text",
+      "x": 1016.3828125,
+      "y": 707.0,
+      "width": 289.234375,
+      "height": 31,
+      "paint_order": 37,
+      "text": "10,000 Rコインで購入",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 29,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1161.0,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -25,
+        289,
+        6
+      ],
+      "binding": "selectedSku.price or confirmation CTA; free is 0"
+    },
+    {
+      "id": "02_purchase_confirm_039",
+      "kind": "image",
+      "x": 1513,
+      "y": 713,
+      "width": 14,
+      "height": 23,
+      "paint_order": 38,
+      "file": "assets/icons/nickname_confirm_arrow.png"
+    }
+  ],
+  "sample_only": true,
+  "runtime_source": "committed purchase receipt, existing catalog/ownership/wallet; never mock sample data",
+  "resize": {
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "position": "center in safe area",
+    "aspect": "uniform"
+  },
+  "taps": [
+    {
+      "id": "back",
+      "x": 123,
+      "y": 38,
+      "width": 64,
+      "height": 64,
+      "action": "shop-no-purchase"
+    },
+    {
+      "id": "close",
+      "x": 1507,
+      "y": 141,
+      "width": 55,
+      "height": 55,
+      "action": "shop-no-purchase"
+    },
+    {
+      "id": "cancel",
+      "x": 300,
+      "y": 692,
+      "width": 460,
+      "height": 65,
+      "action": "shop-no-purchase"
+    },
+    {
+      "id": "purchase",
+      "x": 798,
+      "y": 692,
+      "width": 750,
+      "height": 65,
+      "action": "single commit of charge/draw/grant/claim; then opening",
+      "disabled_when": [
+        "insufficient_coins",
+        "already_claimed_free",
+        "not_setup_complete_for_free",
+        "committing",
+        "invalid_card_pool"
+      ]
+    }
+  ],
+  "scroll": "none; all six approved layouts are fixed, results 10 cards fit 5x2",
+  "effects_clip": "Keep rays and animated effect groups below title bar (body y>=136). Use exported pivot, not default bitmap center."
+}

@@ -1,0 +1,704 @@
+{
+  "screen": "05_card_reveal",
+  "reference_size": [
+    1844,
+    853
+  ],
+  "layers": [
+    {
+      "id": "05_card_reveal_001",
+      "kind": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 0,
+      "file": "assets/collection/background.png"
+    },
+    {
+      "id": "05_card_reveal_002",
+      "kind": "overlay",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "paint_order": 1,
+      "fill": [
+        0,
+        2,
+        18,
+        115
+      ]
+    },
+    {
+      "id": "05_card_reveal_003",
+      "kind": "image",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "paint_order": 2,
+      "file": "assets/nickname/nickname_header.png"
+    },
+    {
+      "id": "05_card_reveal_004",
+      "kind": "text",
+      "x": 237,
+      "y": 47,
+      "width": 195.0,
+      "height": 37,
+      "paint_order": 3,
+      "text": "カード獲得",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 39,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 237,
+      "align": "left",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -33,
+        195,
+        4
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "05_card_reveal_005",
+      "kind": "text",
+      "x": 909.65625,
+      "y": 56,
+      "width": 60.6875,
+      "height": 25,
+      "paint_order": 4,
+      "text": "1 / 10",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 24,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 940,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -20,
+        61,
+        5
+      ],
+      "binding": "revealIndex+1 / committedReceipt.results.length"
+    },
+    {
+      "id": "05_card_reveal_006",
+      "kind": "image",
+      "x": 1253,
+      "y": 47,
+      "width": 37,
+      "height": 37,
+      "paint_order": 5,
+      "file": "home_approved/assets/icons/coin.png"
+    },
+    {
+      "id": "05_card_reveal_007",
+      "kind": "text",
+      "x": 1362.203125,
+      "y": 51,
+      "width": 94.796875,
+      "height": 28,
+      "paint_order": 6,
+      "text": "15,000",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1457,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        95,
+        6
+      ],
+      "binding": "existingWallet.rCoin; preview uses balance-cost"
+    },
+    {
+      "id": "05_card_reveal_008",
+      "kind": "image",
+      "x": 1511,
+      "y": 47,
+      "width": 44,
+      "height": 37,
+      "paint_order": 7,
+      "file": "home_approved/assets/icons/diamond.png"
+    },
+    {
+      "id": "05_card_reveal_009",
+      "kind": "text",
+      "x": 1655.53125,
+      "y": 51,
+      "width": 34.46875,
+      "height": 22,
+      "paint_order": 8,
+      "text": "21",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1690,
+      "align": "right",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -22,
+        34,
+        0
+      ],
+      "binding": "existingWallet.diamonds (display only)"
+    },
+    {
+      "id": "05_card_reveal_010",
+      "kind": "nine_slice",
+      "x": 95,
+      "y": 135,
+      "width": 1653,
+      "height": 640,
+      "paint_order": 9,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "05_card_reveal_011",
+      "kind": "image",
+      "x": 159,
+      "y": 134,
+      "width": 1624,
+      "height": 719,
+      "paint_order": 10,
+      "file": "assets/shop/fx/rays_15.png",
+      "effect": "rays",
+      "pivot_canvas": [
+        922,
+        434
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          434,
+          650,
+          415,
+          [
+            253,
+            203,
+            87
+          ],
+          21
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_012",
+      "kind": "image",
+      "x": 559,
+      "y": 46,
+      "width": 727,
+      "height": 763,
+      "paint_order": 11,
+      "file": "assets/shop/fx/glow_16.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        922,
+        427
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          427,
+          245,
+          265,
+          [
+            255,
+            185,
+            36
+          ],
+          145
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_013",
+      "kind": "image",
+      "x": 628,
+      "y": 76,
+      "width": 589,
+      "height": 699,
+      "paint_order": 12,
+      "file": "assets/shop/fx/glow_17.png",
+      "effect": "glow",
+      "pivot_canvas": [
+        922,
+        425
+      ],
+      "effect_parameters": {
+        "args": [
+          922,
+          425,
+          180,
+          240,
+          [
+            255,
+            240,
+            177
+          ],
+          90
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_014",
+      "kind": "card",
+      "x": 728,
+      "y": 145,
+      "width": 388,
+      "height": 543,
+      "paint_order": 13,
+      "catalog_id": "motoki-r-01",
+      "qa_card_index": 0,
+      "shadow": {
+        "offset": [
+          3,
+          8
+        ],
+        "blur": 5,
+        "opacity": 0.7
+      },
+      "binding": "committed receipt result index; never reroll for rendering",
+      "qa_only": true
+    },
+    {
+      "id": "05_card_reveal_015",
+      "kind": "image",
+      "x": 714,
+      "y": 195,
+      "width": 25,
+      "height": 25,
+      "paint_order": 14,
+      "file": "assets/shop/fx/star_08.png",
+      "effect": "star",
+      "pivot_canvas": [
+        726,
+        207
+      ],
+      "effect_parameters": {
+        "args": [
+          726,
+          207,
+          10
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_016",
+      "kind": "image",
+      "x": 1094,
+      "y": 228,
+      "width": 33,
+      "height": 33,
+      "paint_order": 15,
+      "file": "assets/shop/fx/star_19.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1110,
+        244
+      ],
+      "effect_parameters": {
+        "args": [
+          1110,
+          244,
+          14
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_017",
+      "kind": "image",
+      "x": 732,
+      "y": 586,
+      "width": 23,
+      "height": 23,
+      "paint_order": 16,
+      "file": "assets/shop/fx/star_11.png",
+      "effect": "star",
+      "pivot_canvas": [
+        743,
+        597
+      ],
+      "effect_parameters": {
+        "args": [
+          743,
+          597,
+          9
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_018",
+      "kind": "image",
+      "x": 1100,
+      "y": 613,
+      "width": 31,
+      "height": 31,
+      "paint_order": 17,
+      "file": "assets/shop/fx/star_21.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1115,
+        628
+      ],
+      "effect_parameters": {
+        "args": [
+          1115,
+          628,
+          13
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_019",
+      "kind": "image",
+      "x": 1182,
+      "y": 410,
+      "width": 19,
+      "height": 19,
+      "paint_order": 18,
+      "file": "assets/shop/fx/star_12.png",
+      "effect": "star",
+      "pivot_canvas": [
+        1191,
+        419
+      ],
+      "effect_parameters": {
+        "args": [
+          1191,
+          419,
+          7
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_020",
+      "kind": "image",
+      "x": 673,
+      "y": 388,
+      "width": 19,
+      "height": 19,
+      "paint_order": 19,
+      "file": "assets/shop/fx/star_12.png",
+      "effect": "star",
+      "pivot_canvas": [
+        682,
+        397
+      ],
+      "effect_parameters": {
+        "args": [
+          682,
+          397,
+          7
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_021",
+      "kind": "image",
+      "x": 851,
+      "y": 152,
+      "width": 21,
+      "height": 21,
+      "paint_order": 20,
+      "file": "assets/shop/fx/star_10.png",
+      "effect": "star",
+      "pivot_canvas": [
+        861,
+        162
+      ],
+      "effect_parameters": {
+        "args": [
+          861,
+          162,
+          8
+        ],
+        "kwargs": {}
+      }
+    },
+    {
+      "id": "05_card_reveal_022",
+      "kind": "text",
+      "x": 303.2890625,
+      "y": 291,
+      "width": 79.421875,
+      "height": 80,
+      "paint_order": 21,
+      "text": "R",
+      "font_file": "assets/collection/fonts/nimbus_sans_bold.otf",
+      "font_size": 110,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 343,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -80,
+        79,
+        0
+      ],
+      "binding": "committedReceipt.results[index].rarity"
+    },
+    {
+      "id": "05_card_reveal_023",
+      "kind": "text",
+      "x": 284.203125,
+      "y": 416,
+      "width": 117.59375,
+      "height": 30,
+      "paint_order": 22,
+      "text": "Rランク",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 32,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 343,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -27,
+        118,
+        3
+      ],
+      "binding": "committedReceipt.results[index].rarity"
+    },
+    {
+      "id": "05_card_reveal_024",
+      "kind": "text",
+      "x": 285.5,
+      "y": 470,
+      "width": 115.0,
+      "height": 23,
+      "paint_order": 23,
+      "text": "カード獲得",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 23,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 343,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -20,
+        115,
+        3
+      ],
+      "binding": "static localized label"
+    },
+    {
+      "id": "05_card_reveal_025",
+      "kind": "nine_slice",
+      "x": 1283,
+      "y": 294,
+      "width": 425,
+      "height": 238,
+      "paint_order": 24,
+      "file": "assets/collection/ui/list_panel.png",
+      "insets": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "bright_top": false
+    },
+    {
+      "id": "05_card_reveal_026",
+      "kind": "text",
+      "x": 1425.0,
+      "y": 326,
+      "width": 140.0,
+      "height": 34,
+      "paint_order": 25,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 35,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1495,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -30,
+        140,
+        4
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "05_card_reveal_027",
+      "kind": "text",
+      "x": 1443.953125,
+      "y": 387,
+      "width": 102.09375,
+      "height": 25,
+      "paint_order": 26,
+      "text": "Rランク",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 28,
+      "fill": "#ffe89c",
+      "anchor": "lt",
+      "anchor_x": 1495,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -23,
+        102,
+        2
+      ],
+      "binding": "committedReceipt.results[index].rarity"
+    },
+    {
+      "id": "05_card_reveal_028",
+      "kind": "text",
+      "x": 1401.8046875,
+      "y": 465,
+      "width": 186.390625,
+      "height": 25,
+      "paint_order": 27,
+      "text": "10枚パック  1 / 10",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 23,
+      "fill": "#b3c5ef",
+      "anchor": "lt",
+      "anchor_x": 1495,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -20,
+        186,
+        5
+      ],
+      "binding": "revealIndex+1 / committedReceipt.results.length"
+    },
+    {
+      "id": "05_card_reveal_029",
+      "kind": "text",
+      "x": 852.0,
+      "y": 706,
+      "width": 140.0,
+      "height": 34,
+      "paint_order": 28,
+      "text": "大森元貴",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_650.ttf",
+      "font_size": 35,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 922,
+      "align": "center",
+      "bold": true,
+      "glyph_bbox_baseline": [
+        0,
+        -30,
+        140,
+        4
+      ],
+      "binding": "committedReceipt.results[index].catalogId -> existing catalog member name"
+    },
+    {
+      "id": "05_card_reveal_030",
+      "kind": "nine_slice",
+      "x": 1315,
+      "y": 661,
+      "width": 360,
+      "height": 77,
+      "paint_order": 29,
+      "file": "home_approved/assets/home/button_collection.png",
+      "insets": [
+        18,
+        20,
+        17,
+        20
+      ],
+      "button_label": "次へ"
+    },
+    {
+      "id": "05_card_reveal_031",
+      "kind": "text",
+      "x": 1452.0,
+      "y": 681.0,
+      "width": 62.0,
+      "height": 30,
+      "paint_order": 30,
+      "text": "次へ",
+      "font_file": "assets/inventory/fonts/noto_sans_jp_450.ttf",
+      "font_size": 31,
+      "fill": "#f3f2ff",
+      "anchor": "lt",
+      "anchor_x": 1483.0,
+      "align": "center",
+      "bold": false,
+      "glyph_bbox_baseline": [
+        0,
+        -27,
+        62,
+        3
+      ],
+      "binding": "次へ until last; last label 結果を見る"
+    },
+    {
+      "id": "05_card_reveal_032",
+      "kind": "image",
+      "x": 1640,
+      "y": 688,
+      "width": 14,
+      "height": 23,
+      "paint_order": 31,
+      "file": "assets/icons/nickname_confirm_arrow.png"
+    }
+  ],
+  "sample_only": true,
+  "runtime_source": "committed purchase receipt, existing catalog/ownership/wallet; never mock sample data",
+  "resize": {
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "position": "center in safe area",
+    "aspect": "uniform"
+  },
+  "taps": [
+    {
+      "id": "next",
+      "x": 1315,
+      "y": 661,
+      "width": 360,
+      "height": 77,
+      "action": "next unrevealed result; last shows results"
+    }
+  ],
+  "scroll": "none; all six approved layouts are fixed, results 10 cards fit 5x2",
+  "effects_clip": "Keep rays and animated effect groups below title bar (body y>=136). Use exported pivot, not default bitmap center."
+}
