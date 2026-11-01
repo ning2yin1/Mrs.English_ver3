@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import {mkdir,readFile,writeFile,copyFile} from 'node:fs/promises';
 const layout=JSON.parse(await readFile('home_approved/spec/home_layout.json','utf8'));
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',args:['--no-sandbox']});
-const output='qa/home-width'; await mkdir(output,{recursive:true});
+const output=process.env.HOME_HUD_OUTPUT || 'qa/home-width'; await mkdir(output,{recursive:true});
 const results=[];
 try {
-  for (const [width,height,left,right,bottom] of [[844,390,47,47,21],[852,393,59,59,21],[932,430,59,59,21],[812,375,44,44,21],[932,320,59,59,21],[844,390,47,0,21]]) {
+  for (const [width,height,left,right,bottom] of [[844,390,47,47,21],[852,393,59,59,21],[932,430,59,59,21],[812,375,44,44,21],[932,320,59,59,21],[844,390,47,0,21],[844,390,0,0,0]]) {
     const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1});
     const profile={version:3,nickname:'Nene',memberId:'motoki',backgroundId:'bg-01',setupComplete:true};
     await context.addInitScript(profile=>localStorage.setItem('mrsEnglishV3.profile',JSON.stringify(profile)),profile);
@@ -22,7 +22,8 @@ try {
     const inventory=await box('button_inventory'),ready=await box('button_ready');
     const close=(actual,expected)=>assert.ok(Math.abs(actual-expected)<.05,`${actual} != ${expected}`);
     close(player.x,left);close(player.y,0);close(menu.x+menu.width,width-right);
-    close(inventory.x,left);close(ready.x+ready.width,width-right);close(ready.y+ready.height,height-bottom);
+    const footerBottom=height-(bottom===21?14:0);
+    close(inventory.x,left);close(ready.x+ready.width,width-right);close(ready.y+ready.height,footerBottom);
     for (const e of layout.elements.filter(e=>e.kind==='text'||e.kind==='icon')) {
       const actual=await box(e.id);close(actual.width,e.width*scale);close(actual.height,e.height*scale);
     }
@@ -30,7 +31,7 @@ try {
       const actual=await box(e.id);close(actual.height,e.height*scale);
       assert.match(await page.locator(`[data-layer="${e.id}"]`).getAttribute('style'),/border-image/);
     }
-    const name=`${width}x${height}${left!==right?'-asymmetric':''}`;
+    const name=`${width}x${height}${left!==right?'-asymmetric':bottom===0?'-no-inset':''}`;
     await page.screenshot({path:`${output}/${name}.png`});
     assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('mrsEnglishV3.profile'))),profile);
     assert.equal(await page.locator('#scene-background').getAttribute('src'),'backgrounds/bg-01.jpg');
@@ -39,7 +40,7 @@ try {
     await page.waitForFunction(()=>document.querySelector('#stage').dataset.screen==='placeholder/profile');
     await page.locator('[data-action="home"]').click();
     await page.waitForFunction(()=>document.querySelector('#stage').dataset.screen==='home');
-    await page.mouse.click(width-right-3,height-bottom-ready.height/2);
+    await page.mouse.click(width-right-3,footerBottom-3);
     await page.waitForFunction(()=>document.querySelector('#stage').dataset.screen==='placeholder/ready');
     results.push({viewport:name,safeInsets:{left,right,bottom},scale,topBeforeSafeWidthPercent:1650*scale/(width-left-right)*100,bottomBeforeSafeWidthPercent:1701*scale/(width-left-right)*100,topAfterSafeWidthPercent:100,bottomAfterSafeWidthPercent:100,checks:'Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed.'});
     await context.close();

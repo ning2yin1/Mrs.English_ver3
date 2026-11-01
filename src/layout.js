@@ -23,13 +23,17 @@ export function createLayout(safe, stage) {
     const home = stage.dataset.screen === 'home';
     const canvasWidth = home && scale ? width/scale : REFERENCE.width;
     const canvasHeight = home && scale ? height/scale : REFERENCE.height;
+    // Reclaim a little of the footer inset, retaining 14 CSS px for the home indicator.
+    const bottomInset = Math.max(0, (viewport?.offsetTop || 0) + (viewport?.height || innerHeight) - bottom);
+    const footerOffset = home ? Math.min(8, Math.max(0, bottomInset - 14)) : 0;
+    safe.classList.toggle('home-layout', home);
     Object.assign(stage.style, {
       width:`${canvasWidth}px`, height:`${canvasHeight}px`,
       transform:`scale(${scale})`,
       left:`${left - rect.left + (width - canvasWidth * scale) / 2}px`,
       top:`${top - rect.top + (height - canvasHeight * scale) / 2}px`,
     });
-    stage.querySelector('.home-hud')?.resizeHud(canvasWidth,canvasHeight);
+    stage.querySelector('.home-hud')?.resizeHud(canvasWidth,canvasHeight,scale ? footerOffset/scale : 0);
   }
   window.addEventListener('resize', resize);
   window.visualViewport?.addEventListener('resize', resize);

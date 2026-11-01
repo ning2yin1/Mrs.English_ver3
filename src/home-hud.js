@@ -43,7 +43,7 @@ export async function renderHomeHud(layout, state, tap, bounds) {
       groups.push({row,spec,frame,art,content,buttons});
     }
   }
-  root.resizeHud = (width,height) => {
+  root.resizeHud = (width,height,footerOffset = 0) => {
     for (const row of ['top','bottom']) {
       const list = groups.filter(group => group.row === row);
       const total = list.reduce((sum,group)=>sum+group.spec.advance,0);
@@ -52,7 +52,7 @@ export async function renderHomeHud(layout, state, tap, bounds) {
         const {frame,art,content,buttons,spec} = group;
         const advance = width * spec.advance / total;
         const frameWidth = advance + (index === list.length-1 ? 0 : frame.width-spec.advance);
-        const y = row === 'top' ? 0 : height-112;
+        const y = row === 'top' ? 0 : height-112+footerOffset;
         position(art,{...frame,x,y,width:frameWidth});
         for (const {e,node} of content) {
           let localX = e.x-frame.x;
