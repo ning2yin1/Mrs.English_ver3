@@ -16,7 +16,7 @@ async function screen(name) { await page.waitForFunction(name => document.queryS
 async function settled() {
   await page.evaluate(async () => {
     await document.fonts.ready;
-    await Promise.all([...document.images].map(im => im.decode()));
+    await Promise.all([...document.images].filter(im => im.getAttribute('src')).map(im => im.decode()));
   });
 }
 async function screenshot(name) { await settled(); await page.screenshot({ path:`${output}/${name}.png` }); }
@@ -64,7 +64,7 @@ try {
   await click('confirm'); await screen('home');
   assert.equal(await page.evaluate(key => JSON.parse(localStorage.getItem(key)).nickname, key), 'あいうえおかきくけこさし');
   await page.reload(); await screen('title'); await click('start'); await screen('home');
-  assert.match(await page.locator('[data-layer="background"]').getAttribute('src'), /bg-22/);
+  assert.match(await page.locator('#scene-background').getAttribute('src'), /bg-22/);
   results.push('不正JSONからの復帰・日本語12文字制限・背景22の再読込: PASS');
   // A wholly invalid saved profile must not bypass onboarding.
   await page.evaluate(key => localStorage.setItem(key, JSON.stringify({version:3,nickname:'Nene',memberId:'invalid',backgroundId:'bg-99',setupComplete:true})), key);

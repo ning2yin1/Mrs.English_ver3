@@ -1,7 +1,15 @@
 import { picture, label, hit, nineSlice, position } from './components.js';
 import { MEMBERS, normalizeName } from './profile.js';
+import { isSceneBackground } from './layout.js';
 const names = { motoki: '大森元貴', hiroto: '若井滉斗', ryoka: '藤澤涼架' };
 const byId = (layout, id) => layout.elements.find(e => e.id === id);
+
+export function backgroundForScreen(screen, state, backgrounds) {
+  // Comparison plates contain UI-removal patches: never expose them behind a differently fitted UI.
+  if (screen === 'title' || screen === 'nickname') return 'assets/photos/top_original.jpg';
+  if (screen === 'member' || screen === 'background') return 'backgrounds/' + backgrounds[0].source_file;
+  if (screen === 'home') return 'backgrounds/' + backgrounds.find(b => b.id === state.backgroundId).source_file;
+}
 
 export async function renderScreen(screen, layout, state, actions, backgrounds, homeBounds) {
   const fragment = document.createDocumentFragment();
@@ -15,6 +23,7 @@ export async function renderScreen(screen, layout, state, actions, backgrounds, 
     { id:'frame-ryoka', x:1123, y:145, width:417, height:533, z:10 },
   ];
   for (const original of layout.elements) {
+    if (isSceneBackground(original)) continue;
     const e = { ...original };
     if (screen === 'nickname' && ['name', 'input_caret'].includes(e.id)) continue;
     if (screen === 'member') {
@@ -43,7 +52,6 @@ export async function renderScreen(screen, layout, state, actions, backgrounds, 
       }
     }
     if (screen === 'home') {
-      if (e.id === 'background') { fragment.append(picture({ ...e, file: 'backgrounds/' + selectedBackground.source_file })); continue; }
       if (e.id === 'nickname' && state.nickname !== 'Nene') {
         fragment.append(dynamicText({ ...e, width: 305, height: 35, y: 10 }, state.nickname, 30)); continue;
       }

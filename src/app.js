@@ -1,5 +1,6 @@
 import { loadProfile, saveProfile, normalizeName } from './profile.js';
-import { renderScreen, placeholder } from './screens.js';
+import { renderScreen, placeholder, backgroundForScreen } from './screens.js';
+import { createLayout, sceneBackground, prepareBackground } from './layout.js';
 const stage = document.querySelector('#stage');
 const safe = document.querySelector('#safe-area');
 const notice = document.querySelector('#notice');
@@ -11,30 +12,25 @@ const state = { nickname: saved?.nickname || 'Nene', memberId:saved?.memberId ||
 let current = 'title';
 let renderVersion = 0;
 let layouts, backgrounds, homeBounds;
-function resize() {
-  const v = window.visualViewport;
-  // Keyboard shrinks the visual viewport. Fit the complete canvas into its visible safe rectangle.
-  const keyboard = document.activeElement?.id === 'nickname' && v && v.height < window.innerHeight * .8;
-  const safeRect = safe.getBoundingClientRect();
-  const width = Math.min(safeRect.width, v?.width || innerWidth);
-  const height = keyboard ? Math.max(80, Math.min(safeRect.height, v.height - safeRect.top)) : safeRect.height;
-  const scale = Math.min(width / 1844, height / 853);
-  Object.assign(stage.style, { transform:`scale(${scale})`, left:`${(width - 1844 * scale) / 2}px`, top:`${(height - 853 * scale) / 2 + (keyboard ? v.offsetTop : 0)}px` });
-}
-window.addEventListener('resize', resize);
-window.visualViewport?.addEventListener('resize', resize);
-window.visualViewport?.addEventListener('scroll', resize);
-document.addEventListener('focusin', resize);
-document.addEventListener('focusout', () => requestAnimationFrame(resize));
-new ResizeObserver(resize).observe(safe);
+const { resize } = createLayout(safe, stage);
 
 async function show(screen) {
   current = screen;
   const version = ++renderVersion;
   if (!persistentWarning) message('');
-  const fragment = screen.startsWith('placeholder/') ? placeholder(screen, () => show('home'))
-    : await renderScreen(screen, layouts[screen], state, { tap, confirm }, backgrounds, homeBounds);
+  const isPlaceholder = screen.startsWith('placeholder/');
+  const backgroundFile = sceneBackground(layouts[screen], screen === 'home' ? 'home_approved/' : '',
+    backgroundForScreen(screen, state, backgrounds));
+  const [fragment, background] = await Promise.all([
+    isPlaceholder ? placeholder(screen, () => show('home'))
+      : renderScreen(screen, layouts[screen], state, { tap, confirm }, backgrounds, homeBounds),
+    prepareBackground(backgroundFile),
+  ]);
   if (version !== renderVersion) return;
+  const previousBackground = document.querySelector('#scene-background');
+  if (background) previousBackground.replaceWith(background);
+  else { previousBackground.hidden = true; previousBackground.removeAttribute('src'); }
+  document.body.dataset.screen = screen;
   stage.replaceChildren(fragment); stage.dataset.screen = screen;
   stage.setAttribute('aria-label', {title:'タイトル',nickname:'ニックネーム設定',member:'推し選択',background:'背景選択',home:'ホーム'}[screen] || '仮画面');
   resize();

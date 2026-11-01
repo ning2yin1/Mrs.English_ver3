@@ -1,0 +1,806 @@
+{
+  "checks": 25,
+  "results": [
+    {
+      "viewport": "844x390",
+      "screen": "title",
+      "safeInsets": {
+        "left": 47,
+        "right": 47,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 844,
+        "bottom": 390,
+        "width": 844,
+        "height": 390
+      },
+      "ui": {
+        "left": 47,
+        "top": 11.03125,
+        "right": 797,
+        "bottom": 357.9672546386719,
+        "width": 750,
+        "height": 346.9360046386719
+      },
+      "scaleX": 0.406725,
+      "scaleY": 0.406725,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "844x390",
+      "screen": "nickname",
+      "safeInsets": {
+        "left": 47,
+        "right": 47,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 844,
+        "bottom": 390,
+        "width": 844,
+        "height": 390
+      },
+      "ui": {
+        "left": 47,
+        "top": 11.03125,
+        "right": 797,
+        "bottom": 357.9672546386719,
+        "width": 750,
+        "height": 346.9360046386719
+      },
+      "scaleX": 0.406725,
+      "scaleY": 0.406725,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "844x390",
+      "screen": "member",
+      "safeInsets": {
+        "left": 47,
+        "right": 47,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 844,
+        "bottom": 390,
+        "width": 844,
+        "height": 390
+      },
+      "ui": {
+        "left": 47,
+        "top": 11.03125,
+        "right": 797,
+        "bottom": 357.9672546386719,
+        "width": 750,
+        "height": 346.9360046386719
+      },
+      "scaleX": 0.406725,
+      "scaleY": 0.406725,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "844x390",
+      "screen": "background",
+      "safeInsets": {
+        "left": 47,
+        "right": 47,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 844,
+        "bottom": 390,
+        "width": 844,
+        "height": 390
+      },
+      "ui": {
+        "left": 47,
+        "top": 11.03125,
+        "right": 797,
+        "bottom": 357.9672546386719,
+        "width": 750,
+        "height": 346.9360046386719
+      },
+      "scaleX": 0.406725,
+      "scaleY": 0.406725,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "844x390",
+      "screen": "home",
+      "safeInsets": {
+        "left": 47,
+        "right": 47,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 844,
+        "bottom": 390,
+        "width": 844,
+        "height": 390
+      },
+      "ui": {
+        "left": 47,
+        "top": 11.03125,
+        "right": 797,
+        "bottom": 357.9672546386719,
+        "width": 750,
+        "height": 346.9360046386719
+      },
+      "scaleX": 0.406725,
+      "scaleY": 0.406725,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "852x393",
+      "screen": "title",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 852,
+        "bottom": 393,
+        "width": 852,
+        "height": 393
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 793,
+        "bottom": 355.7534484863281,
+        "width": 734,
+        "height": 339.5346984863281
+      },
+      "scaleX": 0.398048,
+      "scaleY": 0.398048,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "852x393",
+      "screen": "nickname",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 852,
+        "bottom": 393,
+        "width": 852,
+        "height": 393
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 793,
+        "bottom": 355.7534484863281,
+        "width": 734,
+        "height": 339.5346984863281
+      },
+      "scaleX": 0.398048,
+      "scaleY": 0.398048,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "852x393",
+      "screen": "member",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 852,
+        "bottom": 393,
+        "width": 852,
+        "height": 393
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 793,
+        "bottom": 355.7534484863281,
+        "width": 734,
+        "height": 339.5346984863281
+      },
+      "scaleX": 0.398048,
+      "scaleY": 0.398048,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "852x393",
+      "screen": "background",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 852,
+        "bottom": 393,
+        "width": 852,
+        "height": 393
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 793,
+        "bottom": 355.7534484863281,
+        "width": 734,
+        "height": 339.5346984863281
+      },
+      "scaleX": 0.398048,
+      "scaleY": 0.398048,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "852x393",
+      "screen": "home",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 852,
+        "bottom": 393,
+        "width": 852,
+        "height": 393
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 793,
+        "bottom": 355.7534484863281,
+        "width": 734,
+        "height": 339.5346984863281
+      },
+      "scaleX": 0.398048,
+      "scaleY": 0.398048,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "932x430",
+      "screen": "title",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 932,
+        "bottom": 430,
+        "width": 932,
+        "height": 430
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 873,
+        "bottom": 392.7599792480469,
+        "width": 814,
+        "height": 376.5412292480469
+      },
+      "scaleX": 0.441432,
+      "scaleY": 0.441432,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "932x430",
+      "screen": "nickname",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 932,
+        "bottom": 430,
+        "width": 932,
+        "height": 430
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 873,
+        "bottom": 392.7599792480469,
+        "width": 814,
+        "height": 376.5412292480469
+      },
+      "scaleX": 0.441432,
+      "scaleY": 0.441432,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "932x430",
+      "screen": "member",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 932,
+        "bottom": 430,
+        "width": 932,
+        "height": 430
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 873,
+        "bottom": 392.7599792480469,
+        "width": 814,
+        "height": 376.5412292480469
+      },
+      "scaleX": 0.441432,
+      "scaleY": 0.441432,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "932x430",
+      "screen": "background",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 932,
+        "bottom": 430,
+        "width": 932,
+        "height": 430
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 873,
+        "bottom": 392.7599792480469,
+        "width": 814,
+        "height": 376.5412292480469
+      },
+      "scaleX": 0.441432,
+      "scaleY": 0.441432,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "932x430",
+      "screen": "home",
+      "safeInsets": {
+        "left": 59,
+        "right": 59,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 932,
+        "bottom": 430,
+        "width": 932,
+        "height": 430
+      },
+      "ui": {
+        "left": 59,
+        "top": 16.21875,
+        "right": 873,
+        "bottom": 392.7599792480469,
+        "width": 814,
+        "height": 376.5412292480469
+      },
+      "scaleX": 0.441432,
+      "scaleY": 0.441432,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "812x375",
+      "screen": "title",
+      "safeInsets": {
+        "left": 44,
+        "right": 44,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 812,
+        "bottom": 375,
+        "width": 812,
+        "height": 375
+      },
+      "ui": {
+        "left": 44,
+        "top": 9.53125,
+        "right": 768,
+        "bottom": 344.4401550292969,
+        "width": 724,
+        "height": 334.9089050292969
+      },
+      "scaleX": 0.392625,
+      "scaleY": 0.392625,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "812x375",
+      "screen": "nickname",
+      "safeInsets": {
+        "left": 44,
+        "right": 44,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 812,
+        "bottom": 375,
+        "width": 812,
+        "height": 375
+      },
+      "ui": {
+        "left": 44,
+        "top": 9.53125,
+        "right": 768,
+        "bottom": 344.4401550292969,
+        "width": 724,
+        "height": 334.9089050292969
+      },
+      "scaleX": 0.392625,
+      "scaleY": 0.392625,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "812x375",
+      "screen": "member",
+      "safeInsets": {
+        "left": 44,
+        "right": 44,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 812,
+        "bottom": 375,
+        "width": 812,
+        "height": 375
+      },
+      "ui": {
+        "left": 44,
+        "top": 9.53125,
+        "right": 768,
+        "bottom": 344.4401550292969,
+        "width": 724,
+        "height": 334.9089050292969
+      },
+      "scaleX": 0.392625,
+      "scaleY": 0.392625,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "812x375",
+      "screen": "background",
+      "safeInsets": {
+        "left": 44,
+        "right": 44,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 812,
+        "bottom": 375,
+        "width": 812,
+        "height": 375
+      },
+      "ui": {
+        "left": 44,
+        "top": 9.53125,
+        "right": 768,
+        "bottom": 344.4401550292969,
+        "width": 724,
+        "height": 334.9089050292969
+      },
+      "scaleX": 0.392625,
+      "scaleY": 0.392625,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "812x375",
+      "screen": "home",
+      "safeInsets": {
+        "left": 44,
+        "right": 44,
+        "top": 0,
+        "bottom": 21
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 812,
+        "bottom": 375,
+        "width": 812,
+        "height": 375
+      },
+      "ui": {
+        "left": 44,
+        "top": 9.53125,
+        "right": 768,
+        "bottom": 344.4401550292969,
+        "width": 724,
+        "height": 334.9089050292969
+      },
+      "scaleX": 0.392625,
+      "scaleY": 0.392625,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "1844x853",
+      "screen": "title",
+      "safeInsets": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "ui": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "scaleX": 1,
+      "scaleY": 1,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "1844x853",
+      "screen": "nickname",
+      "safeInsets": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "ui": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "scaleX": 1,
+      "scaleY": 1,
+      "objectFit": "cover",
+      "source": "assets/photos/top_original.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "1844x853",
+      "screen": "member",
+      "safeInsets": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "ui": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "scaleX": 1,
+      "scaleY": 1,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "1844x853",
+      "screen": "background",
+      "safeInsets": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "ui": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "scaleX": 1,
+      "scaleY": 1,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    },
+    {
+      "viewport": "1844x853",
+      "screen": "home",
+      "safeInsets": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+      },
+      "background": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "ui": {
+        "left": 0,
+        "top": 0,
+        "right": 1844,
+        "bottom": 853,
+        "width": 1844,
+        "height": 853
+      },
+      "scaleX": 1,
+      "scaleY": 1,
+      "objectFit": "cover",
+      "source": "backgrounds/bg-01.jpg",
+      "loaded": true,
+      "nestedBackground": false
+    }
+  ],
+  "limitation": "Chromium with explicitly simulated safe rectangles; physical iPhone Safari and keyboard not tested."
+}
