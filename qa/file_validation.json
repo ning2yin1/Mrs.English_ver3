@@ -1,0 +1,1186 @@
+{
+  "images": [
+    {
+      "file": "assets/background/background_confirm.png",
+      "decoded": true,
+      "width": 620,
+      "height": 122
+    },
+    {
+      "file": "assets/background/background_header.png",
+      "decoded": true,
+      "width": 1654,
+      "height": 86
+    },
+    {
+      "file": "assets/background/background_panel.png",
+      "decoded": true,
+      "width": 1730,
+      "height": 589
+    },
+    {
+      "file": "assets/background/background_preview_frame.png",
+      "decoded": true,
+      "width": 621,
+      "height": 356
+    },
+    {
+      "file": "assets/background/background_selection_frame.png",
+      "decoded": true,
+      "width": 183,
+      "height": 135
+    },
+    {
+      "file": "assets/background/photo_plate.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "assets/icons/background_back.png",
+      "decoded": true,
+      "width": 27,
+      "height": 40
+    },
+    {
+      "file": "assets/icons/background_check.png",
+      "decoded": true,
+      "width": 45,
+      "height": 45
+    },
+    {
+      "file": "assets/icons/background_confirm_arrow.png",
+      "decoded": true,
+      "width": 30,
+      "height": 42
+    },
+    {
+      "file": "assets/icons/background_photo_icon.png",
+      "decoded": true,
+      "width": 48,
+      "height": 50
+    },
+    {
+      "file": "assets/icons/member_back.png",
+      "decoded": true,
+      "width": 36,
+      "height": 38
+    },
+    {
+      "file": "assets/icons/member_check.png",
+      "decoded": true,
+      "width": 68,
+      "height": 68
+    },
+    {
+      "file": "assets/icons/member_confirm_arrow.png",
+      "decoded": true,
+      "width": 23,
+      "height": 33
+    },
+    {
+      "file": "assets/icons/nickname_back.png",
+      "decoded": true,
+      "width": 24,
+      "height": 40
+    },
+    {
+      "file": "assets/icons/nickname_confirm_arrow.png",
+      "decoded": true,
+      "width": 29,
+      "height": 47
+    },
+    {
+      "file": "assets/member/card_hiroto.png",
+      "decoded": true,
+      "width": 379,
+      "height": 484
+    },
+    {
+      "file": "assets/member/card_ryoka.png",
+      "decoded": true,
+      "width": 387,
+      "height": 487
+    },
+    {
+      "file": "assets/member/card_selected.png",
+      "decoded": true,
+      "width": 424,
+      "height": 533
+    },
+    {
+      "file": "assets/member/member_confirm.png",
+      "decoded": true,
+      "width": 614,
+      "height": 104
+    },
+    {
+      "file": "assets/member/member_header.png",
+      "decoded": true,
+      "width": 1648,
+      "height": 83
+    },
+    {
+      "file": "assets/member/photo_plate.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "assets/nickname/nickname_confirm.png",
+      "decoded": true,
+      "width": 474,
+      "height": 118
+    },
+    {
+      "file": "assets/nickname/nickname_header.png",
+      "decoded": true,
+      "width": 1661,
+      "height": 84
+    },
+    {
+      "file": "assets/nickname/nickname_input.png",
+      "decoded": true,
+      "width": 838,
+      "height": 102
+    },
+    {
+      "file": "assets/nickname/nickname_panel.png",
+      "decoded": true,
+      "width": 1076,
+      "height": 337
+    },
+    {
+      "file": "assets/nickname/photo_plate.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "assets/photos/background_selected_preview.png",
+      "decoded": true,
+      "width": 599,
+      "height": 331
+    },
+    {
+      "file": "assets/photos/background_tile_01.png",
+      "decoded": true,
+      "width": 159,
+      "height": 111
+    },
+    {
+      "file": "assets/photos/background_tile_02.png",
+      "decoded": true,
+      "width": 154,
+      "height": 111
+    },
+    {
+      "file": "assets/photos/background_tile_03.png",
+      "decoded": true,
+      "width": 156,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_04.png",
+      "decoded": true,
+      "width": 158,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_05.png",
+      "decoded": true,
+      "width": 158,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_06.png",
+      "decoded": true,
+      "width": 156,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_07.png",
+      "decoded": true,
+      "width": 181,
+      "height": 113
+    },
+    {
+      "file": "assets/photos/background_tile_08.png",
+      "decoded": true,
+      "width": 190,
+      "height": 113
+    },
+    {
+      "file": "assets/photos/background_tile_09.png",
+      "decoded": true,
+      "width": 190,
+      "height": 114
+    },
+    {
+      "file": "assets/photos/background_tile_10.png",
+      "decoded": true,
+      "width": 194,
+      "height": 114
+    },
+    {
+      "file": "assets/photos/background_tile_11.png",
+      "decoded": true,
+      "width": 194,
+      "height": 115
+    },
+    {
+      "file": "assets/photos/background_tile_12.png",
+      "decoded": true,
+      "width": 156,
+      "height": 107
+    },
+    {
+      "file": "assets/photos/background_tile_13.png",
+      "decoded": true,
+      "width": 153,
+      "height": 108
+    },
+    {
+      "file": "assets/photos/background_tile_14.png",
+      "decoded": true,
+      "width": 156,
+      "height": 108
+    },
+    {
+      "file": "assets/photos/background_tile_15.png",
+      "decoded": true,
+      "width": 156,
+      "height": 108
+    },
+    {
+      "file": "assets/photos/background_tile_16.png",
+      "decoded": true,
+      "width": 157,
+      "height": 108
+    },
+    {
+      "file": "assets/photos/background_tile_17.png",
+      "decoded": true,
+      "width": 157,
+      "height": 108
+    },
+    {
+      "file": "assets/photos/background_tile_18.png",
+      "decoded": true,
+      "width": 156,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_19.png",
+      "decoded": true,
+      "width": 155,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_20.png",
+      "decoded": true,
+      "width": 156,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_21.png",
+      "decoded": true,
+      "width": 155,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/background_tile_22.png",
+      "decoded": true,
+      "width": 156,
+      "height": 112
+    },
+    {
+      "file": "assets/photos/hiroto_portrait.png",
+      "decoded": true,
+      "width": 348,
+      "height": 394
+    },
+    {
+      "file": "assets/photos/motoki_portrait.png",
+      "decoded": true,
+      "width": 361,
+      "height": 392
+    },
+    {
+      "file": "assets/photos/ryoka_portrait.png",
+      "decoded": true,
+      "width": 356,
+      "height": 395
+    },
+    {
+      "file": "assets/title/photo_plate.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "assets/title/tap_strip.png",
+      "decoded": true,
+      "width": 657,
+      "height": 65
+    },
+    {
+      "file": "assets/title/title_logo.png",
+      "decoded": true,
+      "width": 1263,
+      "height": 262
+    },
+    {
+      "file": "home_approved/assets/backgrounds/home_reference_plate.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "home_approved/assets/home/button_collection.png",
+      "decoded": true,
+      "width": 344,
+      "height": 111
+    },
+    {
+      "file": "home_approved/assets/home/button_inventory.png",
+      "decoded": true,
+      "width": 339,
+      "height": 111
+    },
+    {
+      "file": "home_approved/assets/home/button_mission.png",
+      "decoded": true,
+      "width": 355,
+      "height": 111
+    },
+    {
+      "file": "home_approved/assets/home/button_ready.png",
+      "decoded": true,
+      "width": 350,
+      "height": 112
+    },
+    {
+      "file": "home_approved/assets/home/button_shop.png",
+      "decoded": true,
+      "width": 332,
+      "height": 111
+    },
+    {
+      "file": "home_approved/assets/home/status_currency.png",
+      "decoded": true,
+      "width": 541,
+      "height": 83
+    },
+    {
+      "file": "home_approved/assets/home/status_menu.png",
+      "decoded": true,
+      "width": 290,
+      "height": 83
+    },
+    {
+      "file": "home_approved/assets/home/status_player.png",
+      "decoded": true,
+      "width": 529,
+      "height": 83
+    },
+    {
+      "file": "home_approved/assets/home/status_stamina.png",
+      "decoded": true,
+      "width": 302,
+      "height": 83
+    },
+    {
+      "file": "home_approved/assets/icons/avatar.png",
+      "decoded": true,
+      "width": 78,
+      "height": 75
+    },
+    {
+      "file": "home_approved/assets/icons/coin.png",
+      "decoded": true,
+      "width": 53,
+      "height": 49
+    },
+    {
+      "file": "home_approved/assets/icons/collection.png",
+      "decoded": true,
+      "width": 54,
+      "height": 57
+    },
+    {
+      "file": "home_approved/assets/icons/diamond.png",
+      "decoded": true,
+      "width": 53,
+      "height": 45
+    },
+    {
+      "file": "home_approved/assets/icons/energy.png",
+      "decoded": true,
+      "width": 57,
+      "height": 59
+    },
+    {
+      "file": "home_approved/assets/icons/inventory.png",
+      "decoded": true,
+      "width": 45,
+      "height": 53
+    },
+    {
+      "file": "home_approved/assets/icons/menu.png",
+      "decoded": true,
+      "width": 58,
+      "height": 49
+    },
+    {
+      "file": "home_approved/assets/icons/mission.png",
+      "decoded": true,
+      "width": 44,
+      "height": 56
+    },
+    {
+      "file": "home_approved/assets/icons/shop.png",
+      "decoded": true,
+      "width": 61,
+      "height": 52
+    },
+    {
+      "file": "home_approved/assets/icons/stamina.png",
+      "decoded": true,
+      "width": 47,
+      "height": 48
+    },
+    {
+      "file": "home_approved/qa/asset_contact_sheet.png",
+      "decoded": true,
+      "width": 1200,
+      "height": 680
+    },
+    {
+      "file": "home_approved/qa/home_difference.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "home_approved/qa/home_difference_x4.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "home_approved/qa/home_overlay_50.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "home_approved/qa/home_reconstructed.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "home_approved/qa/home_reference.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "home_approved/qa/hud_comparison.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 470
+    },
+    {
+      "file": "mockups/background.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "mockups/home.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "mockups/member.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "mockups/nickname.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "mockups/title.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/asset_transparency_sheet.png",
+      "decoded": true,
+      "width": 1200,
+      "height": 1620
+    },
+    {
+      "file": "qa/background/difference.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/background/difference_x4.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/background/reconstructed.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/member/difference.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/member/difference_x4.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/member/reconstructed.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/nickname/difference.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/nickname/difference_x4.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/nickname/reconstructed.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/title/difference.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/title/difference_x4.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "qa/title/reconstructed.png",
+      "decoded": true,
+      "width": 1844,
+      "height": 853
+    }
+  ],
+  "alpha": [
+    {
+      "file": "assets/background/background_confirm.png",
+      "mode": "RGBA",
+      "zero_alpha": 924,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/background/background_header.png",
+      "mode": "RGBA",
+      "zero_alpha": 480,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/background/background_panel.png",
+      "mode": "RGBA",
+      "zero_alpha": 600241,
+      "partial_alpha": 325309,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/background/background_preview_frame.png",
+      "mode": "RGBA",
+      "zero_alpha": 204168,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/background/background_selection_frame.png",
+      "mode": "RGBA",
+      "zero_alpha": 18000,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/icons/background_back.png",
+      "mode": "RGBA",
+      "zero_alpha": 49,
+      "partial_alpha": 977,
+      "edge_alpha_max": 24
+    },
+    {
+      "file": "assets/icons/background_check.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 1727,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/icons/background_confirm_arrow.png",
+      "mode": "RGBA",
+      "zero_alpha": 101,
+      "partial_alpha": 1071,
+      "edge_alpha_max": 153
+    },
+    {
+      "file": "assets/icons/background_photo_icon.png",
+      "mode": "RGBA",
+      "zero_alpha": 2,
+      "partial_alpha": 2072,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/icons/member_back.png",
+      "mode": "RGBA",
+      "zero_alpha": 24,
+      "partial_alpha": 1275,
+      "edge_alpha_max": 36
+    },
+    {
+      "file": "assets/icons/member_check.png",
+      "mode": "RGBA",
+      "zero_alpha": 4,
+      "partial_alpha": 4164,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/icons/member_confirm_arrow.png",
+      "mode": "RGBA",
+      "zero_alpha": 109,
+      "partial_alpha": 502,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/icons/nickname_back.png",
+      "mode": "RGBA",
+      "zero_alpha": 118,
+      "partial_alpha": 792,
+      "edge_alpha_max": 32
+    },
+    {
+      "file": "assets/icons/nickname_confirm_arrow.png",
+      "mode": "RGBA",
+      "zero_alpha": 165,
+      "partial_alpha": 1000,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/member/card_hiroto.png",
+      "mode": "RGBA",
+      "zero_alpha": 139927,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/member/card_ryoka.png",
+      "mode": "RGBA",
+      "zero_alpha": 145054,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/member/card_selected.png",
+      "mode": "RGBA",
+      "zero_alpha": 166196,
+      "partial_alpha": 0,
+      "edge_alpha_max": 0
+    },
+    {
+      "file": "assets/member/member_confirm.png",
+      "mode": "RGBA",
+      "zero_alpha": 684,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/member/member_header.png",
+      "mode": "RGBA",
+      "zero_alpha": 420,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/nickname/nickname_confirm.png",
+      "mode": "RGBA",
+      "zero_alpha": 760,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/nickname/nickname_header.png",
+      "mode": "RGBA",
+      "zero_alpha": 2081,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/nickname/nickname_input.png",
+      "mode": "RGBA",
+      "zero_alpha": 7760,
+      "partial_alpha": 0,
+      "edge_alpha_max": 0
+    },
+    {
+      "file": "assets/nickname/nickname_panel.png",
+      "mode": "RGBA",
+      "zero_alpha": 104486,
+      "partial_alpha": 235256,
+      "edge_alpha_max": 0
+    },
+    {
+      "file": "assets/photos/background_selected_preview.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_01.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_02.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_03.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_04.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_05.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_06.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_07.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_08.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_09.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_10.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_11.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_12.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_13.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_14.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_15.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_16.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_17.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_18.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_19.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_20.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_21.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/background_tile_22.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/hiroto_portrait.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/motoki_portrait.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/photos/ryoka_portrait.png",
+      "mode": "RGBA",
+      "zero_alpha": 0,
+      "partial_alpha": 0,
+      "edge_alpha_max": 255
+    },
+    {
+      "file": "assets/title/tap_strip.png",
+      "mode": "RGBA",
+      "zero_alpha": 10626,
+      "partial_alpha": 25658,
+      "edge_alpha_max": 0
+    },
+    {
+      "file": "assets/title/title_logo.png",
+      "mode": "RGBA",
+      "zero_alpha": 161114,
+      "partial_alpha": 165079,
+      "edge_alpha_max": 0
+    }
+  ],
+  "fonts": [
+    {
+      "file": "assets/fonts/background_confirm.ttf",
+      "characters": " 定決",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_header.ttf",
+      "characters": " を択景背選",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_hint.ttf",
+      "characters": " いくさすだでにるをんホムー景画示背表選面",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_preview_header.ttf",
+      "characters": " EIPRVW",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_preview_index.ttf",
+      "characters": " /012",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_step.ttf",
+      "characters": " /03",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_01.ttf",
+      "characters": " 01",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_02.ttf",
+      "characters": " 02",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_03.ttf",
+      "characters": " 03",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_04.ttf",
+      "characters": " 04",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_05.ttf",
+      "characters": " 05",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_06.ttf",
+      "characters": " 06",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_07.ttf",
+      "characters": " 07",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_08.ttf",
+      "characters": " 08",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_09.ttf",
+      "characters": " 09",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_10.ttf",
+      "characters": " 01",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_11.ttf",
+      "characters": " 1",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_12.ttf",
+      "characters": " 12",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_13.ttf",
+      "characters": " 13",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_14.ttf",
+      "characters": " 14",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_15.ttf",
+      "characters": " 15",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_16.ttf",
+      "characters": " 16",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_17.ttf",
+      "characters": " 17",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_18.ttf",
+      "characters": " 18",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_19.ttf",
+      "characters": " 19",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_20.ttf",
+      "characters": " 02",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_21.ttf",
+      "characters": " 12",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/background_tile_22.ttf",
+      "characters": " 2",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_confirm.ttf",
+      "characters": " 定決",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_header.ttf",
+      "characters": " しを択推選",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_hiroto_name.ttf",
+      "characters": " 井斗滉若",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_motoki_name.ttf",
+      "characters": " 元大森貴",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_ryoka_name.ttf",
+      "characters": " 架涼澤藤",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_selected.ttf",
+      "characters": " CDELST",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/member_step.ttf",
+      "characters": " /023",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_confirm.ttf",
+      "characters": " 定決",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_header.ttf",
+      "characters": " クッニネムー定設",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_hint.ttf",
+      "characters": " あかきすでとまら変更",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_input_caret.ttf",
+      "characters": " |",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_name.ttf",
+      "characters": " Nen",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_prompt.ttf",
+      "characters": " いくさしだてをクッニネムー入力",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/nickname_step.ttf",
+      "characters": " /013",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/title_tap_label.ttf",
+      "characters": " AOPRST",
+      "valid": true
+    },
+    {
+      "file": "assets/fonts/title_version.ttf",
+      "characters": " .3Ver",
+      "valid": true
+    }
+  ],
+  "home_files_unchanged": 48
+}

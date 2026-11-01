@@ -1,0 +1,364 @@
+{
+  "screen": "member",
+  "reference_size": {
+    "width": 1844,
+    "height": 853
+  },
+  "elements": [
+    {
+      "id": "photo_background",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "z": 0,
+      "kind": "photo",
+      "file": "assets/member/photo_plate.png",
+      "limits": "UI-hidden areas are restored or analytically separated; do not treat as a pristine original photograph."
+    },
+    {
+      "id": "member_header",
+      "x": 99,
+      "y": 27,
+      "width": 1648,
+      "height": 83,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/member/member_header.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "card_selected",
+      "x": 306,
+      "y": 145,
+      "width": 424,
+      "height": 533,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/member/card_selected.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "card_hiroto",
+      "x": 732,
+      "y": 171,
+      "width": 379,
+      "height": 484,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/member/card_hiroto.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "card_ryoka",
+      "x": 1138,
+      "y": 171,
+      "width": 387,
+      "height": 487,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/member/card_ryoka.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "member_confirm",
+      "x": 616,
+      "y": 721,
+      "width": 614,
+      "height": 104,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/member/member_confirm.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "motoki_portrait",
+      "x": 337,
+      "y": 197,
+      "width": 361,
+      "height": 392,
+      "z": 15,
+      "kind": "photo",
+      "file": "assets/photos/motoki_portrait.png",
+      "source": "Photographic crop of user-approved mockup; no generation."
+    },
+    {
+      "id": "hiroto_portrait",
+      "x": 748,
+      "y": 191,
+      "width": 348,
+      "height": 394,
+      "z": 15,
+      "kind": "photo",
+      "file": "assets/photos/hiroto_portrait.png",
+      "source": "Photographic crop of user-approved mockup; no generation."
+    },
+    {
+      "id": "ryoka_portrait",
+      "x": 1154,
+      "y": 191,
+      "width": 356,
+      "height": 395,
+      "z": 15,
+      "kind": "photo",
+      "file": "assets/photos/ryoka_portrait.png",
+      "source": "Photographic crop of user-approved mockup; no generation."
+    },
+    {
+      "id": "member_back",
+      "x": 142,
+      "y": 51,
+      "width": 36,
+      "height": 38,
+      "z": 30,
+      "kind": "icon",
+      "file": "assets/icons/member_back.png"
+    },
+    {
+      "id": "member_confirm_arrow",
+      "x": 1153,
+      "y": 758,
+      "width": 23,
+      "height": 33,
+      "z": 30,
+      "kind": "icon",
+      "file": "assets/icons/member_confirm_arrow.png"
+    },
+    {
+      "id": "member_check",
+      "x": 636,
+      "y": 171,
+      "width": 68,
+      "height": 68,
+      "z": 30,
+      "kind": "icon",
+      "file": "assets/icons/member_check.png"
+    },
+    {
+      "id": "header",
+      "x": 258,
+      "y": 55,
+      "width": 160,
+      "height": 29,
+      "z": 40,
+      "kind": "text",
+      "text": "推しを選択",
+      "font_file": "assets/fonts/member_header.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "推しを選択",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        -1,
+        -32,
+        160,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "step",
+      "x": 1601,
+      "y": 57,
+      "width": 88,
+      "height": 28,
+      "z": 40,
+      "kind": "text",
+      "text": "02 / 03",
+      "font_file": "assets/fonts/member_step.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "02/3",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -30,
+        100,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "selected",
+      "x": 469,
+      "y": 171,
+      "width": 96,
+      "height": 19,
+      "z": 40,
+      "kind": "text",
+      "text": "SELECTED",
+      "font_file": "assets/fonts/member_selected.ttf",
+      "font_size": 64,
+      "color": "#24f7ff",
+      "covered_characters": "SELCTD",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -22,
+        96,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "motoki_name",
+      "x": 452,
+      "y": 604,
+      "width": 130,
+      "height": 34,
+      "z": 40,
+      "kind": "text",
+      "text": "大森元貴",
+      "font_file": "assets/fonts/member_motoki_name.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "大森元貴",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        -1,
+        -37,
+        130,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "hiroto_name",
+      "x": 859,
+      "y": 599,
+      "width": 126,
+      "height": 30,
+      "z": 40,
+      "kind": "text",
+      "text": "若井滉斗",
+      "font_file": "assets/fonts/member_hiroto_name.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "若井滉斗",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -33,
+        126,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "ryoka_name",
+      "x": 1268,
+      "y": 601,
+      "width": 128,
+      "height": 30,
+      "z": 40,
+      "kind": "text",
+      "text": "藤澤涼架",
+      "font_file": "assets/fonts/member_ryoka_name.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "藤澤涼架",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -32,
+        128,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "confirm",
+      "x": 886,
+      "y": 756,
+      "width": 71,
+      "height": 34,
+      "z": 40,
+      "kind": "text",
+      "text": "決定",
+      "font_file": "assets/fonts/member_confirm.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "決定",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        -1,
+        -37,
+        72,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    }
+  ],
+  "tap_targets": [
+    {
+      "id": "back",
+      "x": 105,
+      "y": 33,
+      "width": 113,
+      "height": 72,
+      "route": "nickname"
+    },
+    {
+      "id": "motoki",
+      "x": 320,
+      "y": 157,
+      "width": 394,
+      "height": 506,
+      "action": "select-member",
+      "value": "motoki"
+    },
+    {
+      "id": "hiroto",
+      "x": 737,
+      "y": 176,
+      "width": 372,
+      "height": 475,
+      "action": "select-member",
+      "value": "hiroto"
+    },
+    {
+      "id": "ryoka",
+      "x": 1144,
+      "y": 176,
+      "width": 375,
+      "height": 477,
+      "action": "select-member",
+      "value": "ryoka"
+    },
+    {
+      "id": "confirm",
+      "x": 622,
+      "y": 728,
+      "width": 603,
+      "height": 91,
+      "route": "background"
+    }
+  ],
+  "resize": {
+    "mode": "uniform-contain-safe-area",
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "safe_area": "Subtract env(safe-area-inset-*) before uniform scaling; center canvas; do not stretch either axis separately."
+  }
+}

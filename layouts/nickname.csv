@@ -1,0 +1,15 @@
+id,kind,x,y,width,height,z,file,text,font_file
+photo_background,photo,0,0,1844,853,0,assets/nickname/photo_plate.png,,
+nickname_header,panel,92,26,1661,84,10,assets/nickname/nickname_header.png,,
+nickname_panel,panel,385,336,1076,337,10,assets/nickname/nickname_panel.png,,
+nickname_input,panel,503,475,838,102,10,assets/nickname/nickname_input.png,,
+nickname_confirm,panel,685,695,474,118,10,assets/nickname/nickname_confirm.png,,
+nickname_back,icon,140,49,24,40,30,assets/icons/nickname_back.png,,
+nickname_confirm_arrow,icon,1075,731,29,47,30,assets/icons/nickname_confirm_arrow.png,,
+header,text,245,50,307,38,40,,ニックネーム設定,assets/fonts/nickname_header.ttf
+step,text,1615,54,89,32,40,,01 / 03,assets/fonts/nickname_step.ttf
+prompt,text,663,411,518,34,40,,ニックネームを入力してください,assets/fonts/nickname_prompt.ttf
+name,text,546,512,97,31,40,,Nene,assets/fonts/nickname_name.ttf
+input_caret,text,657,503,4,49,40,,|,assets/fonts/nickname_input_caret.ttf
+hint,text,803,592,239,23,40,,あとから変更できます,assets/fonts/nickname_hint.ttf
+confirm,text,876,729,91,45,40,,決定,assets/fonts/nickname_confirm.ttf

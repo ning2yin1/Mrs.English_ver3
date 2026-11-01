@@ -1,0 +1,107 @@
+{
+  "screen": "title",
+  "reference_size": {
+    "width": 1844,
+    "height": 853
+  },
+  "elements": [
+    {
+      "id": "photo_background",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "z": 0,
+      "kind": "photo",
+      "file": "assets/title/photo_plate.png",
+      "limits": "UI-hidden areas are restored or analytically separated; do not treat as a pristine original photograph."
+    },
+    {
+      "id": "tap_strip",
+      "x": 593,
+      "y": 742,
+      "width": 657,
+      "height": 65,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/title/tap_strip.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "title_logo",
+      "x": 275,
+      "y": 484,
+      "width": 1263,
+      "height": 262,
+      "z": 20,
+      "kind": "logo",
+      "file": "assets/title/title_logo.png",
+      "static_brand_artwork": true
+    },
+    {
+      "id": "version",
+      "x": 874,
+      "y": 695,
+      "width": 94,
+      "height": 29,
+      "z": 40,
+      "kind": "text",
+      "text": "Ver.3",
+      "font_file": "assets/fonts/title_version.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "Ver.3",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -32,
+        94,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "tap_label",
+      "x": 757,
+      "y": 760,
+      "width": 334,
+      "height": 24,
+      "z": 40,
+      "kind": "text",
+      "text": "TAP TO START",
+      "font_file": "assets/fonts/title_tap_label.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "TAPOSR",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -25,
+        361,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    }
+  ],
+  "tap_targets": [
+    {
+      "id": "start",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "route_if_setup_complete": "home",
+      "route_if_first_run": "nickname"
+    }
+  ],
+  "resize": {
+    "mode": "uniform-contain-safe-area",
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "safe_area": "Subtract env(safe-area-inset-*) before uniform scaling; center canvas; do not stretch either axis separately."
+  }
+}

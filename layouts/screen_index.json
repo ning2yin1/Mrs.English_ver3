@@ -1,0 +1,29 @@
+{
+  "title": {
+    "mockup": "mockups/title.png",
+    "layout": "layouts/title.json",
+    "preview": "qa/title/reconstructed.png"
+  },
+  "nickname": {
+    "mockup": "mockups/nickname.png",
+    "layout": "layouts/nickname.json",
+    "preview": "qa/nickname/reconstructed.png"
+  },
+  "member": {
+    "mockup": "mockups/member.png",
+    "layout": "layouts/member.json",
+    "preview": "qa/member/reconstructed.png"
+  },
+  "background": {
+    "mockup": "mockups/background.png",
+    "layout": "layouts/background.json",
+    "preview": "qa/background/reconstructed.png"
+  },
+  "home": {
+    "mockup": "mockups/home.png",
+    "layout": "home_approved/spec/home_layout.json",
+    "asset_path_base": "home_approved/",
+    "preview": "home_approved/qa/home_reconstructed.png",
+    "instructions": "home_approved/spec/codex_instructions.md"
+  }
+}

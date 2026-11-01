@@ -1,0 +1,256 @@
+{
+  "reference_size": [
+    1844,
+    853
+  ],
+  "mean_absolute_rgb_error": 0.6003287703049677,
+  "ui_band_mean_absolute_rgb_error": 2.5350516884660266,
+  "max_rgb_error": 255,
+  "pixels_any_channel_diff_over_16_pct": 0.8416765632589329,
+  "visible_center_max_rgb_error": 0,
+  "visible_center_exactly_preserved": true,
+  "original_screenshot_used_as_ui_asset": false,
+  "text_rasters_shipped_as_dynamic_assets": false,
+  "panel_alpha_verified": true,
+  "font_comparisons": [
+    {
+      "id": "nickname",
+      "font": "DejaVuSansMono.ttf",
+      "mask_mse": 0.11402115610001118,
+      "bounds": [
+        217,
+        18,
+        62,
+        21
+      ]
+    },
+    {
+      "id": "rank",
+      "font": "DejaVuSansMono.ttf",
+      "mask_mse": 0.20518547945606205,
+      "bounds": [
+        217,
+        52,
+        69,
+        14
+      ]
+    },
+    {
+      "id": "stamina_max",
+      "font": "NimbusSansNarrow-Bold.otf",
+      "mask_mse": 0.05798727475218562,
+      "bounds": [
+        724,
+        30,
+        42,
+        23
+      ]
+    },
+    {
+      "id": "stamina_value",
+      "font": "DejaVuSansMono-Bold.ttf",
+      "mask_mse": 0.18641747482378576,
+      "bounds": [
+        830,
+        29,
+        60,
+        25
+      ]
+    },
+    {
+      "id": "coins_value",
+      "font": "NimbusSansNarrow-Bold.otf",
+      "mask_mse": 0.12097262085432728,
+      "bounds": [
+        1117,
+        28,
+        57,
+        27
+      ]
+    },
+    {
+      "id": "diamonds_value",
+      "font": "DejaVuSansMono-Bold.ttf",
+      "mask_mse": 0.10295107759368725,
+      "bounds": [
+        1394,
+        30,
+        24,
+        24
+      ]
+    },
+    {
+      "id": "menu_label",
+      "font": "DejaVuSans.ttf",
+      "mask_mse": 0.154362149081855,
+      "bounds": [
+        1590,
+        31,
+        63,
+        20
+      ]
+    },
+    {
+      "id": "inventory_label",
+      "font": "DejaVuSans.ttf",
+      "mask_mse": 0.12710304574169085,
+      "bounds": [
+        219,
+        780,
+        116,
+        25
+      ]
+    },
+    {
+      "id": "collection_label",
+      "font": "DejaVuSans.ttf",
+      "mask_mse": 0.06640065292318074,
+      "bounds": [
+        542,
+        778,
+        121,
+        22
+      ]
+    },
+    {
+      "id": "mission_label",
+      "font": "DejaVuSans.ttf",
+      "mask_mse": 0.14120587597145387,
+      "bounds": [
+        902,
+        779,
+        87,
+        21
+      ]
+    },
+    {
+      "id": "shop_label",
+      "font": "DejaVuSans.ttf",
+      "mask_mse": 0.06745368151570307,
+      "bounds": [
+        1251,
+        778,
+        61,
+        27
+      ]
+    },
+    {
+      "id": "ready_label",
+      "font": "MrsEnglishReadyTrace.ttf",
+      "mask_mse": 0.05333167450853522,
+      "bounds": [
+        1544,
+        759,
+        115,
+        61
+      ]
+    }
+  ],
+  "limits": [
+    "Original font is unknown. Locally available similar fonts were measured and fitted; dynamic text does not exactly match original glyphs.",
+    "Small previously text-covered texture areas were restored with deterministic harmonic interpolation; these are not recovered original pixels.",
+    "Reference photo plate has hidden bar-covered regions filled from adjacent photo rows. Those hidden pixels are not an original clean photograph. Use supplied original photographs for background switching.",
+    "Soft exterior shadows at clipped corners are approximated by alpha masks; compare QA difference."
+  ],
+  "alpha_checks": [
+    {
+      "file": "assets/home/status_player.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/status_stamina.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/status_currency.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/status_menu.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/button_inventory.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/button_collection.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/button_mission.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/button_shop.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/home/button_ready.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/avatar.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/energy.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/stamina.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/coin.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/diamond.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/menu.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/inventory.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/collection.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/mission.png",
+      "rgba": true,
+      "has_transparency": true
+    },
+    {
+      "file": "assets/icons/shop.png",
+      "rgba": true,
+      "has_transparency": true
+    }
+  ],
+  "ready_font": "Five outline glyphs R,e,a,d,y traced from the supplied reference. Fallback required for all other characters.",
+  "validation_method": "Pillow composition of actual PNG assets plus separately rendered text; no browser or device interaction test.",
+  "quality_status": "Home-only approval candidate, with typography and restored texture differences disclosed.",
+  "source_photo_original_unchanged": true
+}

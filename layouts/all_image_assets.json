@@ -1,0 +1,541 @@
+[
+  {
+    "file": "assets/background/background_confirm.png",
+    "width": 620,
+    "height": 122,
+    "mode": "RGBA",
+    "sha256": "ee73a4b7c091356940c438eaaf618191d39a1a59e110d6fa729aabbf69cee402"
+  },
+  {
+    "file": "assets/background/background_header.png",
+    "width": 1654,
+    "height": 86,
+    "mode": "RGBA",
+    "sha256": "98bb8019d1f5083c192cd664d9956af5e2b44a7c3b0509e23f54596a23197a45"
+  },
+  {
+    "file": "assets/background/background_panel.png",
+    "width": 1730,
+    "height": 589,
+    "mode": "RGBA",
+    "sha256": "27d949bfaa2869c76d34bc205a0a8d0ce0d0be4295400a1cf9f710cf583ec7a2"
+  },
+  {
+    "file": "assets/background/background_preview_frame.png",
+    "width": 621,
+    "height": 356,
+    "mode": "RGBA",
+    "sha256": "19da1b5089ba373e9605a167f30ad26b0386915960d7bbbfc33f52b86d03c42a"
+  },
+  {
+    "file": "assets/background/background_selection_frame.png",
+    "width": 183,
+    "height": 135,
+    "mode": "RGBA",
+    "sha256": "bd45c0d7c7352347282d5d8e0ba99ed03a387122ac030b9a5db4a159848acfde"
+  },
+  {
+    "file": "assets/background/photo_plate.png",
+    "width": 1844,
+    "height": 853,
+    "mode": "RGB",
+    "sha256": "fec9009fa2f761488fdf5152dae30c2347510da77541ddd7c51371be1e2cea69"
+  },
+  {
+    "file": "assets/icons/background_back.png",
+    "width": 27,
+    "height": 40,
+    "mode": "RGBA",
+    "sha256": "69b53441bf7d4e103ab8b749c2032d448a9598d4cedc0e9649c9beb3b0cede19"
+  },
+  {
+    "file": "assets/icons/background_check.png",
+    "width": 45,
+    "height": 45,
+    "mode": "RGBA",
+    "sha256": "428a019dcdb9b237c9ef077dc11b3317b76d1028fcc16f0470d7d438314edc60"
+  },
+  {
+    "file": "assets/icons/background_confirm_arrow.png",
+    "width": 30,
+    "height": 42,
+    "mode": "RGBA",
+    "sha256": "fabb5ef942b7de5dc4032ea5a57facea0cfc31324ecaec47be86fcf7728f0536"
+  },
+  {
+    "file": "assets/icons/background_photo_icon.png",
+    "width": 48,
+    "height": 50,
+    "mode": "RGBA",
+    "sha256": "b4ed5829b6a1472921aaa36712bd274b91d82fc33fe1382f2b2b09db62e502ce"
+  },
+  {
+    "file": "assets/icons/member_back.png",
+    "width": 36,
+    "height": 38,
+    "mode": "RGBA",
+    "sha256": "ae4dbb932ab3678557bf1c299ee5fc38b8dc5abee7d35e4579bb42617aee04e5"
+  },
+  {
+    "file": "assets/icons/member_check.png",
+    "width": 68,
+    "height": 68,
+    "mode": "RGBA",
+    "sha256": "fac88943c199a4c3ccd09949820f4e02bcfd9ea2a26f375fe7e5c03becd18257"
+  },
+  {
+    "file": "assets/icons/member_confirm_arrow.png",
+    "width": 23,
+    "height": 33,
+    "mode": "RGBA",
+    "sha256": "5f68824ed8caba621d22b7f212264c58d4db096b5b669e43489dc802835de6f1"
+  },
+  {
+    "file": "assets/icons/nickname_back.png",
+    "width": 24,
+    "height": 40,
+    "mode": "RGBA",
+    "sha256": "24ac1f84581c63bbdf5118ab8e777786d955355c81d71dd2ff136bf86b6b1844"
+  },
+  {
+    "file": "assets/icons/nickname_confirm_arrow.png",
+    "width": 29,
+    "height": 47,
+    "mode": "RGBA",
+    "sha256": "d73ee0a4f61b31a6fefb83ac6ca507dd0980863625ab9f9d1e2d4e4ec343fb6d"
+  },
+  {
+    "file": "assets/member/card_hiroto.png",
+    "width": 379,
+    "height": 484,
+    "mode": "RGBA",
+    "sha256": "cac3434a8963404e1c91bd03e3557559c00d7db03c49e47551fbc0241756dabe"
+  },
+  {
+    "file": "assets/member/card_ryoka.png",
+    "width": 387,
+    "height": 487,
+    "mode": "RGBA",
+    "sha256": "582749025607a2ca7d5e04c5fe24ad4fda557975dd1708a5e65be88eb3d26709"
+  },
+  {
+    "file": "assets/member/card_selected.png",
+    "width": 424,
+    "height": 533,
+    "mode": "RGBA",
+    "sha256": "9ed92637e4cbcf83f35c152aeadec4671a5c4481fb39bfce9b6c5b8e7a3893e5"
+  },
+  {
+    "file": "assets/member/member_confirm.png",
+    "width": 614,
+    "height": 104,
+    "mode": "RGBA",
+    "sha256": "d536cb52b1a1bc561ce2be485151d1368bb11cca5e07410a72e5424673f5825f"
+  },
+  {
+    "file": "assets/member/member_header.png",
+    "width": 1648,
+    "height": 83,
+    "mode": "RGBA",
+    "sha256": "364ff278338298757cdc03ae8d01dfff5aad6470bd28feb7d9d776163eeb9502"
+  },
+  {
+    "file": "assets/member/photo_plate.png",
+    "width": 1844,
+    "height": 853,
+    "mode": "RGB",
+    "sha256": "798de6ddd95dbe2947323922957f99b3fc5c5b7ae141c86350038dc3070a565c"
+  },
+  {
+    "file": "assets/nickname/nickname_confirm.png",
+    "width": 474,
+    "height": 118,
+    "mode": "RGBA",
+    "sha256": "a965e69c0d71995ccd904c6b112fbd914d07213800f637757e06e59dc3a1a988"
+  },
+  {
+    "file": "assets/nickname/nickname_header.png",
+    "width": 1661,
+    "height": 84,
+    "mode": "RGBA",
+    "sha256": "b872e4b0c1c488d32b1a900bac960698f7db70695f07ce448d681d677a9dfcf1"
+  },
+  {
+    "file": "assets/nickname/nickname_input.png",
+    "width": 838,
+    "height": 102,
+    "mode": "RGBA",
+    "sha256": "98a1715db994387ad9f9cb9729ab1cd1edd7e98f9d67eedad2bf950bc7d0c3a9"
+  },
+  {
+    "file": "assets/nickname/nickname_panel.png",
+    "width": 1076,
+    "height": 337,
+    "mode": "RGBA",
+    "sha256": "a3cc26f1ce045a2c167c0d65d55338fd8a47506da037be3b389e4af97f20e79d"
+  },
+  {
+    "file": "assets/nickname/photo_plate.png",
+    "width": 1844,
+    "height": 853,
+    "mode": "RGB",
+    "sha256": "2a818daeccaa0bbd5a671a13e09fd54595da35d09829cefa4a4e757532be9870"
+  },
+  {
+    "file": "assets/photos/background_selected_preview.png",
+    "width": 599,
+    "height": 331,
+    "mode": "RGBA",
+    "sha256": "ef99dfe0c7d89c2c8264ba42a97b5bfbd44b9902f86124baf76506f733e4a386"
+  },
+  {
+    "file": "assets/photos/background_tile_01.png",
+    "width": 159,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "267fc85d91c14ac7a7e9e66c70c5a6b59144c46c1d7ed72dfb46b106e02ae82d"
+  },
+  {
+    "file": "assets/photos/background_tile_02.png",
+    "width": 154,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "dfab5139563dd375efb063d641513ae8e8eac1be0c7710f3f2bda42864d56cf2"
+  },
+  {
+    "file": "assets/photos/background_tile_03.png",
+    "width": 156,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "8e9dd4a63855d6f0861245a6f24d1651614ec1679403fdce16e8d03196c8bc7b"
+  },
+  {
+    "file": "assets/photos/background_tile_04.png",
+    "width": 158,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "8de2b014593700b0fe605d033dbff708464bef02f38dee01f1572f15fdd4d51f"
+  },
+  {
+    "file": "assets/photos/background_tile_05.png",
+    "width": 158,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "dfcfc937ce329c98714bb51c66d1a8875a4b2ae23d6b4adbbe2108557c1cf57c"
+  },
+  {
+    "file": "assets/photos/background_tile_06.png",
+    "width": 156,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "b1951acc8bf06bd07980bed16ff8cfd7bb7f1f348490d953c41843d598aaa844"
+  },
+  {
+    "file": "assets/photos/background_tile_07.png",
+    "width": 181,
+    "height": 113,
+    "mode": "RGBA",
+    "sha256": "3c7606dd3f7936f31544f4539721cf8b7bf69a046dd4e9fcf414ef5dac12908c"
+  },
+  {
+    "file": "assets/photos/background_tile_08.png",
+    "width": 190,
+    "height": 113,
+    "mode": "RGBA",
+    "sha256": "69768a9def94444122e748be2e1800de4c4f514883678dd75db4797ea6896722"
+  },
+  {
+    "file": "assets/photos/background_tile_09.png",
+    "width": 190,
+    "height": 114,
+    "mode": "RGBA",
+    "sha256": "6378129c31a10cee489e07e1790412728cc20058baa0a9252834b90a371852e7"
+  },
+  {
+    "file": "assets/photos/background_tile_10.png",
+    "width": 194,
+    "height": 114,
+    "mode": "RGBA",
+    "sha256": "da9c1dd576ceefc910a56f8dd9b177a055b639c69796e97ee13809984ce74a55"
+  },
+  {
+    "file": "assets/photos/background_tile_11.png",
+    "width": 194,
+    "height": 115,
+    "mode": "RGBA",
+    "sha256": "257022c07afeed739d41f4be1a900a829ef0053a0129212140f3ce4ed77c14cd"
+  },
+  {
+    "file": "assets/photos/background_tile_12.png",
+    "width": 156,
+    "height": 107,
+    "mode": "RGBA",
+    "sha256": "08479b37240eb2b17b0c3bf6d139d4040d77de2fed96dc43ebfb64312f6e9422"
+  },
+  {
+    "file": "assets/photos/background_tile_13.png",
+    "width": 153,
+    "height": 108,
+    "mode": "RGBA",
+    "sha256": "036017ad94ce2a50b71d726964101bf3b79a8404c7cf76deb26f941a0eceebf6"
+  },
+  {
+    "file": "assets/photos/background_tile_14.png",
+    "width": 156,
+    "height": 108,
+    "mode": "RGBA",
+    "sha256": "2f8993681948db969dbc7a86419939fd099f8a7d5668b417ab0525ec92b07ff8"
+  },
+  {
+    "file": "assets/photos/background_tile_15.png",
+    "width": 156,
+    "height": 108,
+    "mode": "RGBA",
+    "sha256": "27d1f0308fee491460947cfe8d78e509f77bbb881a7531385003881adbdc770e"
+  },
+  {
+    "file": "assets/photos/background_tile_16.png",
+    "width": 157,
+    "height": 108,
+    "mode": "RGBA",
+    "sha256": "6fd8cc5bd3ab9927c3db1151e8788c1a5d26c8bd3ac9034c3983cf51dcd7fbc9"
+  },
+  {
+    "file": "assets/photos/background_tile_17.png",
+    "width": 157,
+    "height": 108,
+    "mode": "RGBA",
+    "sha256": "1d28498a150575b30798cf1455184d9676b76968089c20379232d430a7a082bf"
+  },
+  {
+    "file": "assets/photos/background_tile_18.png",
+    "width": 156,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "a95931d2405f840cd2f76de2b92cf5923e1140c50fee4eec1b673c0b446d06b1"
+  },
+  {
+    "file": "assets/photos/background_tile_19.png",
+    "width": 155,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "292926491ece2cfb98ac920e1e7cc621dd20192401fb3d6b89f2fc6040ba06c8"
+  },
+  {
+    "file": "assets/photos/background_tile_20.png",
+    "width": 156,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "db9c21b6bb964aba4cfa767ee94e73578f24c8b0d5fecbb9609d5c058437e174"
+  },
+  {
+    "file": "assets/photos/background_tile_21.png",
+    "width": 155,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "7f750aee0ee4057a558bf78e5e5dd78e70011a89e3d7bba50ed74b249ef67df3"
+  },
+  {
+    "file": "assets/photos/background_tile_22.png",
+    "width": 156,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "6aba7cc9c8d98237d04f6c66a6a9c36c5013f142b45e69ea37e749796e599cc0"
+  },
+  {
+    "file": "assets/photos/hiroto_portrait.png",
+    "width": 348,
+    "height": 394,
+    "mode": "RGBA",
+    "sha256": "e8c06db2c9677561fbe6059613ab3c1f148d94ef881606602a4efec43ed785eb"
+  },
+  {
+    "file": "assets/photos/motoki_portrait.png",
+    "width": 361,
+    "height": 392,
+    "mode": "RGBA",
+    "sha256": "e8de75199fd4e89467b92c062eaff68eb4fb400f859078e7755bbb04f347d220"
+  },
+  {
+    "file": "assets/photos/ryoka_portrait.png",
+    "width": 356,
+    "height": 395,
+    "mode": "RGBA",
+    "sha256": "72b449ae2a7ea8634be8527fbf1cddc7505345a2727b88cdfeec4de8215b246b"
+  },
+  {
+    "file": "assets/photos/top_original.jpg",
+    "width": 2048,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "9122e9d3fbce8c722ccf963c30bbad789c1f1f17c66193a266ac5482ef28c15b"
+  },
+  {
+    "file": "assets/title/photo_plate.png",
+    "width": 1844,
+    "height": 853,
+    "mode": "RGB",
+    "sha256": "45a549c1ac82fa293bb0929659cbd8ee335fb7d3c38a9337c2b06ced20ee6949"
+  },
+  {
+    "file": "assets/title/tap_strip.png",
+    "width": 657,
+    "height": 65,
+    "mode": "RGBA",
+    "sha256": "5e3150dea4980d7e3c56e0dc921743a3802ed00eb59b43268375561814093c7f"
+  },
+  {
+    "file": "assets/title/title_logo.png",
+    "width": 1263,
+    "height": 262,
+    "mode": "RGBA",
+    "sha256": "81690db1eb7a72c735348c2f8366f8fdf5e65def1e71cdc4392d3ad0969bf997"
+  },
+  {
+    "file": "home_approved/assets/backgrounds/bg_01_original.jpg",
+    "width": 2560,
+    "height": 1280,
+    "mode": "RGB",
+    "sha256": "b662c07126f0e4dc5581d10520bb98e099604040609d7c3643a88f54300892ff"
+  },
+  {
+    "file": "home_approved/assets/backgrounds/home_reference_plate.png",
+    "width": 1844,
+    "height": 853,
+    "mode": "RGB",
+    "sha256": "a3d8a2d26ff32c7583f0da9d9764b0d756380c86118d916d4f5672de8cf5a469"
+  },
+  {
+    "file": "home_approved/assets/home/button_collection.png",
+    "width": 344,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf"
+  },
+  {
+    "file": "home_approved/assets/home/button_inventory.png",
+    "width": 339,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "e3f91762c8eb683fbe2d6a28ca13c17f8f26889f4fe668ba39ec5b2bcc5b0f39"
+  },
+  {
+    "file": "home_approved/assets/home/button_mission.png",
+    "width": 355,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "acc8b080513755579f113c9395138b6819b6709718353781c787e4026b50224a"
+  },
+  {
+    "file": "home_approved/assets/home/button_ready.png",
+    "width": 350,
+    "height": 112,
+    "mode": "RGBA",
+    "sha256": "838aa67c3d52b724ae6fd600a716f647c696115f08221502327bf453c37e68d2"
+  },
+  {
+    "file": "home_approved/assets/home/button_shop.png",
+    "width": 332,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "cbcbcb0723c7488e0a8a615412f8240bd3e6eb6c61f9651f1971638d692b62c2"
+  },
+  {
+    "file": "home_approved/assets/home/status_currency.png",
+    "width": 541,
+    "height": 83,
+    "mode": "RGBA",
+    "sha256": "e527b1222e2d54fe195d2ef2f247a2f3351ab492500b03a466e4b229079d8f67"
+  },
+  {
+    "file": "home_approved/assets/home/status_menu.png",
+    "width": 290,
+    "height": 83,
+    "mode": "RGBA",
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f"
+  },
+  {
+    "file": "home_approved/assets/home/status_player.png",
+    "width": 529,
+    "height": 83,
+    "mode": "RGBA",
+    "sha256": "86fa88d5edce801f5a5bc1624e7c8b994a580cdcc0633350d0523b094f4deb89"
+  },
+  {
+    "file": "home_approved/assets/home/status_stamina.png",
+    "width": 302,
+    "height": 83,
+    "mode": "RGBA",
+    "sha256": "d037b067fc1e21237d83ecd4c4489ff8b701c882e2d79bbdc8d7c2707725d003"
+  },
+  {
+    "file": "home_approved/assets/icons/avatar.png",
+    "width": 78,
+    "height": 75,
+    "mode": "RGBA",
+    "sha256": "b41645eef99ba43dab3965bf4f718cd5d257b8365b558a4e2809f001a73b9d30"
+  },
+  {
+    "file": "home_approved/assets/icons/coin.png",
+    "width": 53,
+    "height": 49,
+    "mode": "RGBA",
+    "sha256": "bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357"
+  },
+  {
+    "file": "home_approved/assets/icons/collection.png",
+    "width": 54,
+    "height": 57,
+    "mode": "RGBA",
+    "sha256": "059c3430a31db485cb3c7fa1e2b5689a545f0a3b206110cb4fa1f9a834ad24a8"
+  },
+  {
+    "file": "home_approved/assets/icons/diamond.png",
+    "width": 53,
+    "height": 45,
+    "mode": "RGBA",
+    "sha256": "d87cc042bbfbe0faf6dc97a4b54ef7113543bf0e236da2c9c0ef2c6c6d3321e4"
+  },
+  {
+    "file": "home_approved/assets/icons/energy.png",
+    "width": 57,
+    "height": 59,
+    "mode": "RGBA",
+    "sha256": "1ac4697bc616d44870ce0b839af801f998194b2965bbf33e3d09fa0670397abc"
+  },
+  {
+    "file": "home_approved/assets/icons/inventory.png",
+    "width": 45,
+    "height": 53,
+    "mode": "RGBA",
+    "sha256": "a3fdbed01e9f980637e9b51a0211db8d1a8a66e4e66b87c629f2da0a45d60732"
+  },
+  {
+    "file": "home_approved/assets/icons/menu.png",
+    "width": 58,
+    "height": 49,
+    "mode": "RGBA",
+    "sha256": "a71301dda35982060d1c36c53496a6912cdf249c7cec6e7f5e1b150eabf056bb"
+  },
+  {
+    "file": "home_approved/assets/icons/mission.png",
+    "width": 44,
+    "height": 56,
+    "mode": "RGBA",
+    "sha256": "95213f63772e40516ae181c463ed7be06ad1c874f5a2df2d559933f05b41a5fd"
+  },
+  {
+    "file": "home_approved/assets/icons/shop.png",
+    "width": 61,
+    "height": 52,
+    "mode": "RGBA",
+    "sha256": "9687a96f57405890cd82ac226057ce79b4ff7b3998c8f98557599e97c793a129"
+  },
+  {
+    "file": "home_approved/assets/icons/stamina.png",
+    "width": 47,
+    "height": 48,
+    "mode": "RGBA",
+    "sha256": "ff93027032285b88e4e6d4993c9fe400a9f38f479a0ada505c9e2caf00953901"
+  }
+]

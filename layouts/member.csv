@@ -1,0 +1,20 @@
+id,kind,x,y,width,height,z,file,text,font_file
+photo_background,photo,0,0,1844,853,0,assets/member/photo_plate.png,,
+member_header,panel,99,27,1648,83,10,assets/member/member_header.png,,
+card_selected,panel,306,145,424,533,10,assets/member/card_selected.png,,
+card_hiroto,panel,732,171,379,484,10,assets/member/card_hiroto.png,,
+card_ryoka,panel,1138,171,387,487,10,assets/member/card_ryoka.png,,
+member_confirm,panel,616,721,614,104,10,assets/member/member_confirm.png,,
+motoki_portrait,photo,337,197,361,392,15,assets/photos/motoki_portrait.png,,
+hiroto_portrait,photo,748,191,348,394,15,assets/photos/hiroto_portrait.png,,
+ryoka_portrait,photo,1154,191,356,395,15,assets/photos/ryoka_portrait.png,,
+member_back,icon,142,51,36,38,30,assets/icons/member_back.png,,
+member_confirm_arrow,icon,1153,758,23,33,30,assets/icons/member_confirm_arrow.png,,
+member_check,icon,636,171,68,68,30,assets/icons/member_check.png,,
+header,text,258,55,160,29,40,,推しを選択,assets/fonts/member_header.ttf
+step,text,1601,57,88,28,40,,02 / 03,assets/fonts/member_step.ttf
+selected,text,469,171,96,19,40,,SELECTED,assets/fonts/member_selected.ttf
+motoki_name,text,452,604,130,34,40,,大森元貴,assets/fonts/member_motoki_name.ttf
+hiroto_name,text,859,599,126,30,40,,若井滉斗,assets/fonts/member_hiroto_name.ttf
+ryoka_name,text,1268,601,128,30,40,,藤澤涼架,assets/fonts/member_ryoka_name.ttf
+confirm,text,886,756,71,34,40,,決定,assets/fonts/member_confirm.ttf

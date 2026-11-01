@@ -1,0 +1,255 @@
+[
+  {
+    "id": "status_player",
+    "file": "assets/home/status_player.png",
+    "width": 529,
+    "height": 83,
+    "mode": "RGBA",
+    "transparent_pixels": 2688,
+    "partial_alpha_pixels": 0,
+    "sha256": "86fa88d5edce801f5a5bc1624e7c8b994a580cdcc0633350d0523b094f4deb89",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "status_stamina",
+    "file": "assets/home/status_stamina.png",
+    "width": 302,
+    "height": 83,
+    "mode": "RGBA",
+    "transparent_pixels": 1689,
+    "partial_alpha_pixels": 0,
+    "sha256": "d037b067fc1e21237d83ecd4c4489ff8b701c882e2d79bbdc8d7c2707725d003",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "status_currency",
+    "file": "assets/home/status_currency.png",
+    "width": 541,
+    "height": 83,
+    "mode": "RGBA",
+    "transparent_pixels": 2645,
+    "partial_alpha_pixels": 0,
+    "sha256": "e527b1222e2d54fe195d2ef2f247a2f3351ab492500b03a466e4b229079d8f67",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "status_menu",
+    "file": "assets/home/status_menu.png",
+    "width": 290,
+    "height": 83,
+    "mode": "RGBA",
+    "transparent_pixels": 1745,
+    "partial_alpha_pixels": 0,
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "button_inventory",
+    "file": "assets/home/button_inventory.png",
+    "width": 339,
+    "height": 111,
+    "mode": "RGBA",
+    "transparent_pixels": 2769,
+    "partial_alpha_pixels": 0,
+    "sha256": "e3f91762c8eb683fbe2d6a28ca13c17f8f26889f4fe668ba39ec5b2bcc5b0f39",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "button_collection",
+    "file": "assets/home/button_collection.png",
+    "width": 344,
+    "height": 111,
+    "mode": "RGBA",
+    "transparent_pixels": 2694,
+    "partial_alpha_pixels": 0,
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "button_mission",
+    "file": "assets/home/button_mission.png",
+    "width": 355,
+    "height": 111,
+    "mode": "RGBA",
+    "transparent_pixels": 2760,
+    "partial_alpha_pixels": 0,
+    "sha256": "acc8b080513755579f113c9395138b6819b6709718353781c787e4026b50224a",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "button_shop",
+    "file": "assets/home/button_shop.png",
+    "width": 332,
+    "height": 111,
+    "mode": "RGBA",
+    "transparent_pixels": 2622,
+    "partial_alpha_pixels": 0,
+    "sha256": "cbcbcb0723c7488e0a8a615412f8240bd3e6eb6c61f9651f1971638d692b62c2",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "button_ready",
+    "file": "assets/home/button_ready.png",
+    "width": 350,
+    "height": 112,
+    "mode": "RGBA",
+    "transparent_pixels": 2935,
+    "partial_alpha_pixels": 0,
+    "sha256": "838aa67c3d52b724ae6fd600a716f647c696115f08221502327bf453c37e68d2",
+    "nine_slice": {
+      "top": 18,
+      "right": 20,
+      "bottom": 17,
+      "left": 20,
+      "usage": "Optional only; use native whole PNG at reference size."
+    }
+  },
+  {
+    "id": "avatar",
+    "file": "assets/icons/avatar.png",
+    "width": 78,
+    "height": 75,
+    "mode": "RGBA",
+    "transparent_pixels": 1350,
+    "partial_alpha_pixels": 711,
+    "sha256": "b41645eef99ba43dab3965bf4f718cd5d257b8365b558a4e2809f001a73b9d30"
+  },
+  {
+    "id": "energy",
+    "file": "assets/icons/energy.png",
+    "width": 57,
+    "height": 59,
+    "mode": "RGBA",
+    "transparent_pixels": 943,
+    "partial_alpha_pixels": 535,
+    "sha256": "1ac4697bc616d44870ce0b839af801f998194b2965bbf33e3d09fa0670397abc"
+  },
+  {
+    "id": "stamina",
+    "file": "assets/icons/stamina.png",
+    "width": 47,
+    "height": 48,
+    "mode": "RGBA",
+    "transparent_pixels": 379,
+    "partial_alpha_pixels": 1802,
+    "sha256": "ff93027032285b88e4e6d4993c9fe400a9f38f479a0ada505c9e2caf00953901"
+  },
+  {
+    "id": "coin",
+    "file": "assets/icons/coin.png",
+    "width": 53,
+    "height": 49,
+    "mode": "RGBA",
+    "transparent_pixels": 132,
+    "partial_alpha_pixels": 2344,
+    "sha256": "bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357"
+  },
+  {
+    "id": "diamond",
+    "file": "assets/icons/diamond.png",
+    "width": 53,
+    "height": 45,
+    "mode": "RGBA",
+    "transparent_pixels": 211,
+    "partial_alpha_pixels": 2085,
+    "sha256": "d87cc042bbfbe0faf6dc97a4b54ef7113543bf0e236da2c9c0ef2c6c6d3321e4"
+  },
+  {
+    "id": "menu",
+    "file": "assets/icons/menu.png",
+    "width": 58,
+    "height": 49,
+    "mode": "RGBA",
+    "transparent_pixels": 91,
+    "partial_alpha_pixels": 2670,
+    "sha256": "a71301dda35982060d1c36c53496a6912cdf249c7cec6e7f5e1b150eabf056bb"
+  },
+  {
+    "id": "inventory",
+    "file": "assets/icons/inventory.png",
+    "width": 45,
+    "height": 53,
+    "mode": "RGBA",
+    "transparent_pixels": 157,
+    "partial_alpha_pixels": 1977,
+    "sha256": "a3fdbed01e9f980637e9b51a0211db8d1a8a66e4e66b87c629f2da0a45d60732"
+  },
+  {
+    "id": "collection",
+    "file": "assets/icons/collection.png",
+    "width": 54,
+    "height": 57,
+    "mode": "RGBA",
+    "transparent_pixels": 259,
+    "partial_alpha_pixels": 2654,
+    "sha256": "059c3430a31db485cb3c7fa1e2b5689a545f0a3b206110cb4fa1f9a834ad24a8"
+  },
+  {
+    "id": "mission",
+    "file": "assets/icons/mission.png",
+    "width": 44,
+    "height": 56,
+    "mode": "RGBA",
+    "transparent_pixels": 128,
+    "partial_alpha_pixels": 2221,
+    "sha256": "95213f63772e40516ae181c463ed7be06ad1c874f5a2df2d559933f05b41a5fd"
+  },
+  {
+    "id": "shop",
+    "file": "assets/icons/shop.png",
+    "width": 61,
+    "height": 52,
+    "mode": "RGBA",
+    "transparent_pixels": 560,
+    "partial_alpha_pixels": 2431,
+    "sha256": "9687a96f57405890cd82ac226057ce79b4ff7b3998c8f98557599e97c793a129"
+  }
+]

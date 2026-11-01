@@ -1,0 +1,242 @@
+[
+  {
+    "file": "home_approved/README.md",
+    "sha256": "bb1f1fe4a773000b98e27696ddfb6abd626bd049215698bbda0e8802572bbccf",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/spec/asset_inventory.csv",
+    "sha256": "3750118865e72735ec7dd2994df4fc65fd282002a1f7438aacb1db4823730969",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/spec/layout_spec.md",
+    "sha256": "56eb0e9ad59daeb6b5e2a6b454abf4e379d82c6eed3f75fcf9aa058af3086181",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/spec/home_layout.csv",
+    "sha256": "b113fd82d545adabf89a05ac1a1e5191f47e4e8ce35c866f30b82dca3fe9dee7",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/spec/codex_instructions.md",
+    "sha256": "6e0fa8c01cf691321e747a519fb3b21437da1d6bbe13f66a26ba4baa7eac9544",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/spec/home_layout.json",
+    "sha256": "5819cf4ee6f7c2440384bc0dacda9acce10e3a458480c2c1942b8b1c33eebcf8",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/spec/asset_manifest.json",
+    "sha256": "0c907caa1e32cde986f4f529c1f40d20de192bdead021c3d730d59168a012c92",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/quality_report.md",
+    "sha256": "c9326a5789138261d26459bb86dae8e2538b5451309fd0882236a7e1cf1bb618",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/asset_contact_sheet.png",
+    "sha256": "d01dd2cafd795039cb29b0f9bca7888b38268134863bd28431fbd9caa19dc6ca",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/quality_report.json",
+    "sha256": "a8094375bddf88e002cd5aa8ae3a1c4ee6ef391250d443fdcaec40f1111c8a7f",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/home_overlay_50.png",
+    "sha256": "ea23789b6a87823e63dcf53c0419e0157a09758025fefa5032bb546dec7191ea",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/home_difference.png",
+    "sha256": "8c9c5918a82a01eda342b06dd31157d958a159b8f7d28d73e547b1cf7dbe79eb",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/hud_comparison.png",
+    "sha256": "db5ef81e86613a309daca0d0ecbca6e8531f79b9866e7fad6353bad3c8f7ff07",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/restoration_regions.json",
+    "sha256": "cab68a5f5ee1239de1215e67c11572e1b631c1fb5b939a1a076f579ef86f4e3f",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/home_difference_x4.png",
+    "sha256": "9f2df9d7423a7f5ebf0b6bfcf501ebabe2b2a74bc69b7ec73d5cc15f28877885",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/home_reconstructed.png",
+    "sha256": "cd3058e3dd93f75fb769d580c86d87b3996134e830e483c965f45ae5b20797f6",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/qa/home_reference.png",
+    "sha256": "f7cd2376cbc35c409d85d7b8965c948573b9f3fe365cc06ee45b0efcf13fa5f2",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/tools/build_home.py",
+    "sha256": "8d9d3bdd8b25ea59ba10bd958f9ea41bc24c7161eded9725dd81c19bf57d94b2",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/tools/trace_ready.py",
+    "sha256": "f1f31a272295153462a287404f1059b38bd20fa2eec6aea25e5d5896b71ffa23",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/common/README.md",
+    "sha256": "e90a5216fd5b660a525779bcc233948af8a968b8e4d0c7546a719c8aabc8f91d",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/coin.png",
+    "sha256": "bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/shop.png",
+    "sha256": "9687a96f57405890cd82ac226057ce79b4ff7b3998c8f98557599e97c793a129",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/avatar.png",
+    "sha256": "b41645eef99ba43dab3965bf4f718cd5d257b8365b558a4e2809f001a73b9d30",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/mission.png",
+    "sha256": "95213f63772e40516ae181c463ed7be06ad1c874f5a2df2d559933f05b41a5fd",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/energy.png",
+    "sha256": "1ac4697bc616d44870ce0b839af801f998194b2965bbf33e3d09fa0670397abc",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/stamina.png",
+    "sha256": "ff93027032285b88e4e6d4993c9fe400a9f38f479a0ada505c9e2caf00953901",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/menu.png",
+    "sha256": "a71301dda35982060d1c36c53496a6912cdf249c7cec6e7f5e1b150eabf056bb",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/inventory.png",
+    "sha256": "a3fdbed01e9f980637e9b51a0211db8d1a8a66e4e66b87c629f2da0a45d60732",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/collection.png",
+    "sha256": "059c3430a31db485cb3c7fa1e2b5689a545f0a3b206110cb4fa1f9a834ad24a8",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/icons/diamond.png",
+    "sha256": "d87cc042bbfbe0faf6dc97a4b54ef7113543bf0e236da2c9c0ef2c6c6d3321e4",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/button_mission.png",
+    "sha256": "acc8b080513755579f113c9395138b6819b6709718353781c787e4026b50224a",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/button_ready.png",
+    "sha256": "838aa67c3d52b724ae6fd600a716f647c696115f08221502327bf453c37e68d2",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/button_collection.png",
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/status_menu.png",
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/status_currency.png",
+    "sha256": "e527b1222e2d54fe195d2ef2f247a2f3351ab492500b03a466e4b229079d8f67",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/button_shop.png",
+    "sha256": "cbcbcb0723c7488e0a8a615412f8240bd3e6eb6c61f9651f1971638d692b62c2",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/button_inventory.png",
+    "sha256": "e3f91762c8eb683fbe2d6a28ca13c17f8f26889f4fe668ba39ec5b2bcc5b0f39",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/status_player.png",
+    "sha256": "86fa88d5edce801f5a5bc1624e7c8b994a580cdcc0633350d0523b094f4deb89",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/home/status_stamina.png",
+    "sha256": "d037b067fc1e21237d83ecd4c4489ff8b701c882e2d79bbdc8d7c2707725d003",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/DejaVuSansMono-Bold.ttf",
+    "sha256": "3a3c502eeff669a231549e80df9f7c49de109bafe303170409e905d0b31a38fe",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/NimbusSansNarrow-Bold.otf",
+    "sha256": "6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/DejaVuSansMono.ttf",
+    "sha256": "c805f9436dbc268644c1d9584f01a601a653e028e08fd74b9b949f6cf8304d88",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/MrsEnglishReadyTrace.ttf",
+    "sha256": "cede0b0f9451d30dd7a78f9791646be9f4116fef3f4c215a389674bbb66e7f1d",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/DejaVuSans.ttf",
+    "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/backgrounds/bg_01_original.jpg",
+    "sha256": "b662c07126f0e4dc5581d10520bb98e099604040609d7c3643a88f54300892ff",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/backgrounds/home_reference_plate.png",
+    "sha256": "a3d8a2d26ff32c7583f0da9d9764b0d756380c86118d916d4f5672de8cf5a469",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/licenses/fonts-dejavu-core.txt",
+    "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+    "unchanged": true
+  },
+  {
+    "file": "home_approved/assets/fonts/licenses/fonts-urw-base35.txt",
+    "sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458",
+    "unchanged": true
+  }
+]

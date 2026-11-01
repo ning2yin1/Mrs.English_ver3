@@ -1,0 +1,70 @@
+{
+  "title": {
+    "screen": "title",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 0.3487245475328876,
+    "pixels_channel_error_over16_percent": 0.42169655140845247,
+    "non_ui_pixels_max_error": 255,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ]
+  },
+  "nickname": {
+    "screen": "nickname",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 1.2822537782942938,
+    "pixels_channel_error_over16_percent": 1.2595585823163367,
+    "non_ui_pixels_max_error": 0,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ]
+  },
+  "member": {
+    "screen": "member",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 0.657152163390831,
+    "pixels_channel_error_over16_percent": 1.1029084537665963,
+    "non_ui_pixels_max_error": 0,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ]
+  },
+  "background": {
+    "screen": "background",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 1.2828454546456343,
+    "pixels_channel_error_over16_percent": 2.173647684706014,
+    "non_ui_pixels_max_error": 255,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ]
+  }
+}

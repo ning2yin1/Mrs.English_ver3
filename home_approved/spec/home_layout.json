@@ -1,0 +1,609 @@
+{
+  "screen": "home",
+  "reference": {
+    "width": 1844,
+    "height": 853,
+    "sha256": "f7cd2376cbc35c409d85d7b8965c948573b9f3fe365cc06ee45b0efcf13fa5f2"
+  },
+  "scope": "Home assets and static QA only. Other four screens await approval.",
+  "elements": [
+    {
+      "id": "background",
+      "file": "assets/backgrounds/home_reference_plate.png",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "z": 0,
+      "kind": "image"
+    },
+    {
+      "id": "status_player",
+      "file": "assets/home/status_player.png",
+      "x": 98,
+      "y": 0,
+      "width": 529,
+      "height": 83,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "status_stamina",
+      "file": "assets/home/status_stamina.png",
+      "x": 623,
+      "y": 0,
+      "width": 302,
+      "height": 83,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "status_currency",
+      "file": "assets/home/status_currency.png",
+      "x": 921,
+      "y": 0,
+      "width": 541,
+      "height": 83,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "status_menu",
+      "file": "assets/home/status_menu.png",
+      "x": 1458,
+      "y": 0,
+      "width": 290,
+      "height": 83,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "button_inventory",
+      "file": "assets/home/button_inventory.png",
+      "x": 72,
+      "y": 736,
+      "width": 339,
+      "height": 111,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "button_collection",
+      "file": "assets/home/button_collection.png",
+      "x": 406,
+      "y": 736,
+      "width": 344,
+      "height": 111,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "button_mission",
+      "file": "assets/home/button_mission.png",
+      "x": 745,
+      "y": 736,
+      "width": 355,
+      "height": 111,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "button_shop",
+      "file": "assets/home/button_shop.png",
+      "x": 1095,
+      "y": 736,
+      "width": 332,
+      "height": 111,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "button_ready",
+      "file": "assets/home/button_ready.png",
+      "x": 1423,
+      "y": 736,
+      "width": 350,
+      "height": 112,
+      "z": 10,
+      "kind": "image",
+      "nine_slice": {
+        "top": 18,
+        "right": 20,
+        "bottom": 17,
+        "left": 20,
+        "usage": "Optional only; use native whole PNG at reference size."
+      }
+    },
+    {
+      "id": "avatar",
+      "file": "assets/icons/avatar.png",
+      "x": 127,
+      "y": 4,
+      "width": 78,
+      "height": 75,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "energy",
+      "file": "assets/icons/energy.png",
+      "x": 550,
+      "y": 12,
+      "width": 57,
+      "height": 59,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "stamina",
+      "file": "assets/icons/stamina.png",
+      "x": 660,
+      "y": 18,
+      "width": 47,
+      "height": 48,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "coin",
+      "file": "assets/icons/coin.png",
+      "x": 944,
+      "y": 16,
+      "width": 53,
+      "height": 49,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "diamond",
+      "file": "assets/icons/diamond.png",
+      "x": 1225,
+      "y": 20,
+      "width": 53,
+      "height": 45,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "menu",
+      "file": "assets/icons/menu.png",
+      "x": 1492,
+      "y": 18,
+      "width": 58,
+      "height": 49,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "inventory",
+      "file": "assets/icons/inventory.png",
+      "x": 156,
+      "y": 763,
+      "width": 45,
+      "height": 53,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "collection",
+      "file": "assets/icons/collection.png",
+      "x": 478,
+      "y": 762,
+      "width": 54,
+      "height": 57,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "mission",
+      "file": "assets/icons/mission.png",
+      "x": 840,
+      "y": 762,
+      "width": 44,
+      "height": 56,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "shop",
+      "file": "assets/icons/shop.png",
+      "x": 1178,
+      "y": 763,
+      "width": 61,
+      "height": 52,
+      "z": 20,
+      "kind": "icon"
+    },
+    {
+      "id": "nickname",
+      "file": null,
+      "x": 217,
+      "y": 18,
+      "width": 62,
+      "height": 21,
+      "z": 30,
+      "kind": "text",
+      "text": "Nene",
+      "font_file": "assets/fonts/DejaVuSansMono.ttf",
+      "font_size": 30,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        214,
+        15,
+        294,
+        43
+      ],
+      "font_mask_mse": 0.11402115610001118
+    },
+    {
+      "id": "rank",
+      "file": null,
+      "x": 217,
+      "y": 52,
+      "width": 69,
+      "height": 14,
+      "z": 30,
+      "kind": "text",
+      "text": "RANK 1",
+      "font_file": "assets/fonts/DejaVuSansMono.ttf",
+      "font_size": 21,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        214,
+        48,
+        328,
+        70
+      ],
+      "font_mask_mse": 0.20518547945606205
+    },
+    {
+      "id": "stamina_max",
+      "file": null,
+      "x": 724,
+      "y": 30,
+      "width": 42,
+      "height": 23,
+      "z": 30,
+      "kind": "text",
+      "text": "MAX",
+      "font_file": "assets/fonts/NimbusSansNarrow-Bold.otf",
+      "font_size": 26,
+      "color": "#25edff",
+      "weight": "bold",
+      "source_box": [
+        720,
+        27,
+        774,
+        59
+      ],
+      "font_mask_mse": 0.05798727475218562
+    },
+    {
+      "id": "stamina_value",
+      "file": null,
+      "x": 830,
+      "y": 29,
+      "width": 60,
+      "height": 25,
+      "z": 30,
+      "kind": "text",
+      "text": "25/25",
+      "font_file": "assets/fonts/DejaVuSansMono-Bold.ttf",
+      "font_size": 27,
+      "color": "#ffffff",
+      "weight": "bold",
+      "source_box": [
+        825,
+        26,
+        896,
+        59
+      ],
+      "font_mask_mse": 0.18641747482378576
+    },
+    {
+      "id": "coins_value",
+      "file": null,
+      "x": 1117,
+      "y": 28,
+      "width": 57,
+      "height": 27,
+      "z": 30,
+      "kind": "text",
+      "text": "9,979",
+      "font_file": "assets/fonts/NimbusSansNarrow-Bold.otf",
+      "font_size": 28,
+      "color": "#ffffff",
+      "weight": "bold",
+      "source_box": [
+        1112,
+        25,
+        1185,
+        58
+      ],
+      "font_mask_mse": 0.12097262085432728
+    },
+    {
+      "id": "diamonds_value",
+      "file": null,
+      "x": 1394,
+      "y": 30,
+      "width": 24,
+      "height": 24,
+      "z": 30,
+      "kind": "text",
+      "text": "21",
+      "font_file": "assets/fonts/DejaVuSansMono-Bold.ttf",
+      "font_size": 28,
+      "color": "#ffffff",
+      "weight": "bold",
+      "source_box": [
+        1391,
+        26,
+        1422,
+        59
+      ],
+      "font_mask_mse": 0.10295107759368725
+    },
+    {
+      "id": "menu_label",
+      "file": null,
+      "x": 1590,
+      "y": 31,
+      "width": 63,
+      "height": 20,
+      "z": 30,
+      "kind": "text",
+      "text": "Menu",
+      "font_file": "assets/fonts/DejaVuSans.ttf",
+      "font_size": 29,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        1586,
+        27,
+        1664,
+        59
+      ],
+      "font_mask_mse": 0.154362149081855
+    },
+    {
+      "id": "inventory_label",
+      "file": null,
+      "x": 219,
+      "y": 780,
+      "width": 116,
+      "height": 25,
+      "z": 30,
+      "kind": "text",
+      "text": "Inventory",
+      "font_file": "assets/fonts/DejaVuSans.ttf",
+      "font_size": 29,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        215,
+        776,
+        341,
+        805
+      ],
+      "font_mask_mse": 0.12710304574169085
+    },
+    {
+      "id": "collection_label",
+      "file": null,
+      "x": 542,
+      "y": 778,
+      "width": 121,
+      "height": 22,
+      "z": 30,
+      "kind": "text",
+      "text": "Collection",
+      "font_file": "assets/fonts/DejaVuSans.ttf",
+      "font_size": 29,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        540,
+        776,
+        674,
+        805
+      ],
+      "font_mask_mse": 0.06640065292318074
+    },
+    {
+      "id": "mission_label",
+      "file": null,
+      "x": 902,
+      "y": 779,
+      "width": 87,
+      "height": 21,
+      "z": 30,
+      "kind": "text",
+      "text": "Mission",
+      "font_file": "assets/fonts/DejaVuSans.ttf",
+      "font_size": 29,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        900,
+        776,
+        999,
+        805
+      ],
+      "font_mask_mse": 0.14120587597145387
+    },
+    {
+      "id": "shop_label",
+      "file": null,
+      "x": 1251,
+      "y": 778,
+      "width": 61,
+      "height": 27,
+      "z": 30,
+      "kind": "text",
+      "text": "Shop",
+      "font_file": "assets/fonts/DejaVuSans.ttf",
+      "font_size": 29,
+      "color": "#ffffff",
+      "weight": "regular",
+      "source_box": [
+        1249,
+        776,
+        1317,
+        805
+      ],
+      "font_mask_mse": 0.06745368151570307
+    },
+    {
+      "id": "ready_label",
+      "file": null,
+      "x": 1544,
+      "y": 759,
+      "width": 115,
+      "height": 61,
+      "z": 30,
+      "kind": "text",
+      "text": "Ready",
+      "font_file": "assets/fonts/MrsEnglishReadyTrace.ttf",
+      "font_size": 59,
+      "color": "#000000",
+      "weight": "bold",
+      "source_box": [
+        1541,
+        756,
+        1666,
+        820
+      ],
+      "font_mask_mse": 0.05333167450853522
+    }
+  ],
+  "tap_targets": [
+    {
+      "id": "player",
+      "x": 100,
+      "y": 0,
+      "width": 525,
+      "height": 80,
+      "route": "placeholder/profile",
+      "return_route": "home"
+    },
+    {
+      "id": "menu",
+      "x": 1460,
+      "y": 0,
+      "width": 285,
+      "height": 80,
+      "route": "placeholder/menu",
+      "return_route": "home"
+    },
+    {
+      "id": "inventory",
+      "x": 75,
+      "y": 739,
+      "width": 333,
+      "height": 105,
+      "route": "placeholder/inventory",
+      "return_route": "home"
+    },
+    {
+      "id": "collection",
+      "x": 408,
+      "y": 739,
+      "width": 339,
+      "height": 105,
+      "route": "placeholder/collection",
+      "return_route": "home"
+    },
+    {
+      "id": "mission",
+      "x": 747,
+      "y": 739,
+      "width": 350,
+      "height": 105,
+      "route": "placeholder/mission",
+      "return_route": "home"
+    },
+    {
+      "id": "shop",
+      "x": 1097,
+      "y": 739,
+      "width": 328,
+      "height": 105,
+      "route": "placeholder/shop",
+      "return_route": "home"
+    },
+    {
+      "id": "ready",
+      "x": 1425,
+      "y": 739,
+      "width": 345,
+      "height": 106,
+      "route": "placeholder/ready",
+      "return_route": "home"
+    }
+  ],
+  "resize": {
+    "mode": "uniform-contain",
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "safe_area": "Subtract env(safe-area-inset-*) before scaling. Center reference canvas. Never stretch axes independently.",
+    "background": "Reference plate aligned with same canvas for comparison; arbitrary backgrounds use their own cover crop and per-photo position."
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "screen": "nickname",
+  "reference_size": {
+    "width": 1844,
+    "height": 853
+  },
+  "elements": [
+    {
+      "id": "photo_background",
+      "x": 0,
+      "y": 0,
+      "width": 1844,
+      "height": 853,
+      "z": 0,
+      "kind": "photo",
+      "file": "assets/nickname/photo_plate.png",
+      "limits": "UI-hidden areas are restored or analytically separated; do not treat as a pristine original photograph."
+    },
+    {
+      "id": "nickname_header",
+      "x": 92,
+      "y": 26,
+      "width": 1661,
+      "height": 84,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/nickname/nickname_header.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "nickname_panel",
+      "x": 385,
+      "y": 336,
+      "width": 1076,
+      "height": 337,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/nickname/nickname_panel.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "nickname_input",
+      "x": 503,
+      "y": 475,
+      "width": 838,
+      "height": 102,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/nickname/nickname_input.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "nickname_confirm",
+      "x": 685,
+      "y": 695,
+      "width": 474,
+      "height": 118,
+      "z": 10,
+      "kind": "panel",
+      "file": "assets/nickname/nickname_confirm.png",
+      "nine_slice": {
+        "recommended": false,
+        "reason": "Use native aspect and uniform screen scaling; transparent decorative relief must not be stretched."
+      }
+    },
+    {
+      "id": "nickname_back",
+      "x": 140,
+      "y": 49,
+      "width": 24,
+      "height": 40,
+      "z": 30,
+      "kind": "icon",
+      "file": "assets/icons/nickname_back.png"
+    },
+    {
+      "id": "nickname_confirm_arrow",
+      "x": 1075,
+      "y": 731,
+      "width": 29,
+      "height": 47,
+      "z": 30,
+      "kind": "icon",
+      "file": "assets/icons/nickname_confirm_arrow.png"
+    },
+    {
+      "id": "header",
+      "x": 245,
+      "y": 50,
+      "width": 307,
+      "height": 38,
+      "z": 40,
+      "kind": "text",
+      "text": "ニックネーム設定",
+      "font_file": "assets/fonts/nickname_header.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "ニックネーム設定",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -40,
+        307,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "step",
+      "x": 1615,
+      "y": 54,
+      "width": 89,
+      "height": 32,
+      "z": 40,
+      "kind": "text",
+      "text": "01 / 03",
+      "font_file": "assets/fonts/nickname_step.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "01/3",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -35,
+        101,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "prompt",
+      "x": 663,
+      "y": 411,
+      "width": 518,
+      "height": 34,
+      "z": 40,
+      "kind": "text",
+      "text": "ニックネームを入力してください",
+      "font_file": "assets/fonts/nickname_prompt.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "ニックネームを入力してください",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -37,
+        518,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "name",
+      "x": 546,
+      "y": 512,
+      "width": 97,
+      "height": 31,
+      "z": 40,
+      "kind": "text",
+      "text": "Nene",
+      "font_file": "assets/fonts/nickname_name.ttf",
+      "font_size": 64,
+      "color": "#090a30",
+      "covered_characters": "Nen",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -33,
+        101,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "input_caret",
+      "x": 657,
+      "y": 503,
+      "width": 4,
+      "height": 49,
+      "z": 40,
+      "kind": "text",
+      "text": "|",
+      "font_file": "assets/fonts/nickname_input_caret.ttf",
+      "font_size": 64,
+      "color": "#3533c8",
+      "covered_characters": "|",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -52,
+        3,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "hint",
+      "x": 803,
+      "y": 592,
+      "width": 239,
+      "height": 23,
+      "z": 40,
+      "kind": "text",
+      "text": "あとから変更できます",
+      "font_file": "assets/fonts/nickname_hint.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "あとから変更できます",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -26,
+        239,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    },
+    {
+      "id": "confirm",
+      "x": 876,
+      "y": 729,
+      "width": 91,
+      "height": 45,
+      "z": 40,
+      "kind": "text",
+      "text": "決定",
+      "font_file": "assets/fonts/nickname_confirm.ttf",
+      "font_size": 64,
+      "color": "#ffffff",
+      "covered_characters": "決定",
+      "dynamic": true,
+      "fallback": "system-ui, sans-serif",
+      "glyph_bbox_at_font_size_64": [
+        0,
+        -46,
+        90,
+        0
+      ],
+      "baseline_note": "Bounds are relative to text baseline at 64px em. Use measured glyph bounds when aligning DOM/SVG text; do not equate line box with visible ink."
+    }
+  ],
+  "tap_targets": [
+    {
+      "id": "back",
+      "x": 97,
+      "y": 30,
+      "width": 107,
+      "height": 76,
+      "route": "title"
+    },
+    {
+      "id": "input",
+      "x": 508,
+      "y": 479,
+      "width": 830,
+      "height": 94,
+      "action": "native-text-input",
+      "maxlength": 12
+    },
+    {
+      "id": "confirm",
+      "x": 690,
+      "y": 700,
+      "width": 465,
+      "height": 108,
+      "route": "member"
+    }
+  ],
+  "resize": {
+    "mode": "uniform-contain-safe-area",
+    "scale": "min(safeWidth/1844,safeHeight/853)",
+    "safe_area": "Subtract env(safe-area-inset-*) before uniform scaling; center canvas; do not stretch either axis separately."
+  }
+}

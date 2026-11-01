@@ -1,0 +1,6 @@
+id,kind,x,y,width,height,z,file,text,font_file
+photo_background,photo,0,0,1844,853,0,assets/title/photo_plate.png,,
+tap_strip,panel,593,742,657,65,10,assets/title/tap_strip.png,,
+title_logo,logo,275,484,1263,262,20,assets/title/title_logo.png,,
+version,text,874,695,94,29,40,,Ver.3,assets/fonts/title_version.ttf
+tap_label,text,757,760,334,24,40,,TAP TO START,assets/fonts/title_tap_label.ttf

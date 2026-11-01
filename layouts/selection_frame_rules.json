@@ -1,0 +1,50 @@
+{
+  "reference_initial_state": "Use native whole PNGs at measured coordinates. The rules below apply only when selection moves to differently sized slots.",
+  "background": {
+    "source": "assets/background/background_selection_frame.png",
+    "source_size": [
+      183,
+      135
+    ],
+    "insets": {
+      "top": 16,
+      "right": 16,
+      "bottom": 16,
+      "left": 16
+    },
+    "placement": "x=tile.x-12,y=tile.y-12,width=tile.width+24,height=tile.height+24",
+    "center": "transparent",
+    "check": "Use assets/icons/background_check.png as an independent top-right overlay.",
+    "status": "Suggested nine-slice cuts, not rendered against a second approved selection mockup."
+  },
+  "member_selected": {
+    "source": "assets/member/card_selected.png",
+    "source_size": [
+      424,
+      533
+    ],
+    "insets": {
+      "top": 56,
+      "right": 32,
+      "bottom": 95,
+      "left": 32
+    },
+    "center": "transparent portrait window; photograph and label are separate",
+    "status": "Preserve initial native composition. Other active members require nine-slice application and separate content-window alignment."
+  },
+  "member_unselected": {
+    "source": "assets/member/card_hiroto.png",
+    "source_size": [
+      379,
+      484
+    ],
+    "insets": {
+      "top": 24,
+      "right": 22,
+      "bottom": 76,
+      "left": 22
+    },
+    "center": "transparent portrait window",
+    "status": "The second native unselected frame for ryoka is supplied separately; prefer native whole artwork at its measured slot size."
+  }
+}

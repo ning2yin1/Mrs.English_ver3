@@ -1,0 +1,92 @@
+{
+  "title": {
+    "screen": "title",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 0.3487245475328876,
+    "pixels_channel_error_over16_percent": 0.42169655140845247,
+    "non_ui_pixels_max_error": 0,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ],
+    "ui_regions_mean_abs_rgb_difference_0_255": 1.4058883685881909,
+    "photo_changed_outside_ui": false,
+    "source_reference_sha256": "6cedabbd39744f4595d9e5b1daba23f4b30a56de14afe7fdd867addd57b6a275",
+    "reference_and_reconstruction_ui_regions": 390159
+  },
+  "nickname": {
+    "screen": "nickname",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 1.2822537782942938,
+    "pixels_channel_error_over16_percent": 1.2595585823163367,
+    "non_ui_pixels_max_error": 0,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ],
+    "ui_regions_mean_abs_rgb_difference_0_255": 3.3420016570008286,
+    "photo_changed_outside_ui": false,
+    "source_reference_sha256": "1444fd7510245e16eae1e95ccc38b12ab98b19a0d9120cb341d2e502330cab3e",
+    "reference_and_reconstruction_ui_regions": 603500
+  },
+  "member": {
+    "screen": "member",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 0.657152163390831,
+    "pixels_channel_error_over16_percent": 1.1029084537665963,
+    "non_ui_pixels_max_error": 0,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ],
+    "ui_regions_mean_abs_rgb_difference_0_255": 1.20752332811145,
+    "photo_changed_outside_ui": false,
+    "source_reference_sha256": "cdffa0275f80c4b6de31edec763c56620f9031c3d1eee0025a80e10cb0f36a30",
+    "reference_and_reconstruction_ui_regions": 856013
+  },
+  "background": {
+    "screen": "background",
+    "reference_size": [
+      1844,
+      853
+    ],
+    "mean_abs_rgb_difference_0_255": 1.2828454546456343,
+    "pixels_channel_error_over16_percent": 2.173647684706014,
+    "non_ui_pixels_max_error": 13,
+    "method": "Actual exported PNGs and TTF text composed with Pillow, no game or browser implementation.",
+    "limitations": [
+      "Hidden decoration restored by harmonic interpolation.",
+      "Glyph contours traced from approved mockup; restricted character sets need system fallback.",
+      "Photo plates retain original visible photo pixels, but UI-hidden areas are not clean source photography.",
+      "Glass layers use analytic alpha separation; original source layers are unavailable."
+    ],
+    "ui_regions_mean_abs_rgb_difference_0_255": 1.6049628900797082,
+    "photo_changed_outside_ui": true,
+    "source_reference_sha256": "0ca8db12d1bf636ba2f1649c8fc9f6ab37e42d21ac8ba9056221463da655f044",
+    "reference_and_reconstruction_ui_regions": 1257211
+  },
+  "home": {
+    "mean_abs_rgb_difference_0_255": 0.6003287703049677,
+    "ui_regions_mean_abs_rgb_difference_0_255": 2.5350516884660266,
+    "pixels_channel_error_over16_percent": 0.8416765632589329,
+    "status": "Previously approved files preserved byte-for-byte; no re-render or font changes."
+  }
+}
