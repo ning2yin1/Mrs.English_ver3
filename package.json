@@ -11,6 +11,7 @@
     "preview:inventory-dev": "node scripts/serve.mjs dist-development",
     "preview": "node scripts/serve.mjs dist",
     "test": "node tests/browser.mjs",
+    "test:settings": "node tests/menu-settings.mjs",
     "test:layout": "node tests/layout.mjs",
     "test:home": "node tests/home-hud.mjs",
     "test:collection": "node tests/collection-store.mjs && node tests/collection-browser.mjs",

@@ -42,7 +42,14 @@ export async function renderHomeHud(layout, state, tap, bounds) {
       for (const id of spec.elements) {
         let e = elements.get(id);
         let node;
-        if(id==='coins_value'){
+        if(id==='avatar'&&['hiroto','ryoka'].includes(state.memberId)) {
+          // Keep the approved avatar frame/coordinates and reuse the selected member's existing portrait.
+          node=document.createElement('div');node.className='layer';node.dataset.layer=id;
+          const frame=picture(e,'home_approved/');Object.assign(frame.style,{inset:'0',width:'100%',height:'100%'});
+          const portrait=new Image();portrait.alt='';portrait.src=`assets/photos/${state.memberId}_portrait.png`;
+          Object.assign(portrait.style,{position:'absolute',left:'6%',top:'6%',width:'88%',height:'88%',borderRadius:'50%',objectFit:'cover',objectPosition:'50% 20%'});
+          node.append(frame,portrait);
+        } else if(id==='coins_value'){
           const result=await coinLabel(e,state.rCoin,bounds[id]);e=result.e;node=result.node;
         } else if (id === 'nickname' && state.nickname !== 'Nene') {
           node = document.createElement('span'); node.className = 'layer'; node.dataset.layer = id;

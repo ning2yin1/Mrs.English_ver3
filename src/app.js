@@ -1,3 +1,4 @@
+import {RELEASE} from './release.js';
 import { loadProfile, saveProfile, normalizeName } from './profile.js';
 import { renderScreen, placeholder, backgroundForScreen } from './screens.js';
 import { createLayout, sceneBackground, prepareBackground } from './layout.js';
@@ -16,6 +17,27 @@ function message(text) { notice.textContent = text; notice.hidden = !text; }
 let saved = loadProfile(storageWarning);
 const state = { nickname: saved?.nickname || 'Nene', memberId:saved?.memberId || 'motoki', backgroundId:saved?.backgroundId || 'bg-01' };
 let current = 'title';
+let menu, menuLoading, settingsRoot, settingsStore, editing;
+function removeSettings() { settingsRoot?.remove(); settingsRoot=null; document.querySelector('.settings-editor-note')?.remove(); }
+async function openSettings() {
+  menu?.close(false); removeSettings(); current='settings'; const version=++renderVersion;
+  try {
+    const [{renderSettings},{createSettingsStore},{loadStyle}]=await Promise.all([import('./settings/view.js'),import('./settings/store.js'),import('./menu.js')]);
+    await loadStyle('./settings/style.css');
+    if(version!==renderVersion)return;
+    settingsStore ||= createSettingsStore({getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)},storageWarning);
+    stage.replaceChildren();stage.dataset.screen='settings';document.body.dataset.screen='settings';document.querySelector('#scene-background').hidden=true;
+    settingsRoot=renderSettings({store:settingsStore,profile:state,release:RELEASE,onHome:()=>show('home'),onCustomize:screen=>{editing={screen,previous:{...state}};show(screen);}});
+    document.body.append(settingsRoot);settingsRoot.querySelector('button').focus();
+  }catch(error){await show('home');message(error.message);}
+}
+async function toggleMenu() {
+  try {
+    menuLoading ||= import('./menu.js').then(({createMenu})=>createMenu({onSettings:openSettings})).catch(error=>{menuLoading=null;throw error;});
+    menu ||= await menuLoading;
+    if(current==='home'&&stage.dataset.screen==='home')menu.toggle(stage.querySelector('[data-action=menu]'));
+  } catch(error){message(error.message);}
+}
 let renderVersion = 0;
 let layouts, backgrounds, homeBounds;
 const { resize } = createLayout(safe, stage);
@@ -25,6 +47,7 @@ const shop = createShop({stage,resize,onHome:()=>show('home'),onInventory:()=>in
 const play = createPlay({stage,resize,onHome:()=>show('home'),notify:message});
 
 async function show(screen) {
+  menu?.close(false); removeSettings();
   current = screen;
   const version = ++renderVersion;
   if (!persistentWarning) message('');
@@ -46,6 +69,8 @@ async function show(screen) {
   stage.replaceChildren(fragment); stage.dataset.screen = screen;
   stage.setAttribute('aria-label', {title:'タイトル',nickname:'ニックネーム設定',member:'推し選択',background:'背景選択',home:'ホーム'}[screen] || '仮画面');
   resize();
+  if(screen==='home') { const button=stage.querySelector('[data-action=menu]');button.setAttribute('aria-haspopup','menu');button.setAttribute('aria-expanded','false'); }
+  if(editing) {const note=document.createElement('p');note.className='settings-editor-note';note.textContent='カスタマイズ：決定で保存 ／ 戻るでキャンセル';document.body.append(note);}
 }
 async function refreshHomeCoins(){
   const root=stage.querySelector('.home-hud');if(current!=='home'||stage.dataset.screen!=='home'||!root)return;
@@ -55,6 +80,10 @@ window.addEventListener('storage',event=>{if(event.key===WALLET_KEY||event.key==
 window.addEventListener('focus',refreshHomeCoins);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshHomeCoins();});
 function confirm() {
+  if(editing) {
+    if(current==='nickname') {const input=document.querySelector('#nickname');state.nickname=normalizeName(input.value);input.value=state.nickname;if(!state.nickname){message('ニックネームを入力してください（12文字まで）。');input.focus();return;}input.blur();}
+    saved={...saved,...state,version:3,setupComplete:true};saveProfile(saved,storageWarning);editing=null;openSettings();return;
+  }
   if (current === 'nickname') {
     const input = document.querySelector('#nickname');
     state.nickname = normalizeName(input.value);
@@ -70,10 +99,13 @@ function confirm() {
 function tap(target) {
   if (current === 'title') { show(saved ? 'home' : 'nickname'); return; }
   if (target.id === 'confirm') { confirm(); return; }
+  if(target.id==='back'&&editing){Object.assign(state,editing.previous);editing=null;openSettings();return;}
   if (target.id === 'back') { show({nickname:'title',member:'nickname',background:'member'}[current]); return; }
   if (current === 'member') { state.memberId = target.id; show('member'); }
   else if (current === 'background' && target.value) { state.backgroundId = target.value; show('background'); }
   else if (current === 'home') {
+    if(target.id==='menu'){toggleMenu();return;}
+    menu?.close(false);
     if (target.route === 'placeholder/collection') collection.open();
     else if (target.route === 'placeholder/inventory') inventory.open();
     else if (target.route === 'placeholder/shop') shop.open();
