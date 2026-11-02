@@ -12,9 +12,9 @@ export function animateResult(root,{finished=()=>{},replay=true,timeline=TIMELIN
   function event(id){if(emitted.has(id))return;emitted.add(id);root.dispatchEvent(new CustomEvent('result:sync',{detail:{id,stageId:model.stageId}}));}
   function geometry(progress,impact){
     const compact=root.dataset.layout==='compact';let sx=compact?root.clientWidth/2:768,sy=compact?Math.min(root.clientHeight*.48,220):322;
-    if(lastMs<timeline.impact)sy=compact?sy:294;
+    if(lastMs<timeline.impact)sy=(compact?sy:294)-10; // Count-up position, independent of the summary.
     const rootBox=root.getBoundingClientRect(),to=target.getBoundingClientRect(),scale=rootBox.width/root.clientWidth;
-    const tx=(to.left+to.width/2-rootBox.left)/scale,ty=(to.top-rootBox.top)/scale;
+    const tx=(to.left+to.width/2-rootBox.left)/scale,ty=(to.top-rootBox.top)/scale+10; // Summary score only.
     const max=compact?Math.min(82,root.clientWidth*.13):(lastMs<timeline.impact?133:137),end=compact?Math.min(60,Math.max(48,root.clientHeight*.15)):94;
     const length=model.total.toLocaleString('en-US').length,fit=length>7?Math.max(.4,7/length):1;
     score.style.left=`${sx+(tx-sx)*progress}px`;score.style.top=`${sy+(ty-sy)*progress}px`;score.style.fontSize=`${(max+(end-max)*progress)*fit}px`;
