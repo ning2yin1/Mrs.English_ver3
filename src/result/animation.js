@@ -12,12 +12,17 @@ export function animateResult(root,{finished=()=>{},replay=true,timeline=TIMELIN
   function event(id){if(emitted.has(id))return;emitted.add(id);root.dispatchEvent(new CustomEvent('result:sync',{detail:{id,stageId:model.stageId}}));}
   function geometry(progress,impact){
     const compact=root.dataset.layout==='compact';let sx=compact?root.clientWidth/2:768,sy=compact?Math.min(root.clientHeight*.48,220):322;
-    if(lastMs<timeline.impact)sy=(compact?sy:294)-10; // Count-up position, independent of the summary.
+    // Intro score positions come from reserved layout slots, not independent top offsets.
     const rootBox=root.getBoundingClientRect(),to=target.getBoundingClientRect(),scale=rootBox.width/root.clientWidth;
     const tx=(to.left+to.width/2-rootBox.left)/scale,ty=(to.top-rootBox.top)/scale+10; // Summary score only.
     let max=compact?Math.min(82,root.clientWidth*.13):(lastMs<timeline.impact?133:137);
     const end=compact?Math.min(60,Math.max(48,root.clientHeight*.15)):94;
     const length=model.total.toLocaleString('en-US').length,fit=length>7?Math.max(.4,7/length):1;
+    if(lastMs<timeline.impact){
+      const slot=root.querySelector('.result-count-score-target').getBoundingClientRect(),height=slot.height/scale;
+      // Leave 12px above/below the score for the existing blurred +/-8px ghost copies.
+      max=Math.min(max,Math.max(1,height-24));sy=(slot.top-rootBox.top)/scale+(height-max*fit)/2;
+    }
     if(lastMs>=timeline.impact){
       const slot=root.querySelector('.result-impact-score-target').getBoundingClientRect(),height=slot.height/scale;
       // Reserve the full 1.12x impact envelope; the label-to-slot gap stays clear throughout the pulse.
@@ -27,7 +32,7 @@ export function animateResult(root,{finished=()=>{},replay=true,timeline=TIMELIN
     score.style.transform=`translateX(-50%) scale(${impact})`;
   }
   function draw(ms,notify=true){
-    lastMs=ms;const f=frameAt(ms,model.parts,timeline),text=f.total.toLocaleString('en-US');root.dataset.phase=f.phase;root.classList.toggle('result-impact-layout',ms>=timeline.impact);
+    lastMs=ms;const f=frameAt(ms,model.parts,timeline),text=f.total.toLocaleString('en-US');root.dataset.phase=f.phase;root.classList.toggle('result-impact-layout',ms>=timeline.impact);root.classList.toggle('result-count-layout',ms<timeline.impact);
     // Remove outgoing text before the score travels through its old position; FX keep their timeline.
     root.querySelector('.result-impact-stack').style.opacity=f.summary>0?'0':'1';
     if(text!==lastValue){value.textContent=text;ghosts.forEach(n=>n.textContent=text);lastValue=text;}

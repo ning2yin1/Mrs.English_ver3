@@ -61,3 +61,21 @@ body[data-screen=play_completed]::before{background:rgba(3,5,24,.60)}
 .result-root.result-impact-layout[data-layout=compact] .result-intro-total{flex-basis:20px;font-size:18px;margin-bottom:8px}
 .result-root.result-impact-layout[data-layout=compact] .result-intro-stats{flex-basis:22px;font-size:16px;line-height:1.25}
 .result-root.result-impact-layout .result-impact-stack > *{height:auto;min-height:0}
+
+/* Count-up reserves six rows, including a flexible score row with its ghost envelope. */
+.result-root .result-count-score-target{display:none}
+.result-root.result-count-layout .result-impact-stack{position:absolute;inset:6px 24px 8px;display:flex;flex-direction:column;align-items:center;gap:16px}
+.result-root.result-count-layout .result-impact-stack > *{position:static;inset:auto;width:100%;height:auto;margin:0;min-height:0;line-height:1.2;flex-shrink:0}
+.result-root.result-count-layout .result-stage-clear{order:0;flex-basis:34px}
+.result-root.result-count-layout .result-intro-total{order:1;flex-basis:32px}
+.result-root.result-count-layout .result-count-score-target{display:block;order:2;flex:1 1 0}
+.result-root.result-count-layout .result-step-label{order:3;flex-basis:32px}
+.result-root.result-count-layout .result-progress{order:4;flex-basis:4px;width:66%}
+.result-root.result-count-layout .result-steps{order:5;flex-basis:24px;width:70%}
+.result-root.result-count-layout .result-intro-rank,.result-root.result-count-layout .result-impact-score-target,.result-root.result-count-layout .result-intro-stats{display:none}
+.result-root.result-impact-layout .result-step-label,.result-root.result-impact-layout .result-progress,.result-root.result-impact-layout .result-steps{display:none}
+.result-root.result-count-layout[data-layout=compact] .result-impact-stack{inset:4px 10px;gap:8px}
+.result-root.result-count-layout[data-layout=compact] .result-stage-clear{flex-basis:23px}
+.result-root.result-count-layout[data-layout=compact] .result-intro-total{flex-basis:22px}
+.result-root.result-count-layout[data-layout=compact] .result-step-label{flex-basis:20px}
+.result-root.result-count-layout[data-layout=compact] .result-steps{flex-basis:18px;width:100%}

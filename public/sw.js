@@ -5,7 +5,16 @@ self.addEventListener('install', event => {
     if (!response.ok) throw new Error('Production build required for offline installation');
     const paths = await response.json();
     const cache = await caches.open(CACHE);
-    await cache.addAll(paths);
+    // A bulk addAll starts hundreds of competing downloads during first-run setup.
+    // Keep the complete offline inventory, but leave connections available for the visible screen.
+    let next = 0;
+    async function fill() {
+      while (next < paths.length) {
+        const url = new URL(paths[next++], self.registration.scope);
+        await cache.add(new Request(url, { priority:'low' }));
+      }
+    }
+    await Promise.all([fill(), fill()]);
     await self.skipWaiting();
   })());
 });

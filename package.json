@@ -18,6 +18,8 @@
     "test:shop": "node tests/shop-store.mjs && node tests/shop-browser.mjs",
     "test:play": "node tests/play-store.mjs && node tests/play-browser.mjs",
     "test:play-ui": "node tests/play-improvements.mjs",
+    "test:setup-performance": "node tests/setup-performance.mjs",
+    "test:setup-offline": "node tests/setup-offline.mjs",
     "test:result-layout": "node tests/result-impact-layout.mjs",
     "test:result": "node tests/result-model.mjs && node tests/result-browser.mjs"
   },

@@ -25,6 +25,8 @@ export function renderResult(state,data,act){
   const impactStack=el('div','result-impact-stack');intro.prepend(impactStack);
   for(const selector of ['.result-stage-clear','.result-intro-rank','.result-intro-total'])impactStack.append(intro.querySelector(selector));
   const impactTarget=el('div','result-impact-score-target');impactTarget.setAttribute('aria-hidden','true');impactStack.append(impactTarget,intro.querySelector('.result-intro-stats'));
+  const countTarget=el('div','result-count-score-target');countTarget.setAttribute('aria-hidden','true');impactStack.append(countTarget);
+  for(const selector of ['.result-step-label','.result-progress','.result-steps'])impactStack.append(intro.querySelector(selector));
   const fx=el('div','result-fx');picture(fx,'result-halo',`assets/result/fx/halo_${model.rank.halo}.svg`);if(model.rank.id==='perfect')picture(fx,'result-halo result-halo-second','assets/result/fx/halo_silver.svg');picture(fx,'result-particles','assets/result/fx/particles.svg');if(model.rank.shockwave)picture(fx,'result-shockwave','assets/result/fx/shockwave.svg');root.append(fx);
   const score=el('div','result-score');text(score,'result-score-ghost ghost-top','0');text(score,'result-score-value','0');text(score,'result-score-ghost ghost-bottom','0');score.querySelectorAll('.result-score-ghost').forEach(n=>n.setAttribute('aria-hidden','true'));root.append(score);
   const introDeck=el('div','result-intro-deck');cards(introDeck,model);text(introDeck,'result-skill-info','装備スキル発動');root.append(introDeck);
