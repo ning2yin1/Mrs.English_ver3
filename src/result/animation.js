@@ -15,13 +15,21 @@ export function animateResult(root,{finished=()=>{},replay=true,timeline=TIMELIN
     if(lastMs<timeline.impact)sy=(compact?sy:294)-10; // Count-up position, independent of the summary.
     const rootBox=root.getBoundingClientRect(),to=target.getBoundingClientRect(),scale=rootBox.width/root.clientWidth;
     const tx=(to.left+to.width/2-rootBox.left)/scale,ty=(to.top-rootBox.top)/scale+10; // Summary score only.
-    const max=compact?Math.min(82,root.clientWidth*.13):(lastMs<timeline.impact?133:137),end=compact?Math.min(60,Math.max(48,root.clientHeight*.15)):94;
+    let max=compact?Math.min(82,root.clientWidth*.13):(lastMs<timeline.impact?133:137);
+    const end=compact?Math.min(60,Math.max(48,root.clientHeight*.15)):94;
     const length=model.total.toLocaleString('en-US').length,fit=length>7?Math.max(.4,7/length):1;
-    score.style.left=`${sx+(tx-sx)*progress}px`;score.style.top=`${sy+(ty-sy)*progress}px`;score.style.fontSize=`${(max+(end-max)*progress)*fit}px`;
+    if(lastMs>=timeline.impact){
+      const slot=root.querySelector('.result-impact-score-target').getBoundingClientRect(),height=slot.height/scale;
+      // Reserve the full 1.12x impact envelope; the label-to-slot gap stays clear throughout the pulse.
+      max=Math.min(max,height/1.12);sy=(slot.top-rootBox.top)/scale+(height-max*fit)/2;
+    }
+    score.style.left=`${sx+(tx-sx)*progress}px`;score.style.top=`${progress>=1?ty:sy+(ty-sy)*progress}px`;score.style.fontSize=`${(max+(end-max)*progress)*fit}px`;
     score.style.transform=`translateX(-50%) scale(${impact})`;
   }
   function draw(ms,notify=true){
-    lastMs=ms;const f=frameAt(ms,model.parts,timeline),text=f.total.toLocaleString('en-US');root.dataset.phase=f.phase;
+    lastMs=ms;const f=frameAt(ms,model.parts,timeline),text=f.total.toLocaleString('en-US');root.dataset.phase=f.phase;root.classList.toggle('result-impact-layout',ms>=timeline.impact);
+    // Remove outgoing text before the score travels through its old position; FX keep their timeline.
+    root.querySelector('.result-impact-stack').style.opacity=f.summary>0?'0':'1';
     if(text!==lastValue){value.textContent=text;ghosts.forEach(n=>n.textContent=text);lastValue=text;}
     const entered=clamp(ms/timeline.enter);root.querySelector('.result-header').style.opacity=entered;intro.style.opacity=entered*(1-f.summary);intro.style.visibility=f.summary>=1?'hidden':'visible';summary.style.opacity=f.summary;
     summary.style.visibility=f.summary>0?'visible':'hidden';reward.style.opacity=f.reward;actions.style.opacity=f.actions;actions.style.visibility=f.actions>0?'visible':'hidden';

@@ -44,3 +44,20 @@ body[data-screen=play_completed]::before{background:rgba(3,5,24,.60)}
 .result-root[data-rank=great] .result-score.gold{color:#66e6ff}
 .result-root[data-rank=good] .result-score.gold{color:#d5edff}
 .result-root[data-rank=nice_try] .result-score.gold{color:#e1d9f5}
+/* The impact scene has its own vertical stack; the regular summary and count-up stay independent. */
+.result-root .result-impact-stack{display:contents}
+.result-root .result-impact-score-target{display:none}
+.result-root.result-impact-layout .result-impact-stack{position:absolute;inset:6px 24px 8px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.result-root.result-impact-layout .result-impact-stack > *{position:static;left:auto;right:auto;top:auto;bottom:auto;width:100%;margin-top:0;line-height:1}
+.result-root.result-impact-layout .result-stage-clear{flex:0 0 34px}
+.result-root.result-impact-layout .result-intro-rank{flex:0 0 140px;max-width:676px}
+.result-root.result-impact-layout .result-intro-total{flex:0 0 28px;margin-bottom:6px}
+.result-root.result-impact-layout .result-impact-score-target{display:block;flex:1 1 0;min-height:0}
+.result-root.result-impact-layout .result-intro-stats{flex:0 0 30px;line-height:1.2}
+.result-root.result-impact-layout[data-layout=compact] .result-intro{top:54px;height:calc(100% - 110px)}
+.result-root.result-impact-layout[data-layout=compact] .result-impact-stack{inset:6px 12px 8px;gap:4px}
+.result-root.result-impact-layout[data-layout=compact] .result-stage-clear{flex-basis:22px}
+.result-root.result-impact-layout[data-layout=compact] .result-intro-rank{flex-basis:52px}
+.result-root.result-impact-layout[data-layout=compact] .result-intro-total{flex-basis:20px;font-size:18px;margin-bottom:8px}
+.result-root.result-impact-layout[data-layout=compact] .result-intro-stats{flex-basis:22px;font-size:16px;line-height:1.25}
+.result-root.result-impact-layout .result-impact-stack > *{height:auto;min-height:0}
