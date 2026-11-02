@@ -1,0 +1,66 @@
+[
+  {
+    "file": "assets/mission/backgrounds/mission_background.png",
+    "reused_source": "collection-addon-stage/assets/collection/background.png",
+    "width": 1844,
+    "height": 853,
+    "mode": "RGB",
+    "sha256": "443b5a40e80c30c1c14ee411a690364741c2d214fe31aacbbe1e752f1eb5fad5"
+  },
+  {
+    "file": "assets/mission/panels/mission_header.png",
+    "reused_source": "mrs-english-ver3-ui-kit/assets/nickname/nickname_header.png",
+    "width": 1661,
+    "height": 84,
+    "mode": "RGBA",
+    "sha256": "b872e4b0c1c488d32b1a900bac960698f7db70695f07ce448d681d677a9dfcf1"
+  },
+  {
+    "file": "assets/mission/panels/mission_list_panel.png",
+    "reused_source": "collection-addon-stage/assets/collection/ui/list_panel.png",
+    "width": 1653,
+    "height": 542,
+    "mode": "RGBA",
+    "sha256": "f62daa03b29902c5c9f38bce5a7bd522d8374f42d12b680dfbffa0066447c0a5"
+  },
+  {
+    "file": "assets/mission/tabs/mission_blue.png",
+    "reused_source": "mrs-english-home-ui-v1/assets/home/button_collection.png",
+    "width": 344,
+    "height": 111,
+    "mode": "RGBA",
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf"
+  },
+  {
+    "file": "assets/mission/tabs/mission_purple.png",
+    "reused_source": "mrs-english-home-ui-v1/assets/home/status_menu.png",
+    "width": 290,
+    "height": 83,
+    "mode": "RGBA",
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f"
+  },
+  {
+    "file": "assets/mission/icons/mission_coin.png",
+    "reused_source": "mrs-english-home-ui-v1/assets/icons/coin.png",
+    "width": 53,
+    "height": 49,
+    "mode": "RGBA",
+    "sha256": "bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357"
+  },
+  {
+    "file": "assets/mission/icons/mission_diamond.png",
+    "reused_source": "mrs-english-home-ui-v1/assets/icons/diamond.png",
+    "width": 53,
+    "height": 45,
+    "mode": "RGBA",
+    "sha256": "d87cc042bbfbe0faf6dc97a4b54ef7113543bf0e236da2c9c0ef2c6c6d3321e4"
+  },
+  {
+    "file": "assets/mission/icons/mission_back.png",
+    "reused_source": "mrs-english-ver3-ui-kit/assets/icons/nickname_back.png",
+    "width": 24,
+    "height": 40,
+    "mode": "RGBA",
+    "sha256": "24ac1f84581c63bbdf5118ab8e777786d955355c81d71dd2ff136bf86b6b1844"
+  }
+]
