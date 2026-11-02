@@ -23,7 +23,7 @@ try {
   const owner=await saved(page,keys.owned);assert.equal(Object.keys(owner.owned).length,10);assert.equal(Object.values(owner.owned).reduce((n,c)=>n+c.quantity,0),10);
   const initial=await saved(page,keys.inventory);assert.equal(initial.deck.filter(Boolean).length,3);
   assert.equal((await saved(page,keys.wallet)).rCoin,10000);
-  await settled(page);const homeBefore=await page.screenshot();
+  await settled(page);const homeBefore=await page.screenshot({mask:[page.locator('[data-layer="status_currency"]')]});assert.equal(await page.locator('[data-layer="coins_value"]').textContent(),'10,000');
   await click(page,'collection');await wait(page,'collection_owned');assert.equal(await page.locator('.collection-card-hit').count(),10);
   await click(page,'back');await wait(page,'home');await click(page,'inventory');await wait(page,'inventory_main');
   assert.equal(await page.locator('.collection-card-hit').count(),10);
@@ -51,7 +51,7 @@ try {
   assert.deepEqual(await saved(page,keys.owned),owner);
   await shot(page,'upgraded');await click(page,'back');await wait(page,'inventory_main');
   assert.equal(await page.locator('[data-layer="main_014"]').textContent(),'Lv. 13 / 50');
-  await click(page,'back');await wait(page,'home');await settled(page);assert.deepEqual(await page.screenshot(),homeBefore);
+  await click(page,'back');await wait(page,'home');await settled(page);assert.ok((await page.screenshot({mask:[page.locator('[data-layer="status_currency"]')]})).equals(homeBefore));assert.equal(await page.locator('[data-layer="coins_value"]').textContent(),'9,500');
   await click(page,'collection');await wait(page,'collection_owned');
   const progress=JSON.parse(await page.locator('.collection-card[data-card-id="motoki-r-01"]').getAttribute('data-instance-levels'));
   assert.equal(progress.find(i=>i.instanceId===initial.deck[0]).level,13);

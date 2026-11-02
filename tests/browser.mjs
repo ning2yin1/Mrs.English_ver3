@@ -50,6 +50,7 @@ try {
   await click('confirm'); await screen('home'); await screenshot('home');
   assert.deepEqual(await page.evaluate(key => JSON.parse(localStorage.getItem(key)), key), {version:3,nickname:'Nene',memberId:'motoki',backgroundId:'bg-01',setupComplete:true});
   for (const id of ['player','menu','inventory','collection','mission','shop','ready']) {
+    if (id === 'ready') { await click(id); await screen('play_ready'); await click('back'); await screen('home'); continue; }
     if (id === 'shop') {
       await click(id); await screen('shop_main'); await click('back'); await screen('home'); continue;
     }

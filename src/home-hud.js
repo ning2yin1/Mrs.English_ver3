@@ -1,4 +1,16 @@
-import { label, picture, nineSlice, hit, position } from './components.js';
+import { label, picture, nineSlice, hit, position, fontFor } from './components.js';
+
+async function coinLabel(original,value,bounds) {
+  const text=Number.isSafeInteger(value)&&value>=0?value.toLocaleString('en-US'):'—';
+  const family=await fontFor('home_approved/'+original.font_file),ctx=document.createElement('canvas').getContext('2d');
+  ctx.font=`${original.font_size}px ${family}`;
+  const nativeWidth=Math.max(1,Math.ceil(ctx.measureText(text).width));
+  const width=Math.min(170,nativeWidth*original.height/(bounds[3]-bounds[1]));
+  const e={...original,text,x:original.x+original.width-width,width};
+  const node=await label(e,'home_approved/',[0,bounds[1],nativeWidth,bounds[3]]);
+  node.setAttribute('preserveAspectRatio','xMaxYMid meet');node.setAttribute('aria-label',`Rコイン ${text}`);
+  return {e,node};
+}
 
 const top = [
   {id:'status_player', advance:525, elements:['avatar','nickname','rank','energy'], targets:['player']},
@@ -19,6 +31,7 @@ export async function renderHomeHud(layout, state, tap, bounds) {
   const elements = new Map(layout.elements.map(e => [e.id,e]));
   const targets = new Map(layout.tap_targets.map(e => [e.id,e]));
   const groups = [];
+  let coin,lastSize;
   for (const [row, entries] of [['top',top],['bottom',bottom]]) {
     for (const spec of entries) {
       const frame = elements.get(spec.id);
@@ -27,14 +40,16 @@ export async function renderHomeHud(layout, state, tap, bounds) {
       root.append(art);
       const content = [];
       for (const id of spec.elements) {
-        const e = elements.get(id);
+        let e = elements.get(id);
         let node;
-        if (id === 'nickname' && state.nickname !== 'Nene') {
+        if(id==='coins_value'){
+          const result=await coinLabel(e,state.rCoin,bounds[id]);e=result.e;node=result.node;
+        } else if (id === 'nickname' && state.nickname !== 'Nene') {
           node = document.createElement('span'); node.className = 'layer'; node.dataset.layer = id;
           node.textContent = state.nickname;
           Object.assign(node.style,{font:'30px/1.15 system-ui, sans-serif',color:'#fff',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'});
         } else node = e.kind === 'text' ? await label(e,'home_approved/',bounds[id]) : picture(e,'home_approved/');
-        root.append(node); content.push({e,node});
+        root.append(node);const entry={e,node};content.push(entry);if(id==='coins_value')coin=entry;
       }
       const buttons = spec.targets.map(id => {
         const e = targets.get(id);
@@ -44,6 +59,7 @@ export async function renderHomeHud(layout, state, tap, bounds) {
     }
   }
   root.resizeHud = (width,height,footerOffset = 0) => {
+    lastSize=[width,height,footerOffset];
     for (const row of ['top','bottom']) {
       const list = groups.filter(group => group.row === row);
       const total = list.reduce((sum,group)=>sum+group.spec.advance,0);
@@ -75,6 +91,13 @@ export async function renderHomeHud(layout, state, tap, bounds) {
         x += advance;
       });
     }
+  };
+  let coinVersion=0;
+  root.updateCoins=async value=>{
+    const version=++coinVersion,result=await coinLabel(elements.get('coins_value'),value,bounds.coins_value);
+    if(version!==coinVersion)return;
+    coin.node.replaceWith(result.node);coin.e=result.e;coin.node=result.node;
+    if(lastSize)root.resizeHud(...lastSize);
   };
   return root;
 }

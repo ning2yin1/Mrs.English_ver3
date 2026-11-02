@@ -25,7 +25,7 @@ try {
     const footerBottom=height-(bottom===21?14:0);
     close(inventory.x,left);close(ready.x+ready.width,width-right);close(ready.y+ready.height,footerBottom);
     for (const e of layout.elements.filter(e=>e.kind==='text'||e.kind==='icon')) {
-      const actual=await box(e.id);close(actual.width,e.width*scale);close(actual.height,e.height*scale);
+      const actual=await box(e.id);if(e.id==='coins_value')assert.ok(actual.width>0&&actual.width<=170*scale);else close(actual.width,e.width*scale);close(actual.height,e.height*scale);
     }
     for (const e of layout.elements.filter(e=>e.id.startsWith('status_')||e.id.startsWith('button_'))) {
       const actual=await box(e.id);close(actual.height,e.height*scale);
@@ -41,7 +41,7 @@ try {
     await page.locator('[data-action="home"]').click();
     await page.waitForFunction(()=>document.querySelector('#stage').dataset.screen==='home');
     await page.mouse.click(width-right-3,footerBottom-3);
-    await page.waitForFunction(()=>document.querySelector('#stage').dataset.screen==='placeholder/ready');
+    await page.waitForFunction(()=>document.querySelector('#stage').dataset.screen==='play_ready');
     results.push({viewport:name,safeInsets:{left,right,bottom},scale,topBeforeSafeWidthPercent:1650*scale/(width-left-right)*100,bottomBeforeSafeWidthPercent:1701*scale/(width-left-right)*100,topAfterSafeWidthPercent:100,bottomAfterSafeWidthPercent:100,checks:'Height, icon/text dimensions, nine-slice artwork, safe edges, taps, background and saved profile passed.'});
     await context.close();
   }

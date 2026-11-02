@@ -10,6 +10,8 @@ export function sceneBackground(layout, base = '', override) {
 }
 export function createLayout(safe, stage) {
   function resize() {
+    // A screen may keep device-sized controls; all existing screens use the reference path below.
+    if (stage.resizeDeviceLayout?.()) return;
     const rect = safe.getBoundingClientRect();
     const viewport = window.visualViewport;
     // Intersect the safe rectangle with what is visible above the software keyboard.
