@@ -1,0 +1,35 @@
+{
+  "reference": [
+    1536,
+    710
+  ],
+  "panel": [
+    1208,
+    70,
+    240,
+    146
+  ],
+  "row_height": 46,
+  "icon_size": [
+    20,
+    20
+  ],
+  "font_px": 18,
+  "row_centers": [
+    94,
+    140,
+    186
+  ],
+  "border_px": 1,
+  "radius_px": 4,
+  "background_rgba": [
+    24,
+    13,
+    56,
+    0.9215686274509803
+  ],
+  "text": "#f1eef8",
+  "disabled_text": "#9690a8",
+  "duration_ms": 180,
+  "anchor": "existing Menu bottom/right; +11px gap; clamp safe area"
+}

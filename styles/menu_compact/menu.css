@@ -1,0 +1,42 @@
+/* Approved compact menu skin only; no TOP/router/game implementation. */
+.me-menu-compact {
+  --menu-left:0px; --menu-top:0px;
+  position:fixed; left:var(--menu-left); top:var(--menu-top); z-index:1000;
+  box-sizing:border-box; width:240px; height:146px; padding:0 0 6px;
+  border:1px solid rgba(127,114,166,.745); border-radius:4px;
+  background:rgba(24,13,56,.922); color:#f1eef8;
+  font-family:inherit; font-size:18px; font-weight:400;
+  box-shadow:none; filter:none; backdrop-filter:none;
+  opacity:0; visibility:hidden; pointer-events:none;
+  transform:translateY(-4px);
+  transition:opacity 180ms ease,transform 180ms ease,visibility 0s linear 180ms;
+}
+.me-menu-compact[data-state="open"] {
+ opacity:1; visibility:visible; pointer-events:auto; transform:translateY(0);
+ transition:opacity 180ms ease,transform 180ms ease,visibility 0s;
+}
+.me-menu-compact[data-state="closing"] { transform:translateY(0); }
+.me-menu-compact[hidden] { display:none; }
+.me-menu-compact__item {
+ position:relative; display:grid; grid-template-columns:20px minmax(0,1fr) 8px;
+ align-items:center; column-gap:10px; box-sizing:border-box; width:100%; height:46px;
+ margin:0; padding:0 14px 0 11px; border:0; border-radius:0;
+ appearance:none; -webkit-appearance:none; background:transparent; color:inherit;
+ font:inherit; line-height:24px; text-align:left; cursor:pointer;
+ touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+}
+.me-menu-compact__item:not(:last-child)::after {
+ content:""; position:absolute; top:47px; left:11px; right:11px; height:1px;
+ background:rgba(160,149,188,.255); pointer-events:none;
+}
+.me-menu-compact__icon {display:block; width:20px; height:20px; flex:none; pointer-events:none;}
+.me-menu-compact__label {white-space:nowrap; pointer-events:none;}
+.me-menu-compact__chevron {display:block; width:8px; height:12px; pointer-events:none;}
+.me-menu-compact__item[aria-disabled="true"] {color:#9690a8; cursor:default;}
+.me-menu-compact__item:not([aria-disabled="true"]):active {background:rgba(255,255,255,.06);}
+.me-menu-compact__item:focus-visible {outline:1px solid #c7bde0;outline-offset:-3px;}
+@media(prefers-reduced-motion:reduce){
+ .me-menu-compact,.me-menu-compact[data-state="open"]{transform:none;transition:none;}
+}
+/* Position clamping and optional internal scrolling belong to existing TOP integration.
+   Do not transform-scale this popover together with a large reference canvas. */
