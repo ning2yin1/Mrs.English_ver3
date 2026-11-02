@@ -1,0 +1,131 @@
+[
+  {
+    "path": "assets/result/fx/halo_cyan.svg",
+    "svg_parse": "PASS",
+    "external_resources": false
+  },
+  {
+    "path": "assets/result/fx/halo_gold.svg",
+    "svg_parse": "PASS",
+    "external_resources": false
+  },
+  {
+    "path": "assets/result/fx/halo_silver.svg",
+    "svg_parse": "PASS",
+    "external_resources": false
+  },
+  {
+    "path": "assets/result/fx/particles.svg",
+    "svg_parse": "PASS",
+    "external_resources": false
+  },
+  {
+    "path": "assets/result/fx/shockwave.svg",
+    "svg_parse": "PASS",
+    "external_resources": false
+  },
+  {
+    "path": "assets/result/fx/star.svg",
+    "svg_parse": "PASS",
+    "external_resources": false
+  },
+  {
+    "path": "assets/result/ranks/rank_excellent.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_min": 0,
+    "alpha_max": 254
+  },
+  {
+    "path": "assets/result/ranks/rank_good.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_min": 0,
+    "alpha_max": 253
+  },
+  {
+    "path": "assets/result/ranks/rank_great.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_min": 0,
+    "alpha_max": 253
+  },
+  {
+    "path": "assets/result/ranks/rank_nice_try.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_min": 0,
+    "alpha_max": 254
+  },
+  {
+    "path": "assets/result/ranks/rank_perfect.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_min": 0,
+    "alpha_max": 253
+  },
+  {
+    "path": "assets/result/reused/arrow.png",
+    "size": [
+      29,
+      47
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "path": "assets/result/reused/button_blue.png",
+    "size": [
+      344,
+      111
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "path": "assets/result/reused/button_purple.png",
+    "size": [
+      290,
+      83
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "path": "assets/result/reused/coin.png",
+    "size": [
+      53,
+      49
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "path": "assets/result/reused/header.png",
+    "size": [
+      1661,
+      84
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  },
+  {
+    "path": "assets/result/reused/panel.png",
+    "size": [
+      1653,
+      542
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255
+  }
+]

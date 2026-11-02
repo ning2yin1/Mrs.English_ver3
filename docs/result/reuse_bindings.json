@@ -1,0 +1,65 @@
+[
+  {
+    "role": "header",
+    "kit_path": "assets/result/reused/header.png",
+    "previous_kit_path": "assets/nickname/nickname_header.png",
+    "slice_top_right_bottom_left": null,
+    "sha256": "b872e4b0c1c488d32b1a900bac960698f7db70695f07ce448d681d677a9dfcf1",
+    "repository_path_verified": false
+  },
+  {
+    "role": "panel",
+    "kit_path": "assets/result/reused/panel.png",
+    "previous_kit_path": "assets/collection/ui/list_panel.png",
+    "slice_top_right_bottom_left": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "sha256": "f62daa03b29902c5c9f38bce5a7bd522d8374f42d12b680dfbffa0066447c0a5",
+    "repository_path_verified": false
+  },
+  {
+    "role": "blue",
+    "kit_path": "assets/result/reused/button_blue.png",
+    "previous_kit_path": "assets/home/button_collection.png",
+    "slice_top_right_bottom_left": [
+      18,
+      20,
+      17,
+      20
+    ],
+    "sha256": "7e8b2a5533bf09f87085ca247541846e586a3318055535d133bab3a0590a0faf",
+    "repository_path_verified": false
+  },
+  {
+    "role": "purple",
+    "kit_path": "assets/result/reused/button_purple.png",
+    "previous_kit_path": "assets/home/status_menu.png",
+    "slice_top_right_bottom_left": [
+      16,
+      18,
+      16,
+      18
+    ],
+    "sha256": "b3d36bde9dc070fa0db0d595041571f082f0212f8533a712207b69773107ad9f",
+    "repository_path_verified": false
+  },
+  {
+    "role": "arrow",
+    "kit_path": "assets/result/reused/arrow.png",
+    "previous_kit_path": "assets/icons/nickname_confirm_arrow.png",
+    "slice_top_right_bottom_left": null,
+    "sha256": "d73ee0a4f61b31a6fefb83ac6ca507dd0980863625ab9f9d1e2d4e4ec343fb6d",
+    "repository_path_verified": false
+  },
+  {
+    "role": "coin",
+    "kit_path": "assets/result/reused/coin.png",
+    "previous_kit_path": "assets/icons/coin.png",
+    "slice_top_right_bottom_left": null,
+    "sha256": "bc2c4f9bfb78770fdd98a6a1f1b9bd594b98dbdac464d9caf72dc3d349a48357",
+    "repository_path_verified": false
+  }
+]

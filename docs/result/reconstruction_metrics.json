@@ -1,0 +1,17 @@
+[
+  {
+    "reference": "result_countup",
+    "mean_absolute_error": 0.0,
+    "max_difference": 0
+  },
+  {
+    "reference": "result_impact",
+    "mean_absolute_error": 0.0,
+    "max_difference": 0
+  },
+  {
+    "reference": "result_final",
+    "mean_absolute_error": 0.0,
+    "max_difference": 0
+  }
+]
