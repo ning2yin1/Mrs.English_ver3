@@ -1,3 +1,4 @@
+import {animateResult} from '../result/animation.js';
 import {createPlayStore} from './store.js';
 import {validateDataset} from './data.js';
 import {renderPlay} from './view.js';
@@ -12,13 +13,14 @@ export async function loadPlayResources(){
     const css=p=>new Promise((resolve,reject)=>{const n=document.createElement('link');n.rel='stylesheet';n.href=p;n.onload=resolve;n.onerror=reject;document.head.append(n);});
     const response=await fetch('data/play/source/grammar_01_40.json');if(!response.ok)throw new Error('問題を読み込めません。');const source=await response.text(),dataset=validateDataset(JSON.parse(source));
     const datasetHash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(source)))].map(n=>n.toString(16).padStart(2,'0')).join('');
-    const [config,backgrounds,catalog,definitions,balance,layouts,titles]=await Promise.all([json('specs/play/scoring_config.json'),json('specs/play/backgrounds.json'),json('layouts/collection/catalog.json'),json('data/inventory/card_definitions.example.json'),json('data/inventory/balance.example.json'),json('specs/play/layouts.json'),json('data/play/display_titles.json'),css('src/collection/style.css'),css('src/play/style.css')]);
-    await document.fonts.load('26px PlayJP');await document.fonts.load('700 26px PlayJP');await document.fonts.load('26px PlayEN');
+    const [config,backgrounds,catalog,definitions,balance,layouts,titles]=await Promise.all([json('specs/play/scoring_config.json'),json('specs/play/backgrounds.json'),json('layouts/collection/catalog.json'),json('data/inventory/card_definitions.example.json'),json('data/inventory/balance.example.json'),json('specs/play/layouts.json'),json('data/play/display_titles.json'),css('src/collection/style.css'),css('src/play/style.css'),css('src/result/style.css')]);
+    await document.fonts.load('26px PlayJP');await document.fonts.load('700 26px PlayJP');await document.fonts.load('26px PlayEN');await document.fonts.load('700 94px ResultNumber');
     return {dataset,datasetHash,config,backgrounds,catalog,definitions,balance,layouts,titles};
   })().catch(e=>{resources=null;throw e;});return resources;
 }
 export function createPlay({stage,resize,onHome,notify=()=>{},resources:customResources,store:customStore}){
   const state={session:null,saved:null,categoryId:'01',difficulty:'EASY',grade:'',deckCount:0,deckPower:0,busy:false,canSave:true};
+  let resultAnimation;const shownResults=new Set();
   let data,store,active=false,root,renderId=0,anchor=null,baseMs=0,queue=Promise.resolve(),backgroundPath,checkpoint,observing=false;
   const error=e=>notify(e.message||'プレイを保存できませんでした。再試行してください。');
   const running=()=>active&&state.session?.status==='input'&&!document.hidden&&innerWidth>innerHeight;
@@ -28,6 +30,10 @@ export function createPlay({stage,resize,onHome,notify=()=>{},resources:customRe
   function adopt(saved){state.saved=saved;const s=saved.session;state.session=s&&!['aborted'].includes(s.status)?s:null;}
   function fit(){
     if(!active||!root)return false;const safe=document.querySelector('#safe-area'),r=safe.getBoundingClientRect();
+    if(root.classList.contains('result-root')){
+      const scale=Math.min(r.width/1536,r.height/710),compact=scale<.72;root.dataset.layout=compact?'compact':'reference';
+      Object.assign(stage.style,compact?{left:'0px',top:'0px',width:`${r.width}px`,height:`${r.height}px`,transform:'none'}:{left:`${(r.width-1536*scale)/2}px`,top:`${(r.height-710*scale)/2}px`,width:'1536px',height:'710px',transform:`scale(${scale})`});return true;
+    }
     const compact=Math.min(r.width/1844,r.height/853)<.72;root.dataset.layout=compact?'compact':'reference';root.classList.toggle('is-short',r.height<365);
     if(compact){Object.assign(stage.style,{left:'0px',top:'0px',width:`${r.width}px`,height:`${r.height}px`,transform:'none'});return true;}
     return false;
@@ -37,8 +43,9 @@ export function createPlay({stage,resize,onHome,notify=()=>{},resources:customRe
     const id=++renderId;const scroll=root?.querySelector('.play-category-list')?.scrollTop||0,central=root?.querySelector('.play-central')?.scrollTop||0;
     const next=renderPlay(state,data,tap);if(decode)await Promise.all([...next.querySelectorAll('img')].map(im=>im.decode()));
     if(!active||id!==renderId)return;
-    root=next;stage.replaceChildren(root);const screen=state.session?state.session.status:'ready';stage.dataset.screen=`play_${screen}`;document.body.dataset.screen=`play_${screen}`;stage.setAttribute('aria-label',state.session?'英語プレイ':'READY');
+    resultAnimation?.destroy();resultAnimation=null;root=next;stage.replaceChildren(root);const screen=state.session?state.session.status:'ready';stage.dataset.screen=`play_${screen}`;document.body.dataset.screen=`play_${screen}`;stage.setAttribute('aria-label',state.session?.status==='completed'?'リザルト':state.session?'英語プレイ':'READY');
     resize();if(root.querySelector('.play-category-list'))root.querySelector('.play-category-list').scrollTop=scroll;if(root.querySelector('.play-central'))root.querySelector('.play-central').scrollTop=central;
+    if(state.session?.status==='completed'&&!state.busy){const id=state.session.stageId;resultAnimation=animateResult(root,{replay:!shownResults.has(id),finished:()=>shownResults.add(id)});}
     if(['paused','quitConfirm'].includes(state.session?.status))root.querySelector('.play-modal-wrap button')?.focus({preventScroll:true});
   }
   async function backdrop(){
@@ -46,7 +53,7 @@ export function createPlay({stage,resize,onHome,notify=()=>{},resources:customRe
     if(!path)throw new Error('背景写真を読み込めません。');
     if(path!==backgroundPath){const bg=await prepareBackground(path);document.querySelector('#scene-background').replaceWith(bg);backgroundPath=path;}
   }
-  function leave(){active=false;anchor=null;clearInterval(checkpoint);renderId++;window.removeEventListener('storage',onStorage);window.removeEventListener('resize',onResize);document.removeEventListener('visibilitychange',onVisibility);window.removeEventListener('pagehide',onPageHide);onHome();}
+  function leave(){resultAnimation?.destroy();resultAnimation=null;active=false;anchor=null;clearInterval(checkpoint);renderId++;window.removeEventListener('storage',onStorage);window.removeEventListener('resize',onResize);document.removeEventListener('visibilitychange',onVisibility);window.removeEventListener('pagehide',onPageHide);onHome();}
   async function ready(){
     stop();state.session=null;
     const categories=[...data.dataset.categories].sort((a,b)=>Number(a.id)-Number(b.id));
@@ -68,7 +75,7 @@ export function createPlay({stage,resize,onHome,notify=()=>{},resources:customRe
       return;
     }
     if(state.session.status==='completed'){
-      if(['home','ready'].includes(id)){state.busy=true;schedule(async()=>{try{adopt(await store.dismiss(state.session.stageId,state.saved.revision));if(id==='home')leave();else await ready();}finally{state.busy=false;if(active)await render();}});return;}return;
+      if(['home','ready','again'].includes(id)){const completed=state.session;state.busy=true;resultAnimation?.destroy();resultAnimation=null;schedule(async()=>{try{state.categoryId=completed.categoryId;state.difficulty=completed.difficulty;if(id==='again'){adopt(await store.start(completed.categoryId,completed.difficulty,state.saved.revision));await backdrop();}else{adopt(await store.dismiss(completed.stageId,state.saved.revision));if(id==='home'){leave();return;}await ready();}}finally{state.busy=false;if(active){await render();startClock();}}});return;}return;
     }
     const s=state.session;
     if(id.startsWith('option:')||id.startsWith('tile:')||id.startsWith('undo:')){

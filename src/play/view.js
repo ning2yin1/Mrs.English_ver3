@@ -1,3 +1,4 @@
+import {renderResult} from '../result/view.js';
 import {cardLayer,memberNames} from '../collection/components.js';
 import {summarize} from './scoring.js';
 const fmt=n=>Math.floor(n).toLocaleString('en-US');
@@ -102,17 +103,11 @@ function modal(root,state,act){
   }
   for(const child of [...root.children].filter(n=>n!==wrap))child.inert=true;
 }
-function completed(root,state,act){
-  root.classList.add('is-completed');const r=state.saved.results[state.session.stageId];panel(root,'result-panel',350,150,1144,635);copy(root,'result-title','ステージ完了',420,180,1004,65,44);
-  const items=[['正解数 / 正解率',`${r.correctCount}/10 ・ ${r.accuracy}%`],['基本点',r.basePointsRaw],['速度ボーナス',r.speedPointsRaw],['コンボボーナス',r.comboPointsRaw],['スキル追加点',r.skillPointsRaw],['カードボーナス',r.cardBonusRaw],['最終スコア',fmt(r.finalScoreInteger)],['獲得Rコイン',`${r.rewardCoins} R${r.dailyMultiplier===2?'（デイリー2倍）':''}`]];
-  const grid=rect(el('dl','play-result-grid'),450,260,944,360);root.append(grid);for(const [label,value]of items){grid.append(el('dt','',label),el('dd','',typeof value==='number'?value.toLocaleString('en-US',{maximumFractionDigits:3}):value));}
-  rect(button(root,'ready','READYへ',act,true),450,670,440,80);rect(button(root,'home','ホームへ',act),954,670,440,80);
-}
 export function renderPlay(state,data,act){
+  if(state.session?.status==='completed')return renderResult(state,data,act);
   const root=el('div','me-play-kit collection-root');root.dataset.view=state.session?.status||'ready';root.dataset.difficulty=state.session?.difficulty||state.difficulty;
   header(root,state,data,act);
   if(!state.session)ready(root,state,data,act);
-  else if(state.session.status==='completed')completed(root,state,act);
   else{question(root,state,data,act);footer(root,state,data,act);if(['paused','quitConfirm'].includes(state.session.status))modal(root,state,act);}
   if(state.busy)root.querySelectorAll('button').forEach(n=>n.disabled=true);
   return root;
