@@ -1,0 +1,45 @@
+{
+  "transport": "Local HTTP/1 queue, 6 active requests, 25ms latency + 256KiB/s each, clean browser cache per case",
+  "results": [
+    {
+      "mode": "pre",
+      "nicknameMs": 5590,
+      "backgroundMs": 2377,
+      "requestsDuringSetup": 177,
+      "unrelatedResultImages": 0,
+      "peakConnections": 6
+    },
+    {
+      "mode": "before",
+      "nicknameMs": 5669,
+      "backgroundMs": 2974,
+      "requestsDuringSetup": 177,
+      "unrelatedResultImages": 0,
+      "peakConnections": 6
+    },
+    {
+      "mode": "after",
+      "nicknameMs": 4778,
+      "backgroundMs": 469,
+      "requestsDuringSetup": 151,
+      "unrelatedResultImages": 0,
+      "peakConnections": 6
+    },
+    {
+      "mode": "before",
+      "nicknameMs": 5701,
+      "backgroundMs": 2699,
+      "requestsDuringSetup": 177,
+      "unrelatedResultImages": 0,
+      "peakConnections": 6
+    },
+    {
+      "mode": "after",
+      "nicknameMs": 4899,
+      "backgroundMs": 315,
+      "requestsDuringSetup": 152,
+      "unrelatedResultImages": 0,
+      "peakConnections": 6
+    }
+  ]
+}

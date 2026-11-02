@@ -1,0 +1,17 @@
+[
+  {
+    "screen": "final",
+    "mean_absolute_rgb_error_0_255": 6.371554369620501,
+    "note": "Approved 24527/900 QA sample; countup values vary with capture timing."
+  },
+  {
+    "screen": "countup",
+    "mean_absolute_rgb_error_0_255": 5.9643932169405325,
+    "note": "Approved 24527/900 QA sample; countup values vary with capture timing."
+  },
+  {
+    "screen": "impact",
+    "mean_absolute_rgb_error_0_255": 14.84269091109155,
+    "note": "Approved 24527/900 QA sample; countup values vary with capture timing."
+  }
+]
