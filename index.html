@@ -11,7 +11,7 @@
   <link rel="preload" as="image" href="./assets/photos/top_original.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="./assets/title/title_logo.png" fetchpriority="high">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="./icons/apple-green-0fe09e478194-180.png">
   <link rel="stylesheet" href="./src/style.css">
   <style>
     #loading-ui{position:fixed;inset:0;z-index:1200;display:grid;place-items:center;pointer-events:none;color:white;font:14px/1.5 system-ui,sans-serif}
@@ -35,7 +35,7 @@
   <script>
   (()=>{
     const root=document.getElementById('loading-ui'),error=document.getElementById('loading-error'),retry=document.getElementById('loading-retry');
-    const logo=/* LOADING_LOGO */ null;
+    const logo=/* LOADING_LOGO */ './icons/apple-white.png';
     if(logo){const image=document.getElementById('loading-logo');image.src=logo;image.hidden=false;}
     const active=new Set();let timer,bootTimer,number=0;
     function emit(){window.dispatchEvent(new Event('mrs-loading-change'));}

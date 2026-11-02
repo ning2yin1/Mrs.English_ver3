@@ -31,13 +31,15 @@ for(const background of backgrounds){
   background.thumbnail_file=file;
 }
 await writeFile(`${output}/layouts/external_backgrounds.json`,JSON.stringify(backgrounds));
-// Branding is generated only from the supplied source file, never from a substituted/recreated logo.
-try{
-  await readFile('assets/branding/apple-white-source.png');
-  const branding=await prepareBranding('assets/branding/apple-white-source.png',output);
-  const manifest=JSON.parse(await readFile(`${output}/manifest.webmanifest`,'utf8'));manifest.icons=branding.icons.filter(icon=>!icon.sizes.startsWith('180'));await writeFile(`${output}/manifest.webmanifest`,JSON.stringify(manifest,null,2));
-  let html=await readFile(`${output}/index.html`,'utf8');html=html.replace('/* LOADING_LOGO */ null',JSON.stringify('data:image/png;base64,'+branding.logo.toString('base64'))).replace('./icons/apple-touch-icon.png','./'+branding.icons.find(icon=>icon.sizes==='180x180').src);await writeFile(`${output}/index.html`,html);
-}catch(error){if(error.code!=='ENOENT')throw error;console.warn('Original apple logo file is not available; existing app icons retained.');}
+// The supplied original is required: fail the build rather than silently publishing old branding.
+const branding=await prepareBranding('assets/branding/apple-white-source.png',output);
+const manifest=JSON.parse(await readFile(`${output}/manifest.webmanifest`,'utf8'));
+manifest.icons=branding.icons.filter(icon=>icon.sizes!=='180x180');
+await writeFile(`${output}/manifest.webmanifest`,JSON.stringify(manifest,null,2));
+let html=await readFile(`${output}/index.html`,'utf8');
+html=html.replace(/\/\* LOADING_LOGO \*\/ (?:null|'[^']*'|"[^"]*")/,JSON.stringify('data:image/png;base64,'+branding.logo.toString('base64')))
+  .replace(/(<link rel="apple-touch-icon" href=")[^"]*(")/,'$1./'+branding.icons.find(icon=>icon.sizes==='180x180').src+'$2');
+await writeFile(`${output}/index.html`,html);
 if(inventoryDevelopment)await writeFile(`${output}/src/inventory/runtime-config.js`,'export const development = Object.freeze({enabled:true, testCoins:10000});\n');
 async function walk(dir) {
   const out = [];
