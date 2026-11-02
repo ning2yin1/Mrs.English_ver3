@@ -48,9 +48,11 @@ export function createLayout(safe, stage) {
 }
 export async function prepareBackground(file) {
   if (!file) return null;
+  const existing=document.querySelector('#scene-background');
+  if(existing?.src===new URL(file,location.href).href&&existing.complete&&existing.naturalWidth)return existing;
   const image = new Image();
   image.id = 'scene-background'; image.alt = ''; image.setAttribute('aria-hidden', 'true');
-  image.draggable = false; image.src = file;
-  await image.decode();
-  return image;
+  image.draggable = false;image.fetchPriority='high'; image.src = file;
+  const loading=window.mrsLoading,id=loading?.begin();let deadline;
+  try{await Promise.race([image.decode(),new Promise((_,reject)=>deadline=setTimeout(()=>reject(new Error('背景画像を読み込めませんでした。接続を確認してください。')),30000))]);return image;}finally{clearTimeout(deadline);if(loading)loading.end(id);}
 }

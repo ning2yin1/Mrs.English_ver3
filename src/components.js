@@ -1,5 +1,6 @@
 const SVG = 'http://www.w3.org/2000/svg';
 const fontCache = new Map();
+let fontNumber=0;
 export const boxStyle = e => ({ left: `${e.x}px`, top: `${e.y}px`, width: `${e.width}px`, height: `${e.height}px`, zIndex: String(e.z ?? 100) });
 export function position(node, e) { Object.assign(node.style, boxStyle(e)); return node; }
 export function picture(e, base = '') {
@@ -10,8 +11,8 @@ export function picture(e, base = '') {
 }
 export async function fontFor(file) {
   if (!fontCache.has(file)) {
-    const family = `mrs${fontCache.size}`;
-    const ready = new FontFace(family, `url("${file}")`).load().then(font => { document.fonts.add(font); return family; });
+    const family = `mrs${fontNumber++}`;
+    const ready = new FontFace(family, `url("${file}")`).load().then(font => { document.fonts.add(font); return family; }).catch(error=>{fontCache.delete(file);throw error;});
     fontCache.set(file, ready);
   }
   return fontCache.get(file);

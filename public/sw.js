@@ -2,7 +2,13 @@ const CACHE = 'mrs-english-v3-phase1-v1';
 const RELEASE_ID = CACHE.slice('mrs-english-v3-'.length);
 const versionURL = new URL('./version.json', self.registration.scope).href;
 let preparing;
-async function fillCache() {
+const foreground=new Map(),backgroundRequests=new Set(),quietWaiters=new Set();let quietAfter=Date.now()+750;
+function isForegroundBusy(){const now=Date.now();for(const [id,state]of foreground)if(state.expires<=now)foreground.delete(id);return [...foreground.values()].some(state=>state.busy);}
+async function waitForQuiet(){
+  while(isForegroundBusy()||Date.now()<quietAfter)await new Promise(resolve=>{let timer;const wake=()=>{clearTimeout(timer);quietWaiters.delete(wake);resolve();};quietWaiters.add(wake);timer=setTimeout(wake,isForegroundBusy()?1000:Math.max(1,quietAfter-Date.now()));});
+}
+
+async function fillCache({background=false}={}) {
   const getVersion=async()=>{const r=await fetch(versionURL,{cache:'no-store'});if(!r.ok||(await r.json()).id!==RELEASE_ID)throw new Error('公開版が変更されました。もう一度更新を確認してください。');};
   await getVersion();
   const response=await fetch('./precache.json',{cache:'no-store'});
@@ -15,9 +21,17 @@ async function fillCache() {
     while(next<paths.length){
       const url=new URL(paths[next++],self.registration.scope);
       if(url.origin!==self.location.origin||!url.href.startsWith(self.registration.scope))throw new Error('更新ファイルの場所が不正です。');
-      const request=new Request(url,{cache:'no-store',priority:'low'}),result=await fetch(request);
-      if(!result.ok)throw new Error('更新ファイルを取得できませんでした。接続を確認して再試行してください。');
-      await cache.put(request,result);
+      // Foreground navigation can cancel and later retry only these optional background transfers.
+      while(true){
+        if(background)await waitForQuiet();
+        const controller=new AbortController();if(background)backgroundRequests.add(controller);
+        try{
+          const request=new Request(url,{cache:background?'no-cache':'no-store',priority:'low',signal:controller.signal}),result=await fetch(request);
+          if(!result.ok)throw new Error('更新ファイルを取得できませんでした。接続を確認して再試行してください。');
+          await cache.put(request,result);break;
+        }catch(error){if(!background||!controller.signal.aborted)throw error;}
+        finally{backgroundRequests.delete(controller);}
+      }
     }
   }
   // Always settle both download queues before reporting failure or retrying.
@@ -41,11 +55,16 @@ self.addEventListener('install',event=>{
     if(active&&await supportsManualUpdates(active))return;
     // One-time migration: the legacy worker/app has no update UI or message protocol.
     // Bootstrap that UI using its original complete offline installation behavior.
-    await fillCache();await self.skipWaiting();
+    await fillCache({background:true});await self.skipWaiting();
   })());
 });
 self.addEventListener('message',event=>{
   const reply=value=>event.ports[0]?.postMessage(value);
+  if(event.data?.type==='FOREGROUND_BUSY'){
+    foreground.set(event.source?.id||'app',{busy:event.data.busy===true,expires:Date.now()+15000});quietAfter=Date.now()+750;
+    if(isForegroundBusy())for(const request of backgroundRequests)request.abort();
+    for(const wake of [...quietWaiters])wake();return;
+  }
   if(event.data?.type==='GET_RELEASE'){reply({ok:true,id:RELEASE_ID});return;}
   if(event.data?.type!=='PREPARE_UPDATE')return;
   if(event.data.id!==RELEASE_ID){reply({ok:false,error:'公開版が変更されました。もう一度更新を確認してください。'});return;}

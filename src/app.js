@@ -1,13 +1,10 @@
-import {createMission} from './mission/controller.js';
+import './touch.js';
+import {development} from './inventory/runtime-config.js';
 import {RELEASE} from './release.js';
 import { loadProfile, saveProfile, normalizeName } from './profile.js';
 import { renderScreen, placeholder, backgroundForScreen } from './screens.js';
 import { createLayout, sceneBackground, prepareBackground } from './layout.js';
-import { createCollection } from './collection/controller.js';
-import { createInventory } from './inventory/controller.js';
-import { createShop } from './shop/controller.js';
-import { createPlay } from './play/controller.js';
-import {readWallet,WALLET_KEY} from './inventory/store.js';
+import {readWallet,WALLET_KEY} from './wallet.js';
 import {persistence} from './inventory/persistence.js';
 const stage = document.querySelector('#stage');
 const safe = document.querySelector('#safe-area');
@@ -20,7 +17,8 @@ const state = { nickname: saved?.nickname || 'Nene', memberId:saved?.memberId ||
 let current = 'title';
 let menu, menuLoading, settingsRoot, settingsStore, editing;
 function removeSettings() { settingsRoot?.remove(); settingsRoot=null; document.querySelector('.settings-editor-note')?.remove(); }
-async function openSettings() {
+async function openSettings(){try{return await loading.run(()=>paintSettings(),()=>openSettings());}catch(error){message(error.message);}}
+async function paintSettings() {
   menu?.close(false); removeSettings(); current='settings'; const version=++renderVersion;
   try {
     const [{renderSettings},{createSettingsStore},{loadStyle}]=await Promise.all([import('./settings/view.js'),import('./settings/store.js'),import('./menu.js')]);
@@ -40,19 +38,37 @@ async function toggleMenu() {
   } catch(error){message(error.message);}
 }
 let renderVersion = 0;
-let layouts, backgrounds, homeBounds;
+let layouts={}, backgrounds=[], homeBounds;
+const loading=window.mrsLoading||{run:task=>task(),finishBoot(){},fail(){}};
+const resourceCache=new Map();
+async function json(path){if(!resourceCache.has(path)){const pending=fetch(path,{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw new Error('画面データを読み込めませんでした。接続を確認して再試行してください。');return response.json();}).catch(error=>{resourceCache.delete(path);throw error;});resourceCache.set(path,pending);}return resourceCache.get(path);}
+async function screenData(screen){
+  if(screen.startsWith('placeholder/'))return;
+  const tasks=[json(screen==='home'?'home_approved/spec/home_layout.json':`layouts/${screen}.json`).then(layout=>layouts[screen]=layout)];
+  if(['member','background','home'].includes(screen))tasks.push(json('layouts/external_backgrounds.json').then(data=>backgrounds=data));
+  if(screen==='home')tasks.push(json('src/home-font-bounds.json').then(data=>homeBounds=data));
+  await Promise.all(tasks);
+}
 const { resize } = createLayout(safe, stage);
-const collection = createCollection({stage,resize,onHome:()=>show('home'),notify:message});
-const inventory = createInventory({stage,resize,onHome:()=>show('home'),notify:message});
-const shop = createShop({stage,resize,onHome:()=>show('home'),onInventory:()=>inventory.open(),notify:message});
-const play = createPlay({stage,resize,onHome:()=>show('home'),notify:message});
-const mission = createMission({onHome:()=>show('home'),notify:message,enabled:()=>!!saved});
+const services=new Map();
+async function service(name){
+  if(!services.has(name))services.set(name,import(`./${name}/controller.js`).then(module=>module[{collection:'createCollection',inventory:'createInventory',shop:'createShop',play:'createPlay',mission:'createMission'}[name]]({stage,resize,onHome:()=>show('home'),onInventory:()=>openFeature('inventory'),notify:message,enabled:()=>!!saved})).catch(error=>{services.delete(name);throw error;}));
+  return services.get(name);
+}
+const mission={close(){services.get('mission')?.then(instance=>instance.close()).catch(()=>{});},refresh(){return service('mission').then(instance=>instance.refresh());}};
+let opening=false;
+async function openFeature(name){
+  if(opening)return;opening=true;
+  try{await loading.run(async()=>{const instance=await service(name);await instance.open();},()=>openFeature(name));}catch(error){message(error.message);}finally{opening=false;}
+}
 
-async function show(screen) {
+async function show(screen){try{return await loading.run(()=>paintScreen(screen),()=>show(screen));}catch(error){message(error.message);return false;}}
+async function paintScreen(screen) {
   menu?.close(false); removeSettings();mission.close();
   current = screen;
   const version = ++renderVersion;
   if (!persistentWarning) message('');
+  await screenData(screen);
   const isPlaceholder = screen.startsWith('placeholder/');
   let wallet;
   if(screen==='home')try{wallet=await persistence().read(storage=>readWallet(storage));}catch(error){if(!persistentWarning)message(error.message);wallet={rCoin:null,diamonds:null};}
@@ -64,6 +80,9 @@ async function show(screen) {
     prepareBackground(backgroundFile),
   ]);
   if (version !== renderVersion) return;
+  let imageDeadline;
+  try{await Promise.race([Promise.all([...fragment.querySelectorAll('img')].map(image=>image.decode())),new Promise((_,reject)=>imageDeadline=setTimeout(()=>reject(new Error('画面素材を読み込めませんでした。再試行してください。')),20000))]);}finally{clearTimeout(imageDeadline);}
+  if(version!==renderVersion)return;
   const previousBackground = document.querySelector('#scene-background');
   if (background) previousBackground.replaceWith(background);
   else { previousBackground.hidden = true; previousBackground.removeAttribute('src'); }
@@ -109,24 +128,19 @@ function tap(target) {
   else if (current === 'home') {
     if(target.id==='menu'){toggleMenu();return;}
     menu?.close(false);
-    if(target.id==='mission'){current='mission';mission.open().finally(()=>{if(stage.dataset.screen==='home')current='home';});return;}
-    if (target.route === 'placeholder/collection') collection.open();
-    else if (target.route === 'placeholder/inventory') inventory.open();
-    else if (target.route === 'placeholder/shop') shop.open();
-    else if (target.route === 'placeholder/ready') play.open();
+    if(target.id==='mission'){current='mission';openFeature('mission').finally(()=>{if(stage.dataset.screen==='home')current='home';});return;}
+    if (target.route === 'placeholder/collection') openFeature('collection');
+    else if (target.route === 'placeholder/inventory') openFeature('inventory');
+    else if (target.route === 'placeholder/shop') openFeature('shop');
+    else if (target.route === 'placeholder/ready') openFeature('play');
     else show(target.route);
   }
 }
 try {
-  const json = async path => { const response = await fetch(path); if (!response.ok) throw new Error(path); return response.json(); };
-  const screens = ['title','nickname','member','background','home'];
-  const data = await Promise.all(screens.map(s => json(s === 'home' ? 'home_approved/spec/home_layout.json' : `layouts/${s}.json`)));
-  layouts = Object.fromEntries(screens.map((s, i) => [s, data[i]]));
-  [backgrounds, homeBounds] = await Promise.all([json('layouts/external_backgrounds.json'), json('src/home-font-bounds.json')]);
-  try { await inventory.initializeDevelopment(); } catch (error) { message(error.message); }
+  if(development.enabled){try{await(await service('inventory')).initializeDevelopment();}catch(error){message(error.message);}}
   await show('title');
-  if(saved)mission.refresh();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
+  if(saved)mission.refresh().catch(error=>message(error.message));
+  import('./offline.js').then(({registerOffline})=>registerOffline()).catch(()=>{});
 } catch (error) {
-  message('画面素材を読み込めませんでした。接続を確認して再読み込みしてください。'); console.error(error);
-}
+  loading.fail(new Error('画面素材を読み込めませんでした。接続を確認して再試行してください。'));console.error(error);
+} finally {loading.finishBoot();}

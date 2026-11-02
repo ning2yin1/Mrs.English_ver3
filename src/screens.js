@@ -1,4 +1,4 @@
-import { picture, label, hit, nineSlice, position } from './components.js';
+import { picture, label, hit, nineSlice, position, fontFor } from './components.js';
 import { MEMBERS, normalizeName } from './profile.js';
 import { isSceneBackground } from './layout.js';
 import { renderHomeHud } from './home-hud.js';
@@ -13,6 +13,17 @@ export function backgroundForScreen(screen, state, backgrounds) {
 }
 
 export async function renderScreen(screen, layout, state, actions, backgrounds, homeBounds) {
+  const assetBase=screen==='home'?'home_approved/':'';
+  const fonts=[...new Set(layout.elements.filter(e=>e.kind==='text').map(e=>assetBase+e.font_file))].map(fontFor);
+  // Launch visible artwork and fonts together, rather than serializing each label's network request.
+  for(const e of layout.elements){
+    if(!e.file||isSceneBackground(e))continue;
+    let file=assetBase+e.file;
+    if(screen==='background'&&e.id.startsWith('background_tile_')){const b=backgrounds[Number(e.id.slice(-2))-1];file=b.thumbnail_file||'backgrounds/'+b.source_file;}
+    if(screen==='background'&&e.id==='background_selected_preview')file='backgrounds/'+backgrounds.find(b=>b.id===state.backgroundId).source_file;
+    const image=new Image();image.src=file;
+  }
+  await Promise.all(fonts);
   if (screen === 'home') return renderHomeHud(layout,state,actions.tap,homeBounds);
   const fragment = document.createDocumentFragment();
   const base = screen === 'home' ? 'home_approved/' : '';
@@ -47,7 +58,7 @@ export async function renderScreen(screen, layout, state, actions, backgrounds, 
         continue;
       }
       if (e.id === 'background_check') { e.x = tile.x + tile.width - 41; e.y = tile.y - 6; }
-      if (e.id.startsWith('background_tile_')) e.file = 'backgrounds/' + backgrounds[Number(e.id.slice(-2)) - 1].source_file;
+      if (e.id.startsWith('background_tile_')) {const b=backgrounds[Number(e.id.slice(-2))-1];e.file=b.thumbnail_file||'backgrounds/'+b.source_file;}
       if (e.id === 'background_selected_preview') e.file = 'backgrounds/' + selectedBackground.source_file;
       if (e.id === 'preview_index' && state.backgroundId !== 'bg-01') {
         fragment.append(dynamicText(e, `${state.backgroundId.slice(3)} / 22`, 31)); continue;

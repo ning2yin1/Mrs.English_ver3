@@ -13,6 +13,7 @@
     "test": "node tests/browser.mjs",
     "test:mission-timing": "node tests/mission-notification-timing.mjs",
     "test:mission": "node tests/mission-store.mjs && node tests/mission-browser.mjs",
+    "test:startup": "node tests/startup-loading.mjs",
     "test:settings": "node tests/menu-settings.mjs",
     "test:layout": "node tests/layout.mjs",
     "test:home": "node tests/home-hud.mjs",
@@ -26,5 +27,8 @@
     "test:result-layout": "node tests/result-impact-layout.mjs",
     "test:result": "node tests/result-model.mjs && node tests/result-browser.mjs"
   },
-  "devDependencies": { "playwright": "1.56.1" }
+  "devDependencies": {
+    "playwright": "1.56.1",
+    "sharp": "0.34.5"
+  }
 }

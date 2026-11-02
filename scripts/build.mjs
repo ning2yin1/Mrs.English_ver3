@@ -1,3 +1,5 @@
+import sharp from 'sharp';
+import {prepareBranding} from './prepare-branding.mjs';
 import { cp, mkdir, readdir, writeFile, readFile, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 const inventoryDevelopment=process.argv.includes('--inventory-development');
@@ -12,6 +14,30 @@ for(const file of ['mission_coin.png','mission_diamond.png','mission_back.png'])
 await cp('specs/play', `${output}/specs/play`, { recursive: true });
 for (const file of ['assets', 'spec']) await cp(`home_approved/${file}`, `${output}/home_approved/${file}`, { recursive: true });
 await cp('public', output, { recursive: true });
+// Lossless encoding of the existing title artwork; retain the original file in the checkout/output.
+await mkdir(`${output}/assets/startup`,{recursive:true});
+const titleLogo=await sharp('assets/title/title_logo.png').webp({lossless:true,effort:4}).toBuffer();
+if(titleLogo.length<(await readFile('assets/title/title_logo.png')).length){
+  await writeFile(`${output}/assets/startup/title-logo.webp`,titleLogo);
+  const title=JSON.parse(await readFile(`${output}/layouts/title.json`,'utf8'));title.elements.find(e=>e.id==='title_logo').file='assets/startup/title-logo.webp';await writeFile(`${output}/layouts/title.json`,JSON.stringify(title));
+  await writeFile(`${output}/index.html`,(await readFile(`${output}/index.html`,'utf8')).replace('./assets/title/title_logo.png','./assets/startup/title-logo.webp'));
+}
+// Thumbnail derivatives reduce the 22-tile selector payload; full originals remain untouched.
+const backgrounds=JSON.parse(await readFile('layouts/external_backgrounds.json','utf8'));
+await mkdir(`${output}/thumbnails`,{recursive:true});
+for(const background of backgrounds){
+  const file=`thumbnails/${background.id}.jpg`;
+  await sharp(`public/backgrounds/${background.source_file}`).resize({width:320,height:224,fit:'inside',withoutEnlargement:true}).jpeg({quality:88,mozjpeg:true}).toFile(`${output}/${file}`);
+  background.thumbnail_file=file;
+}
+await writeFile(`${output}/layouts/external_backgrounds.json`,JSON.stringify(backgrounds));
+// Branding is generated only from the supplied source file, never from a substituted/recreated logo.
+try{
+  await readFile('assets/branding/apple-white-source.png');
+  const branding=await prepareBranding('assets/branding/apple-white-source.png',output);
+  const manifest=JSON.parse(await readFile(`${output}/manifest.webmanifest`,'utf8'));manifest.icons=branding.icons.filter(icon=>!icon.sizes.startsWith('180'));await writeFile(`${output}/manifest.webmanifest`,JSON.stringify(manifest,null,2));
+  let html=await readFile(`${output}/index.html`,'utf8');html=html.replace('/* LOADING_LOGO */ null',JSON.stringify('data:image/png;base64,'+branding.logo.toString('base64'))).replace('./icons/apple-touch-icon.png','./'+branding.icons.find(icon=>icon.sizes==='180x180').src);await writeFile(`${output}/index.html`,html);
+}catch(error){if(error.code!=='ENOENT')throw error;console.warn('Original apple logo file is not available; existing app icons retained.');}
 if(inventoryDevelopment)await writeFile(`${output}/src/inventory/runtime-config.js`,'export const development = Object.freeze({enabled:true, testCoins:10000});\n');
 async function walk(dir) {
   const out = [];
