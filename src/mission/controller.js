@@ -20,7 +20,21 @@ export function createMission({onHome,notify=()=>{},enabled=()=>true}) {
     try{return await refreshing;}finally{refreshing=null;}
   }
   function close(){generation++;root?.remove();root=null;}
-  let toast,toastReady,pumping=false,current=null,timer,remaining=0,due=0,phase='hidden';
+  let toast,toastReady,pumping=false,pumpAgain=false,current=null,timer,remaining=0,due=0,phase='hidden',suspended=false;
+  function canPresent(){
+    const screen=document.querySelector('#stage').dataset.screen||'';
+    return !document.hidden&&(!screen.startsWith('play_')||['play_ready','play_completed'].includes(screen));
+  }
+  function syncPresentation(){
+    // A claimed notification is not resumable until its asynchronous visual setup finishes.
+    if(current&&pumping)return;
+    if(!canPresent()){
+      if(current&&!suspended){clearTimeout(timer);if(due)remaining=Math.max(0,due-performance.now());suspended=true;if(toast)toast.hidden=true;}
+      return;
+    }
+    if(current&&suspended){suspended=false;toast.hidden=phase==='hidden';toast.dataset.phase=phase;placeToast();arm(remaining);}
+    else if(!current){if(pumping)pumpAgain=true;else pump();}
+  }
   async function ensureToast(){
     toastReady ||= (async()=>{await loadStyle('./mission/notification.css');const {CHECK}=await import('./view.js');toast=document.createElement('div');toast.className='me-mission-toast';toast.hidden=true;toast.dataset.phase='hidden';toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');toast.setAttribute('aria-atomic','true');toast.innerHTML=CHECK+'<strong class="me-mission-toast__title">ミッション達成！</strong><span class="me-mission-toast__divider"></span><span class="me-mission-toast__name"></span><span class="me-mission-toast__divider"></span><span class="me-mission-toast__reward"><img alt=""><span></span></span>';toast.firstChild.classList.add('me-mission-toast__check');document.body.append(toast);})();
     try{await toastReady;}catch(error){toastReady=null;throw error;}
@@ -35,32 +49,32 @@ export function createMission({onHome,notify=()=>{},enabled=()=>true}) {
     const bottom=rect?Math.min(rect.bottom,safe.top+Math.max(44,safe.height*.2)):safe.top;
     toast.style.setProperty('--header-bottom',`${bottom}px`);toast.style.left=`${(left+right)/2}px`;toast.style.maxWidth=`${Math.max(0,right-left-24)}px`;toast.style.minWidth=`${Math.min(800*Math.min(1,Math.max(.65,innerWidth/1536)),Math.max(0,right-left-24))}px`;
   }
-  function arm(ms){remaining=ms;clearTimeout(timer);if(document.hidden)return;due=performance.now()+ms;timer=setTimeout(advance,ms);}
+  function arm(ms){remaining=ms;clearTimeout(timer);if(!canPresent()){due=0;suspended=true;if(toast)toast.hidden=true;return;}suspended=false;due=performance.now()+ms;timer=setTimeout(advance,ms);}
   function advance(){
-    if(document.hidden)return;
+    if(!canPresent()){syncPresentation();return;}
     if(phase==='enter'){phase='hold';toast.dataset.phase=phase;arm(3000);}
     else if(phase==='hold'){phase='exit';toast.dataset.phase=phase;arm(220);}
     else if(phase==='exit'){phase='hidden';toast.dataset.phase=phase;toast.hidden=true;arm(100);}
     else{current=null;pump();}
   }
   async function pump(){
-    if(!enabled()||pumping||current||document.hidden)return;pumping=true;
+    if(!enabled()||pumping||current||!canPresent())return;pumping=true;
     try{
       // Only create/read visual resources when a committed notification actually exists.
       const pending=await store.refresh();if(!pending.data.outbox.some(n=>n.status==='pending'))return;
-      await ensureToast();current=await store.nextNotification();if(!current)return;
+      await ensureToast();current=await store.nextNotification(canPresent);if(!current)return;
       const {ASSETS}=await import('./assets.js'),diamond=current.currency==='diamond',reward=`＋${current.amount.toLocaleString('en-US')}${diamond?'':' R'}`;
       toast.querySelector('.me-mission-toast__name').textContent=current.name;toast.querySelector('.me-mission-toast__reward img').src=ASSETS[`assets/mission/icons/mission_${diamond?'diamond':'coin'}.png`];toast.querySelector('.me-mission-toast__reward span').textContent=reward;toast.setAttribute('aria-label',`ミッション達成！ ${current.name} ${diamond?'ダイヤ':'Rコイン'} ${current.amount}`);
       phase='enter';toast.hidden=false;toast.dataset.phase='hidden';placeToast();toast.getBoundingClientRect();toast.dataset.phase=phase;arm(180);
-    }catch(error){report(error);current=null;}finally{pumping=false;}
+    }catch(error){report(error);current=null;}finally{pumping=false;if(pumpAgain){pumpAgain=false;if(!current&&canPresent())pump();}}
   }
-  function changed(){if(root)refresh();else pump();}
+  function changed(){if(pumping)pumpAgain=true;if(root)refresh();else pump();}
   window.addEventListener('mrs-progress-change',changed);
   window.addEventListener('storage',event=>{if(event.key===null||event.key==='mrsEnglishV3.missions.v1')changed();});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){clearTimeout(timer);if(current)remaining=Math.max(0,due-performance.now());}else{if(current)arm(remaining);refresh();}});
+  document.addEventListener('visibilitychange',()=>{syncPresentation();if(!document.hidden)refresh();});
   window.addEventListener('focus',()=>refresh());
   window.addEventListener('resize',()=>{fit();placeToast();});visualViewport?.addEventListener('resize',placeToast);visualViewport?.addEventListener('scroll',placeToast);
-  const observer=new MutationObserver(()=>{if(current)requestAnimationFrame(placeToast);});observer.observe(document.querySelector('#stage'),{childList:true});observer.observe(document.body,{attributes:true,attributeFilter:['data-screen']});
+  const observer=new MutationObserver(()=>{syncPresentation();if(current)requestAnimationFrame(placeToast);});observer.observe(document.querySelector('#stage'),{childList:true,attributes:true,attributeFilter:['data-screen']});observer.observe(document.body,{attributes:true,attributeFilter:['data-screen']});
   new ResizeObserver(()=>{fit();placeToast();}).observe(document.querySelector('#safe-area'));
   return {refresh,close,async open(){
     const version=++generation;

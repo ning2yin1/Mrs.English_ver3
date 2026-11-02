@@ -11,6 +11,7 @@
     "preview:inventory-dev": "node scripts/serve.mjs dist-development",
     "preview": "node scripts/serve.mjs dist",
     "test": "node tests/browser.mjs",
+    "test:mission-timing": "node tests/mission-notification-timing.mjs",
     "test:mission": "node tests/mission-store.mjs && node tests/mission-browser.mjs",
     "test:settings": "node tests/menu-settings.mjs",
     "test:layout": "node tests/layout.mjs",

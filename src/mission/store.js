@@ -7,7 +7,7 @@ export function createMissionStore({storageProvider=()=>localStorage,locks=globa
   function snapshot(storage){const data=readMissions(storage),at=now();ensurePeriods(data,at);return {data,at,daily:missionRows(data,'daily',at),weekly:missionRows(data,'weekly',at)};}
   return {
     refresh:()=>db.run(storage=>{const result=snapshot(storage),values={[MISSION_KEY]:JSON.stringify(result.data)},raw=storage.getItem(WALLET_KEY);if(raw!==null){const wallet=readWallet(storage);if(JSON.parse(raw).diamonds===undefined)values[WALLET_KEY]=JSON.stringify(wallet);}db.commitDurable(storage,values);return result;}),
-    nextNotification:()=>db.run(storage=>{const data=readMissions(storage),next=data.outbox.find(n=>n.status==='pending');if(!next)return null;next.status='started';db.commitDurable(storage,{[MISSION_KEY]:JSON.stringify(data)});return {...next};}),
+    nextNotification:(canStart=()=>true)=>db.run(storage=>{if(!canStart())return null;const data=readMissions(storage),next=data.outbox.find(n=>n.status==='pending');if(!next)return null;next.status='started';db.commitDurable(storage,{[MISSION_KEY]:JSON.stringify(data)});return {...next};}),
     // Prepared for a future approved Shop/currency confirmation UI. No new screen is invented.
     exchange(operationId){return db.run(storage=>{
       if(typeof operationId!=='string'||!operationId)throw new Error('交換操作IDが必要です。');

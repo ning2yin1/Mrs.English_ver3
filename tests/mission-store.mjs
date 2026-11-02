@@ -20,6 +20,7 @@ for(let i=0;i<15;i++)await f.event({id:`c:${i}`,type:'clear',grammarId:String(i%
 for(let i=0;i<3;i++)await f.event({id:`u:${i}`,type:'upgrade'});
 let state=await f.store.refresh();assert.ok([...state.daily,...state.weekly].every(m=>m.state==='completed'));assert.equal(state.data.outbox.length,12);assert.deepEqual(JSON.parse(f.values.get(WALLET_KEY)),{version:1,rCoin:8500,diamonds:32,legacy:'keep'});
 const all=f.values.get(WALLET_KEY);await f.event({id:'c:0',type:'clear',grammarId:'99',difficulty:'EASY',total:10,correctCount:0});assert.equal(f.values.get(WALLET_KEY),all);
+let releaseClaim,allowed=true;const held=f.locks.request('test',()=>new Promise(resolve=>releaseClaim=resolve));await Promise.resolve();const guarded=f.store.nextNotification(()=>allowed);allowed=false;releaseClaim();await held;assert.equal(await guarded,null);assert.ok(readMissions(f.storage).outbox.every(n=>n.status==='pending'));
 const pending=[];for(let i=0;i<12;i++)pending.push((await f.store.nextNotification()).id);assert.equal(new Set(pending).size,12);assert.equal(await f.store.nextNotification(),null);assert.equal(f.values.get(WALLET_KEY),all);
 // JST midnight/Monday and actual streak crossing the boundary; same ID stays in its old period.
 assert.deepEqual(periodKeys('2026-11-01T14:59:59Z'),{daily:'2026-11-01',weekly:'2026-10-26'});assert.deepEqual(periodKeys('2026-11-01T15:00:00Z'),{daily:'2026-11-02',weekly:'2026-11-02'});
