@@ -1,3 +1,4 @@
+import {planMissionEvent} from '../mission/engine.js';
 import {persistence} from '../inventory/persistence.js';
 import {createInventoryStore,WALLET_KEY} from '../inventory/store.js';
 import {power,totalPower} from '../inventory/model.js';
@@ -12,7 +13,12 @@ export function createPlayStore({dataset,datasetHash,backgrounds,config,catalog,
     if(data?.version!==1||!Number.isSafeInteger(data.revision)||data.revision<0||['results','daily','records'].some(k=>!data[k]||typeof data[k]!=='object'||Array.isArray(data[k])))throw new Error('プレイの保存内容を確認してください。元データを保持しています。');
     return {raw,data};
   }
-  function save(storage,state){state.data.revision++;db.commit(storage,{[PLAY_KEY]:JSON.stringify(state.data)},{[PLAY_KEY]:state.raw});return structuredClone(state.data);}
+  function save(storage,state,event){
+    state.data.revision++;const values={[PLAY_KEY]:JSON.stringify(state.data)},expected={[PLAY_KEY]:state.raw};
+    if(event){const mission=planMissionEvent(storage,event);db.commitDurable(storage,{...values,...mission.values},{...expected,...mission.expected});}
+    else db.commit(storage,values,expected);
+    return structuredClone(state.data);
+  }
   function session(state,id,revision){const s=state.data.session;if(!s||s.stageId!==id||state.data.revision!==revision)throw new Error('別のタブでプレイが更新されました。保存内容を再読み込みしてください。');return s;}
   function verify(s){if(!s||s.datasetHash===datasetHash)return;if(!s.questionSources?.every((q,i)=>JSON.stringify(dataset.categories.find(c=>c.id===s.categoryId)?.questions.find(x=>x.id===s.questionIds[i]))===q))throw new Error('途中の問題データが更新されています。このステージは再開できません。途中終了で戻ってください。');}
   const api={
@@ -55,7 +61,7 @@ export function createPlayStore({dataset,datasetHash,backgrounds,config,catalog,
         const answer={questionId:q.id,...scoreAnswer({correct:isCorrect(q,s.difficulty,input),elapsedActiveMs:input.elapsedActiveMs,combo:s.combo,supportRemaining:s.supportRemaining,skills:s.skills,difficulty:s.difficulty,config}),resolvedSkillSnapshot:s.skills};
         s.answers.push(answer);s.combo=answer.comboAfter;s.supportRemaining=answer.supportRemaining;s.status='feedback';
       }
-      s.updatedAt=now();return save(storage,state);
+      s.updatedAt=now();return save(storage,state,action==='answer'?{id:`answer:${s.stageId}:${s.index}`,type:'answer',stageId:s.stageId,index:s.index,correct:s.answers.at(-1).correct,at:s.updatedAt}:undefined);
     });},
     settle(id,revision){return db.run(storage=>{
       const state=read(storage);if(state.data.results[id])return structuredClone(state.data);
@@ -71,7 +77,8 @@ export function createPlayStore({dataset,datasetHash,backgrounds,config,catalog,
       state.data.records[recordKey]={...previous,completionCount:(previous?.completionCount??0)+1,lastStageId:id};
       if(previous?.bestScore===undefined||result.finalScoreInteger>previous.bestScore)state.data.records[recordKey].bestScore=result.finalScoreInteger;
       s.status='completed';state.data.revision++;snapshot.wallet.rCoin+=rewardCoins;
-      db.commitDurable(storage,{[PLAY_KEY]:JSON.stringify(state.data),[WALLET_KEY]:JSON.stringify(snapshot.wallet)},{[PLAY_KEY]:state.raw,[WALLET_KEY]:snapshot.raw[WALLET_KEY]});
+      const mission=planMissionEvent(storage,{id:`clear:${id}`,type:'clear',at:completedAt,grammarId:s.categoryId,difficulty:s.difficulty,total:10,correctCount:s.answers.filter(answer=>answer.correct).length},snapshot.wallet);
+      db.commitDurable(storage,{[PLAY_KEY]:JSON.stringify(state.data),...mission.values},{[PLAY_KEY]:state.raw,...mission.expected});
       return structuredClone(state.data);
     });},
   };return api;

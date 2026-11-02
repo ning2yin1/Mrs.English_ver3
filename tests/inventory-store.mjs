@@ -26,6 +26,7 @@ await assert.rejects(a.store.saveDeck([first.deck[0],first.deck[0],null]));
 await assert.rejects(a.store.saveDeck(['unknown',null,null]));
 await assert.rejects(a.store.saveDeck(first.deck,0));
 const target=(await a.store.load()).instances.find(i=>i.instanceId===first.deck[0]);assert.equal(target.level,12);assert.equal(cost(target,balance),500);
+a.values.set(WALLET_KEY,JSON.stringify({...first.wallet,diamonds:100}));
 const upgraded=await a.store.upgrade(target.instanceId,12,'test-upgrade-1');
 assert.equal(upgraded.wallet.rCoin,9500);assert.equal(upgraded.instances.find(i=>i.instanceId===target.instanceId).level,13);assert.equal(power(upgraded.instances.find(i=>i.instanceId===target.instanceId)),5350);
 await a.store.upgrade(target.instanceId,12,'test-upgrade-1');assert.equal((await a.store.load()).wallet.rCoin,9500);
@@ -48,11 +49,14 @@ for(const rarity of Object.keys(CAPS)) {
  const data=JSON.parse(f.values.get(INVENTORY_KEY));data.instances[instance.instanceId].level=CAPS[rarity];data.unknownField={keep:true};f.values.set(INVENTORY_KEY,JSON.stringify(data));
  await assert.rejects(f.store.upgrade(instance.instanceId,CAPS[rarity],'cap'));assert.deepEqual((await f.store.load()).data.unknownField,{keep:true});
 }
-const exact=fixture();await exact.store.seedDevelopment(seed,{enabled:true,testCoins:500});let es=await exact.store.load();await exact.store.upgrade(es.deck[0],12,'exact');assert.equal((await exact.store.load()).wallet.rCoin,0);await assert.rejects(exact.store.upgrade(es.deck[0],13,'insufficient'));
+const exact=fixture();await exact.store.seedDevelopment(seed,{enabled:true,testCoins:500});let es=await exact.store.load();exact.values.set(WALLET_KEY,JSON.stringify({...es.wallet,diamonds:5}));await exact.store.upgrade(es.deck[0],12,'exact');assert.equal((await exact.store.load()).wallet.rCoin,0);await assert.rejects(exact.store.upgrade(es.deck[0],13,'insufficient'));
 for(const key of [INVENTORY_KEY,WALLET_KEY,COLLECTION_KEY])for(const raw of ['broken',JSON.stringify({version:99})]){const f=fixture();f.values.set(key,raw);await assert.rejects(f.store.load());assert.equal(f.values.get(key),raw);}
-// Failure after level write rolls back both keys; a retained recovery record repairs interruption.
-const failure=fixture();await failure.store.seedDevelopment(seed,{enabled:true,testCoins:10000});const fs=await failure.store.load(),ib=failure.values.get(INVENTORY_KEY),wb=failure.values.get(WALLET_KEY);
-failure.fault(key=>key===WALLET_KEY);await assert.rejects(failure.store.upgrade(fs.deck[0],12,'failure'));assert.equal(failure.values.get(INVENTORY_KEY),ib);assert.equal(failure.values.get(WALLET_KEY),wb);failure.fault(null);
+// A durable committed upgrade is recovered together with its wallet and mission effects.
+const failure=fixture();await failure.store.seedDevelopment(seed,{enabled:true,testCoins:10000});failure.values.set(WALLET_KEY,JSON.stringify({version:1,rCoin:10000,diamonds:5}));const fs=await failure.store.load(),ib=failure.values.get(INVENTORY_KEY),wb=failure.values.get(WALLET_KEY);
+failure.fault(key=>key===WALLET_KEY);await assert.rejects(failure.store.upgrade(fs.deck[0],12,'failure'));assert.equal(JSON.parse(failure.values.get(JOURNAL_KEY)).phase,'committed');failure.fault(null);
+const committed=await failure.store.load();assert.equal(committed.instances.find(i=>i.instanceId===fs.deck[0]).level,13);assert.equal(committed.wallet.rCoin,9500);assert.equal(committed.wallet.diamonds,0);assert.equal(failure.values.has(JOURNAL_KEY),false);
+// Legacy journals created before Mission remain recoverable too.
+failure.values.set(INVENTORY_KEY,ib);failure.values.set(WALLET_KEY,wb);
 const afterI=JSON.parse(ib);afterI.instances[fs.deck[0]].level=13;const afterW=JSON.stringify({version:1,rCoin:9500});
 failure.values.set(JOURNAL_KEY,JSON.stringify({version:1,changes:[{key:INVENTORY_KEY,before:ib,after:JSON.stringify(afterI)},{key:WALLET_KEY,before:wb,after:afterW}]}));failure.values.set(INVENTORY_KEY,JSON.stringify(afterI));
 const recovered=await failure.store.load();assert.equal(recovered.instances.find(i=>i.instanceId===fs.deck[0]).level,13);assert.equal(recovered.wallet.rCoin,9500);assert.equal(failure.values.has(JOURNAL_KEY),false);

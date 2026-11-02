@@ -1,0 +1,12 @@
+@font-face{font-family:MissionJP;src:url('../../assets/inventory/fonts/noto_sans_jp_450.ttf');font-weight:400 500;font-display:swap}
+@font-face{font-family:MissionJP;src:url('../../assets/inventory/fonts/noto_sans_jp_650.ttf');font-weight:600 700;font-display:swap}
+.me-mission{--me-existing-font:MissionJP,system-ui,sans-serif;position:fixed;inset:0;z-index:4;overflow:hidden;}
+.me-mission__header::after{content:'';position:absolute;left:calc(92 * var(--u));top:calc(12 * var(--u));bottom:calc(12 * var(--u));width:1px;background:#d9d5efb0;pointer-events:none;}
+.me-mission__title{margin-left:calc(10 * var(--u));}
+.me-mission__reward{min-width:0;}.me-mission__list{overflow-x:hidden;}
+.me-mission-toast *{pointer-events:none;}
+@media(max-width:740px){.me-mission__summary{gap:8px}.me-mission__tab{min-width:116px;white-space:nowrap}.me-mission__toolbar{gap:8px}.me-mission__footer{font-size:12px}}
+
+.me-mission__back{padding:8px 10px}.me-mission__back img{transform:translateX(-12px)}
+
+.me-mission__reward-unit{line-height:1.1}.me-mission__text{transform:translateY(calc(-3 * var(--u)))}.me-mission__progress{transform:translateY(calc(-4 * var(--u)))}

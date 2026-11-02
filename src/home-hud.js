@@ -5,10 +5,10 @@ async function coinLabel(original,value,bounds) {
   const family=await fontFor('home_approved/'+original.font_file),ctx=document.createElement('canvas').getContext('2d');
   ctx.font=`${original.font_size}px ${family}`;
   const nativeWidth=Math.max(1,Math.ceil(ctx.measureText(text).width));
-  const width=Math.min(170,nativeWidth*original.height/(bounds[3]-bounds[1]));
+  const width=Math.min(original.id==='diamonds_value'?90:170,nativeWidth*original.height/(bounds[3]-bounds[1]));
   const e={...original,text,x:original.x+original.width-width,width};
   const node=await label(e,'home_approved/',[0,bounds[1],nativeWidth,bounds[3]]);
-  node.setAttribute('preserveAspectRatio','xMaxYMid meet');node.setAttribute('aria-label',`Rコイン ${text}`);
+  node.setAttribute('preserveAspectRatio','xMaxYMid meet');node.setAttribute('aria-label',`${original.id==='diamonds_value'?'ダイヤ':'Rコイン'} ${text}`);
   return {e,node};
 }
 
@@ -31,7 +31,7 @@ export async function renderHomeHud(layout, state, tap, bounds) {
   const elements = new Map(layout.elements.map(e => [e.id,e]));
   const targets = new Map(layout.tap_targets.map(e => [e.id,e]));
   const groups = [];
-  let coin,lastSize;
+  let coin,diamond,lastSize;
   for (const [row, entries] of [['top',top],['bottom',bottom]]) {
     for (const spec of entries) {
       const frame = elements.get(spec.id);
@@ -49,14 +49,14 @@ export async function renderHomeHud(layout, state, tap, bounds) {
           const portrait=new Image();portrait.alt='';portrait.src=`assets/photos/${state.memberId}_portrait.png`;
           Object.assign(portrait.style,{position:'absolute',left:'6%',top:'6%',width:'88%',height:'88%',borderRadius:'50%',objectFit:'cover',objectPosition:'50% 20%'});
           node.append(frame,portrait);
-        } else if(id==='coins_value'){
-          const result=await coinLabel(e,state.rCoin,bounds[id]);e=result.e;node=result.node;
+        } else if(['coins_value','diamonds_value'].includes(id)){
+          const result=await coinLabel(e,id==='coins_value'?state.rCoin:state.diamonds,bounds[id]);e=result.e;node=result.node;
         } else if (id === 'nickname' && state.nickname !== 'Nene') {
           node = document.createElement('span'); node.className = 'layer'; node.dataset.layer = id;
           node.textContent = state.nickname;
           Object.assign(node.style,{font:'30px/1.15 system-ui, sans-serif',color:'#fff',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'});
         } else node = e.kind === 'text' ? await label(e,'home_approved/',bounds[id]) : picture(e,'home_approved/');
-        root.append(node);const entry={e,node};content.push(entry);if(id==='coins_value')coin=entry;
+        root.append(node);const entry={e,node};content.push(entry);if(id==='coins_value')coin=entry;if(id==='diamonds_value')diamond=entry;
       }
       const buttons = spec.targets.map(id => {
         const e = targets.get(id);
@@ -100,10 +100,10 @@ export async function renderHomeHud(layout, state, tap, bounds) {
     }
   };
   let coinVersion=0;
-  root.updateCoins=async value=>{
-    const version=++coinVersion,result=await coinLabel(elements.get('coins_value'),value,bounds.coins_value);
+  root.updateWallet=async wallet=>{
+    const version=++coinVersion,results=await Promise.all(['coins_value','diamonds_value'].map(id=>coinLabel(elements.get(id),id==='coins_value'?wallet.rCoin:wallet.diamonds,bounds[id])));
     if(version!==coinVersion)return;
-    coin.node.replaceWith(result.node);coin.e=result.e;coin.node=result.node;
+    for(const [i,entry]of [coin,diamond].entries()){const result=results[i];entry.node.replaceWith(result.node);entry.e=result.e;entry.node=result.node;}
     if(lastSize)root.resizeHud(...lastSize);
   };
   return root;

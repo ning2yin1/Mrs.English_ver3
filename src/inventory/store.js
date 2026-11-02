@@ -1,8 +1,10 @@
+import {readWallet as wallet,WALLET_KEY,diamondCost} from '../wallet.js';
+import {planMissionEvent} from '../mission/engine.js';
+export {WALLET_KEY};
 import {createOwnershipStore,ownedCards,COLLECTION_KEY} from '../collection/store.js';
 import {persistence} from './persistence.js';
 import {definition,validDeck,cost} from './model.js';
 export const INVENTORY_KEY='mrsEnglishV3.inventory.v1';
-export const WALLET_KEY='mrsEnglishV3.wallet.v1';
 function sidecar(storage){
   const raw=storage.getItem(INVENTORY_KEY);if(raw===null)return {version:1,instances:{},deck:[null,null,null],appliedDevGrants:{}};
   const data=JSON.parse(raw);
@@ -10,11 +12,7 @@ function sidecar(storage){
   if((data.revision!==undefined&&(!Number.isSafeInteger(data.revision)||data.revision<0))||(data.transactions!==undefined&&(!data.transactions||typeof data.transactions!=='object'||Array.isArray(data.transactions)))||Array.isArray(data.appliedDevGrants))throw new Error('保存の管理情報を読み込めません。元データを保持しています。');
   return data;
 }
-function wallet(storage){
-  const raw=storage.getItem(WALLET_KEY);if(raw===null)return {version:1,rCoin:0};
-  const data=JSON.parse(raw);if(data.version!==1||!Number.isSafeInteger(data.rCoin)||data.rCoin<0)throw new Error('Rコインの保存内容を確認してください。');return data;
-}
-export function createInventoryStore({catalog,definitions,balance,storageProvider=()=>localStorage,locks=globalThis.navigator?.locks}) {
+export function createInventoryStore({catalog,definitions,balance,storageProvider=()=>localStorage,locks=globalThis.navigator?.locks,now=()=>new Date().toISOString()}) {
   const db=persistence(storageProvider,locks);
   function snapshot(storage) {
     const raw=Object.fromEntries([COLLECTION_KEY,INVENTORY_KEY,WALLET_KEY].map(key=>[key,storage.getItem(key)]));
@@ -57,10 +55,12 @@ export function createInventoryStore({catalog,definitions,balance,storageProvide
       if(!instance||instance.level!==expectedLevel)throw new Error('カードの状態が更新されました。再度確認してください。');
       if(instance.level>=instance.definition.maxLevel)throw new Error('レベル上限です。');
       const required=cost(instance,balance);if(state.wallet.rCoin<required)throw new Error('Rコインが不足しています。');
-      state.data.instances[instanceId].level++;state.wallet.rCoin-=required;
+      const diamonds=diamondCost(instance.rarity);if(state.wallet.diamonds<diamonds)throw new Error(`ダイヤが不足しています（必要 ${diamonds}個）。`);
+      state.data.instances[instanceId].level++;state.wallet.rCoin-=required;state.wallet.diamonds-=diamonds;
       state.data.revision=(state.data.revision||0)+1;
       state.data.transactions={...state.data.transactions,[operationId]:{instanceId,from:expectedLevel,cost:required}};
-      db.commit(storage,{[INVENTORY_KEY]:JSON.stringify(state.data),[WALLET_KEY]:JSON.stringify(state.wallet)},state.raw);
+      const mission=planMissionEvent(storage,{id:`upgrade:${operationId}`,type:'upgrade',at:now()},state.wallet);
+      db.commitDurable(storage,{[INVENTORY_KEY]:JSON.stringify(state.data),...mission.values},{...state.raw,...mission.expected});
       return snapshot(storage);
     });},
     seedDevelopment(seed,{enabled=false,testCoins=0}={}) {

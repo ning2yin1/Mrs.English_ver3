@@ -1,3 +1,4 @@
+import {diamondCost} from '../wallet.js';
 import {artLayer,textLayer,cardLayer,position,hit,memberNames} from '../collection/components.js';
 import {power,cost,totalPower} from './model.js';
 const UI='assets/inventory/ui/';
@@ -16,8 +17,9 @@ export async function renderInventory(scene,state,actions) {
   const capped=!current||current.level>=maximum;
   const required=current?cost(current,state.balance):0;
   const insufficient=coins<required;
-  const blocked=capped||insufficient||state.busy;
-  const buttonLabel=state.busy?'強化中…':capped?'レベル上限':insufficient?'Rコイン不足':`Rコイン ${fmt(required)}で強化`;
+  const diamonds=state.snapshot.wallet.diamonds,requiredDiamonds=diamondCost(current?.rarity),diamondInsufficient=diamonds<requiredDiamonds;
+  const blocked=capped||insufficient||diamondInsufficient||state.busy;
+  const buttonLabel=state.busy?'強化中…':capped?'レベル上限':insufficient?'Rコイン不足':diamondInsufficient?'ダイヤ不足':requiredDiamonds?`${fmt(required)} R ＋ ${requiredDiamonds}ダイヤで強化`:`Rコイン ${fmt(required)}で強化`;
   const number=id=>Number(id.slice(id.lastIndexOf('_')+1));
   let scroll;
   const values=mode==='main'?{
@@ -75,6 +77,7 @@ export async function renderInventory(scene,state,actions) {
     root.append(button);
   }
   if(mode==='main')slots.forEach((card,i)=>{if(card)root.append(hit({id:`deck_card_${i}`,x:140+276*i,y:217,width:238,height:333},`${memberNames[card.memberId]}を選択`,()=>actions.select(card.instanceId)));});
+  if(mode==='upgrade'&&requiredDiamonds){const note=document.createElement('span');note.className='layer';note.dataset.layer='diamond-cost';note.textContent=`ダイヤ：所持 ${fmt(diamonds)} ／ 必要 ${requiredDiamonds}`;Object.assign(note.style,{left:'1090px',top:'581px',width:'520px',font:'22px system-ui',color:diamondInsufficient?'#ff9da5':'#b3c5ef',textAlign:'right'});root.append(note);}
   if(scroll) {
     const railSpec=scene.layers.find(e=>e.kind==='scrollbar');const rail=position(document.createElement('div'),railSpec);rail.className='inventory-rail';
     const thumb=document.createElement('div');thumb.className='inventory-thumb';rail.append(thumb);root.append(rail);

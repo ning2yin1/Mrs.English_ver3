@@ -31,7 +31,7 @@ export function createShopStore({catalog,products,definitions,balance,storagePro
     const ready=!!validProfile(profile);
     let receipt=null;
     if(data.pendingPurchaseId){receipt=receiptValid(data.receipts[data.pendingPurchaseId],catalog,products);if(!data.appliedPurchaseIds[data.pendingPurchaseId])throw new Error('未完了の購入を先に復旧してください。');}
-    const diamonds=state.wallet.diamonds===undefined?21:state.wallet.diamonds;
+    const diamonds=state.wallet.diamonds;
     if(!Number.isSafeInteger(diamonds)||diamonds<0)throw new Error('ダイヤの表示データが不正です。');
     return {...state,shop:data,profileRaw,ready,diamonds,receipt,welcomeAvailable:ready&&!data.claims[WELCOME_EVENT]};
   }

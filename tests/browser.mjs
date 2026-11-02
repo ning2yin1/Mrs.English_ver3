@@ -51,6 +51,7 @@ try {
   assert.deepEqual(await page.evaluate(key => JSON.parse(localStorage.getItem(key)), key), {version:3,nickname:'Nene',memberId:'motoki',backgroundId:'bg-01',setupComplete:true});
   for (const id of ['player','menu','inventory','collection','mission','shop','ready']) {
     if (id === 'menu') { await click(id); await page.locator('.me-menu-compact[data-state="open"]').waitFor(); await page.keyboard.press('Escape'); await screen('home'); continue; }
+    if (id === 'mission') { await click(id); await page.locator('.me-mission').waitFor(); await page.getByRole('button',{name:'ホームへ戻る',exact:true}).click(); await screen('home'); continue; }
     if (id === 'ready') { await click(id); await screen('play_ready'); await click('back'); await screen('home'); continue; }
     if (id === 'shop') {
       await click(id); await screen('shop_main'); await click('back'); await screen('home'); continue;

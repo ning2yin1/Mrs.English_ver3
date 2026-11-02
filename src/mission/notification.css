@@ -1,0 +1,15 @@
+.me-mission-toast {--toast-u:clamp(.65px,calc(100vw / 1536),1px);--header-bottom:59px;position:fixed;z-index:var(--me-notification-z,1000);left:50%;top:calc(var(--header-bottom) + 14 * var(--toast-u));width:max-content;min-width:min(calc(800 * var(--toast-u)),calc(100vw - 32px));max-width:calc(100vw - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px) - 24px);min-height:calc(46 * var(--toast-u));padding:calc(9 * var(--toast-u)) calc(15 * var(--toast-u));display:flex;align-items:center;justify-content:center;gap:calc(18 * var(--toast-u));border:1px solid rgb(126 150 232 / .80);border-top-color:rgb(202 213 255 / .73);border-radius:5px;background:rgb(24 14 54 / .898);color:#f3f2ff;font-family:var(--me-existing-font,"Noto Sans JP",sans-serif);font-size:clamp(13px,calc(21 * var(--toast-u)),21px);font-variant-numeric:tabular-nums;text-shadow:1px 1px 1px #000914;pointer-events:none;user-select:none;opacity:0;visibility:hidden;transform:translate(-50%,-6px);}
+.me-mission-toast[data-phase="enter"],.me-mission-toast[data-phase="hold"] {opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity 180ms ease-out,transform 180ms ease-out;}
+.me-mission-toast[data-phase="exit"] {visibility:visible;opacity:0;transform:translate(-50%,0);transition:opacity 220ms ease-in;}
+.me-mission-toast__check {flex:none;width:calc(28 * var(--toast-u));height:calc(28 * var(--toast-u));color:#63e8ff;}
+.me-mission-toast__title {color:#63e8ff;font-weight:650;white-space:nowrap;}
+.me-mission-toast__name {min-width:0;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.me-mission-toast__divider {height:calc(22 * var(--toast-u));width:1px;background:rgb(162 157 206 / .43);flex:none;}
+.me-mission-toast__reward {display:flex;align-items:center;gap:calc(14 * var(--toast-u));font-weight:650;color:#ffe89c;white-space:nowrap;flex:none;}
+.me-mission-toast__reward img {width:calc(26 * var(--toast-u));height:calc(26 * var(--toast-u));object-fit:contain;}
+
+.me-mission-toast,.me-mission-toast *{box-sizing:border-box;pointer-events:none;}
+.me-mission-toast[hidden]{display:none;}
+.me-mission-toast{--me-notification-z:150;--me-existing-font:system-ui,sans-serif;}
+@media(max-width:740px){.me-mission-toast{gap:8px}.me-mission-toast__title{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.me-mission-toast[data-phase]{transition:none;transform:translate(-50%,0)}}

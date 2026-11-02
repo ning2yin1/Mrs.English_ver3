@@ -44,7 +44,7 @@ export function createInventory({stage,resize,onHome,notify=()=>{},store:customS
       if(state.busy)return;
       try {
         if(e.id==='back'){
-          if(state.screen==='main'){active=false;generation++;window.removeEventListener('storage',onStorage);onHome();return;}
+          if(state.screen==='main'){active=false;generation++;window.removeEventListener('mrs-progress-change',onProgress);window.removeEventListener('storage',onStorage);onHome();return;}
           state.draft=null;state.screen='main';await refresh();
         }else if(e.id==='edit_deck'){
           await refresh();state.draft=[...state.snapshot.deck];state.expectedRevision=state.snapshot.data.revision||0;state.screen='deck';
@@ -67,6 +67,7 @@ export function createInventory({stage,resize,onHome,notify=()=>{},store:customS
       await safeRender();
     },
   };
+  const onProgress=()=>onStorage({key:'mrsEnglishV3.wallet.v1'});
   async function onStorage(event){if(['mrsEnglishV3.collection.v1','mrsEnglishV3.inventory.v1','mrsEnglishV3.wallet.v1'].includes(event.key)&&!state.busy){try{await refresh();if(state.screen==='deck')notify('別の画面で保存内容が更新されました。確定時に再検証します。');await safeRender();}catch(error){report(error);}}}
   return {
     async initializeDevelopment(){
@@ -79,7 +80,7 @@ export function createInventory({stage,resize,onHome,notify=()=>{},store:customS
       try{
         await initialize();await refresh();const bg=await prepareBackground('assets/collection/background.png');
         document.querySelector('#scene-background').replaceWith(bg);active=true;state.screen='main';state.draft=null;
-        window.removeEventListener('storage',onStorage);window.addEventListener('storage',onStorage);await safeRender();
+        window.removeEventListener('mrs-progress-change',onProgress);window.removeEventListener('storage',onStorage);window.addEventListener('storage',onStorage);window.addEventListener('mrs-progress-change',onProgress);await safeRender();
       }catch(error){console.error(error);report(error);}
     },
   };

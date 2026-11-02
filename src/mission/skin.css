@@ -1,0 +1,78 @@
+/* Mrs. English Ver.3 — scoped visual recipe only. No global TOP overrides.
+   Keep folder relation styles/ -> ../assets/. Rebind URLs to existing assets
+   when identical shared files already exist. DOM contract: docs/LAYOUT_SPEC.md. */
+.me-mission, .me-mission *,.me-mission-toast,.me-mission-toast * { box-sizing:border-box; }
+.me-mission {
+ --safe-l:env(safe-area-inset-left,0px); --safe-r:env(safe-area-inset-right,0px);
+ --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+ --u:min(calc((100vw - var(--safe-l) - var(--safe-r)) / 1536),calc((100dvh - var(--safe-t) - var(--safe-b)) / 710));
+ --cyan:#63e8ff; --gold:#ffe89c; --muted:#b3c5ef; --white:#f3f2ff;
+ --blue:url('../../home_approved/assets/home/button_collection.png');
+ --purple:url('../../home_approved/assets/home/status_menu.png');
+ position:relative; isolation:isolate; width:100%; height:100vh; height:100dvh;
+ padding:calc(var(--safe-t) + 18 * var(--u)) calc(var(--safe-r) + 80 * var(--u)) calc(var(--safe-b) + 18 * var(--u)) calc(var(--safe-l) + 80 * var(--u));
+ display:flex; flex-direction:column; gap:calc(16 * var(--u)); min-height:0;
+ background:#0b1030 url('../../assets/collection/background.png') center/cover no-repeat;
+ color:var(--white); font-family:var(--me-existing-font,"Noto Sans JP",sans-serif);
+ text-shadow:1px 1px 1px #000914; font-variant-numeric:tabular-nums;
+}
+.me-mission__header {
+ position:relative; flex:none; min-height:44px; height:calc(70 * var(--u)); display:flex; align-items:center; gap:calc(24 * var(--u));
+ padding:0 calc(38 * var(--u)); background:url('../../assets/nickname/nickname_header.png') center/100% 100% no-repeat;
+}
+.me-mission__back {width:44px; height:44px; flex:none; padding:10px; border:0; background:transparent; cursor:pointer; color:inherit;}
+.me-mission__back img {height:100%; width:auto; display:block; margin:auto;}
+.me-mission__title {margin:0; font-weight:650; font-size:clamp(21px,calc(32 * var(--u)),32px); white-space:nowrap;}
+.me-mission__subtitle {position:absolute; left:54.5%; transform:translateX(-50%); font-size:clamp(14px,calc(20 * var(--u)),20px);color:var(--muted);white-space:nowrap;}
+.me-mission__automatic {margin-left:auto; font-size:clamp(13px,calc(18 * var(--u)),18px);color:var(--cyan);white-space:nowrap;}
+.me-mission__toolbar {display:flex; align-items:center; justify-content:space-between; gap:12px; flex:none; min-height:44px;height:calc(46 * var(--u));}
+.me-mission__tabs {display:flex; gap:calc(10 * var(--u)); min-width:0;}
+.me-mission__tab {position:relative; isolation:isolate; width:calc(260 * var(--u)); min-width:116px; height:calc(46 * var(--u));min-height:44px; border:0; background:none; color:inherit; font:inherit; font-size:clamp(16px,calc(23 * var(--u)),23px); text-shadow:inherit; cursor:pointer;}
+.me-mission__tab::before,.me-mission__row::before {content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-style:solid;border-color:transparent;border-width:calc(16 * var(--u)) calc(18 * var(--u));border-image:var(--purple) 16 18 16 18 fill stretch;}
+.me-mission__tab[aria-selected="true"]::before {border-width:calc(18 * var(--u)) calc(20 * var(--u)) calc(17 * var(--u));border-image:var(--blue) 18 20 17 20 fill stretch;}
+.me-mission__summary {display:flex;align-items:center;gap:calc(120 * var(--u));font-size:clamp(14px,calc(18 * var(--u)),18px);color:var(--muted);white-space:nowrap;}
+.me-mission__summary strong {font-size:clamp(20px,calc(27 * var(--u)),27px);color:var(--cyan);}
+.me-mission__list {position:relative;isolation:isolate; flex:1;min-height:0; margin:0;padding:calc(12 * var(--u)) calc(16 * var(--u)) calc(18 * var(--u));list-style:none;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;display:flex;flex-direction:column;gap:calc(6 * var(--u));scrollbar-width:thin;scrollbar-color:#63e8ff #171a43;}
+/* The list frame must remain stationary while its rows scroll: put this class
+   on a wrapper, not directly on the scrolling UL. */
+.me-mission__list-frame {position:relative;isolation:isolate;flex:1;min-height:0;display:flex;}
+.me-mission__list-frame::before {content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border:calc(16 * var(--u)) solid transparent;border-image:url('../../assets/collection/ui/list_panel.png') 16 fill stretch;}
+.me-mission__row {position:relative;isolation:isolate;display:grid;grid-template-columns:45% 23.5% 14% 17.5%;align-items:center;gap:0;flex:none;min-height:max(60px,calc(70 * var(--u)));padding:calc(8 * var(--u)) calc(25 * var(--u));}
+.me-mission__row::before {opacity:.30;}
+.me-mission__row[data-state="completed"]::before {opacity:.50;border-width:calc(18 * var(--u)) calc(20 * var(--u)) calc(17 * var(--u));border-image:var(--blue) 18 20 17 20 fill stretch;}
+.me-mission__row[data-bonus="true"] {outline:1px solid rgb(222 205 146 / .71);outline-offset:-2px;border-radius:5px;}
+.me-mission__row[data-bonus="true"]::after {content:"";position:absolute;left:12px;right:12px;top:2px;height:1px;background:rgb(255 236 173 / .67);pointer-events:none;}
+.me-mission__name {display:block;font-size:clamp(16px,calc(23 * var(--u)),23px);font-weight:650;line-height:1.2;overflow-wrap:anywhere;}
+.me-mission__condition {display:block;margin-top:calc(4 * var(--u));font-size:clamp(13px,calc(17 * var(--u)),17px);line-height:1.3;color:var(--muted);}
+.me-mission__row[data-bonus="true"] .me-mission__name {color:var(--gold);}
+.me-mission__progress-value {display:block;text-align:center;font-size:clamp(16px,calc(22 * var(--u)),22px);font-weight:650;color:var(--cyan);line-height:1.3;}
+.me-mission__row[data-state="untouched"] .me-mission__progress-value {color:var(--muted);}
+.me-mission__track {display:block;height:max(5px,calc(7 * var(--u)));margin-top:calc(18 * var(--u));border:1px solid #465075;border-radius:4px;background:#10122d;overflow:hidden;}
+.me-mission__fill {display:block;height:100%;width:var(--progress,0%);max-width:100%;background:var(--cyan);border-radius:inherit;box-shadow:0 0 3px rgb(99 232 255 / .35);transition:width 180ms ease-out;}
+.me-mission__row[data-bonus="true"] .me-mission__fill {background:var(--gold);box-shadow:none;}
+.me-mission__reward {padding-left:calc(33 * var(--u));padding-right:calc(25 * var(--u));display:grid;grid-template-columns:calc(29 * var(--u)) 1fr;align-items:center;column-gap:calc(15 * var(--u));text-align:right;}
+.me-mission__reward-icon {width:max(18px,calc(29 * var(--u)));height:max(18px,calc(29 * var(--u)));object-fit:contain;grid-row:1/3;}
+.me-mission__reward-amount {font-size:clamp(20px,calc(27 * var(--u)),27px);font-weight:650;line-height:1.1;}
+.me-mission__reward-unit {color:var(--muted);font-size:clamp(11px,calc(14 * var(--u)),14px);margin-top:calc(6 * var(--u));}
+.me-mission__row[data-bonus="true"] .me-mission__reward-amount {color:var(--gold);}
+.me-mission__state {display:flex;justify-content:center;align-items:center;gap:calc(15 * var(--u));font-size:clamp(14px,calc(19 * var(--u)),19px);color:#b9dfff;white-space:nowrap;}
+.me-mission__row[data-state="untouched"] .me-mission__state {color:var(--muted);}
+.me-mission__row[data-state="completed"] .me-mission__state {color:var(--cyan);font-weight:650;}
+.me-mission__check {width:calc(28 * var(--u));height:calc(28 * var(--u));min-width:18px;min-height:18px;flex:none;color:var(--cyan);}
+.me-mission__footer {display:flex;justify-content:space-between;gap:16px;flex:none;font-size:clamp(12px,calc(18 * var(--u)),18px);color:var(--muted);}
+.me-mission__footer span:last-child {color:var(--gold);}
+.me-mission button:focus-visible {outline:2px solid var(--cyan);outline-offset:3px;}
+/* Toast is mounted once in the application shell. Set header-bottom from the
+   actual current header rectangle, in CSS viewport pixels, not design units. */
+.me-mission-toast {--toast-u:clamp(.65px,calc(100vw / 1536),1px);--header-bottom:59px;position:fixed;z-index:var(--me-notification-z,1000);left:50%;top:calc(var(--header-bottom) + 14 * var(--toast-u));width:max-content;min-width:min(calc(800 * var(--toast-u)),calc(100vw - 32px));max-width:calc(100vw - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px) - 24px);min-height:calc(46 * var(--toast-u));padding:calc(9 * var(--toast-u)) calc(15 * var(--toast-u));display:flex;align-items:center;justify-content:center;gap:calc(18 * var(--toast-u));border:1px solid rgb(126 150 232 / .80);border-top-color:rgb(202 213 255 / .73);border-radius:5px;background:rgb(24 14 54 / .898);color:#f3f2ff;font-family:var(--me-existing-font,"Noto Sans JP",sans-serif);font-size:clamp(13px,calc(21 * var(--toast-u)),21px);font-variant-numeric:tabular-nums;text-shadow:1px 1px 1px #000914;pointer-events:none;user-select:none;opacity:0;visibility:hidden;transform:translate(-50%,-6px);}
+.me-mission-toast[data-phase="enter"],.me-mission-toast[data-phase="hold"] {opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity 180ms ease-out,transform 180ms ease-out;}
+.me-mission-toast[data-phase="exit"] {visibility:visible;opacity:0;transform:translate(-50%,0);transition:opacity 220ms ease-in;}
+.me-mission-toast__check {flex:none;width:calc(28 * var(--toast-u));height:calc(28 * var(--toast-u));color:#63e8ff;}
+.me-mission-toast__title {color:#63e8ff;font-weight:650;white-space:nowrap;}
+.me-mission-toast__name {min-width:0;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.me-mission-toast__divider {height:calc(22 * var(--toast-u));width:1px;background:rgb(162 157 206 / .43);flex:none;}
+.me-mission-toast__reward {display:flex;align-items:center;gap:calc(14 * var(--toast-u));font-weight:650;color:#ffe89c;white-space:nowrap;flex:none;}
+.me-mission-toast__reward img {width:calc(26 * var(--toast-u));height:calc(26 * var(--toast-u));object-fit:contain;}
+@media (max-width:1000px) { .me-mission__subtitle{display:none;} .me-mission__summary{gap:16px;} .me-mission__reward{padding:0;} .me-mission__row{grid-template-columns:minmax(0,1fr) minmax(90px,calc(304 * var(--u))) minmax(75px,calc(150 * var(--u))) minmax(75px,calc(170 * var(--u)));gap:12px;} }
+@media (max-width:740px) { .me-mission__automatic{display:none;} .me-mission__row{grid-template-columns:minmax(0,1fr) minmax(90px,25%);grid-template-areas:"text state" "progress reward";row-gap:8px;min-height:90px;padding:10px 12px;} .me-mission__text{grid-area:text;} .me-mission__progress{grid-area:progress;} .me-mission__reward{grid-area:reward;grid-template-columns:20px 1fr;column-gap:6px;} .me-mission__state{grid-area:state;} .me-mission__track{margin-top:4px;} .me-mission__progress-value{text-align:left;} .me-mission__reward-unit{display:none;} .me-mission__footer span:last-child{display:none;} .me-mission-toast{gap:8px;} .me-mission-toast__title{font-size:12px;} }
+@media (prefers-reduced-motion:reduce) { .me-mission__fill,.me-mission-toast[data-phase] {transition:none;transform:translate(-50%,0);} .me-mission__fill {transform:none;} }

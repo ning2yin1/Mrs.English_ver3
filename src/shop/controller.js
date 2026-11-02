@@ -52,7 +52,7 @@ export function createShop({stage,resize,onHome,onInventory,notify=()=>{},store:
     const id=++task;state.animating=true;const view=await render();if(!view||id!==task||!active)return;
     try{await fx.next(view);if(id!==task||!active)return;state.index++;state.screen='back';const back=await render();if(!back||id!==task||!active)return;await fx.back(back);if(id!==task||!active)return;state.animating=false;await render();await progress();}catch(e){if(e.name!=='AbortError')error(e);}
   }
-  function leave(callback){active=false;task++;generation++;fx.cancel();window.removeEventListener('storage',onStorage);document.removeEventListener('visibilitychange',onVisibility);callback();}
+  function leave(callback){active=false;task++;generation++;fx.cancel();window.removeEventListener('mrs-progress-change',onProgress);window.removeEventListener('storage',onStorage);document.removeEventListener('visibilitychange',onVisibility);callback();}
   async function choose(id){fx.cancel();await refresh();if(state.snapshot.receipt){state.receipt=state.snapshot.receipt;state.sku=data.products.skus.find(s=>s.id===state.receipt.sku);await finish();return;}state.sku=data.products.skus.find(s=>s.id===id);state.screen='confirm';state.busy=false;operationId=crypto.randomUUID();await render();}
   const actions={async tap(e){
     try{
@@ -81,6 +81,7 @@ export function createShop({stage,resize,onHome,onInventory,notify=()=>{},store:
       }
     }catch(e){state.busy=false;error(e);}
   }};
+  const onProgress=()=>onStorage({key:'mrsEnglishV3.wallet.v1'});
   async function onStorage(event){if(!['mrsEnglishV3.shop.v1','mrsEnglishV3.wallet.v1'].includes(event.key)||state.busy||state.animating)return;try{await refresh();if(!state.receipt&&state.snapshot.receipt){state.receipt=state.snapshot.receipt;state.sku=data.products.skus.find(s=>s.id===state.receipt.sku);state.screen='results';}await render();}catch(e){error(e);}}
   async function onVisibility(){if(document.hidden){wasHidden=true;task++;fx.cancel();state.animating=false;}else if(wasHidden&&state.receipt&&!state.busy){wasHidden=false;try{await finish();}catch(e){error(e);}}}
   return {async open(){
@@ -88,7 +89,7 @@ export function createShop({stage,resize,onHome,onInventory,notify=()=>{},store:
       data=customResources||await loadResources();store=customStore||createShopStore(data);fx=createEffects(data.animation);await refresh();
       const bg=await prepareBackground('assets/collection/background.png');document.querySelector('#scene-background').replaceWith(bg);active=true;state.storageBlocked=!navigator.locks?.request;state.busy=false;state.animating=false;
       if(state.snapshot.receipt){state.receipt=state.snapshot.receipt;state.sku=data.products.skus.find(s=>s.id===state.receipt.sku);state.index=0;state.screen='results';await preloadReceipt();}else{state.receipt=null;state.screen='main';}
-      window.removeEventListener('storage',onStorage);window.addEventListener('storage',onStorage);document.removeEventListener('visibilitychange',onVisibility);document.addEventListener('visibilitychange',onVisibility);await render();
+      window.removeEventListener('mrs-progress-change',onProgress);window.removeEventListener('storage',onStorage);window.addEventListener('storage',onStorage);window.addEventListener('mrs-progress-change',onProgress);document.removeEventListener('visibilitychange',onVisibility);document.addEventListener('visibilitychange',onVisibility);await render();
       if(state.storageBlocked)notify('安全な購入処理が利用できないため、購入を無効にしています。');
     }catch(e){console.error(e);error(e);}
   }};

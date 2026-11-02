@@ -7,6 +7,8 @@ await mkdir(output, { recursive: true });
 for (const file of ['index.html', 'src', 'assets', 'layouts', 'data', 'styles']) await cp(file, `${output}/${file}`, { recursive: true });
 // Result's delivery kit includes byte-identical copies; runtime reuses the original common assets.
 await rm(`${output}/assets/result/reused`, {recursive:true,force:true});
+for(const folder of ['backgrounds','panels','tabs'])await rm(`${output}/assets/mission/${folder}`,{recursive:true,force:true});
+for(const file of ['mission_coin.png','mission_diamond.png','mission_back.png'])await rm(`${output}/assets/mission/icons/${file}`,{force:true});
 await cp('specs/play', `${output}/specs/play`, { recursive: true });
 for (const file of ['assets', 'spec']) await cp(`home_approved/${file}`, `${output}/home_approved/${file}`, { recursive: true });
 await cp('public', output, { recursive: true });

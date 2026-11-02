@@ -1,3 +1,4 @@
+import {createMission} from './mission/controller.js';
 import {RELEASE} from './release.js';
 import { loadProfile, saveProfile, normalizeName } from './profile.js';
 import { renderScreen, placeholder, backgroundForScreen } from './screens.js';
@@ -45,20 +46,21 @@ const collection = createCollection({stage,resize,onHome:()=>show('home'),notify
 const inventory = createInventory({stage,resize,onHome:()=>show('home'),notify:message});
 const shop = createShop({stage,resize,onHome:()=>show('home'),onInventory:()=>inventory.open(),notify:message});
 const play = createPlay({stage,resize,onHome:()=>show('home'),notify:message});
+const mission = createMission({onHome:()=>show('home'),notify:message,enabled:()=>!!saved});
 
 async function show(screen) {
-  menu?.close(false); removeSettings();
+  menu?.close(false); removeSettings();mission.close();
   current = screen;
   const version = ++renderVersion;
   if (!persistentWarning) message('');
   const isPlaceholder = screen.startsWith('placeholder/');
-  let rCoin;
-  if(screen==='home')try{rCoin=await persistence().read(storage=>readWallet(storage).rCoin);}catch(error){if(!persistentWarning)message(error.message);rCoin=null;}
+  let wallet;
+  if(screen==='home')try{wallet=await persistence().read(storage=>readWallet(storage));}catch(error){if(!persistentWarning)message(error.message);wallet={rCoin:null,diamonds:null};}
   const backgroundFile = sceneBackground(layouts[screen], screen === 'home' ? 'home_approved/' : '',
     backgroundForScreen(screen, state, backgrounds));
   const [fragment, background] = await Promise.all([
     isPlaceholder ? placeholder(screen, () => show('home'))
-      : renderScreen(screen, layouts[screen], screen==='home'?{...state,rCoin}:state, { tap, confirm }, backgrounds, homeBounds),
+      : renderScreen(screen, layouts[screen], screen==='home'?{...state,...wallet}:state, { tap, confirm }, backgrounds, homeBounds),
     prepareBackground(backgroundFile),
   ]);
   if (version !== renderVersion) return;
@@ -74,10 +76,11 @@ async function show(screen) {
 }
 async function refreshHomeCoins(){
   const root=stage.querySelector('.home-hud');if(current!=='home'||stage.dataset.screen!=='home'||!root)return;
-  try{const value=await persistence().read(storage=>readWallet(storage).rCoin);if(stage.querySelector('.home-hud')===root)await root.updateCoins(value);}catch(error){message(error.message);}
+  try{const value=await persistence().read(storage=>readWallet(storage));if(stage.querySelector('.home-hud')===root)await root.updateWallet(value);}catch(error){message(error.message);}
 }
 window.addEventListener('storage',event=>{if(event.key===WALLET_KEY||event.key===null)refreshHomeCoins();});
 window.addEventListener('focus',refreshHomeCoins);
+window.addEventListener('mrs-progress-change',refreshHomeCoins);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshHomeCoins();});
 function confirm() {
   if(editing) {
@@ -106,6 +109,7 @@ function tap(target) {
   else if (current === 'home') {
     if(target.id==='menu'){toggleMenu();return;}
     menu?.close(false);
+    if(target.id==='mission'){current='mission';mission.open().finally(()=>{if(stage.dataset.screen==='home')current='home';});return;}
     if (target.route === 'placeholder/collection') collection.open();
     else if (target.route === 'placeholder/inventory') inventory.open();
     else if (target.route === 'placeholder/shop') shop.open();
@@ -121,6 +125,7 @@ try {
   [backgrounds, homeBounds] = await Promise.all([json('layouts/external_backgrounds.json'), json('src/home-font-bounds.json')]);
   try { await inventory.initializeDevelopment(); } catch (error) { message(error.message); }
   await show('title');
+  if(saved)mission.refresh();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 } catch (error) {
   message('画面素材を読み込めませんでした。接続を確認して再読み込みしてください。'); console.error(error);

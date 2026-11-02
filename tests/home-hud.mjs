@@ -25,7 +25,7 @@ try {
     const footerBottom=height-(bottom===21?14:0);
     close(inventory.x,left);close(ready.x+ready.width,width-right);close(ready.y+ready.height,footerBottom);
     for (const e of layout.elements.filter(e=>e.kind==='text'||e.kind==='icon')) {
-      const actual=await box(e.id);if(e.id==='coins_value')assert.ok(actual.width>0&&actual.width<=170*scale);else close(actual.width,e.width*scale);close(actual.height,e.height*scale);
+      const actual=await box(e.id);if(['coins_value','diamonds_value'].includes(e.id))assert.ok(actual.width>0&&actual.width<=170*scale);else close(actual.width,e.width*scale);close(actual.height,e.height*scale);
     }
     for (const e of layout.elements.filter(e=>e.id.startsWith('status_')||e.id.startsWith('button_'))) {
       const actual=await box(e.id);close(actual.height,e.height*scale);
